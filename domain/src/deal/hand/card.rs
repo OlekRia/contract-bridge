@@ -172,7 +172,13 @@ mod tests {
         assert_ne!(card1, card3);
         assert!(card1 < card3);
         
-        let card4 = Card::new(0);
-        assert!(card1 > card4);
+        
+        let card2c = Card::new(0);
+        let card3c = Card::new(1);
+        assert!(card2c < card3c);
+        assert!(card3c > card2c);
+        
+        let card2s = Card::new(51);
+        assert!(card2s > card3c);
     }
 }

@@ -1,8 +1,13 @@
+use crate::deal::hand::Hand;
+
 pub mod hand;
 
-use hand::card::Card;
+pub struct Deal {
+    pub hands: [Hand; 4],
+}
 
-#[derive(Debug, Clone)]
-pub struct Trick {
-    pub cards: Vec<Card>,
+impl Deal {
+    pub fn new(hands: [Hand; 4]) -> Self {
+        Self { hands }
+    }
 }
