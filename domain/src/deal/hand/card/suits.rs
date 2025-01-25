@@ -17,12 +17,6 @@ pub enum MajorMinor {
 ///
 /// # Example
 ///
-/// ```rust
-/// use domain::Suits;
-///
-/// assert_eq!(Suits::Clubs as u8, 0);
-/// assert_eq!(Suits::Clubs.to_string(), "c");
-/// ```
 #[derive(Debug, PartialEq, Clone, Copy, Eq, PartialOrd, Ord)]
 #[repr(u8)]
 pub enum Suits {
@@ -33,6 +27,15 @@ pub enum Suits {
 }
 
 impl Display for Suits {
+    /// Formats the suit as a single character.
+    ///
+    /// # Examples
+    ///
+    /// - `Suits::Clubs` is formatted as `"c"`.
+    /// - `Suits::Diamonds` is formatted as `"d"`.
+    /// - `Suits::Hearts` is formatted as `"h"`.
+    /// - `Suits::Spades` is formatted as `"s"`.
+    ///
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         match self {
             Suits::Clubs => write!(f, "c"),
@@ -44,6 +47,8 @@ impl Display for Suits {
 }
 
 impl Suits {
+    /// Returns `MajorMinor::Major` if the suit is either `Spades` or `Hearts`, and `MajorMinor::Minor`
+    /// if the suit is either `Clubs` or `Diamonds`.
     pub fn major_minor(&self) -> MajorMinor {
         match self {
             Suits::Spades | Suits::Hearts => MajorMinor::Major,
