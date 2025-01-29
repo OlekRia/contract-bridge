@@ -18,6 +18,10 @@ impl Side {
             Side::West => Side::North,
         }
     }
+
+    pub fn iter() -> impl Iterator<Item = Side> {
+        [Side::North, Side::East, Side::South, Side::West].into_iter()
+    }
 }
 
 impl Display for Side {
@@ -49,5 +53,15 @@ mod tests {
         assert_eq!(Side::East.next(), Side::South);
         assert_eq!(Side::South.next(), Side::West);
         assert_eq!(Side::West.next(), Side::North);
+    }
+
+    #[test]
+    fn iter_test() {
+        let mut sides = Side::iter();
+        assert_eq!(sides.next(), Some(Side::North));
+        assert_eq!(sides.next(), Some(Side::East));
+        assert_eq!(sides.next(), Some(Side::South));
+        assert_eq!(sides.next(), Some(Side::West));
+        assert_eq!(sides.next(), None);
     }
 }

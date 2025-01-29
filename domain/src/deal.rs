@@ -1,9 +1,11 @@
 pub mod hand;
+pub mod trick;
 
 use crate::game::Side;
 use hand::card::suits::Suits;
 use hand::Hand;
 use std::collections::HashMap;
+use trick::Trick;
 
 /// A struct representing a deal of cards in the game.
 /// * `dealer`: is the position of the dealer, who deals card, he makes bidding first
@@ -18,7 +20,9 @@ pub struct Deal {
 
     pub trump: Option<Suits>,
     pub player: Option<Side>,
-    // tricks: Tricks,
+
+    // Each player can have multiple tricks in a deal
+    tricks: Vec<Trick>,
 }
 
 impl Deal {
@@ -52,7 +56,7 @@ impl Deal {
             player: None,
             trump: None,
             zone,
-            // tricks: Vec::with_capacity(13),
+            tricks: Vec::with_capacity(13),
         }
     }
 }
