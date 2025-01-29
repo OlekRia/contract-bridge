@@ -1,7 +1,6 @@
 pub mod rank;
 pub mod suits;
 
-use std::cmp::Ordering;
 use rank::Rank;
 use std::fmt::Display;
 use suits::Suits;
@@ -14,20 +13,30 @@ use suits::Suits;
 pub struct Card {
     pub id: u8,
     pub suit: Suits,
-    pub value: Rank,
+    pub rank: Rank,
 }
 
 impl Display for Card {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        write!(f, "{}{}", self.suit, self.value)
+        write!(f, "{}{}", self.suit, self.rank)
+    }
+}
+
+impl Ord for Card {
+    fn cmp(&self, other: &Self) -> std::cmp::Ordering {
+        match self.suit.cmp(&other.suit) {
+            std::cmp::Ordering::Equal => self.rank.cmp(&other.rank),
+            other => other,
+        }
     }
 }
 
 impl PartialOrd for Card {
-    fn partial_cmp(&self, other: &Self) -> Option<Ordering> {
-        self.suit.partial_cmp(&other.suit).and_then(|_| self.value.partial_cmp(&other.value))
+    fn partial_cmp(&self, other: &Self) -> Option<std::cmp::Ordering> {
+        Some(self.cmp(other))
     }
 }
+
 
 impl Card {
     /// Creates a Card from a u8 representing the card.
@@ -41,7 +50,7 @@ impl Card {
     /// # Panics
     /// Panics if the card number is greater than 51.
     ///
-    pub fn new(card_num: u8) -> Self {
+    pub fn new(card_num: u8 ) -> Self {
         if card_num > 51 {
             panic!("card number must be less than 52")
         }
@@ -74,7 +83,7 @@ impl Card {
         Self {
             id: card_num,
             suit,
-            value,
+            rank: value,
         }
     }
 }
@@ -86,7 +95,7 @@ mod tests {
     fn test_numbers(num: u8, suit: Suits, value: Rank) {
         let card = Card::new(num);
         assert_eq!(card.suit, suit);
-        assert_eq!(card.value, value);
+        assert_eq!(card.rank, value);
     }
 
     #[test]
