@@ -1,4 +1,4 @@
 [workspace]
-members = ["core", "domain"]
+members = ["core", "domain", "infrastructure", "ui"]
 
 resolver = "2"
