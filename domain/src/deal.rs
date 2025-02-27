@@ -3,8 +3,8 @@ pub mod trick;
 
 use crate::deal::hand::card::Card;
 use crate::game::Side;
-use hand::card::suits::Suits;
 use hand::Hand;
+use hand::card::suits::Suits;
 use std::collections::HashMap;
 use trick::Trick;
 
@@ -17,8 +17,7 @@ use trick::Trick;
 pub struct Deal {
     pub hands: HashMap<Side, Hand>,
     pub dealer: Side,
-    pub zone: (bool, bool),
-
+    pub volnurable: (bool, bool),
     pub trump: Option<Suits>,
     pub declarer: Option<Side>,
 
@@ -43,7 +42,7 @@ impl Deal {
         south: Hand,
         west: Hand,
         dealer: Side,
-        zone: (bool, bool),
+        volnurable: (bool, bool),
     ) -> Self {
         let hands = HashMap::from([
             (Side::North, north),
@@ -56,11 +55,13 @@ impl Deal {
             dealer,
             declarer: None,
             trump: None,
-            zone,
+            volnurable,
             tricks: Vec::with_capacity(13),
         }
     }
+}
 
+impl Deal {
     pub fn encode(&self) -> Vec<u8> {
         let mut masks: [u64; 4] = [0; 4];
 
@@ -112,7 +113,7 @@ impl Deal {
         };
 
         // Encode zone (2 bits)
-        let zone_value = ((self.zone.0 as u8) << 1) | (self.zone.1 as u8);
+        let zone_value = ((self.volnurable.0 as u8) << 1) | (self.volnurable.1 as u8);
 
         // Store all values in the last byte
         result[26] = (trump_value << 5) | (dealer_value << 3) | declarer_value | (zone_value << 7);
@@ -276,7 +277,7 @@ impl Deal {
             dealer,
             trump,
             declarer,
-            zone,
+            volnurable: zone,
             tricks,
         }
     }
