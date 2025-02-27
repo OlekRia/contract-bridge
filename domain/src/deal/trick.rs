@@ -4,8 +4,8 @@ use std::collections::HashMap;
 
 /// We put all the tricks here. Up to 4 cards and determin a winner
 pub struct Trick {
-    side_cards: HashMap<Side, Option<Card>>,
-    winner: Option<Side>,
+    pub side_cards: HashMap<Side, Option<Card>>,
+    pub winner: Option<Side>,
 }
 
 impl Trick {
