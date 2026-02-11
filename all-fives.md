@@ -10,7 +10,7 @@
 2. [Known Problems](#known-problems)
 3. [The Central Idea](#the-central-idea)
 4. [Openings](#openings)
-   - [1NT](#1nt---12-hcp)
+   - [1NT](#1nt---12-14-hcp)
    - [1♧ / 1♢ / 1♡ / 1♤](#1-1-1-1---4-cards-12-hcp)
    - [2♧ - Semi-Strong (Benji)](#2---semi-strong-benji)
    - [2♢ - Strong Game-Force](#2---strong-game-force)
@@ -40,7 +40,8 @@ Most of the time we will face competitive auctions, but keeping our opening prin
 
 | #   | Problem                                                                                             |
 | --- | --------------------------------------------------------------------------------------------------- |
-| 1   | Opening in 3rd/4th seat where 12 HCP 1NT doesn't make sense - better to play 15-17 HCP there.       |
+| 1   | Opening in 3rd/4th seat where 12 HCP 1NT doesn't make sense - we play 15-17 HCP there.              |
+|     | After a 3rd-seat suit opening, the NT rebid shows 12-14 balanced (since 15-17 opened 1NT directly). |
 | 2   | The 4441 distribution. Every system struggles with this.                                            |
 | 3   | 1♤ usually promises 5 spades, but with a strong 4333 hand it may show only 4 - which feels awkward. |
 
@@ -73,7 +74,7 @@ In that case, opener "escapes" to NT on the next bid, or makes a reverse (strong
 
 ## Openings
 
-### 1NT -
+### 1NT - 12-14 HCP
 
 - 12-14 HCP
 - third hand is 15-17 HCP
@@ -92,14 +93,29 @@ Third hand 15-17, because it is only the risk we have with a weak hand, we block
 | 2♤  | Transfer to ♧                                                                           |
 | 3♧  | Transfer to ♢                                                                           |
 
-#### SOS Redouble
+#### Escaping 1NTx (Helvic Wriggle)
 
-         ```
-         1NT - (X) - Pass - Pass
-         XX   = SOS - please bid a suit!
-         ```
+After 1NT - (X):
 
-The opponents have shown they hold the balance of power. We try to escape cheaply into a suit (likely a 4-3 fit). Partner retains the option to pass and play 1NTxx. This is extremely rare.
+| Bid  | Meaning                                                        |
+| ---- | -------------------------------------------------------------- |
+| XX   | One-suited hand. Opener bids 2♧, responder passes or corrects. |
+| 2♧   | Clubs + diamonds (touching pairs)                              |
+| 2♢   | Diamonds + hearts (touching pairs)                             |
+| 2♡   | Hearts + spades (touching pairs)                               |
+| Pass | To play, or will bid later                                     |
+
+After Pass - Pass - **XX** = SOS with non-touching pairs (clubs+hearts or diamonds+spades). Opener bids 2♧, responder passes or corrects.
+
+This finds a 7+ card fit almost every time. With a 12-14 range we will get doubled - a reliable escape is essential, not optional.
+
+**"But we lose Stayman and transfers!"** — Yes, and that's fine. If the opponents doubled, they are showing 15+ HCP. If responder is strong (10+ HCP), our side has 22+ combined — the opponents made a mistake. **Pass and collect the penalty.** Playing 1NTx making with overtricks scores far more than any game contract. You lose Stayman and transfers precisely when you don't need them.
+
+| Responder's hand | Action                                       |
+| ---------------- | -------------------------------------------- |
+| Weak, shapely    | Wriggle (escape to a suit fit)               |
+| Weak, balanced   | Pass (hope for the best)                     |
+| Strong (10+ HCP) | **Pass** (penalty - thank them for doubling) |
 
 > **1NT is both the strength and the weakness of this system.** We may occasionally suffer, but in the long run we gain more than we lose, especially forcing the opponents to play higher from start.
 
@@ -173,9 +189,9 @@ _Future expansion: possibly two-suited hands or 4441 shapes - to be decided._
 | Response | Meaning                                                     |
 | -------- | ----------------------------------------------------------- |
 | 2♢       | Waiting (0-7 HCP)                                           |
-| 2♡       | Balanced, no 5-card suit                                    |
-| 2♤       | 5+ spades                                                   |
-| 2NT      | 5+ hearts **(!!)**                                          |
+| 2♡       | Balanced, no 5-card suit, 8+ HCP                            |
+| 2♤       | 5+ spades, 8+ HCP                                           |
+| 2NT      | 5+ hearts **(!!)** 8+ HCP                                   |
 | 3♧ / 3♢  | 5+ clubs/diamonds, game-force, slam interest opposite 22-23 |
 
 All non-2♢ responses are effectively **game-forcing (8+ HCP)**. This avoids the problem where, after 2♧ - 2♢ - 2♡, responder cannot show a 5-card major.
@@ -208,7 +224,9 @@ Disciplined, especially when vulnerable. Always consider that partner may hold 1
 
 ### 2NT - 20-21 HCP
 
-With **Puppet Stayman**.
+With **Puppet Stayman** (3♧ asks for a 5-card major; 3♢ denies; then check for 4-card fits).
+
+Puppet Stayman fits better over 2NT than over 1NT: the auction is already at the 3-level, so information leakage matters less, and finding the right major-suit game matters more.
 
 ---
 
@@ -235,8 +253,28 @@ An overcall of **1NT** shows:
 - **5 cards** in a minor
 
 We bid using the **minimax principle** (aiming to sign off, tolerate a suit). This comes up more frequently than a natural 1NT (15-17) overcall.
-If an opponent open 1 Major - we have 4 in unbid major and 5 in one of Minor.
-If an opponent opens 1 Minor - we show 5 cards in another Minor and 4 card in unknown Major
+If an opponent opens 1 Major - we have 4 in unbid major and 5 in one of Minor.
+If an opponent opens 1 Minor - we show 5 cards in another Minor and 4 card in unknown Major.
+
+#### RAPTOR Responses
+
+After opponent opens **1♡ or 1♤** and we overcall 1NT:
+
+| Response                  | Meaning                                |
+| ------------------------- | -------------------------------------- |
+| Cue bid (opponent's suit) | Asks for the major                     |
+| 2 of other minor          | To play                                |
+| 2 of unbid major          | Natural, 5+ cards, willing to play     |
+| 2NT                       | Invitational+, asks overcaller's shape |
+
+After opponent opens **1♧ or 1♢** and we overcall 1NT:
+
+| Response                  | Meaning                                |
+| ------------------------- | -------------------------------------- |
+| 2♧ (cheapest minor)       | Pass or correct to overcaller's minor  |
+| Cue bid (opponent's suit) | Asks for the major                     |
+| 2♡ / 2♤                   | Natural, 5+ cards                      |
+| 2NT                       | Invitational+, asks overcaller's shape |
 
 ---
 
