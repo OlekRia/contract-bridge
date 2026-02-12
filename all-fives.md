@@ -31,6 +31,7 @@ Whatever a partner bid we should understand as it makes sense and respect his ch
 - **Bids mean what they look like.** A sequence like 1♧ - 3♧ is not destructive - it is an **invitation to 3NT**.
 - **Use the opponents' information.** If they have shown 18+ points both hands, temper your ambitions for game.
 - **Stay flexible.** This is an experimental system and may be adjusted as we learn.
+- **Dont be crazy about one way bidding** Usually it is rare. Mostly people bid competitive bidding.
 
 Most of the time we will face competitive auctions, but keeping our opening principles in mind is essential.
 
@@ -219,6 +220,7 @@ Excellent for slam exploration.
 ### 2♡ / 2♤ - Weak Two
 
 Disciplined, especially when vulnerable. Always consider that partner may hold 18+ HCP - so your weak two should show **reasonable values and suit quality**.
+Todo: Probably Ougust convention makes sense here.
 
 ---
 
@@ -241,7 +243,7 @@ Puppet Stayman fits better over 2NT than over 1NT: the auction is already at the
 
 ---
 
-## Competitive Bidding
+## Competitive Bidding (Overcall)
 
 Generally standard methods apply. There are many conventions. But.. hold on.
 
