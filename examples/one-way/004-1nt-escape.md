@@ -19,8 +19,10 @@
   ├───────┼──────┼───────┼──────┤
   │ 1NT   │ X    │ 2♡    │ ...  │
   └───────┴──────┴───────┴──────┘
-  South bids 2♡ immediately = hearts + spades (touching). North picks the better major. Simple, one-step escape.
+  South bids 2♡ immediately = hearts + spades (touching). North picks
+  the better major. Simple, one-step escape.
 
-  The Pass → XX route is reserved for hands like ♧xxxxx ♡xxxxx (clubs + hearts, non-touching) where no direct bid covers that
+  The Pass → XX route is reserved for hands like ♧xxxxx ♡xxxxx
+  (clubs + hearts, non-touching) where no direct bid covers that
   combination.
   

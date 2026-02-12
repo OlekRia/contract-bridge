@@ -1,6 +1,7 @@
 # Worth Investigating: System Extensions
 
-> Five practical gaps that cost tricks at the table. These are the next priorities for system development.
+> Five practical gaps that cost tricks at the table. These are the
+> next priorities for system development.
 
 ---
 
@@ -17,7 +18,9 @@ After 2♡/2♤ - **2NT** (enquiry):
 | 3♡             | Maximum (8-10), poor suit              |
 | 3♤             | Maximum (8-10), good suit              |
 
-The strength/quality boundaries match our disciplined weak two requirements. The combination of min/max and suit quality tells responder exactly whether to bid game.
+The strength/quality boundaries match our disciplined weak two
+requirements. The combination of min/max and suit quality tells
+responder exactly whether to bid game.
 
 **Why it matters:** Without this, responder guesses. With it, responder knows.
 
@@ -25,7 +28,9 @@ The strength/quality boundaries match our disciplined weak two requirements. The
 
 ## 2. Super-Accepts on 1NT Transfers
 
-**Problem:** After 1NT - 2♢ (transfer to hearts), opener always completes with 2♡. Responder with an invitational 5-card major is guessing whether opener's 12-14 is working for them.
+**Problem:** After 1NT - 2♢ (transfer to hearts), opener always
+completes with 2♡. Responder with an invitational 5-card major is
+guessing whether opener's 12-14 is working for them.
 
 | Opener's Action | Meaning                                          |
 | --------------- | ------------------------------------------------ |
@@ -41,7 +46,8 @@ Same applies after 1NT - 2♡ (transfer to spades):
 | 3♤              | Maximum, 4-card support.                         |
 | 2NT             | Maximum, doubleton support.                      |
 
-**Why it matters:** Responder with ♠Qxxxx ♡Kx ♢Axx ♧xxx (invitational) can pass 2♤ or bid game over 3♤ — no guessing.
+**Why it matters:** Responder with ♠Qxxxx ♡Kx ♢Axx ♧xxx
+(invitational) can pass 2♤ or bid game over 3♤ — no guessing.
 
 ---
 
@@ -57,15 +63,18 @@ Same applies after 1NT - 2♡ (transfer to spades):
 | 2♡ / 2♤ | Natural, good 6+ card suit                       |
 | 2NT     | Both minors (5-5+)                               |
 
-The 2♧/2♢ split handles the common "I have a major but which one?" problem. Natural 2-level overcalls cover strong single-suited hands.
+The 2♧/2♢ split handles the common "I have a major but which one?"
+problem. Natural 2-level overcalls cover strong single-suited hands.
 
-**Why it matters:** Opponents open 1NT frequently. Having no defense means you pass hands where you should compete.
+**Why it matters:** Opponents open 1NT frequently. Having no defense
+means you pass hands where you should compete.
 
 ---
 
 ## 4. Jump Responses to 1-Level Openings
 
-**Problem:** Partner opens 1♡. Responder bids 3♧. Is it weak? Strong? Invitational? The system doesn't say.
+**Problem:** Partner opens 1♡. Responder bids 3♧. Is it weak? Strong?
+Invitational? The system doesn't say.
 
 ### After 1♡ or 1♤ opening:
 
@@ -84,17 +93,22 @@ The 2♧/2♢ split handles the common "I have a major but which one?" problem. 
 | 3♧ / 3♢  | Invitational raise, 5+ card support, 10-12 HCP              |
 | Jump in major | Strong, 5+ cards, game-forcing                         |
 
-**Why fit jumps work here:** Opener's 5+ card promise means 3-card support guarantees an 8-card fit. The fit jump shows both a side suit (lead direction) and support in one bid.
+**Why fit jumps work here:** Opener's 5+ card promise means 3-card
+support guarantees an 8-card fit. The fit jump shows both a side suit
+(lead direction) and support in one bid.
 
 ---
 
 ## 5. 2♧ Type 3: Strong Two-Suiters (18-21, 5-5+)
 
-**Problem:** Type 3 is empty. The 4441 approach was rejected (too rare at 17+ HCP). But strong two-suiters are more common and genuinely hard to bid from the 1-level.
+**Problem:** Type 3 is empty. The 4441 approach was rejected (too rare
+at 17+ HCP). But strong two-suiters are more common and genuinely
+hard to bid from the 1-level.
 
 **Example:** ♠x ♡AKQxx ♢AKJxx ♧xx (18 HCP, 5-5)
 
-Opening 1♡ risks partner passing with 6 HCP and missing game. Opening 2♢ (game-force) overstates it. Type 3 fills the gap.
+Opening 1♡ risks partner passing with 6 HCP and missing game. Opening
+2♢ (game-force) overstates it. Type 3 fills the gap.
 
 After 2♧ - 2♢ - **3 of a suit** = 5-5+, the bid suit and a higher suit, 18-21 HCP:
 
@@ -106,7 +120,9 @@ After 2♧ - 2♢ - **3 of a suit** = 5-5+, the bid suit and a higher suit, 18-2
 
 Responder picks the fit or bids 3NT. The 3-level start leaves room for exploration.
 
-**Why it matters:** These hands occur more often than 4441 with 17+ and more often than the balanced 22-23 (Type 1). Filling Type 3 makes 2♧ earn its place in the system.
+**Why it matters:** These hands occur more often than 4441 with 17+
+and more often than the balanced 22-23 (Type 1). Filling Type 3
+makes 2♧ earn its place in the system.
 
 ---
 

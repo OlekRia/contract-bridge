@@ -24,16 +24,23 @@
 
 ## Philosophy
 
-We play solid and we play what we see. No wild bids, no destructive actions. No gamble, no suicide, no guessing.
-Whatever a partner bid we should understand as it makes sense and respect his choice.
+We play solid and we play what we see. No wild bids, no destructive actions.
+No gamble, no suicide, no guessing.
+Whatever a partner bid we should understand as it makes sense and respect
+his choice.
 
-- **No crazy openings.** We would never open 2♡ with just 4 HCP - that could ruin partner's decision-making. If partner knows you are reliable, he can trust that knowledge.
-- **Bids mean what they look like.** A sequence like 1♧ - 3♧ is not destructive - it is an **invitation to 3NT**.
-- **Use the opponents' information.** If they have shown 18+ points both hands, temper your ambitions for game.
+- **No crazy openings.** We would never open 2♡ with just 4 HCP - that
+  could ruin partner's decision-making. If partner knows you are reliable,
+  he can trust that knowledge.
+- **Bids mean what they look like.** A sequence like 1♧ - 3♧ is not
+  destructive - it is an **invitation to 3NT**.
+- **Use the opponents' information.** If they have shown 18+ points both
+  hands, temper your ambitions for game.
 - **Stay flexible.** This is an experimental system and may be adjusted as we learn.
 - **Dont be crazy about one way bidding** Usually it is rare. Mostly people bid competitive bidding.
 
-Most of the time we will face competitive auctions, but keeping our opening principles in mind is essential.
+Most of the time we will face competitive auctions, but keeping our
+opening principles in mind is essential.
 
 ---
 
@@ -82,7 +89,8 @@ In that case, opener "escapes" to NT on the next bid, or makes a reverse (strong
 
 **Shape:** 4333 / 4432 / 5332 (including a 5-card major, yes)
 
-Third hand 15-17, because it is only the risk we have with a weak hand, we block ourself without a chance to have a Game.
+Third hand 15-17, because it is only the risk we have with a weak hand,
+we block ourself without a chance to have a Game.
 
 #### Responses
 
@@ -106,11 +114,18 @@ After 1NT - (X):
 | 2♡   | Hearts + spades (touching pairs)                               |
 | Pass | To play, or will bid later                                     |
 
-After Pass - Pass - **XX** = SOS with non-touching pairs (clubs+hearts or diamonds+spades). Opener bids 2♧, responder passes or corrects.
+After Pass - Pass - **XX** = SOS with non-touching pairs (clubs+hearts
+or diamonds+spades). Opener bids 2♧, responder passes or corrects.
 
-This finds a 7+ card fit almost every time. With a 12-14 range we will get doubled - a reliable escape is essential, not optional.
+This finds a 7+ card fit almost every time. With a 12-14 range we will
+get doubled - a reliable escape is essential, not optional.
 
-**"But we lose Stayman and transfers!"** — Yes, and that's fine. If the opponents doubled, they are showing 15+ HCP. If responder is strong (10+ HCP), our side has 22+ combined — the opponents made a mistake. **Pass and collect the penalty.** Playing 1NTx making with overtricks scores far more than any game contract. You lose Stayman and transfers precisely when you don't need them.
+**"But we lose Stayman and transfers!"** — Yes, and that's fine. If the
+opponents doubled, they are showing 15+ HCP. If responder is strong
+(10+ HCP), our side has 22+ combined — the opponents made a mistake.
+**Pass and collect the penalty.** Playing 1NTx making with overtricks
+scores far more than any game contract. You lose Stayman and transfers
+precisely when you don't need them.
 
 | Responder's hand | Action                                       |
 | ---------------- | -------------------------------------------- |
@@ -118,7 +133,9 @@ This finds a 7+ card fit almost every time. With a 12-14 range we will get doubl
 | Weak, balanced   | Pass (hope for the best)                     |
 | Strong (10+ HCP) | **Pass** (penalty - thank them for doubling) |
 
-> **1NT is both the strength and the weakness of this system.** We may occasionally suffer, but in the long run we gain more than we lose, especially forcing the opponents to play higher from start.
+> **1NT is both the strength and the weakness of this system.** We may
+> occasionally suffer, but in the long run we gain more than we lose,
+> especially forcing the opponents to play higher from start.
 
 ---
 
@@ -131,7 +148,9 @@ This finds a 7+ card fit almost every time. With a 12-14 range we will get doubl
 
 #### Continuations
 
-Responder may bid a **3-card suit** fit at the 2-level without fear - if opener had only 4 cards, he simply rebids 2NT. So a 2NT rebid confirms 4 cards (not 5) in the opening suit.
+Responder may bid a **3-card suit** fit at the 2-level without fear -
+if opener had only 4 cards, he simply rebids 2NT. So a 2NT rebid
+confirms 4 cards (not 5) in the opening suit.
 
 **Example**: 1H - 2H (with 3 cards, is pretty standard)
 
@@ -153,7 +172,10 @@ A 1NT response typically shows:
 - **6-9 HCP**
 - No 5-card major to bid, and no game ambitions
 
-We may miss a 4-4 fit, but if we are weak, the opponents will bid again. If not, everyone has misfit or balanced hands - and NT is the right spot. Yes even with 4-4 major fit. But nobody scares to miss 4-4 fit when they open 15-17. NT and all pass.
+We may miss a 4-4 fit, but if we are weak, the opponents will bid
+again. If not, everyone has misfit or balanced hands - and NT is the
+right spot. Yes even with 4-4 major fit. But nobody scares to miss
+4-4 fit when they open 15-17. NT and all pass.
 
 #### Quick Reference
 
@@ -195,7 +217,9 @@ _Future expansion: possibly two-suited hands or 4441 shapes - to be decided._
 | 2NT      | 5+ hearts **(!!)** 8+ HCP                                   |
 | 3♧ / 3♢  | 5+ clubs/diamonds, game-force, slam interest opposite 22-23 |
 
-All non-2♢ responses are effectively **game-forcing (8+ HCP)**. This avoids the problem where, after 2♧ - 2♢ - 2♡, responder cannot show a 5-card major.
+All non-2♢ responses are effectively **game-forcing (8+ HCP)**. This
+avoids the problem where, after 2♧ - 2♢ - 2♡, responder cannot show
+a 5-card major.
 
 Opener accepts a fit immediately or continues describing his hand.
 
@@ -219,16 +243,21 @@ Excellent for slam exploration.
 
 ### 2♡ / 2♤ - Weak Two
 
-Disciplined, especially when vulnerable. Always consider that partner may hold 18+ HCP - so your weak two should show **reasonable values and suit quality**.
+Disciplined, especially when vulnerable. Always consider that partner
+may hold 18+ HCP - so your weak two should show **reasonable values
+and suit quality**.
 Todo: Probably Ougust convention makes sense here.
 
 ---
 
 ### 2NT - 20-21 HCP
 
-With **Puppet Stayman** (3♧ asks for a 5-card major; 3♢ denies; then check for 4-card fits).
+With **Puppet Stayman** (3♧ asks for a 5-card major; 3♢ denies; then
+check for 4-card fits).
 
-Puppet Stayman fits better over 2NT than over 1NT: the auction is already at the 3-level, so information leakage matters less, and finding the right major-suit game matters more.
+Puppet Stayman fits better over 2NT than over 1NT: the auction is
+already at the 3-level, so information leakage matters less, and
+finding the right major-suit game matters more.
 
 ---
 
@@ -254,9 +283,12 @@ An overcall of **1NT** shows:
 - **4 cards** in the unbid major
 - **5 cards** in a minor
 
-We bid using the **minimax principle** (aiming to sign off, tolerate a suit). This comes up more frequently than a natural 1NT (15-17) overcall.
+We bid using the **minimax principle** (aiming to sign off, tolerate a
+suit). This comes up more frequently than a natural 1NT (15-17)
+overcall.
 If an opponent opens 1 Major - we have 4 in unbid major and 5 in one of Minor.
-If an opponent opens 1 Minor - we show 5 cards in another Minor and 4 card in unknown Major.
+If an opponent opens 1 Minor - we show 5 cards in another Minor and 4 card in
+unknown Major.
 
 #### RAPTOR Responses
 
@@ -283,12 +315,18 @@ After opponent opens **1♧ or 1♢** and we overcall 1NT:
 ## Defensive Carding
 
 > **Use your head first, not partner's signals.**
-> In most situations, the bidding and the dummy tell you everything you need to know.
+> In most situations, the bidding and the dummy tell you everything you need to
+know.
 > Signals are a **last resort**.
 
-Some players become obsessed with carding, stop thinking for themselves, and put all their hopes on partner's signals - that is a mistake.
+Some players become obsessed with carding, stop thinking for
+themselves, and put all their hopes on partner's signals - that is a
+mistake.
 
-**Use signals only at critical moments** - typically at the start of play, or when declarer runs a long suit and you must decide which suits to protect. Or an opponent runs a long suit and you have to know even/odd in order to block it.
+**Use signals only at critical moments** - typically at the start of
+play, or when declarer runs a long suit and you must decide which
+suits to protect. Or an opponent runs a long suit and you have to
+know even/odd in order to block it.
 
 ### 1. Attitude (Encourage / Discourage)
 
@@ -297,8 +335,12 @@ Some players become obsessed with carding, stop thinking for themselves, and put
 | **Low** card  | Encouraging - continue this suit |
 | **High** card | Discouraging - please switch     |
 
-**Exception:** When partner leads the **Ace**, give **count** (even/odd) instead of attitude.
-Reason: if partner wants a continuation from AK, he leads the King. If he leads A without K, usually he doesn't even see what you signal and continues :). However, there is an unexpected dummy at the table and it requires a correction.
+**Exception:** When partner leads the **Ace**, give **count**
+(even/odd) instead of attitude.
+Reason: if partner wants a continuation from AK, he leads the King.
+If he leads A without K, usually he doesn't even see what you signal
+and continues :). However, there is an unexpected dummy at the table
+and it requires a correction.
 
 ### 2. Count (Even / Odd)
 
@@ -329,7 +371,8 @@ Sometimes you can't signal directly, so you deny:
 | 9 then 3 | Denies interest in the discarded suit |
 | 8 then 6 | Denies interest in the higher suit    |
 
-> **Rule of thumb:** The higher the discard, the less reliable the signal. The **second discard** confirms.
+> **Rule of thumb:** The higher the discard, the less reliable the
+> signal. The **second discard** confirms.
 
 ### 4. Opening Leads (Auspiel)
 
