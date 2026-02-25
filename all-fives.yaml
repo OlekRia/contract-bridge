@@ -81,10 +81,10 @@ openings:
           - bid: 3NT
             by: responder
             meaning: "No 4-card major, game values"
-          note: >
-            After 2!C - 2!D, responder's major bids are TRANSFER-LIKE:
-            bidding 2!H shows spades (the other major), 2!S shows hearts.
-            This lets the strong hand (opener) become declarer.
+          - note: >
+              After 2!C - 2!D, responder's major bids are TRANSFER-LIKE:
+              bidding 2!H shows spades (the other major), 2!S shows hearts.
+              This lets the strong hand (opener) become declarer.
       - bid: 2!D
         meaning: "Transfer to !H"
         completion: "Opener bids 2!H (or 3!H with maximum and 4-card support — see H-4)"
