@@ -446,7 +446,83 @@ Without Lebensohl, advancer cannot distinguish weak (0-7), invitational (8-11), 
 | direct 3NT | To play, denies stopper in their suit (Fast Denies) |
 | 2NT then 3NT (after relay) | To play, shows stopper in their suit (Slow Shows) |
 
-## Hand Evaluation
+## Defensive Carding
+
+> **Use your head first, not partner's signals. In most situations, the bidding and dummy tell you everything. Signals are a last resort.**
+
+### 1. Attitude (Encourage / Discourage) (Encourage / Discourage)
+
+| Signal | Meaning |
+|---|---|
+| **Low card** | Encouraging — continue this suit |
+| **High card** | Discouraging — please switch |
+
+**Exception:** When partner leads the Ace, give count (even/odd) instead of attitude. If partner wants continuation from AK, he leads the King.
+
+### 2. Count (Even / Odd) (Even / Odd)
+
+| Signal | Meaning |
+|---|---|
+| **High card** | Even number of cards |
+| **Low card** | Odd number of cards |
+
+Easy to remember: From a doubleton (even), play high.
+
+### 3. Suit Preference on Discards (Italian Style) on Discards
+
+| Discard | Meaning |
+|---|---|
+| **Odd card (3, 5, 7, 9)** | Interest in the suit being discarded |
+| **Low even card (2, 4)** | Interest in the lower-ranking side suit |
+| **High even card (6, 8)** | Interest in the higher-ranking side suit |
+
+#### Signalling by Elimination
+
+| Sequence | Meaning |
+|---|---|
+| 4 then 2 | Denies interest in the lower suit |
+| 9 then 3 | Denies interest in the discarded suit |
+| 8 then 6 | Denies interest in the higher suit |
+
+> The higher the discard, the less reliable. The second discard confirms.
+
+### 4. Opening Leads
+
+**Lead 3rd or 5th highest from length.**
+
+**Vs suits:** Prefer top-of-sequence leads. Avoid leading from unsupported honours into declarer's strength.
+
+**Vs NT:** Lead your longest suit unless the bidding clearly shows opponents hold it.
+
+#### From Length
+
+| Holding | Lead | Rule |
+|---|---|---|
+| K95 | **5** | 3rd highest |
+| KQ752 | **2** | 5th highest |
+
+#### From Sequences
+
+| Holding | Lead |
+|---|---|
+| AKx(x) | K (A asks for count) |
+| KQx(x) | K |
+| QJx(x) | Q |
+| JTx(x) | J |
+| T9x(x) | T |
+| AKQx(x) | A (then K — showing the sequence) |
+
+#### From Short Holdings
+
+| Holding | Lead |
+|---|---|
+| xx | Higher card |
+| xxx | Middle, then high (MUD) |
+| xxxx | Highest safe, then low |
+
+> **Special rule:** If you hold the J, lead 4th highest. Example: from KJ732, lead the 3 (not the 2).
+
+## Additional Materials — Hand Evaluation
 
 > High Card Points are the lingua franca of bridge, but HCP alone misjudge distributional hands, honour placement, and fit quality. A complete evaluation combines HCP with distributional adjustments, Losing Trick Count, controls, working honours, and suit quality.
 
@@ -586,7 +662,7 @@ A hand has playing tricks (tricks it can take as declarer) and defensive tricks 
 
 ---
 
-## Losing Trick Count
+## Additional Materials — Losing Trick Count
 
 > The Losing Trick Count evaluates hand strength by counting losers — cards that will not win tricks even in the best case. It is more accurate than HCP for suit contracts, especially for distributional hands and competitive decisions. The formula: 24 minus combined losers equals the number of tricks the partnership can expect.
 
@@ -709,80 +785,4 @@ NLTC refines the standard count by weighting losers: an ace loser (missing the a
 | Penalty doubles | HCP + defensive tricks | You need quick tricks, not playing tricks |
 
 ---
-
-## Defensive Carding
-
-> **Use your head first, not partner's signals. In most situations, the bidding and dummy tell you everything. Signals are a last resort.**
-
-### 1. Attitude (Encourage / Discourage) (Encourage / Discourage)
-
-| Signal | Meaning |
-|---|---|
-| **Low card** | Encouraging — continue this suit |
-| **High card** | Discouraging — please switch |
-
-**Exception:** When partner leads the Ace, give count (even/odd) instead of attitude. If partner wants continuation from AK, he leads the King.
-
-### 2. Count (Even / Odd) (Even / Odd)
-
-| Signal | Meaning |
-|---|---|
-| **High card** | Even number of cards |
-| **Low card** | Odd number of cards |
-
-Easy to remember: From a doubleton (even), play high.
-
-### 3. Suit Preference on Discards (Italian Style) on Discards
-
-| Discard | Meaning |
-|---|---|
-| **Odd card (3, 5, 7, 9)** | Interest in the suit being discarded |
-| **Low even card (2, 4)** | Interest in the lower-ranking side suit |
-| **High even card (6, 8)** | Interest in the higher-ranking side suit |
-
-#### Signalling by Elimination
-
-| Sequence | Meaning |
-|---|---|
-| 4 then 2 | Denies interest in the lower suit |
-| 9 then 3 | Denies interest in the discarded suit |
-| 8 then 6 | Denies interest in the higher suit |
-
-> The higher the discard, the less reliable. The second discard confirms.
-
-### 4. Opening Leads
-
-**Lead 3rd or 5th highest from length.**
-
-**Vs suits:** Prefer top-of-sequence leads. Avoid leading from unsupported honours into declarer's strength.
-
-**Vs NT:** Lead your longest suit unless the bidding clearly shows opponents hold it.
-
-#### From Length
-
-| Holding | Lead | Rule |
-|---|---|---|
-| K95 | **5** | 3rd highest |
-| KQ752 | **2** | 5th highest |
-
-#### From Sequences
-
-| Holding | Lead |
-|---|---|
-| AKx(x) | K (A asks for count) |
-| KQx(x) | K |
-| QJx(x) | Q |
-| JTx(x) | J |
-| T9x(x) | T |
-| AKQx(x) | A (then K — showing the sequence) |
-
-#### From Short Holdings
-
-| Holding | Lead |
-|---|---|
-| xx | Higher card |
-| xxx | Middle, then high (MUD) |
-| xxxx | Highest safe, then low |
-
-> **Special rule:** If you hold the J, lead 4th highest. Example: from KJ732, lead the 3 (not the 2).
 
