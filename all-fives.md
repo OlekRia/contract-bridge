@@ -115,7 +115,6 @@ After Pass — Pass — **XX** = SOS with non-touching pairs (♣+♥ or ♦+♠
 #### Continuations
 
 Responder may raise with **3-card support** at the 2-level without fear — if opener had only 4, he simply rebids 2NT. Raises to 2NT and 3-level fits are **invitational**.
-Responder may raise with **3-card support** at the 2-level without fear — if opener had only 4, he simply rebids 2NT. Raises to 2NT and 3-level fits are **invitational**.
 
 #### 1-Minor Opening, 1-Major Response
 
@@ -144,6 +143,12 @@ Responder may raise with **3-card support** at the 2-level without fear — if o
 |---|---|
 | 1♣ - 1♦ | Natural, 4+ diamonds, waiting |
 | 1♣ - 1♥/♠ | 5+ if weak; 4+ if strong (invitational+) |
+
+#### Jump Responses — _Under investigation — see hypothesis H-5_
+
+Jump responses to 1-level openings (e.g. 2NT, 3x, 3M, 4M) are not yet defined.
+See hypothesis H-5 for a proposed structure covering forcing raises, fit jumps,
+preemptive raises, and direct game bids.
 
 ---
 
