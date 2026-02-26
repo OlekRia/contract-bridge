@@ -2,7 +2,7 @@
 
 **Date**: 2026-02-26
 **Engine**: bridge-tools simulate raptor (DDS double-dummy, dds-bridge 0.11)
-**Hypothesis**: H-3 (Defense to Opponents' 1NT Opening — RAPTOR component)
+**Hypothesis**: H-7 (Defensive Bidding Effectiveness — RAPTOR component)
 **Sample**: 19,992 deals (1,666 per opening x vulnerability combo), seed=42
 
 ## What Is RAPTOR?
