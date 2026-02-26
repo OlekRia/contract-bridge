@@ -215,7 +215,9 @@ Excellent for slam exploration. Opener immediately knows the combined control co
 - Decent suit quality — partner may raise pre-emptively or try for game
 - Avoid opening a weak two with a void or a strong 4-card side suit
 
-#### Ogust (2NT asks) — _Under investigation — see hypothesis H-1_
+#### Ogust (2NT asks)
+
+After 2♥ or 2♠, responder bids **2NT** to ask opener's hand quality:
 
 | Response | Meaning |
 |---|---|
@@ -224,6 +226,31 @@ Excellent for slam exploration. Opener immediately knows the combined control co
 | 3♥ | Maximum (8-10 HCP), poor suit |
 | 3♠ | Maximum (8-10 HCP), good suit |
 | 3NT | Solid suit (AKQxxx+) — to play |
+
+> **Memory trick:** "Minors are Minimum" — 3♣ and 3♦ both show minimum. Suit quality alternates: poor-good-poor-good-solid.
+
+#### Continuations After Ogust
+
+| Responder's Action | Meaning |
+|---|---|
+| 3 of opener's major | Sign-off (stopping) |
+| New suit at 3-level | Forcing, own suit |
+| 3NT | To play |
+| 4 of opener's major | To play |
+| New suit at 4-level | Cue-bid, slam exploration |
+
+#### Interference Over 2NT — DOPI
+
+If opponents **double** the 2NT enquiry:
+
+| Action | Meaning |
+|---|---|
+| Redouble | = 3♣ (minimum, poor suit) |
+| Pass | = 3♦ (minimum, good suit) |
+| 3♥ | Maximum, poor suit |
+| 3♠ | Maximum, good suit |
+
+If opponents **overcall** over 2NT: natural bidding resumes (Ogust off).
 
 ---
 
