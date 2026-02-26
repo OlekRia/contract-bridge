@@ -36,14 +36,18 @@ openings:
       strong_10plus: "Pass for penalty"
 
   1_suit:
-    1st_2nd: 12+ HCP, 5+ cards (4+ with 15-17 bal, rebid NT)
+    1st_2nd: 12+ HCP (~7 losers), 5+ cards (4+ with 15-17 bal, rebid NT)
     3rd: 8+ HCP, 5+ cards (light, tactical)
     rules:
       - "Two 4-card suits: open lower"
       - "15-17 bal: open 4 cards, rebid NT"
       - "2NT rebid confirms 4 cards in opened suit"
     1NT_response: "6-9, no fit, no 5M (non-forcing; see H-2)"
-    raises: "3-card support OK; if opener had 4, rebids 2NT"
+    raises:
+      single: "6-9 HCP, 3+ support, 9-10 losers"
+      limit: "10-12 HCP, 4+ support, 7-8 losers"
+      game: "Distributional, 5+ support, 6-7 losers"
+    raise_note: "After fit, use LTC: 24 - combined losers = tricks (H-8)"
 
   2C:
     name: Benji
@@ -59,6 +63,7 @@ openings:
 
   2D:
     name: Strong Game-Force
+    ltc: "3-4 losers"
     responses_controls: "A=2, K=1"
     2H: "0-1"
     2S: "2"
@@ -70,6 +75,7 @@ openings:
   2H_2S:
     name: Weak Two
     hcp: 6-10
+    ltc: "8-9 losers"
     suit: 6+ cards, 2+ of top 5 honours
     style: "Disciplined, especially vulnerable"
     avoid: "Void or strong 4-card side suit"
@@ -99,7 +105,7 @@ openings:
       4NT: "Quantitative (invite 6NT)"
 
   preempts:
-    3x: "7+ cards, ~5-10 HCP, destructive"
+    3x: "7+ cards, ~5-10 HCP, 7-8 losers (fav: 8-9, unfav: 7), destructive"
     3NT: "Gambling (AKQxxxx+ minor, no outside A/K)"
     4H_4S: "To play (distributional or preemptive)"
     4C_4D: "Strong preempt (8+ minor)"

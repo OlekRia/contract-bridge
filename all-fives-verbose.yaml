@@ -134,6 +134,7 @@ openings:
   - bid: "1!C / 1!D / 1!H / 1!S"
     seat: "1st/2nd"
     hcp: "12+"
+    ltc: "7 losers typical (range 5-8)"
     promise: "5+ cards (4+ with extra strength and NT escape)"
     rules:
       - "With two 4-card suits, open the lower one first."
@@ -152,10 +153,23 @@ openings:
   - bid: "1!C / 1!D / 1!H / 1!S"
     section: continuations
     raises:
-      - sequence: "1x - 2x (raise with 3 cards)"
-        meaning: "Standard. If opener had only 4, he rebids 2NT."
-      - sequence: "Raise to 2NT or 3-level fit"
-        meaning: "Invitational"
+      - sequence: "1x - 2x (single raise)"
+        meaning: "6-9 HCP, 3+ card support"
+        ltc: "9-10 losers"
+        note: "Standard. If opener had only 4, he rebids 2NT."
+      - sequence: "1x - 3x (limit raise)"
+        meaning: "10-12 HCP, 4+ card support"
+        ltc: "7-8 losers"
+        note: "Invitational. Opener bids game with 5-6 losers."
+      - sequence: "1M - 4M (game raise)"
+        meaning: "Distributional, 5+ card support or strong hand"
+        ltc: "6-7 losers"
+        note: "Based on playing tricks, not just HCP."
+    raise_ltc_note: >
+      After a fit is found, re-evaluate using LTC: 24 minus combined losers =
+      expected tricks. A hand with 10 HCP but 7 losers (e.g. !S:KQxxx !H:x
+      !D:Axxx !C:xxx) is a limit raise by LTC, though HCP says only a single
+      raise. Trust LTC in suit contracts — see H-8.
 
     after_1minor_1major:
       rule: >
@@ -166,6 +180,7 @@ openings:
 
     response_1nt:
       meaning: "6-9 HCP, no fit (at most 3 cards), no 5-card major, no game ambitions"
+      ltc: "10+ losers (no fit found — LTC less relevant here)"
       note: >
         We may miss a 4-4 fit, but if we are weak the opponents will bid.
         If not, everyone has misfit or balanced — NT is the right spot.
@@ -196,6 +211,33 @@ openings:
         meaning: "Natural, 4+ diamonds, waiting"
       - sequence: "1!C - 1!H/!S"
         meaning: "5+ if weak; 4+ if strong (invitational+)"
+
+    competitive_revaluation:
+      title: "Competitive Re-evaluation with LTC"
+      principle: >
+        When opponents intervene after our suit opening, both partners must
+        re-evaluate using LTC, not just HCP. The auction (1!H) - 2!S - ?
+        asks responder: 'How many losers do I have in support of partner's
+        suit?' A hand with 10 HCP and 9 losers should pass; a hand with
+        9 HCP and 7 losers should compete to 3!H.
+      guidelines:
+        - action: "Compete to the 2-level"
+          combined_ltc: "16+ (8 tricks)"
+          note: "Free bid at the 2-level shows values; LTC confirms it's safe."
+        - action: "Compete to the 3-level"
+          combined_ltc: "15 (9 tricks)"
+          note: "Law of Total Tricks applies here — with 9 trumps, bid to 3."
+        - action: "Bid game despite interference"
+          combined_ltc: "14 or fewer (10+ tricks)"
+          note: "Don't let opponents push you out of game."
+        - action: "Double (penalty-oriented)"
+          note: "Prefer double when you hold 2+ defensive tricks and a misfit."
+      sacrifice_guide:
+        principle: >
+          At favorable vulnerability, sacrifice when your combined LTC
+          suggests you are outgunned. Going down 2 doubled non-vulnerable
+          (-300) is better than letting them make game (+420/+620).
+        guideline: "Sacrifice with 16+ combined losers at favorable; never at unfavorable."
 
   # ── 2!C Semi-Strong (Benji) ───────────────
   - bid: 2!C
@@ -241,6 +283,7 @@ openings:
   # ── 2!D Strong Game-Force ─────────────────
   - bid: 2!D
     name: "Strong Game-Force"
+    ltc: "3-4 losers (game in hand or near it)"
     response_method: "Controls (Ace = 2, King = 1)"
     responses:
       - bid: 2!H
@@ -263,6 +306,7 @@ openings:
   - bid: "2!H / 2!S"
     name: "Weak Two"
     hcp: "6-10"
+    ltc: "8-9 losers"
     suit_length: "6+"
     style: "Disciplined, especially when vulnerable"
     suit_quality: "At least 2 of the top 5 honours (A, K, Q, J, T)"
@@ -336,6 +380,7 @@ openings:
     name: "Preemptive"
     suit_length: "7+"
     hcp: "~5-10"
+    ltc: "7-8 losers (favorable: 8-9; unfavorable: 7)"
     meaning: "Destructive block. Sound at unfavourable vulnerability."
 
   - bid: 3NT

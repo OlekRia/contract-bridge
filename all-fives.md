@@ -58,7 +58,7 @@ After 2♦ denial:
 
 | Seat | Requirements |
 |---|---|
-| 1st/2nd | 12+ HCP, 5+ cards (4+ with 15-17 bal, rebid NT) |
+| 1st/2nd | 12+ HCP (~7 losers), 5+ cards (4+ with 15-17 bal, rebid NT) |
 | 3rd | 8+ HCP, 5+ cards (light, tactical) |
 
 - Two 4-card suits: open lower
@@ -66,8 +66,6 @@ After 2♦ denial:
 - 2NT rebid confirms 4 cards in opened suit
 
 **1NT response:** 6-9, no fit, no 5M (non-forcing; see H-2)
-
-**Raises:** 3-card support OK; if opener had 4, rebids 2NT
 
 ---
 
@@ -157,7 +155,7 @@ Avoid: Void or strong 4-card side suit
 
 | Opening | Meaning |
 |---|---|
-| 3x | 7+ cards, ~5-10 HCP, destructive |
+| 3x | 7+ cards, ~5-10 HCP, 7-8 losers (fav: 8-9, unfav: 7), destructive |
 | 3NT | Gambling (AKQxxxx+ minor, no outside A/K) |
 | 4♥/4♠ | To play (distributional or preemptive) |
 | 4♣/4♦ | Strong preempt (8+ minor) |

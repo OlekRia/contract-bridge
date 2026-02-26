@@ -104,7 +104,7 @@ After Pass — Pass — **XX** = SOS with non-touching pairs (♣+♥ or ♦+♠
 
 ### 1♣ / 1♦ / 1♥ / 1♠
 
-**1st/2nd seat:** 12+ HCP, 5+ cards (4+ with extra strength and NT escape).
+**1st/2nd seat:** 12+ HCP, 5+ cards (4+ with extra strength and NT escape). LTC: 7 losers typical (range 5-8).
 
 - With two 4-card suits, open the lower one first.
 - With 15-17 balanced, open 4 cards and rebid NT.
@@ -114,7 +114,28 @@ After Pass — Pass — **XX** = SOS with non-touching pairs (♣+♥ or ♦+♠
 
 #### Continuations
 
-Responder may raise with **3-card support** at the 2-level without fear — if opener had only 4, he simply rebids 2NT. Raises to 2NT and 3-level fits are **invitational**.
+| Raise | Meaning | LTC |
+|---|---|---|
+| 1x - 2x (single raise) | 6-9 HCP, 3+ card support. Standard. If opener had only 4, he rebids 2NT. | 9-10 losers |
+| 1x - 3x (limit raise) | 10-12 HCP, 4+ card support. Invitational. Opener bids game with 5-6 losers. | 7-8 losers |
+| 1M - 4M (game raise) | Distributional, 5+ card support or strong hand. Based on playing tricks, not just HCP. | 6-7 losers |
+
+> **After a fit is found, re-evaluate using LTC: 24 minus combined losers = expected tricks. A hand with 10 HCP but 7 losers (e.g. ♠:KQxxx ♥:x ♦:Axxx ♣:xxx) is a limit raise by LTC, though HCP says only a single raise. Trust LTC in suit contracts — see H-8.**
+
+#### Competitive Re-evaluation with LTC
+
+When opponents intervene after our suit opening, both partners must re-evaluate using LTC, not just HCP. The auction (1♥) - 2♠ - ? asks responder: 'How many losers do I have in support of partner's suit?' A hand with 10 HCP and 9 losers should pass; a hand with 9 HCP and 7 losers should compete to 3♥.
+
+| Action | Combined LTC |
+|---|---|
+| Compete to the 2-level | 16+ (8 tricks) — Free bid at the 2-level shows values; LTC confirms it's safe. |
+| Compete to the 3-level | 15 (9 tricks) — Law of Total Tricks applies here — with 9 trumps, bid to 3. |
+| Bid game despite interference | 14 or fewer (10+ tricks) — Don't let opponents push you out of game. |
+| Double (penalty-oriented) |  — Prefer double when you hold 2+ defensive tricks and a misfit. |
+
+> At favorable vulnerability, sacrifice when your combined LTC suggests you are outgunned. Going down 2 doubled non-vulnerable (-300) is better than letting them make game (+420/+620).
+
+**Sacrifice with 16+ combined losers at favorable; never at unfavorable.**
 
 #### 1-Minor Opening, 1-Major Response
 
@@ -183,6 +204,8 @@ All non-2♦ responses are game-forcing (8+ HCP). This avoids the problem where 
 
 ### 2♦ — Strong Game-Force
 
+**LTC:** 3-4 losers (game in hand or near it)
+
 Responder shows **controls** (Controls (Ace = 2, King = 1)):  
 
 | Response | Controls |
@@ -200,7 +223,7 @@ Excellent for slam exploration. Opener immediately knows the combined control co
 
 ### 2♥ / 2♠ — Weak Two
 
-**6-10 HCP, 6+ cards.** Disciplined, especially when vulnerable.
+**6-10 HCP, 6+ cards.** Disciplined, especially when vulnerable. LTC: 8-9 losers.
 
 **Suit quality:** At least 2 of the top 5 honours (A, K, Q, J, T).
 
@@ -236,7 +259,7 @@ After 3♣, opener replies: 3♦ = denies 5-card major, then check for 4-card fi
 
 | Opening | Meaning |
 |---|---|
-| 3♣ / 3♦ / 3♥ / 3♠ | **Preemptive** — Destructive block. Sound at unfavourable vulnerability., 7+ cards, ~5-10 HCP |
+| 3♣ / 3♦ / 3♥ / 3♠ | **Preemptive** — Destructive block. Sound at unfavourable vulnerability., 7+ cards, ~5-10 HCP, LTC: 7-8 losers (favorable: 8-9; unfavorable: 7) |
 | 3NT | **Gambling** — AKQxxxx+ in a minor, no outside A or K |
 | 4♥ / 4♠ | To play — strong distributional hand or preemptive |
 | 4♣ / 4♦ | Strong preempt (8+ card minor, some values) |
