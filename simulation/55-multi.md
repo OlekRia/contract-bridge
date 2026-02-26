@@ -14,109 +14,132 @@ Standard weak-two defense of the bid major:
 |-----|---------|
 | X | Takeout of the bid major. Lebensohl applies. |
 | 2NT | 16-18 HCP balanced (systems on) |
-| New suit | Natural, 5+ suit, 10+ HCP, constructive |
+| New suit | Natural, 5+ suit, 10+ HCP, LTC-gated by vulnerability |
 | Cuebid | Game-forcing, stopper ask |
 | Pass | Default |
 
 **Note:** Opener has a 5-card minor — bid minors cautiously.
 
+**LTC gates** (added v2): all overcalls and 12-16 takeout doubles are gated by
+Losing Trick Count adjusted for vulnerability (Fav ≤ 9, Equal ≤ 8, Unfav ≤ 7).
+17+ takeout doubles and 2NT are not gated (strong hands almost always qualify).
+
 ## Results Summary
 
 | vs Opener | N | Act% | MP% | Avg Gain | When Acting: Tops | When Acting: Bottoms |
 |-----------|---|------|-----|----------|-------------------|----------------------|
-| **5-5 2H** | 4,998 | 45.6% | **46.0%** | **-6** | 39.5% | 57.0% |
-| **5-5 2S** | 4,998 | 43.4% | **46.9%** | **+7** | 42.6% | 56.8% |
+| **5-5 2H** | 4,998 | 43.7% | **45.9%** | **-12** | 38.9% | 57.5% |
+| **5-5 2S** | 4,998 | 41.5% | **46.7%** | **+0** | 41.8% | 57.5% |
 
 ## Detailed Results: vs 5-5 2H (5 Hearts + 5-card Minor)
 
-### When We Act (2,277 boards)
+### When We Act (2,183 boards)
 
 | Metric | Value |
 |--------|-------|
-| Tops (par > pass) | 39.5% |
-| Bottoms (par < pass) | 57.0% |
+| Tops (par > pass) | 38.9% |
+| Bottoms (par < pass) | 57.5% |
 | Neutral | 3.6% |
-| MP% when acting | 41.3% |
-| Avg gain when acting | -13 points |
+| MP% when acting | 40.7% |
+| Avg gain when acting | -26 points |
 
 ### Score Distribution
 
 | Outcome | Avg | Median | Range |
 |---------|-----|--------|-------|
-| Gains | +837 | +730 | +10 to +4,440 |
-| Losses | -604 | -540 | -2,220 to -10 |
+| Gains | +834 | +730 | +10 to +4,440 |
+| Losses | -611 | -540 | -2,220 to -10 |
 
 ### Action Breakdown
 
 | Action | Count | AvgTricks | Game% |
 |--------|-------|-----------|-------|
-| Takeout X | 939 | 9.9 | 61.3% |
+| Takeout X | 922 | 10.0 | 62.1% |
 | 2NT (16-18 balanced) | 210 | 9.4 | 51.4% |
-| Natural S | 552 | 9.3 | 45.7% |
-| Natural D | 315 | 8.7 | 30.5% |
-| Natural C | 261 | 9.4 | 47.1% |
-| Pass | 2,721 | — | — |
+| Natural S | 519 | 9.3 | 46.2% |
+| Natural D | 288 | 8.8 | 31.6% |
+| Natural C | 244 | 9.4 | 47.1% |
+| Pass | 2,815 | — | — |
 
 ### By Vulnerability
 
 | Vulnerability | Acts | MP% | Avg Gain | Tops% |
 |---------------|------|-----|----------|-------|
 | Favorable | 759 | 46.3% | +13 | 18.3% |
-| Equal | 759 | 45.9% | -16 | 17.8% |
-| Unfavorable | 759 | 45.9% | -16 | 17.8% |
+| Equal | 751 | 45.7% | -22 | 17.4% |
+| Unfavorable | 673 | 45.8% | -26 | 15.3% |
 
 ## Detailed Results: vs 5-5 2S (5 Spades + 5-card Minor)
 
-### When We Act (2,169 boards)
+### When We Act (2,075 boards)
 
 | Metric | Value |
 |--------|-------|
-| Tops (par > pass) | 42.6% |
-| Bottoms (par < pass) | 56.8% |
+| Tops (par > pass) | 41.8% |
+| Bottoms (par < pass) | 57.5% |
 | Neutral | 0.7% |
-| MP% when acting | 42.9% |
-| Avg gain when acting | +15 points |
+| MP% when acting | 42.2% |
+| Avg gain when acting | +0 points |
 
 ### Score Distribution
 
 | Outcome | Avg | Median | Range |
 |---------|-----|--------|-------|
-| Gains | +848 | +850 | +10 to +4,420 |
-| Losses | -610 | -540 | -2,220 to -10 |
+| Gains | +845 | +820 | +10 to +4,420 |
+| Losses | -614 | -540 | -2,220 to -10 |
 
 ### Action Breakdown
 
 | Action | Count | AvgTricks | Game% |
 |--------|-------|-----------|-------|
-| Takeout X | 984 | 9.8 | 57.9% |
+| Takeout X | 966 | 9.8 | 58.1% |
 | 2NT (16-18 balanced) | 150 | 9.9 | 58.0% |
-| Natural H | 480 | 9.3 | 46.2% |
-| Natural D | 306 | 9.2 | 46.1% |
-| Natural C | 249 | 9.2 | 43.4% |
-| Pass | 2,829 | — | — |
+| Natural H | 451 | 9.4 | 47.2% |
+| Natural D | 282 | 9.2 | 46.8% |
+| Natural C | 226 | 9.3 | 45.6% |
+| Pass | 2,923 | — | — |
 
 ### By Vulnerability
 
 | Vulnerability | Acts | MP% | Avg Gain | Tops% |
 |---------------|------|-----|----------|-------|
 | Favorable | 723 | 47.0% | +26 | 18.5% |
-| Equal | 723 | 46.9% | -3 | 18.4% |
-| Unfavorable | 723 | 46.9% | -3 | 18.4% |
+| Equal | 717 | 46.8% | -5 | 18.2% |
+| Unfavorable | 635 | 46.4% | -21 | 15.4% |
 
 ## Analysis
 
+### LTC Gates: Correct but Modest Impact
+
+The v2 fix adds vulnerability-adjusted LTC gates to natural overcalls and 12-16
+takeout doubles, aligning `classify_action_vs_55` with the CC specification. Before
+this fix, vulnerability was ignored entirely (`_vul` parameter unused).
+
+**Before vs After:**
+
+| Metric | 2H v1 | 2H v2 | 2S v1 | 2S v2 |
+|--------|-------|-------|-------|-------|
+| Act% | 45.6% | 43.7% | 43.4% | 41.5% |
+| MP% | 46.0% | 45.9% | 46.9% | 46.7% |
+| Avg Gain | -6 | -12 | +7 | +0 |
+
+The LTC gate correctly reduces action rates at unfavorable vulnerability (Unfav acts
+dropped from 759→673 for 2H, 723→635 for 2S). But overall MP% barely changed because
+the filtered hands (10 HCP with LTC 8-9) weren't systematically the worst performers.
+Against preemptive openings, partner's holding matters more than declarer's LTC alone.
+
 ### The Defense Is Structurally Sound
 
-Both 5-5 scenarios show near break-even MP% (46.0% and 46.9%). Key observations:
+Both 5-5 scenarios show near break-even MP% (45.9% and 46.7%). Key observations:
 
-1. **Takeout double is the strongest action.** 61.3% game rate vs 2H, 57.9% vs 2S.
+1. **Takeout double is the strongest action.** 62.1% game rate vs 2H, 58.1% vs 2S.
    When we have the right shape (short in their major, support for unbid suits),
    the takeout double consistently finds game.
 
 2. **2NT (16-18 balanced) is highly constructive.** 51-58% game rate. These hands
    reach the right contract reliably.
 
-3. **Natural overcalls are the weakest link.** 30-47% game rate, contributing most
+3. **Natural overcalls are the weakest link.** 31-47% game rate, contributing most
    bottoms. Natural overcalls at the 10+ HCP level are too frequent against
    preemptive openings. The 5-card suit may be outgunned by opener's 10-card fit.
 
@@ -126,8 +149,8 @@ Both 5-5 scenarios show near break-even MP% (46.0% and 46.9%). Key observations:
 
 ### 2H vs 2S Asymmetry
 
-Defense against 5-5 2S (46.9% MP, +7 avg) outperforms defense against 5-5 2H
-(46.0% MP, -6 avg). This is because:
+Defense against 5-5 2S (46.7% MP, +0 avg) outperforms defense against 5-5 2H
+(45.9% MP, -12 avg). This is because:
 - When they open 2S, we can overcall 2-level hearts (cheap). When they open 2H,
   we must bid 2S or higher (more committed).
 - Spade overcalls require committing at a higher level, increasing risk.
@@ -154,8 +177,9 @@ but the real comparison is "structured defense vs ad hoc defense."
 
 3. **2NT (16-18 balanced) is excellent.** Always bid 2NT when the hand qualifies.
 
-4. **Consider tightening natural overcall thresholds.** Natural overcalls contribute
-   disproportionately to bottoms. Options:
+4. **LTC gates are now correct but insufficient.** The LTC filter reduced action
+   rates (especially at unfavorable) but the remaining natural overcalls still
+   produce ~57% bottoms. Further improvement options:
    - Raise minimum HCP from 10 to 12
    - Require 6-card suit for 2-level overcall
    - Only overcall with good suit quality (2 of top 3 honours)
