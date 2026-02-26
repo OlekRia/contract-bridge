@@ -232,6 +232,77 @@ competitive:
     cuebid: "Game-forcing, stopper ask"
     note: "Opener has 5-card minor — bid minors cautiously"
 
+  defense_vs_3_level_preempts:
+    name: "Defense to 3-level preempts"
+    trigger: "Opponent opens 3!C / 3!D / 3!H / 3!S"
+    X: "Takeout/cooperative (bid with shape, pass with flat defence)"
+    3NT: "To play (stopper required)"
+    new_suit_3: "Forcing, natural"
+    new_suit_4: "To play (not forcing)"
+    4NT: "Unusual (two lowest unbid suits)"
+    note: "Lebensohl does NOT apply (already at 3-level)"
+
+  defense_vs_4_level_preempts:
+    name: "Defense to 4-level preempts"
+    trigger: "Opponent opens 4!C / 4!D / 4!H / 4!S"
+    X_of_major: "Penalty-oriented (pass unless very distributional)"
+    X_of_minor: "Takeout (room to find major fit)"
+    4NT: "Two-suited takeout"
+    5_level: "To play"
+
+  balancing:
+    name: "Balancing (protection)"
+    trigger: "Opponent's bidding dies at low level: (1x)-P-P-?"
+    principle: "Act ~3 HCP less than direct ('borrow a king from partner')"
+    1NT: "~11-14 (not 15-18)"
+    X: "10+ (not 12+)"
+    overcall: "8+, reasonable suit"
+    jump_overcall: "Intermediate (not weak)"
+    partner_note: "Partner downgrades ~3 HCP ('return the borrowed king')"
+
+  advancing_overcall:
+    name: "Advancing partner's overcall"
+    trigger: "(1x) - 1y/2y [partner overcalls] - ?"
+    simple_raise: "Competitive 6-9, 3+ support (NOT invitational)"
+    cuebid: "Limit raise+ (10+, 3+ support)"
+    jump_raise: "Preemptive (weak, 4+ support, NOT invitational)"
+    2NT: "Sound raise (9-11, 3+ support)"
+    new_suit: "Non-forcing (constructive)"
+    jump_new_suit: "Fit-showing (good suit + support, invitational)"
+
+  advancing_takeout_double:
+    name: "Advancing partner's takeout X (of 1-level)"
+    trigger: "(1x) - X - Pass - ?"
+    cheapest_suit: "Minimum (0-8), forced"
+    jump_suit: "Invitational (9-11)"
+    cuebid: "Game force (12+)"
+    1NT: "6-10 with stopper"
+    2NT: "11-12 with stopper (invitational)"
+    pass: "Penalty conversion (rare — 5+ strong trumps in opener's suit)"
+
+  lead_directing_doubles:
+    name: "Lead-directing doubles"
+    principle: "X of any artificial bid = lead that suit"
+    X_Stayman: "Lead clubs"
+    X_transfer: "Lead the suit doubled (not target major)"
+    X_cuebid: "Lead that suit"
+    Lightner: "X of slam = unusual lead (NOT normal lead)"
+
+  defense_vs_transfers:
+    name: "Defense to opponents' transfers over 1NT"
+    trigger: "(1NT) - P - (transfer) - ?"
+    X: "Lead-directing (the transfer suit, not target)"
+    bid_transfer_suit: "Natural (you hold that suit)"
+    bid_target_suit: "Takeout/lead-directing"
+
+  sandwich_position:
+    name: "Sandwich position"
+    trigger: "(1x) - P - (1y) - ? [between two bidders]"
+    X: "Both unbid suits, moderate values"
+    1NT: "Unusual (two lower unbid, NOT natural)"
+    overcall: "Natural, good suit required"
+    note: "Dangerous position — only act with shape or genuine strength"
+
 # ── Defensive Carding ─────────────────────────────
 
 carding:

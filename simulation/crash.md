@@ -148,12 +148,8 @@ openings. The 5-5+ shape requirement at unfavorable correctly limits exposure.
 1. **Continue using CRASH against all artificial/strong openings.** The data is
    unambiguous: MP% 55-67%, gain:loss 2.5:1 to 13:1.
 
-2. **Investigate a separate defense against Multi 2D.** The current CRASH thresholds
-   produce negative expectation when acting. Options:
-   - Tighten LTC requirement by 1 (fav: 8, equal: 7, unfav: 6)
-   - Require 5-5+ at all vulnerabilities
-   - Switch to natural bidding over Multi 2D (not CRASH)
-   - This should become a new hypothesis (H-8 or similar)
+2. **CRASH excluded against Multi 2D.** Negative expectation (46.9% MP, 0.8:1).
+   See `2d-multi.md` for the Fighters defense simulation.
 
 3. **Penalty double against Weak 1NT is excellent.** The 15+ HCP threshold is
    well-placed — 34.7% game rate from penalty double alone.
@@ -169,9 +165,6 @@ openings. The 5-5+ shape requirement at unfavorable correctly limits exposure.
   their own defenses (Cappelletti, DONT, etc.), compressing the advantage by 2-5%.
 - **No bidding simulation**: Par is a proxy for CRASH entry outcome. Real MP% depends
   on how well we handle the subsequent auction.
-- **Multi 2D model**: The Multi 2D filter (5-10 HCP, 6-card major) is simplified.
-  Real Multi also includes strong options (25+ balanced, Acol two). This would make
-  the results even more mixed.
 
 ## Reproducibility
 

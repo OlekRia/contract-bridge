@@ -858,6 +858,235 @@ competitive:
       - scenario: "(2!S = 5!S + 5m), you hold !S:72 !H:AKJ84 !D:Q3 !C:KJ54"
         action: "3!H natural, constructive (good 5-card suit, opening values)."
 
+  # ── Defense to 3-Level Preempts ──────────────
+  defense_vs_3_level_preempts:
+    name: "Defense to 3-Level Preempts"
+    trigger: "Opponent opens 3!C / 3!D / 3!H / 3!S"
+    principle: >
+      At the 3-level, double is takeout/cooperative — partner should bid with shape
+      and pass with flat defence. New suits at the 3-level are forcing. Lebensohl
+      does NOT apply (already at the 3-level, no 2NT relay available).
+    bids:
+      - bid: X
+        meaning: "Takeout/cooperative — asks partner to bid with shape, pass with flat defence"
+      - bid: 3NT
+        meaning: "To play (requires stopper in their suit)"
+      - bid: "new suit at 3-level"
+        meaning: "Forcing, natural, good suit"
+      - bid: "new suit at 4-level"
+        meaning: "To play (not forcing)"
+      - bid: 4NT
+        meaning: "Unusual — two lowest unbid suits"
+    note: >
+      Against major preempts, the cooperative double is the key tool — "do something
+      intelligent." Against minor preempts, there is more room to bid naturally.
+    examples:
+      - scenario: "(3!H), you hold !S:AQ43 !H:52 !D:KJ76 !C:A32 (14 HCP, short hearts)"
+        action: "Double (takeout). Partner bids best suit."
+      - scenario: "(3!D), you hold !S:KQ2 !H:AJ4 !D:QJ76 !C:K32 (16 HCP, diamond stopper)"
+        action: "3NT to play."
+      - scenario: "(3!C), you hold !S:72 !H:AKJ843 !D:KQ3 !C:54 (13 HCP, good suit)"
+        action: "3!H forcing — natural, good suit."
+
+  # ── Defense to 4-Level Preempts ──────────────
+  defense_vs_4_level_preempts:
+    name: "Defense to 4-Level Preempts"
+    trigger: "Opponent opens 4!C / 4!D / 4!H / 4!S"
+    principle: >
+      The key rule: double of a major preempt at game level = penalty-oriented
+      (partner passes unless very distributional). Double of a minor preempt
+      below game = takeout (room to find a major fit).
+    bids:
+      - bid: "X of 4!H / 4!S"
+        meaning: "Penalty-oriented (partner passes unless very distributional)"
+      - bid: "X of 4!C / 4!D"
+        meaning: "Takeout (room to find major fit below game)"
+      - bid: "4NT over 4!H / 4!S"
+        meaning: "Two-suited takeout (both minors, or any 5-5+)"
+      - bid: "5-level"
+        meaning: "To play"
+    examples:
+      - scenario: "(4!S), you hold !S:KJ4 !H:AQ7 !D:K983 !C:A52 (17 HCP, balanced)"
+        action: "Double (penalty). Expect to defeat 4!S."
+      - scenario: "(4!D), you hold !S:AQ43 !H:KJ76 !D:2 !C:AJ32 (15 HCP, short diamonds)"
+        action: "Double (takeout). Partner bids best major."
+      - scenario: "(4!H), you hold !S:3 !H:— !D:KQJ876 !C:AQJ54 (extreme shape)"
+        action: "4NT (two-suited takeout). Both minors."
+
+  # ── Balancing / Protection ───────────────────
+  balancing:
+    name: "Balancing (Protection)"
+    trigger: "Opponent's bidding dies at a low level — (1x) - P - P - ? or (1x) - P - (2x) - P - P - ?"
+    principle: >
+      When opponents stop low, partner's pass may trap values behind the opener
+      ("borrowing a king from partner"). Act with ~3 HCP less than a direct action.
+      Critical at matchpoints — letting opponents play undisturbed at the 1-2 level
+      is often a bottom board.
+    adjustments:
+      - action: "Balancing 1NT"
+        range: "~11-14 HCP (not 15-18 like direct seat)"
+      - action: "Balancing takeout double"
+        range: "10+ HCP (not 12+ like direct seat)"
+      - action: "Balancing overcall"
+        range: "8+ HCP, reasonable suit"
+      - action: "Balancing jump overcall"
+        range: "Intermediate (not weak — partner already passed)"
+    partner_adjustment: >
+      Partner must downgrade by ~3 HCP when responding to a balancing action
+      ("return the borrowed king"). Do not jump to game when partner balances
+      unless your hand justifies it independently.
+    examples:
+      - scenario: "(1!S) - Pass - Pass - ?, you hold !S:52 !H:KJ43 !D:A76 !C:Q832 (10 HCP)"
+        action: "Double (balancing takeout). Would pass in direct seat (too weak for direct X)."
+      - scenario: "(1!H) - Pass - Pass - ?, you hold !S:KQ4 !H:J76 !D:AJ32 !C:Q54 (13 HCP)"
+        action: "1NT (balancing, shows ~11-14). Not strong enough for direct 1NT (15-18)."
+      - scenario: "(1!D) - Pass - (2!D) - Pass - Pass - ?, you hold !S:AJ84 !H:K43 !D:72 !C:Q832"
+        action: "Double (balancing). Partner's pass trapped values."
+
+  # ── Advancing Partner's Overcall ─────────────
+  advancing_overcall:
+    name: "Advancing Partner's Overcall"
+    trigger: "(1x) - 1y/2y [partner overcalls] - Pass/Bid - ?"
+    principle: >
+      Key insight: cuebid = good raise, jump raise = weak. This reverses what many
+      club players assume. Simple raise is competitive (Law of Total Tricks), not
+      invitational. New suits are non-forcing.
+    bids:
+      - bid: "simple raise"
+        meaning: "Competitive, 6-9 HCP, 3+ support (Law of Total Tricks, not invitational)"
+      - bid: "cuebid of opponent's suit"
+        meaning: "Limit raise or better (10+ HCP, 3+ support)"
+      - bid: "jump raise"
+        meaning: "Preemptive (weak, 4+ support — NOT invitational)"
+      - bid: 2NT
+        meaning: "Sound constructive raise (9-11 HCP, 3+ support, balanced)"
+      - bid: "new suit"
+        meaning: "Non-forcing (constructive, but may be passed)"
+      - bid: "jump in new suit"
+        meaning: "Fit-showing (good suit + support for partner, invitational)"
+    examples:
+      - scenario: "(1!H) - 1!S - Pass - ?, you hold !S:Q43 !H:72 !D:KJ76 !C:8432 (6 HCP)"
+        action: "2!S (simple raise, competitive — not invitational)."
+      - scenario: "(1!H) - 1!S - Pass - ?, you hold !S:K43 !H:72 !D:AJ76 !C:K432 (11 HCP)"
+        action: "2!H (cuebid = limit raise+). Shows 10+ with spade support."
+      - scenario: "(1!H) - 1!S - Pass - ?, you hold !S:QJ43 !H:2 !D:J9763 !C:843 (4 HCP)"
+        action: "3!S (jump raise = preemptive, 4 trumps, weak)."
+      - scenario: "(1!D) - 1!S - Pass - ?, you hold !S:K3 !H:AQJ84 !D:76 !C:J543 (10 HCP)"
+        action: "2!H (new suit, non-forcing). Constructive but partner may pass."
+
+  # ── Advancing Partner's Takeout Double ───────
+  advancing_takeout_double:
+    name: "Advancing Partner's Takeout Double (of 1-Level)"
+    trigger: "(1x) - X - Pass - ?"
+    principle: >
+      The most common use of a takeout double. Partner has asked you to bid —
+      you MUST bid unless you want to convert to penalty. Lebensohl covers
+      responses to doubles of weak twos (see Lebensohl section). This section
+      covers responses to doubles of 1-level openings.
+    bids:
+      - bid: "cheapest 4-card suit"
+        meaning: "Minimum (0-8 HCP) — forced, even with nothing"
+      - bid: "jump in a suit"
+        meaning: "Invitational (9-11 HCP), shows real values and 4+ cards"
+      - bid: "cuebid of opener's suit"
+        meaning: "Game force (12+ HCP), no clear direction — asks doubler to describe"
+      - bid: 1NT
+        meaning: "6-10 HCP with stopper in opener's suit"
+      - bid: 2NT
+        meaning: "11-12 HCP with stopper in opener's suit (invitational)"
+      - bid: Pass
+        meaning: "Penalty conversion (rare — requires 5+ strong trumps in opener's suit)"
+    pass_conversion_note: >
+      The penalty pass is a powerful but rare weapon. Requirements: 5+ cards in
+      opener's suit with good honours (e.g., KQJ9x). Partner must lead a trump.
+      Do NOT pass just because you have nothing — bid your cheapest suit instead.
+    examples:
+      - scenario: "(1!H) - X - Pass - ?, you hold !S:J743 !H:852 !D:964 !C:Q32 (2 HCP)"
+        action: "1!S (cheapest 4-card suit). Forced — even with nothing."
+      - scenario: "(1!H) - X - Pass - ?, you hold !S:KQ43 !H:52 !D:A76 !C:J832 (10 HCP)"
+        action: "2!S (jump = invitational, shows 9-11 and 4+ spades)."
+      - scenario: "(1!D) - X - Pass - ?, you hold !S:A43 !H:KJ6 !D:Q74 !C:K832 (13 HCP)"
+        action: "2!D (cuebid = game force). Asks partner to describe further."
+      - scenario: "(1!H) - X - Pass - ?, you hold !S:43 !H:KQJ97 !D:864 !C:Q32 (8 HCP)"
+        action: "Pass (penalty conversion). Strong trumps; partner leads a trump."
+
+  # ── Lead-Directing Doubles ───────────────────
+  lead_directing_doubles:
+    name: "Lead-Directing Doubles of Artificial Bids"
+    trigger: "Opponents make an artificial bid (Stayman, transfer, cuebid, slam)"
+    principle: >
+      One principle covers all cases: double of an artificial bid always requests
+      a lead of that suit. This is free information at zero memory cost.
+    bids:
+      - bid: "X of Stayman (2!C)"
+        meaning: "Lead clubs"
+      - bid: "X of transfer (2!D over 1NT)"
+        meaning: "Lead diamonds (the suit doubled, not the target major)"
+      - bid: "X of transfer (2!H over 1NT)"
+        meaning: "Lead hearts (the suit doubled, not the target major)"
+      - bid: "X of any cuebid"
+        meaning: "Lead the cuebid suit"
+      - bid: "X of voluntarily-bid slam"
+        meaning: "Lightner double — unusual lead request (NOT your normal lead)"
+    lightner_note: >
+      Lightner double requests the most unusual lead: typically dummy's first-bid
+      suit, or a suit where you can ruff. It explicitly says "do NOT lead the
+      normal suit (our suit, or the unbid suit)."
+    examples:
+      - scenario: "(1NT) - Pass - (2!C Stayman) - X"
+        action: "Lead clubs. You hold !C:KQJ84 or similar."
+      - scenario: "(1NT) - Pass - (2!D transfer) - X"
+        action: "Lead diamonds. You hold !D:AKJ or good diamonds."
+      - scenario: "Opponents bid 6!S voluntarily, you double (Lightner)"
+        action: "Partner leads dummy's first-bid suit (or the most unusual suit)."
+
+  # ── Defense to Opponents' Transfers over 1NT ─
+  defense_vs_transfers:
+    name: "Defense to Opponents' Transfers over Their 1NT"
+    trigger: "(1NT) - Pass - (2!D/2!H transfer) - ?"
+    principle: >
+      Extends the lead-directing double principle. Generally be conservative —
+      opponents have announced combined 20+ HCP. Only compete with shape or
+      strength.
+    bids:
+      - bid: "X of transfer"
+        meaning: "Lead-directing — shows the suit being doubled (not the target major)"
+      - bid: "bid of transfer suit"
+        meaning: "Natural — you hold that suit (e.g., 2!D over 2!D shows diamonds)"
+      - bid: "bid of target suit"
+        meaning: "Takeout/lead-directing (showing the other suits)"
+    examples:
+      - scenario: "(1NT) - Pass - (2!D = transfer to !H) - X"
+        action: "Shows diamonds (lead-directing). Bid 2!H if you have hearts (natural)."
+      - scenario: "(1NT) - Pass - (2!H = transfer to !S) - 2!S"
+        action: "Takeout of spades (the target suit). Showing the other suits."
+
+  # ── Sandwich Position ────────────────────────
+  sandwich_position:
+    name: "Sandwich Position"
+    trigger: "(1x) - Pass - (1y) - ? [sitting between two bidding opponents]"
+    principle: >
+      Acting between two bidding opponents is dangerous — both have values. Be
+      cautious. The key agreement: 1NT in the sandwich position is UNUSUAL
+      (showing the two lower unbid suits), NOT natural. Only act with real
+      shape or real strength.
+    bids:
+      - bid: X
+        meaning: "Both unbid suits, moderate values (at least opening count)"
+      - bid: 1NT
+        meaning: "Unusual — two lower unbid suits (NOT natural)"
+      - bid: "overcall"
+        meaning: "Natural, good suit required (sandwiched between two bidders)"
+    caution: >
+      The sandwich position is the most dangerous position at the table. Both
+      opponents have values, and partner is broke. Only act with extreme shape
+      (5-5+) or genuine strength. Light actions here produce catastrophic results.
+    examples:
+      - scenario: "(1!C) - Pass - (1!H) - ?, you hold !S:KQ43 !H:2 !D:AQJ76 !C:843"
+        action: "1NT (unusual — shows diamonds + spades, the two lower unbid)."
+      - scenario: "(1!D) - Pass - (1!S) - ?, you hold !S:72 !H:AKJ84 !D:Q3 !C:KJ54"
+        action: "2!H (overcall, good suit). Dangerous position but suit quality justifies."
+
 # ──────────────────────────────────────────────
 # Defensive Carding
 # ──────────────────────────────────────────────

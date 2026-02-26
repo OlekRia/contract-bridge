@@ -483,6 +483,267 @@ Without Lebensohl, advancer cannot distinguish weak (0-7), invitational (8-11), 
 | direct 3NT | To play, denies stopper in their suit (Fast Denies) |
 | 2NT then 3NT (after relay) | To play, shows stopper in their suit (Slow Shows) |
 
+### Defense to Multi 2♦ (Fighters style)
+
+**Trigger:** (2♦) - ? [Multi 2♦ — weak two in either major, 5-10 HCP, 6-card major]
+
+Multi 2♦ is PREEMPTIVE, not artificial/strong. CRASH is explicitly excluded (simulation: 46.9% MP, 0.8:1 gain/loss across 40,000 deals). The key problem is ambiguity — which major do they have? The Fighters defense acts minimally in direct seat, then uses pass-then-act to compete once the suit is revealed.
+
+> **CRASH excluded:** CRASH was falsified against Multi 2♦ by DD simulation. The opener is weak (5-10 HCP) with a known 6-card major, so CRASH's suit-pairing disruption adds no value. Our side typically holds 20-25 HCP — the goal is to reach the right contract, not to disrupt. See contract-bridge/simulation/crash.md.
+
+#### Direct Seat Actions (immediately over 2♦)
+
+| Bid | Meaning |
+|---|---|
+| X | Fighters double: 12-15 HCP balanced, OR any 19+ HCP |
+| 2♥ | Natural, 5+ hearts, 10+ HCP, good suit |
+| 2♠ | Natural, 5+ spades, 10+ HCP, good suit |
+| 2NT | 16-18 HCP balanced (systems on — Puppet Stayman, transfers) |
+| 3♣ | Natural, good 6+ suit, constructive (opening values) |
+| 3♦ | Natural, good 6+ suit, constructive (opening values) |
+| 3♥ | Natural, good 6+ suit, constructive (opening values) |
+| 3♠ | Natural, good 6+ suit, constructive (opening values) |
+| Pass | Default — most hands. Wait for suit to be revealed. |
+
+#### Phase 2 — After Opponent's Suit Is Revealed
+
+**Trigger:** (2♦) - Pass - 2♥/2♠ (pass or correct) - ?
+
+Once the suit is known, treat exactly as defense to a standard weak two. Lebensohl applies (R-BID-021, F-SYS-018). This is the primary advantage of pass-then-act: no new convention needed, existing Lebensohl covers it.
+
+| Bid | Meaning |
+|---|---|
+| X | Takeout of the revealed major |
+| 2NT | Lebensohl relay to 3♣ (weak hand, pass or correct) |
+| direct 3-level suit | Invitational (8-11 HCP), natural, non-forcing |
+| cuebid (3 of their suit) | Game-forcing, asks stopper |
+| direct 3NT | To play (Fast Denies stopper) |
+| 2NT then 3NT | To play (Slow Shows stopper) |
+
+#### Examples
+
+- **Multi 2♦, you hold ♠:AQ43 ♥:K52 ♦:J76 ♣:A32 (14 HCP balanced)**
+  → Double (12-15 balanced). Partner places contract.
+- **Multi 2♦, you hold ♠:AKQ2 ♥:AK4 ♦:K76 ♣:Q32 (22 HCP)**
+  → Double (19+). You will bid again strongly after partner's response.
+- **Multi 2♦, you hold ♠:KQJ84 ♥:A3 ♦:72 ♣:KJ54 (14 HCP)**
+  → 2♠ natural (5+ spades, 10+ HCP). Lead-directing and constructive.
+- **Multi 2♦ - Pass - 2♥, you hold ♠:AK32 ♥:52 ♦:KJ76 ♣:A32**
+  → Double (takeout of hearts). Lebensohl applies — partner bids naturally.
+
+### Defense to 5-5 Openings
+
+**Trigger:** (2♥) = 5♥ + 5-card minor, or (2♠) = 5♠ + 5-card minor
+
+The bid major is known — treat as a weak two in that major. Standard weak-two defense applies: double = takeout, Lebensohl structures responses. The only additional awareness: opener has a 5-card minor, so bid minors cautiously (prefer the longer minor when advancer has a choice between two).
+
+| Bid | Meaning |
+|---|---|
+| X | Takeout of the bid major. Lebensohl applies. |
+| 2NT | 16-18 HCP balanced (systems on — Puppet Stayman, transfers) |
+| new suit | Natural, constructive (opening values) |
+| cuebid (3♥ over 2♥, 3♠ over 2♠) | Game-forcing, stopper ask |
+| 3NT | To play, with stopper(s) |
+
+> Opener has a 5-card minor. If advancer is choosing between clubs and diamonds, prefer the longer one. If equal length, prefer the one less likely to be opener's second suit (often unknowable — just bid your longer/stronger minor).
+
+#### Examples
+
+- **(2♥ = 5♥ + 5m), you hold ♠:KQ43 ♥:52 ♦:AJ76 ♣:K32**
+  → Double (takeout of hearts). Lebensohl applies if needed.
+- **(2♠ = 5♠ + 5m), you hold ♠:72 ♥:AKJ84 ♦:Q3 ♣:KJ54**
+  → 3♥ natural, constructive (good 5-card suit, opening values).
+
+### Defense to 3-Level Preempts
+
+**Trigger:** Opponent opens 3♣ / 3♦ / 3♥ / 3♠
+
+At the 3-level, double is takeout/cooperative — partner should bid with shape and pass with flat defence. New suits at the 3-level are forcing. Lebensohl does NOT apply (already at the 3-level, no 2NT relay available).
+
+| Bid | Meaning |
+|---|---|
+| X | Takeout/cooperative — asks partner to bid with shape, pass with flat defence |
+| 3NT | To play (requires stopper in their suit) |
+| new suit at 3-level | Forcing, natural, good suit |
+| new suit at 4-level | To play (not forcing) |
+| 4NT | Unusual — two lowest unbid suits |
+
+> Against major preempts, the cooperative double is the key tool — "do something intelligent." Against minor preempts, there is more room to bid naturally.
+
+#### Examples
+
+- **(3♥), you hold ♠:AQ43 ♥:52 ♦:KJ76 ♣:A32 (14 HCP, short hearts)**
+  → Double (takeout). Partner bids best suit.
+- **(3♦), you hold ♠:KQ2 ♥:AJ4 ♦:QJ76 ♣:K32 (16 HCP, diamond stopper)**
+  → 3NT to play.
+- **(3♣), you hold ♠:72 ♥:AKJ843 ♦:KQ3 ♣:54 (13 HCP, good suit)**
+  → 3♥ forcing — natural, good suit.
+
+### Defense to 4-Level Preempts
+
+**Trigger:** Opponent opens 4♣ / 4♦ / 4♥ / 4♠
+
+The key rule: double of a major preempt at game level = penalty-oriented (partner passes unless very distributional). Double of a minor preempt below game = takeout (room to find a major fit).
+
+| Bid | Meaning |
+|---|---|
+| X of 4♥ / 4♠ | Penalty-oriented (partner passes unless very distributional) |
+| X of 4♣ / 4♦ | Takeout (room to find major fit below game) |
+| 4NT over 4♥ / 4♠ | Two-suited takeout (both minors, or any 5-5+) |
+| 5-level | To play |
+
+#### Examples
+
+- **(4♠), you hold ♠:KJ4 ♥:AQ7 ♦:K983 ♣:A52 (17 HCP, balanced)**
+  → Double (penalty). Expect to defeat 4♠.
+- **(4♦), you hold ♠:AQ43 ♥:KJ76 ♦:2 ♣:AJ32 (15 HCP, short diamonds)**
+  → Double (takeout). Partner bids best major.
+- **(4♥), you hold ♠:3 ♥:— ♦:KQJ876 ♣:AQJ54 (extreme shape)**
+  → 4NT (two-suited takeout). Both minors.
+
+### Balancing (Protection)
+
+**Trigger:** Opponent's bidding dies at a low level — (1x) - P - P - ? or (1x) - P - (2x) - P - P - ?
+
+When opponents stop low, partner's pass may trap values behind the opener ("borrowing a king from partner"). Act with ~3 HCP less than a direct action. Critical at matchpoints — letting opponents play undisturbed at the 1-2 level is often a bottom board.
+
+| Action | Range |
+|---|---|
+| Balancing 1NT | ~11-14 HCP (not 15-18 like direct seat) |
+| Balancing takeout double | 10+ HCP (not 12+ like direct seat) |
+| Balancing overcall | 8+ HCP, reasonable suit |
+| Balancing jump overcall | Intermediate (not weak — partner already passed) |
+
+> Partner must downgrade by ~3 HCP when responding to a balancing action ("return the borrowed king"). Do not jump to game when partner balances unless your hand justifies it independently.
+
+#### Examples
+
+- **(1♠) - Pass - Pass - ?, you hold ♠:52 ♥:KJ43 ♦:A76 ♣:Q832 (10 HCP)**
+  → Double (balancing takeout). Would pass in direct seat (too weak for direct X).
+- **(1♥) - Pass - Pass - ?, you hold ♠:KQ4 ♥:J76 ♦:AJ32 ♣:Q54 (13 HCP)**
+  → 1NT (balancing, shows ~11-14). Not strong enough for direct 1NT (15-18).
+- **(1♦) - Pass - (2♦) - Pass - Pass - ?, you hold ♠:AJ84 ♥:K43 ♦:72 ♣:Q832**
+  → Double (balancing). Partner's pass trapped values.
+
+### Advancing Partner's Overcall
+
+**Trigger:** (1x) - 1y/2y [partner overcalls] - Pass/Bid - ?
+
+Key insight: cuebid = good raise, jump raise = weak. This reverses what many club players assume. Simple raise is competitive (Law of Total Tricks), not invitational. New suits are non-forcing.
+
+| Bid | Meaning |
+|---|---|
+| simple raise | Competitive, 6-9 HCP, 3+ support (Law of Total Tricks, not invitational) |
+| cuebid of opponent's suit | Limit raise or better (10+ HCP, 3+ support) |
+| jump raise | Preemptive (weak, 4+ support — NOT invitational) |
+| 2NT | Sound constructive raise (9-11 HCP, 3+ support, balanced) |
+| new suit | Non-forcing (constructive, but may be passed) |
+| jump in new suit | Fit-showing (good suit + support for partner, invitational) |
+
+#### Examples
+
+- **(1♥) - 1♠ - Pass - ?, you hold ♠:Q43 ♥:72 ♦:KJ76 ♣:8432 (6 HCP)**
+  → 2♠ (simple raise, competitive — not invitational).
+- **(1♥) - 1♠ - Pass - ?, you hold ♠:K43 ♥:72 ♦:AJ76 ♣:K432 (11 HCP)**
+  → 2♥ (cuebid = limit raise+). Shows 10+ with spade support.
+- **(1♥) - 1♠ - Pass - ?, you hold ♠:QJ43 ♥:2 ♦:J9763 ♣:843 (4 HCP)**
+  → 3♠ (jump raise = preemptive, 4 trumps, weak).
+- **(1♦) - 1♠ - Pass - ?, you hold ♠:K3 ♥:AQJ84 ♦:76 ♣:J543 (10 HCP)**
+  → 2♥ (new suit, non-forcing). Constructive but partner may pass.
+
+### Advancing Partner's Takeout Double (of 1-Level)
+
+**Trigger:** (1x) - X - Pass - ?
+
+The most common use of a takeout double. Partner has asked you to bid — you MUST bid unless you want to convert to penalty. Lebensohl covers responses to doubles of weak twos (see Lebensohl section). This section covers responses to doubles of 1-level openings.
+
+| Bid | Meaning |
+|---|---|
+| cheapest 4-card suit | Minimum (0-8 HCP) — forced, even with nothing |
+| jump in a suit | Invitational (9-11 HCP), shows real values and 4+ cards |
+| cuebid of opener's suit | Game force (12+ HCP), no clear direction — asks doubler to describe |
+| 1NT | 6-10 HCP with stopper in opener's suit |
+| 2NT | 11-12 HCP with stopper in opener's suit (invitational) |
+| Pass | Penalty conversion (rare — requires 5+ strong trumps in opener's suit) |
+
+> The penalty pass is a powerful but rare weapon. Requirements: 5+ cards in opener's suit with good honours (e.g., KQJ9x). Partner must lead a trump. Do NOT pass just because you have nothing — bid your cheapest suit instead.
+
+#### Examples
+
+- **(1♥) - X - Pass - ?, you hold ♠:J743 ♥:852 ♦:964 ♣:Q32 (2 HCP)**
+  → 1♠ (cheapest 4-card suit). Forced — even with nothing.
+- **(1♥) - X - Pass - ?, you hold ♠:KQ43 ♥:52 ♦:A76 ♣:J832 (10 HCP)**
+  → 2♠ (jump = invitational, shows 9-11 and 4+ spades).
+- **(1♦) - X - Pass - ?, you hold ♠:A43 ♥:KJ6 ♦:Q74 ♣:K832 (13 HCP)**
+  → 2♦ (cuebid = game force). Asks partner to describe further.
+- **(1♥) - X - Pass - ?, you hold ♠:43 ♥:KQJ97 ♦:864 ♣:Q32 (8 HCP)**
+  → Pass (penalty conversion). Strong trumps; partner leads a trump.
+
+### Lead-Directing Doubles of Artificial Bids
+
+**Trigger:** Opponents make an artificial bid (Stayman, transfer, cuebid, slam)
+
+One principle covers all cases: double of an artificial bid always requests a lead of that suit. This is free information at zero memory cost.
+
+| Bid | Meaning |
+|---|---|
+| X of Stayman (2♣) | Lead clubs |
+| X of transfer (2♦ over 1NT) | Lead diamonds (the suit doubled, not the target major) |
+| X of transfer (2♥ over 1NT) | Lead hearts (the suit doubled, not the target major) |
+| X of any cuebid | Lead the cuebid suit |
+| X of voluntarily-bid slam | Lightner double — unusual lead request (NOT your normal lead) |
+
+> Lightner double requests the most unusual lead: typically dummy's first-bid suit, or a suit where you can ruff. It explicitly says "do NOT lead the normal suit (our suit, or the unbid suit)."
+
+#### Examples
+
+- **(1NT) - Pass - (2♣ Stayman) - X**
+  → Lead clubs. You hold ♣:KQJ84 or similar.
+- **(1NT) - Pass - (2♦ transfer) - X**
+  → Lead diamonds. You hold ♦:AKJ or good diamonds.
+- **Opponents bid 6♠ voluntarily, you double (Lightner)**
+  → Partner leads dummy's first-bid suit (or the most unusual suit).
+
+### Defense to Opponents' Transfers over Their 1NT
+
+**Trigger:** (1NT) - Pass - (2♦/2♥ transfer) - ?
+
+Extends the lead-directing double principle. Generally be conservative — opponents have announced combined 20+ HCP. Only compete with shape or strength.
+
+| Bid | Meaning |
+|---|---|
+| X of transfer | Lead-directing — shows the suit being doubled (not the target major) |
+| bid of transfer suit | Natural — you hold that suit (e.g., 2♦ over 2♦ shows diamonds) |
+| bid of target suit | Takeout/lead-directing (showing the other suits) |
+
+#### Examples
+
+- **(1NT) - Pass - (2♦ = transfer to ♥) - X**
+  → Shows diamonds (lead-directing). Bid 2♥ if you have hearts (natural).
+- **(1NT) - Pass - (2♥ = transfer to ♠) - 2♠**
+  → Takeout of spades (the target suit). Showing the other suits.
+
+### Sandwich Position
+
+**Trigger:** (1x) - Pass - (1y) - ? [sitting between two bidding opponents]
+
+Acting between two bidding opponents is dangerous — both have values. Be cautious. The key agreement: 1NT in the sandwich position is UNUSUAL (showing the two lower unbid suits), NOT natural. Only act with real shape or real strength.
+
+| Bid | Meaning |
+|---|---|
+| X | Both unbid suits, moderate values (at least opening count) |
+| 1NT | Unusual — two lower unbid suits (NOT natural) |
+| overcall | Natural, good suit required (sandwiched between two bidders) |
+
+> The sandwich position is the most dangerous position at the table. Both opponents have values, and partner is broke. Only act with extreme shape (5-5+) or genuine strength. Light actions here produce catastrophic results.
+
+#### Examples
+
+- **(1♣) - Pass - (1♥) - ?, you hold ♠:KQ43 ♥:2 ♦:AQJ76 ♣:843**
+  → 1NT (unusual — shows diamonds + spades, the two lower unbid).
+- **(1♦) - Pass - (1♠) - ?, you hold ♠:72 ♥:AKJ84 ♦:Q3 ♣:KJ54**
+  → 2♥ (overcall, good suit). Dangerous position but suit quality justifies.
+
 ---
 
 ## Defensive Carding

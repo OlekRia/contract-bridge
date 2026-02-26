@@ -297,6 +297,134 @@ Avoid: Void or strong 4-card side suit
 | cuebid | Game-forcing, asks stopper |
 | slow shows fast denies | Via 2NT then 3NT = stopper; direct 3NT = no stopper |
 
+### Defense to Multi 2♦ (Fighters style)
+
+**Trigger:** Opponent opens Multi 2♦ (weak two in either major). CRASH excluded.
+
+| Bid | Meaning |
+|---|---|
+| X | 12-15 balanced OR any 19+ |
+| 2♥/2♠ | Natural, 5+ suit, 10+ HCP |
+| 2NT | 16-18 balanced (systems on) |
+| 3 level | Natural, good suit, constructive |
+| Pass | Default (most hands) |
+
+**After suit revealed:** Treat as standard weak two: X = takeout, Lebensohl applies
+
+### Defense to 5-5 openings
+
+**Trigger:** Opponent opens 2♥ (5♥ + 5m) or 2♠ (5♠ + 5m)
+
+_Standard weak-two defense of the bid major_
+
+| Bid | Meaning |
+|---|---|
+| X | Takeout of bid major, Lebensohl applies |
+| 2NT | 16-18 balanced (systems on) |
+| new suit | Natural, constructive |
+| cuebid | Game-forcing, stopper ask |
+
+> Opener has 5-card minor — bid minors cautiously
+
+### Defense to 3-level preempts
+
+**Trigger:** Opponent opens 3♣ / 3♦ / 3♥ / 3♠
+
+| Bid | Meaning |
+|---|---|
+| X | Takeout/cooperative (bid with shape, pass with flat defence) |
+| 3NT | To play (stopper required) |
+| new suit 3 | Forcing, natural |
+| new suit 4 | To play (not forcing) |
+| 4NT | Unusual (two lowest unbid suits) |
+
+> Lebensohl does NOT apply (already at 3-level)
+
+### Defense to 4-level preempts
+
+**Trigger:** Opponent opens 4♣ / 4♦ / 4♥ / 4♠
+
+| Bid | Meaning |
+|---|---|
+| X of major | Penalty-oriented (pass unless very distributional) |
+| X of minor | Takeout (room to find major fit) |
+| 4NT | Two-suited takeout |
+| 5 level | To play |
+
+### Balancing (protection)
+
+**Trigger:** Opponent's bidding dies at low level: (1x)-P-P-?
+
+Act ~3 HCP less than direct ('borrow a king from partner')
+
+| Action | Range |
+|---|---|
+| 1NT | ~11-14 (not 15-18) |
+| X | 10+ (not 12+) |
+| overcall | 8+, reasonable suit |
+| jump overcall | Intermediate (not weak) |
+
+> Partner downgrades ~3 HCP ('return the borrowed king')
+
+### Advancing partner's overcall
+
+**Trigger:** (1x) - 1y/2y [partner overcalls] - ?
+
+| Bid | Meaning |
+|---|---|
+| simple raise | Competitive 6-9, 3+ support (NOT invitational) |
+| cuebid | Limit raise+ (10+, 3+ support) |
+| jump raise | Preemptive (weak, 4+ support, NOT invitational) |
+| 2NT | Sound raise (9-11, 3+ support) |
+| new suit | Non-forcing (constructive) |
+| jump new suit | Fit-showing (good suit + support, invitational) |
+
+### Advancing partner's takeout X (of 1-level)
+
+**Trigger:** (1x) - X - Pass - ?
+
+| Bid | Meaning |
+|---|---|
+| cheapest suit | Minimum (0-8), forced |
+| jump suit | Invitational (9-11) |
+| cuebid | Game force (12+) |
+| 1NT | 6-10 with stopper |
+| 2NT | 11-12 with stopper (invitational) |
+| pass | Penalty conversion (rare — 5+ strong trumps in opener's suit) |
+
+### Lead-directing doubles
+
+X of any artificial bid = lead that suit
+
+| Bid | Meaning |
+|---|---|
+| X Stayman | Lead clubs |
+| X transfer | Lead the suit doubled (not target major) |
+| X cuebid | Lead that suit |
+| Lightner | X of slam = unusual lead (NOT normal lead) |
+
+### Defense to opponents' transfers over 1NT
+
+**Trigger:** (1NT) - P - (transfer) - ?
+
+| Bid | Meaning |
+|---|---|
+| X | Lead-directing (the transfer suit, not target) |
+| bid transfer suit | Natural (you hold that suit) |
+| bid target suit | Takeout/lead-directing |
+
+### Sandwich position
+
+**Trigger:** (1x) - P - (1y) - ? [between two bidders]
+
+| Bid | Meaning |
+|---|---|
+| X | Both unbid suits, moderate values |
+| 1NT | Unusual (two lower unbid, NOT natural) |
+| overcall | Natural, good suit required |
+
+> Dangerous position — only act with shape or genuine strength
+
 ---
 
 ## Defensive Carding
