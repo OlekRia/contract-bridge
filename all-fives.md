@@ -206,7 +206,7 @@ Avoid: Void or strong 4-card side suit
 
 ### CRASH over artificial/strong openings
 
-**Trigger:** Opponents open strong 1♣, 2♣, 2♦, or short club (2+)
+**Trigger:** Opponents open artificial/strong or short/garbage (strong 1♣, 2♣, 2♦, short ♣ 2+, garbage 1♦). NOT Multi 2♦.
 
 | Property | Shows |
 |---|---|
@@ -222,6 +222,37 @@ Avoid: Void or strong 4-card side suit
 | 2♦ | Rank |
 | 2♥/2♠ | Natural 5+ |
 | 2NT | Shape |
+
+#### vs Strong 1♣
+
+| Bid | Meaning |
+|---|---|
+| X | Color |
+| 1♦ | Rank |
+| 1♥/1♠ | Natural 5+ |
+| 1NT | Shape |
+
+#### Vs strong/garbage 2♦ (NOT Multi)
+
+| Bid | Meaning |
+|---|---|
+| X | Color |
+| 2♥ | Rank |
+| 2♠ | Natural 5+ |
+| 2NT | Shape |
+
+#### Vs garbage/short 1♦
+
+| Bid | Meaning |
+|---|---|
+| X | Color |
+| 1♥ | Rank |
+| 1♠ | Natural 5+ |
+| 1NT | Shape |
+
+**Requirements:** 5-4+ shape (5-5+ unfav), LTC: 8 equal / 9 fav / 7 unfav
+
+**Advancer:** Pass/correct — bid better suit in the shorter possible pair
 
 ### CRASH defense to 1NT (differentiated by strength)
 

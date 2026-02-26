@@ -335,9 +335,9 @@ Shows: 5+ in other minor + 4 in an unknown major.
 
 ### CRASH Convention
 
-**Trigger:** Opponents open strong 1♣, 2♣, 2♦, or short club (2+)
+**Trigger:** Opponents open artificial/strong bid or short/garbage suit (strong 1♣, 2♣, 2♦, short ♣ 2+, garbage 1♦). NOT against Multi 2♦ — use natural bidding instead.
 
-When opponents open an artificial/strong bid that does not promise a specific suit, all four suits are 'unbid'. CRASH provides three two-suited bids organized by suit-pairing property: Color, Rank, Shape.
+When opponents open an artificial/strong bid that does not promise a specific suit, all four suits are 'unbid'. CRASH provides three two-suited bids organized by suit-pairing property: Color, Rank, Shape. The same applies to garbage/short openings where the bid does not promise length in the suit.
 
 | Property | Shows |
 |---|---|
@@ -359,6 +359,43 @@ When opponents open an artificial/strong bid that does not promise a specific su
 | 2♥ | Natural, 5+ hearts |
 | 2♠ | Natural, 5+ spades |
 | 2NT | Shape (pointed or rounded) |
+
+#### vs Strong 1♣: (1♣) - ?
+
+| Bid | Meaning |
+|---|---|
+| X | Color (reds or blacks) |
+| 1♦ | Rank (majors or minors) |
+| 1♥ | Natural, 5+ hearts |
+| 1♠ | Natural, 5+ spades |
+| 1NT | Shape (pointed or rounded) |
+
+#### vs Strong / Garbage 2♦: (2♦) - ? [strong or garbage 2♦ only — NOT Multi 2♦]
+
+| Bid | Meaning |
+|---|---|
+| X | Color (reds or blacks) |
+| 2♥ | Rank (majors or minors) |
+| 2♠ | Natural, 5+ spades |
+| 2NT | Shape (pointed or rounded) |
+
+#### vs Garbage / Short 1♦: (1♦) - ? [garbage/short ♦, does not promise length]
+
+| Bid | Meaning |
+|---|---|
+| X | Color (reds or blacks) |
+| 1♥ | Rank (majors or minors) |
+| 1♠ | Natural, 5+ spades |
+| 1NT | Shape (pointed or rounded) |
+
+#### Advancer (partner of CRASH bidder)
+
+Advancer uses pass/correct to find the right suit. Bid your better suit in the shorter possible pair. If you hold equal preference, bid the cheaper suit.
+
+- **Partner bids Color (reds or blacks), you hold ♥:Kxxx ♦:xx ♠:Jxx ♣:xxxx**
+  → Bid hearts (your better red suit). If partner has blacks, he corrects to ♠.
+- **Partner bids Rank (majors or minors), you hold ♥:xx ♠:Qxxx ♣:Kxxxx ♦:x**
+  → Bid ♠ (your better major). If partner has minors, he corrects to his minor.
 
 ### CRASH Defense to 1NT (differentiated by strength)
 
@@ -446,6 +483,8 @@ Without Lebensohl, advancer cannot distinguish weak (0-7), invitational (8-11), 
 | direct 3NT | To play, denies stopper in their suit (Fast Denies) |
 | 2NT then 3NT (after relay) | To play, shows stopper in their suit (Slow Shows) |
 
+---
+
 ## Defensive Carding
 
 > **Use your head first, not partner's signals. In most situations, the bidding and dummy tell you everything. Signals are a last resort.**
@@ -521,6 +560,8 @@ Easy to remember: From a doubleton (even), play high.
 | xxxx | Highest safe, then low |
 
 > **Special rule:** If you hold the J, lead 4th highest. Example: from KJ732, lead the 3 (not the 2).
+
+---
 
 ## Additional Materials — Hand Evaluation
 

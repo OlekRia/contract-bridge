@@ -513,11 +513,12 @@ competitive:
   # ── CRASH over artificial/strong openings ────
   crash:
     name: "CRASH Convention"
-    trigger: "Opponents open strong 1!C, 2!C, 2!D, or short club (2+)"
+    trigger: "Opponents open artificial/strong bid or short/garbage suit (strong 1!C, 2!C, 2!D, short !C 2+, garbage 1!D). NOT against Multi 2!D — use natural bidding instead."
     principle: >
       When opponents open an artificial/strong bid that does not promise a specific
       suit, all four suits are 'unbid'. CRASH provides three two-suited bids organized
-      by suit-pairing property: Color, Rank, Shape.
+      by suit-pairing property: Color, Rank, Shape. The same applies to garbage/short
+      openings where the bid does not promise length in the suit.
     definitions:
       Color: "Two same-color suits (!H+!D reds, or !S+!C blacks)"
       Rank: "Two same-rank suits (!H+!S majors, or !C+!D minors)"
@@ -554,7 +555,13 @@ competitive:
         - bid: 1NT
           meaning: "Shape (pointed or rounded)"
     vs_strong_2D:
-      trigger: "(2!D) - ?"
+      trigger: "(2!D) - ? [strong or garbage 2!D only — NOT Multi 2!D]"
+      note: >
+        CRASH is excluded against Multi 2!D (weak two in either major). Simulation
+        evidence: 40,000 deals show 46.9% MP and 0.8:1 gain/loss ratio — the only
+        negative-expectation CRASH scenario. Multi is a preemptive opening; the opener
+        is weak (5-10 HCP) with a known 6-card major, reducing CRASH's disruption value.
+        Use natural bidding (double/overcall) until a dedicated defense is developed.
       bids:
         - bid: X
           meaning: "Color (reds or blacks)"
@@ -563,6 +570,17 @@ competitive:
         - bid: 2!S
           meaning: "Natural, 5+ spades"
         - bid: 2NT
+          meaning: "Shape (pointed or rounded)"
+    vs_garbage_1D:
+      trigger: "(1!D) - ? [garbage/short !D, does not promise length]"
+      bids:
+        - bid: X
+          meaning: "Color (reds or blacks)"
+        - bid: 1!H
+          meaning: "Rank (majors or minors)"
+        - bid: 1!S
+          meaning: "Natural, 5+ spades"
+        - bid: 1NT
           meaning: "Shape (pointed or rounded)"
     advancer_actions:
       title: "Advancer (partner of CRASH bidder)"
@@ -735,6 +753,110 @@ competitive:
       shows a stopper (you took the slow route). Bidding 3NT directly denies a
       stopper (fast route). This lets partner judge whether 3NT or a suit game
       is better.
+
+  # ── Defense to Multi 2D (Fighters style) ────
+  defense_vs_multi_2D:
+    name: "Defense to Multi 2!D (Fighters style)"
+    trigger: "(2!D) - ? [Multi 2!D — weak two in either major, 5-10 HCP, 6-card major]"
+    principle: >
+      Multi 2!D is PREEMPTIVE, not artificial/strong. CRASH is explicitly excluded
+      (simulation: 46.9% MP, 0.8:1 gain/loss across 40,000 deals). The key problem
+      is ambiguity — which major do they have? The Fighters defense acts minimally
+      in direct seat, then uses pass-then-act to compete once the suit is revealed.
+    exclusion_note: >
+      CRASH was falsified against Multi 2!D by DD simulation. The opener is weak
+      (5-10 HCP) with a known 6-card major, so CRASH's suit-pairing disruption adds
+      no value. Our side typically holds 20-25 HCP — the goal is to reach the right
+      contract, not to disrupt. See contract-bridge/simulation/crash.md.
+    direct_seat:
+      title: "Direct Seat Actions (immediately over 2!D)"
+      bids:
+        - bid: X
+          meaning: "Fighters double: 12-15 HCP balanced, OR any 19+ HCP"
+          continuations:
+            - situation: "Doubler has 12-15 balanced"
+              advancer: >
+                Place the contract: pass (penalty, rare), 2!H/2!S natural to play,
+                2NT invitational, 3-level natural.
+            - situation: "Doubler has 19+"
+              advancer: >
+                Doubler bids again strongly: double of their suit = takeout,
+                cuebid = game force, jump = natural strong.
+        - bid: 2!H
+          meaning: "Natural, 5+ hearts, 10+ HCP, good suit"
+        - bid: 2!S
+          meaning: "Natural, 5+ spades, 10+ HCP, good suit"
+        - bid: 2NT
+          meaning: "16-18 HCP balanced (systems on — Puppet Stayman, transfers)"
+        - bid: 3!C
+          meaning: "Natural, good 6+ suit, constructive (opening values)"
+        - bid: 3!D
+          meaning: "Natural, good 6+ suit, constructive (opening values)"
+        - bid: 3!H
+          meaning: "Natural, good 6+ suit, constructive (opening values)"
+        - bid: 3!S
+          meaning: "Natural, good 6+ suit, constructive (opening values)"
+        - bid: Pass
+          meaning: "Default — most hands. Wait for suit to be revealed."
+    phase_2:
+      title: "Phase 2 — After Opponent's Suit Is Revealed"
+      trigger: "(2!D) - Pass - 2!H/2!S (pass or correct) - ?"
+      principle: >
+        Once the suit is known, treat exactly as defense to a standard weak two.
+        Lebensohl applies (R-BID-021, F-SYS-018). This is the primary advantage
+        of pass-then-act: no new convention needed, existing Lebensohl covers it.
+      bids:
+        - bid: X
+          meaning: "Takeout of the revealed major"
+        - bid: 2NT
+          meaning: "Lebensohl relay to 3!C (weak hand, pass or correct)"
+        - bid: "direct 3-level suit"
+          meaning: "Invitational (8-11 HCP), natural, non-forcing"
+        - bid: "cuebid (3 of their suit)"
+          meaning: "Game-forcing, asks stopper"
+        - bid: "direct 3NT"
+          meaning: "To play (Fast Denies stopper)"
+        - bid: "2NT then 3NT"
+          meaning: "To play (Slow Shows stopper)"
+    examples:
+      - scenario: "Multi 2!D, you hold !S:AQ43 !H:K52 !D:J76 !C:A32 (14 HCP balanced)"
+        action: "Double (12-15 balanced). Partner places contract."
+      - scenario: "Multi 2!D, you hold !S:AKQ2 !H:AK4 !D:K76 !C:Q32 (22 HCP)"
+        action: "Double (19+). You will bid again strongly after partner's response."
+      - scenario: "Multi 2!D, you hold !S:KQJ84 !H:A3 !D:72 !C:KJ54 (14 HCP)"
+        action: "2!S natural (5+ spades, 10+ HCP). Lead-directing and constructive."
+      - scenario: "Multi 2!D - Pass - 2!H, you hold !S:AK32 !H:52 !D:KJ76 !C:A32"
+        action: "Double (takeout of hearts). Lebensohl applies — partner bids naturally."
+
+  # ── Defense to 5-5 Openings ─────────────────
+  defense_vs_55_openings:
+    name: "Defense to 5-5 Openings"
+    trigger: "(2!H) = 5!H + 5-card minor, or (2!S) = 5!S + 5-card minor"
+    principle: >
+      The bid major is known — treat as a weak two in that major. Standard weak-two
+      defense applies: double = takeout, Lebensohl structures responses. The only
+      additional awareness: opener has a 5-card minor, so bid minors cautiously
+      (prefer the longer minor when advancer has a choice between two).
+    bids:
+      - bid: X
+        meaning: "Takeout of the bid major. Lebensohl applies."
+      - bid: 2NT
+        meaning: "16-18 HCP balanced (systems on — Puppet Stayman, transfers)"
+      - bid: "new suit"
+        meaning: "Natural, constructive (opening values)"
+      - bid: "cuebid (3!H over 2!H, 3!S over 2!S)"
+        meaning: "Game-forcing, stopper ask"
+      - bid: 3NT
+        meaning: "To play, with stopper(s)"
+    minor_caution: >
+      Opener has a 5-card minor. If advancer is choosing between clubs and diamonds,
+      prefer the longer one. If equal length, prefer the one less likely to be
+      opener's second suit (often unknowable — just bid your longer/stronger minor).
+    examples:
+      - scenario: "(2!H = 5!H + 5m), you hold !S:KQ43 !H:52 !D:AJ76 !C:K32"
+        action: "Double (takeout of hearts). Lebensohl applies if needed."
+      - scenario: "(2!S = 5!S + 5m), you hold !S:72 !H:AKJ84 !D:Q3 !C:KJ54"
+        action: "3!H natural, constructive (good 5-card suit, opening values)."
 
 # ──────────────────────────────────────────────
 # Defensive Carding

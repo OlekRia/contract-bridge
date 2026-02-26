@@ -141,7 +141,7 @@ competitive:
 
   CRASH:
     name: "CRASH over artificial/strong openings"
-    trigger: "Opponents open strong 1!C, 2!C, 2!D, or short club (2+)"
+    trigger: "Opponents open artificial/strong or short/garbage (strong 1!C, 2!C, 2!D, short !C 2+, garbage 1!D). NOT Multi 2!D."
     principle: "Color-Rank-Shape: three bids showing two-suited hands by suit pairing"
     definitions:
       Color: "Two same-color suits (!H+!D reds or !S+!C blacks)"
@@ -158,10 +158,17 @@ competitive:
       1H_1S: "Natural 5+"
       1NT: "Shape"
     vs_strong_2D:
+      label: "Vs strong/garbage 2!D (NOT Multi)"
       X: "Color"
       2H: "Rank"
       2S: "Natural 5+"
       2NT: "Shape"
+    vs_garbage_1D:
+      label: "Vs garbage/short 1!D"
+      X: "Color"
+      1H: "Rank"
+      1S: "Natural 5+"
+      1NT: "Shape"
     requirements: "5-4+ shape (5-5+ unfav), LTC: 8 equal / 9 fav / 7 unfav"
     advancer: "Pass/correct — bid better suit in the shorter possible pair"
 
@@ -203,6 +210,27 @@ competitive:
     direct_3_level: "Invitational (8-11 HCP)"
     cuebid: "Game-forcing, asks stopper"
     slow_shows_fast_denies: "Via 2NT then 3NT = stopper; direct 3NT = no stopper"
+
+  defense_vs_multi_2D:
+    name: "Defense to Multi 2!D (Fighters style)"
+    trigger: "Opponent opens Multi 2!D (weak two in either major). CRASH excluded."
+    direct_seat:
+      X: "12-15 balanced OR any 19+"
+      2H_2S: "Natural, 5+ suit, 10+ HCP"
+      2NT: "16-18 balanced (systems on)"
+      3_level: "Natural, good suit, constructive"
+      Pass: "Default (most hands)"
+    after_suit_revealed: "Treat as standard weak two: X = takeout, Lebensohl applies"
+
+  defense_vs_55_openings:
+    name: "Defense to 5-5 openings"
+    trigger: "Opponent opens 2!H (5!H + 5m) or 2!S (5!S + 5m)"
+    treatment: "Standard weak-two defense of the bid major"
+    X: "Takeout of bid major, Lebensohl applies"
+    2NT: "16-18 balanced (systems on)"
+    new_suit: "Natural, constructive"
+    cuebid: "Game-forcing, stopper ask"
+    note: "Opener has 5-card minor — bid minors cautiously"
 
 # ── Defensive Carding ─────────────────────────────
 
