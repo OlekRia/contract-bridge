@@ -480,6 +480,7 @@ Without Lebensohl, advancer cannot distinguish weak (0-7), invitational (8-11), 
 | Weak (0-7 HCP, 10+ losers) | Bid 2NT relay → pass or correct at 3-level |
 | Invitational (8-11 HCP, 8-9 losers) | Bid directly at 3-level (natural, non-forcing) |
 | Game-forcing (12+ HCP, 7 or fewer losers) | Cuebid or direct 3NT |
+| Penalty (any HCP, 5+ strong trumps in opponent's suit) | Pass (penalty conversion). Partner leads a trump. |
 
 | Bid | Meaning |
 |---|---|
@@ -490,6 +491,7 @@ Without Lebensohl, advancer cannot distinguish weak (0-7), invitational (8-11), 
 | cuebid (3 of their suit) | Game-forcing, asks for stopper in opponent's suit |
 | direct 3NT | To play, denies stopper in their suit (Fast Denies) |
 | 2NT then 3NT (after relay) | To play, shows stopper in their suit (Slow Shows) |
+| Pass | Penalty conversion — 5+ strong trumps (2+ of AKQ) in opponent's suit. Partner leads a trump. |
 
 > 'Slow Shows, Fast Denies' — going through the 2NT relay before bidding 3NT shows a stopper (you took the slow route). Bidding 3NT directly denies a stopper (fast route). This lets partner judge whether 3NT or a suit game is better.
 
