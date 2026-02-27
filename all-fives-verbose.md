@@ -475,13 +475,23 @@ Unified CRASH framework extends to 1NT defense. Against weak NT, a penalty doubl
 
 Without Lebensohl, advancer cannot distinguish weak (0-7), invitational (8-11), and game-forcing (12+) hands. The 2NT relay creates a weak channel; direct bids become constructive. Slow Shows, Fast Denies resolves the 3NT stopper question.
 
+| Range | Action |
+|---|---|
+| Weak (0-7 HCP, 10+ losers) | Bid 2NT relay → pass or correct at 3-level |
+| Invitational (8-11 HCP, 8-9 losers) | Bid directly at 3-level (natural, non-forcing) |
+| Game-forcing (12+ HCP, 7 or fewer losers) | Cuebid or direct 3NT |
+
 | Bid | Meaning |
 |---|---|
 | 2NT | Relay to 3♣ (weak hand, 0-7 HCP, 10+ losers) |
+| &nbsp;&nbsp;→ doubler: 3♣ | Forced relay |
+| &nbsp;&nbsp;→ advancer: Pass / 3♦ / 3♥ | Pass or correct to play in advancer's suit |
 | direct 3-level suit | Invitational (8-11 HCP), natural, non-forcing |
 | cuebid (3 of their suit) | Game-forcing, asks for stopper in opponent's suit |
 | direct 3NT | To play, denies stopper in their suit (Fast Denies) |
 | 2NT then 3NT (after relay) | To play, shows stopper in their suit (Slow Shows) |
+
+> 'Slow Shows, Fast Denies' — going through the 2NT relay before bidding 3NT shows a stopper (you took the slow route). Bidding 3NT directly denies a stopper (fast route). This lets partner judge whether 3NT or a suit game is better.
 
 ### Defense to Multi 2♦ (Fighters style)
 

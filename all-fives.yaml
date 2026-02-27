@@ -210,6 +210,7 @@ competitive:
     direct_3_level: "Invitational (8-11 HCP)"
     cuebid: "Game-forcing, asks stopper"
     slow_shows_fast_denies: "Via 2NT then 3NT = stopper; direct 3NT = no stopper"
+    pass: "Penalty conversion (5+ strong trumps in opponent's suit, partner leads trump)"
 
   defense_vs_multi_2D:
     name: "Defense to Multi 2!D (Fighters style)"

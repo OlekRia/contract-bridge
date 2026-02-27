@@ -90,16 +90,11 @@
 
 ### vs Multi 2D (5-10 HCP, 6-card major)
 
-- **The only negative-expectation scenario** when acting (44.7% MP when acting)
-- Why: Multi 2D is a PREEMPTIVE opening. The opener is WEAK (5-10 HCP), meaning
-  we typically hold the balance of power. But:
-  - Their 6-card major suit is already known to be strong (by suit length)
-  - We act 58.4% of the time (highest rate) — the thresholds are too loose
-  - Our losses average -618 (highest of any scenario) vs gains of +877
-  - Bottom rate 54.1% when acting — majority of actions lose
-- **Conclusion**: CRASH thresholds are NOT calibrated for preemptive openings.
-  Against Multi 2D, we should be more conservative or use a different defense
-  entirely. This is a genuine anomaly worth investigating (see Recommendations).
+- **Note**: This row uses CRASH against Multi 2D. The Fighters defense (AMD-5) is
+  used instead — see `2d-multi.md` for the current simulation with corrected model
+  (65.8% MP with pass baseline fix + disruption model + Phase 2).
+- CRASH against Multi 2D was the only negative-expectation scenario in v1,
+  which led to the adoption of the Fighters defense.
 
 ## Conclusions
 
@@ -119,15 +114,14 @@ targets. This corroborates DEC-5.
 | Weak artificial (garbage 1D, short C) | 57-59% | Partscore competition |
 | Weak 1NT (12-14) | 55% | Penalty double + modest CRASH edge |
 
-### 3. CRASH Fails Against Preemptive Openings
+### 3. Preemptive Openings Use Different Defense (Resolved)
 
-Multi 2D (46.9% MP) is the clear outlier. Preemptive openings are fundamentally
-different from artificial/strong openings:
-- The opener is WEAK, so we likely hold the majority of points
-- Their suit is KNOWN (6-card major), reducing our disruption value
-- Our CRASH entry competes against our own ability to bid naturally
-- The LTC/shape thresholds, designed for defensive positions, are too aggressive
-  here
+CRASH was excluded against Multi 2D (46.9% MP in this sim) and replaced with the
+Fighters defense (AMD-5). With the corrected model (pass baseline + disruption +
+Phase 2), Fighters achieves **65.8% MP** — see `2d-multi.md`. The 5-5 openings
+use standard takeout defense at **58.1-58.6% MP** — see `55-multi.md`.
+
+All 10 defensive scenarios are now positive-expectation.
 
 ### 4. Risk Profile Follows a Clear Pattern
 
@@ -136,25 +130,28 @@ different from artificial/strong openings:
 | Strong openings | 9-13:1 | Always (near-free) |
 | Medium openings | 4-5:1 | Always (strongly positive) |
 | Weak artificial | 2.5-3:1 | Always (positive) |
-| Preemptive | 0.8:1 | **Reconsider** |
+| Preemptive (Fighters/takeout) | tops only (0 bottoms) | Always (positive) |
 
-### 5. Vulnerability Thresholds Are Well-Calibrated for Artificial Openings
+### 5. Vulnerability Thresholds Are Well-Calibrated
 
-Favorable/Equal/Unfavorable all produce positive MP% against non-preemptive
-openings. The 5-5+ shape requirement at unfavorable correctly limits exposure.
+Favorable/Equal/Unfavorable all produce positive MP% across all opener types.
+The 5-5+ shape requirement at unfavorable correctly limits exposure.
 
 ## Recommendations
 
 1. **Continue using CRASH against all artificial/strong openings.** The data is
    unambiguous: MP% 55-67%, gain:loss 2.5:1 to 13:1.
 
-2. **CRASH excluded against Multi 2D.** Negative expectation (46.9% MP, 0.8:1).
-   See `2d-multi.md` for the Fighters defense simulation.
+2. **Use Fighters defense against Multi 2D** (see `2d-multi.md`). 65.8% MP
+   with Phase 2 + disruption model.
 
-3. **Penalty double against Weak 1NT is excellent.** The 15+ HCP threshold is
+3. **Use standard takeout defense against 5-5 openings** (see `55-multi.md`).
+   58.1-58.6% MP with disruption model.
+
+4. **Penalty double against Weak 1NT is excellent.** The 15+ HCP threshold is
    well-placed — 34.7% game rate from penalty double alone.
 
-4. **Against Strong 1NT, emphasize CRASH entry.** 70% tops when acting, with
+5. **Against Strong 1NT, emphasize CRASH entry.** 70% tops when acting, with
    the disruption value to their system (Stayman/transfers) being the key.
 
 ## Limitations

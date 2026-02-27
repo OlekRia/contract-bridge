@@ -730,6 +730,8 @@ competitive:
         action: "Bid directly at 3-level (natural, non-forcing)"
       - range: "Game-forcing (12+ HCP, 7 or fewer losers)"
         action: "Cuebid or direct 3NT"
+      - range: "Penalty (any HCP, 5+ strong trumps in opponent's suit)"
+        action: "Pass (penalty conversion). Partner leads a trump."
     responses:
       - bid: 2NT
         meaning: "Relay to 3!C (weak hand, 0-7 HCP, 10+ losers)"
@@ -748,6 +750,8 @@ competitive:
         meaning: "To play, denies stopper in their suit (Fast Denies)"
       - bid: "2NT then 3NT (after relay)"
         meaning: "To play, shows stopper in their suit (Slow Shows)"
+      - bid: Pass
+        meaning: "Penalty conversion — 5+ strong trumps (2+ of AKQ) in opponent's suit. Partner leads a trump."
     note: >
       'Slow Shows, Fast Denies' — going through the 2NT relay before bidding 3NT
       shows a stopper (you took the slow route). Bidding 3NT directly denies a
