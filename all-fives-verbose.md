@@ -18,7 +18,7 @@
 
 | # | Problem |
 |---|---|
-| 1 | 3rd/4th seat 1NT is 15-17 HCP (not 12-14), because a weak NT blocks us without a chance at game. After a 3rd-seat suit opening, the NT rebid shows 12-14 balanced. |
+| 1 | 3rd/4th seat 1NT is 15-17 HCP (not 12-14), because a weak NT blocks us without a chance at game. After a 3rd/4th-seat suit opening, the NT rebid shows 12-14 balanced. Responder must not jump-raise clubs without 5+ clubs (the "prepared 1♣ trap"). Addressed by H-9: explicit 4th seat entry, prepared ♣ warning, and upgrade policy added to spec. |
 | 2 | The 4441 distribution. Every system struggles with this. |
 | 3 | 1♠ usually promises 5 spades, but with a strong 4333 hand it may show only 4 — which feels awkward. |
 | 4 | New defensive bidding package (CRASH, Michaels, Lebensohl) is adopted but untested at the table. See H-7 for the effectiveness tracking plan. |
@@ -43,7 +43,11 @@ With extra strength (15-17 balanced), opener may hold only 4 cards and escapes t
 
 **3rd seat:** 15-17 HCP — shape 4333 / 4432 / 5332.
 
-Stronger range in 3rd seat. With a weak 12-14 hand we risk blocking ourselves from game when partner passed with 11.
+Stronger range in 3rd seat. With a weak 12-14 hand we risk blocking ourselves from game when partner passed with 11. With 12-14 balanced, open a suit and plan a 1NT rebid (see below).
+
+**4th seat:** 15-17 HCP — shape 4333 / 4432 / 5332.
+
+** seat:**  HCP.
 
 #### Responses to 1NT
 

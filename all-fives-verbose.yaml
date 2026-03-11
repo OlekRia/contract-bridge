@@ -22,8 +22,11 @@ known_problems:
   - id: 1
     problem: >
       3rd/4th seat 1NT is 15-17 HCP (not 12-14), because a weak NT
-      blocks us without a chance at game. After a 3rd-seat suit opening,
-      the NT rebid shows 12-14 balanced.
+      blocks us without a chance at game. After a 3rd/4th-seat suit
+      opening, the NT rebid shows 12-14 balanced. Responder must not
+      jump-raise clubs without 5+ clubs (the "prepared 1!C trap").
+      Addressed by H-9: explicit 4th seat entry, prepared !C warning,
+      and upgrade policy added to spec.
   - id: 2
     problem: "The 4441 distribution. Every system struggles with this."
   - id: 3
@@ -55,6 +58,35 @@ openings:
     note: >
       Stronger range in 3rd seat. With a weak 12-14 hand we risk
       blocking ourselves from game when partner passed with 11.
+      With 12-14 balanced, open a suit and plan a 1NT rebid (see below).
+
+  - bid: 1NT
+    seat: "4th"
+    hcp: "15-17"
+    shape: ["4333", "4432", "5332"]
+    note: >
+      Same strong range as 3rd seat. With 12-14 balanced in 4th seat,
+      either pass (acceptable — everyone else passed) or open a suit
+      planning a 1NT rebid to show 12-14 balanced.
+
+  - bid: 1NT
+    section: upgrade_policy
+    name: "1NT Upgrade / Downgrade Policy"
+    note: >
+      Borderline hands may be upgraded or downgraded by 1 HCP for
+      1NT purposes. This applies in all seats but matters most in
+      3rd/4th seat where the gap between weak (12-14) and strong
+      (15-17) NT creates difficult hands at 14-15 HCP.
+    upgrade: >
+      Add 1 HCP when: all honours are concentrated (working together
+      in long suits or honour combinations like KQ10, QJ10, AJ10),
+      multiple good intermediates (10s, 9s), or a 5-card suit with
+      body. A strong 14 may be opened 1NT (15-17) in 3rd/4th seat.
+    downgrade: >
+      Subtract 1 HCP when: scattered quacks in short suits (Qx, Jx),
+      4333 shape, no intermediates, or honours in opponent's suit
+      (after an overcall). A flat 15 with quacks may be opened at
+      the 1-level instead of 1NT.
 
   - bid: 1NT
     section: responses
@@ -142,13 +174,20 @@ openings:
       - "A 2NT rebid confirms 4 cards (not 5) in the opening suit."
 
   - bid: "1!C / 1!D / 1!H / 1!S"
-    seat: "3rd"
+    seat: "3rd/4th"
     hcp: "8+"
     promise: "5+ cards (may be lighter than 1st/2nd seat)"
     note: >
       This is a passed-hand opening. Partner already passed, so
       there is no risk of missing game. The lighter range is tactical —
       competing for the partscore and directing the lead.
+    prepared_club_warning: >
+      IMPORTANT: In 3rd/4th seat, 1!C may be a PREPARED opening from
+      a 12-14 balanced hand that cannot open 1NT (which is 15-17 here).
+      Opener plans to rebid 1NT to show 12-14 balanced. Responder MUST
+      NOT jump-raise clubs without 5+ clubs — wait for opener's rebid.
+      After 1!C, a 1NT rebid = 12-14 balanced; 2!C rebid = real clubs.
+      This is the "prepared 1!C trap" — see H-9.
 
   - bid: "1!C / 1!D / 1!H / 1!S"
     section: continuations
