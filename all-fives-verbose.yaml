@@ -7,9 +7,14 @@ system:
   name: All Fives
   tagline: "A natural, disciplined bidding system built on common sense."
   central_idea: "Every 1-level suit opening promises 5+ cards."
-  exception: >
-    With extra strength (15-17 balanced), opener may hold only 4 cards
-    and escapes to NT on the next bid, or makes a reverse (16+ HCP).
+  exceptions:
+    - >
+      With extra strength (15-17 balanced), opener may hold only 4 cards
+      and escapes to NT on the next bid, or makes a reverse (16+ HCP).
+    - >
+      In 3rd/4th seat, 1!C promises only 2+ clubs. A 12-14 balanced hand
+      cannot open 1NT (15-17 in 3rd/4th seat), so it opens 1!C as a
+      prepared bid and rebids 1NT.
 
 philosophy:
   - "No crazy openings. Bids mean what they look like."
@@ -173,7 +178,7 @@ openings:
       - "With 15-17 balanced, open 4 cards and rebid NT."
       - "A 2NT rebid confirms 4 cards (not 5) in the opening suit."
 
-  - bid: "1!C / 1!D / 1!H / 1!S"
+  - bid: "1!D / 1!H / 1!S"
     seat: "3rd/4th"
     hcp: "8+"
     promise: "5+ cards (may be lighter than 1st/2nd seat)"
@@ -181,13 +186,22 @@ openings:
       This is a passed-hand opening. Partner already passed, so
       there is no risk of missing game. The lighter range is tactical —
       competing for the partscore and directing the lead.
-    prepared_club_warning: >
-      IMPORTANT: In 3rd/4th seat, 1!C may be a PREPARED opening from
-      a 12-14 balanced hand that cannot open 1NT (which is 15-17 here).
-      Opener plans to rebid 1NT to show 12-14 balanced. Responder MUST
-      NOT jump-raise clubs without 5+ clubs — wait for opener's rebid.
-      After 1!C, a 1NT rebid = 12-14 balanced; 2!C rebid = real clubs.
-      This is the "prepared 1!C trap" — see H-9.
+
+  - bid: "1!C"
+    seat: "3rd/4th"
+    hcp: "8+"
+    promise: "2+ clubs"
+    note: >
+      In 3rd/4th seat, 1!C promises only 2+ clubs (not 5+) because
+      12-14 balanced hands cannot open 1NT (which is 15-17 here).
+      A 4432 or 4333 hand with 12-14 HCP opens 1!C as a prepared bid,
+      planning to rebid 1NT to show 12-14 balanced.
+    responder_rules:
+      - "Do NOT jump-raise clubs without 5+ clubs."
+      - "Bid a new suit or 1NT — wait for opener's rebid."
+      - "After 1!C, a 1NT rebid = 12-14 balanced (prepared 1!C)."
+      - "After 1!C, a 2!C rebid = real clubs (5+)."
+    see_also: "H-9 (prepared 1!C trap)"
 
   - bid: "1!C / 1!D / 1!H / 1!S"
     section: continuations
