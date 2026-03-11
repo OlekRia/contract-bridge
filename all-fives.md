@@ -59,7 +59,7 @@ After 2♦ denial:
 | Seat | Requirements |
 |---|---|
 | 1st/2nd | 12+ HCP (~7 losers), 5+ cards (4+ with 15-17 bal, rebid NT) |
-| 3rd | 8+ HCP, 5+ cards (light, tactical) |
+| 3rd | 8+ HCP, 5+ cards (light, tactical). 1♣ see above. |
 
 - Two 4-card suits: open lower
 - 15-17 bal: open 4 cards, rebid NT

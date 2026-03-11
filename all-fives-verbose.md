@@ -110,9 +110,9 @@ After Pass — Pass — **XX** = SOS with non-touching pairs (♣+♥ or ♦+♠
 - With 15-17 balanced, open 4 cards and rebid NT.
 - A 2NT rebid confirms 4 cards (not 5) in the opening suit.
 
-**3rd seat:** 8+ HCP, 5+ cards (may be lighter than 1st/2nd seat). This is a passed-hand opening. Partner already passed, so there is no risk of missing game. The lighter range is tactical — competing for the partscore and directing the lead.
+**3rd seat:** 8+ HCP, 2+ clubs. In 3rd seat, 1♣ promises only 2+ clubs (not 5+) because 12-14 balanced hands cannot open 1NT (which is 15-17 here). A 4432 or 4333 hand with 12-14 HCP opens 1♣ as a prepared bid, planning to rebid 1NT to show 12-14 balanced.
 
-**3rd seat:** 8+ HCP, 2+ clubs. In 3rd/4th seat, 1♣ promises only 2+ clubs (not 5+) because 12-14 balanced hands cannot open 1NT (which is 15-17 here). A 4432 or 4333 hand with 12-14 HCP opens 1♣ as a prepared bid, planning to rebid 1NT to show 12-14 balanced.
+**3rd seat:** 8+ HCP, 5+ cards (may be lighter than 1st/2nd seat). This is a passed-hand opening. Partner already passed, so there is no risk of missing game. The lighter range is tactical — competing for the partscore and directing the lead.
 
 #### Continuations
 

@@ -12,8 +12,8 @@ system:
       With extra strength (15-17 balanced), opener may hold only 4 cards
       and escapes to NT on the next bid, or makes a reverse (16+ HCP).
     - >
-      In 3rd/4th seat, 1!C promises only 2+ clubs. A 12-14 balanced hand
-      cannot open 1NT (15-17 in 3rd/4th seat), so it opens 1!C as a
+      In 3rd seat, 1!C promises only 2+ clubs. A 12-14 balanced hand
+      cannot open 1NT (15-17 in 3rd seat), so it opens 1!C as a
       prepared bid and rebids 1NT.
 
 philosophy:
@@ -178,21 +178,12 @@ openings:
       - "With 15-17 balanced, open 4 cards and rebid NT."
       - "A 2NT rebid confirms 4 cards (not 5) in the opening suit."
 
-  - bid: "1!D / 1!H / 1!S"
-    seat: "3rd/4th"
-    hcp: "8+"
-    promise: "5+ cards (may be lighter than 1st/2nd seat)"
-    note: >
-      This is a passed-hand opening. Partner already passed, so
-      there is no risk of missing game. The lighter range is tactical —
-      competing for the partscore and directing the lead.
-
   - bid: "1!C"
-    seat: "3rd/4th"
+    seat: "3rd"
     hcp: "8+"
     promise: "2+ clubs"
     note: >
-      In 3rd/4th seat, 1!C promises only 2+ clubs (not 5+) because
+      In 3rd seat, 1!C promises only 2+ clubs (not 5+) because
       12-14 balanced hands cannot open 1NT (which is 15-17 here).
       A 4432 or 4333 hand with 12-14 HCP opens 1!C as a prepared bid,
       planning to rebid 1NT to show 12-14 balanced.
@@ -203,6 +194,15 @@ openings:
       - "After 1!C, a 2!C rebid = real clubs (5+)."
     see_also: "H-9 (prepared 1!C trap)"
 
+  - bid: "1!D / 1!H / 1!S"
+    seat: "3rd"
+    hcp: "8+"
+    promise: "5+ cards (may be lighter than 1st/2nd seat)"
+    note: >
+      This is a passed-hand opening. Partner already passed, so
+      there is no risk of missing game. The lighter range is tactical —
+      competing for the partscore and directing the lead.
+
   - bid: "1!C / 1!D / 1!H / 1!S"
     section: continuations
     minor_opening_warning: >
@@ -210,7 +210,7 @@ openings:
       opener has a balanced hand. Responder must keep this in mind:
       - 1st/2nd seat: 1!C or 1!D may be 4 cards with 15-17 balanced
         (opener plans to rebid NT). Majors always promise 5+.
-      - 3rd/4th seat: 1!C may be as short as 2 cards with 12-14 balanced
+      - 3rd seat: 1!C may be as short as 2 cards with 12-14 balanced
         (opener cannot open 1NT, which is 15-17 here — see H-9).
       In all cases, wait for opener's rebid before committing to a minor
       fit. A 1NT or 2NT rebid confirms the opening was prepared (short).
