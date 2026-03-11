@@ -205,6 +205,16 @@ openings:
 
   - bid: "1!C / 1!D / 1!H / 1!S"
     section: continuations
+    minor_opening_warning: >
+      1-minor openings may be shorter than the system's 5+ promise when
+      opener has a balanced hand. Responder must keep this in mind:
+      - 1st/2nd seat: 1!C or 1!D may be 4 cards with 15-17 balanced
+        (opener plans to rebid NT). Majors always promise 5+.
+      - 3rd/4th seat: 1!C may be as short as 2 cards with 12-14 balanced
+        (opener cannot open 1NT, which is 15-17 here — see H-9).
+      In all cases, wait for opener's rebid before committing to a minor
+      fit. A 1NT or 2NT rebid confirms the opening was prepared (short).
+      A 2!C or 2!D rebid confirms real length (5+).
     raises:
       - sequence: "1x - 2x (single raise)"
         meaning: "6-9 HCP, 3+ card support"
