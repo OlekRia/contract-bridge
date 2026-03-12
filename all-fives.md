@@ -65,8 +65,6 @@ After 2♦ denial:
 - 15-17 bal: open 4 cards, rebid NT
 - 2NT rebid confirms 4 cards in opened suit
 
-**1NT response:** 6-9, no fit, no 5M (non-forcing; see H-2)
-
 ---
 
 ### 2♣ — Benji

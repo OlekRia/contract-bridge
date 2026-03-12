@@ -198,11 +198,128 @@ When opponents intervene after our suit opening, both partners must re-evaluate 
 
 #### 1-Minor Opening, 1-Major Response
 
-> **Key rule:** After 1♣ or 1♦, a response of 1♥ or 1♠ promises **5 cards** if weak. With invitational+ strength, may show only 4 (with a plan to rebid NT or raise). Therefore, **opener may support with just 3 cards!**
+> **Key rule:** After 1♣ or 1♦, a response of 1♥ or 1♠ always promises 5+ cards regardless of strength. Invitational+ hands with only 4-card major route through forcing 1NT and show the major on the second round. Opener may raise with 3-card support, knowing it's a real fit.
 
-#### 1NT Response
+#### 1NT Response (Forcing)
 
 6-12 HCP, FORCING one round. Forcing 1NT acknowledges that after a 5+ card opening, 1NT almost never survives as a final contract. Opener was going to bid again with 95% of hands anyway. DD simulation proved +1.118 tricks/deal over non-forcing (F-SIM-001, DEC-6).
+
+**Conditions:**
+
+- No fit (at most 3 cards in opener's suit)
+- No new suit available at the 1-level
+- 1st/2nd seat openings only
+
+**Competition:** If opponents bid or double, 1NT is OFF (reverts to natural).
+
+#### Opener's Rebids After Forcing 1NT
+
+Opener MUST bid again. Describe your hand naturally: show a second suit, rebid a long suit, or show balanced strength with 2NT. With a dead minimum 5-3-3-2 and no 4-card side suit, rebid the 5-card suit (this is rare — 0.4% of deals are "awkward").
+
+##### After 1♥ - 1NT (forcing)
+
+| Rebid | Meaning |
+|---|---|
+| 2♣ | 4+ clubs, any strength |
+| 2♦ | 4+ diamonds, any strength |
+| 2♥ | 6+ hearts, minimum (12-14) |
+| 2♠ | Reverse — 16+ HCP, 4+ spades (forcing) |
+| 2NT | 15-17 balanced (confirms 4-card ♥ opening) |
+| 3♥ | 6+ hearts, invitational (15-17) |
+
+##### After 1♠ - 1NT (forcing)
+
+| Rebid | Meaning |
+|---|---|
+| 2♣ | 4+ clubs, any strength |
+| 2♦ | 4+ diamonds, any strength |
+| 2♥ | 4+ hearts, any strength (NOT a reverse — below 2♠) |
+| 2♠ | 6+ spades, minimum (12-14) |
+| 2NT | 15-17 balanced (confirms 4-card ♠ opening) |
+| 3♠ | 6+ spades, invitational (15-17) |
+
+##### After 1♦ - 1NT (forcing)
+
+| Rebid | Meaning |
+|---|---|
+| 2♣ | 4+ clubs, any strength |
+| 2♦ | 6+ diamonds, minimum (12-14) |
+| 2♥ | Reverse — 16+ HCP, 4+ hearts (forcing) |
+| 2♠ | Reverse — 16+ HCP, 4+ spades (forcing) |
+| 2NT | 15-17 balanced (confirms 4-card ♦ opening) |
+| 3♦ | 6+ diamonds, invitational (15-17) |
+
+##### After 1♣ - 1NT (forcing)
+
+| Rebid | Meaning |
+|---|---|
+| 2♣ | 6+ clubs, minimum (12-14) |
+| 2♦ | 4+ diamonds (may be convenient rebid with 5-3-3-2) |
+| 2♥ | Reverse — 16+ HCP, 4+ hearts (forcing) |
+| 2♠ | Reverse — 16+ HCP, 4+ spades (forcing) |
+| 2NT | 15-17 balanced (confirms 4-card ♣ opening) |
+| 3♣ | 6+ clubs, invitational (15-17) |
+
+#### Responder's Second Bid After Forcing 1NT
+
+After hearing opener's rebid, responder places the contract. With 6-9 HCP: pass. With 10-12 HCP: bid again (raise, preference, or 2NT). With a hidden 4-card major (after 1m): show it now.
+
+**Weak (6-9):** Pass opener's rebid — You've done your job — partner described their hand, you stop.
+
+**Invitational (10-12):**
+
+- Raise opener's second suit with 4+ support
+- Give preference back to opener's first suit
+- Bid 2NT with scattered values
+- Raise to 3 of opener's rebid suit (invitational)
+
+**Hidden 4-card major:** After 1m - 1NT(f) - rebid, responder has 4-card major with inv+ values → Show the major at the second turn
+
+#### Responder's Decision Tree After Partner Opens 1-Suit
+
+This is the practical guide: partner opens a suit, what do you bid? Work through the tree top to bottom. First match wins.
+
+**Step 1:** Do you have a fit (3+ cards in partner's suit)?
+
+- **Yes:** Raise directly. 2x = 6-9 HCP, 3x = 10-12 (limit raise), 4M = distributional game raise. Forcing 1NT does NOT apply.
+- **No:** Continue to next question.
+
+**Step 2:** Do you have a new suit to show at the 1-level?
+
+- **Yes:** Bid it. 1♥ or 1♠ over 1♣/1♦. Must be 5+ cards (always, regardless of strength — DEC-6). Over 1♥, bid 1♠ with 5+.
+- **No:** Continue to next question.
+
+**Step 3:** Do you have 6-12 HCP?
+
+- **Yes:** Bid 1NT (forcing). Partner will describe their hand. With 6-9: pass whatever partner rebids. With 10-12: bid again.
+- **No (too weak):** Pass (0-5 HCP).
+- **No (too strong):** Bid 2/1 game force (13+ HCP).
+
+##### Partner opens 1♥
+
+| Hand | HCP | Bid |
+|---|---|---|
+| ♠:Q43 ♥:K76 ♦:J432 ♣:932 | 7 | 2♥ — fit (3 hearts), weak (6-9). Raise directly. |
+| ♠:Q43 ♥:K76 ♦:J432 ♣:A32 | 10 | 2♥ — fit (3 hearts), invitational. Still a single raise (not enough for limit raise without 4-card support). |
+| ♠:QJ432 ♥:K7 ♦:J43 ♣:932 | 7 | 1♠ — 5+ spades, show at 1-level. |
+| ♠:Q43 ♥:K7 ♦:J432 ♣:Q932 | 8 | 1NT (forcing) — no fit, no 5-card spade suit. Pass partner's rebid. |
+| ♠:QJ43 ♥:K7 ♦:A432 ♣:932 | 10 | 1NT (forcing) — 4 spades but not 5, can't bid 1♠. After partner's rebid, bid again to show invitational values. |
+
+##### Partner opens 1♣
+
+| Hand | HCP | Bid |
+|---|---|---|
+| ♠:QJ43 ♥:K76 ♦:A432 ♣:93 | 10 | 1NT (forcing) — 4♠ but not 5, can't bid 1♠ (promises 5+). After partner rebids, show spades at the second turn (inv+). |
+| ♠:QJ432 ♥:K76 ♦:A43 ♣:93 | 10 | 1♠ — 5+ spades, bid at 1-level. This always promises 5+. |
+| ♠:K43 ♥:QJ43 ♦:J432 ♣:93 | 7 | 1NT (forcing) — 4♥ but not 5, no fit for clubs. Pass partner's rebid. |
+| ♠:K43 ♥:Q7 ♦:J432 ♣:9432 | 6 | 1NT (forcing) — no fit (only 4♣ is a fit, but that's marginal and we have no new suit at the 1-level). Pass rebid. |
+
+##### Partner opens 1♠
+
+| Hand | HCP | Bid |
+|---|---|---|
+| ♠:K7 ♥:QJ432 ♦:J43 ♣:932 | 7 | 1NT (forcing) — 5♥ but can't bid at 1-level over 1♠. This is exactly why forcing 1NT helps over majors. Pass rebid. |
+| ♠:K7 ♥:QJ43 ♦:A432 ♣:932 | 10 | 1NT (forcing) — can't show hearts at 1-level. After partner's rebid, show hearts or bid 2NT (invitational). |
 
 #### Opener's rebids after 1♣ - 1♥
 

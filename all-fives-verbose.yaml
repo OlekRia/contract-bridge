@@ -414,6 +414,82 @@ openings:
           This is the structural insight: 1m-1M always promises 5+,
           so 4-card major inv+ hands route through here. See F-SIM-003.
 
+    forcing_1nt_decision_tree:
+      title: "Responder's Decision Tree After Partner Opens 1-Suit"
+      note: >
+        This is the practical guide: partner opens a suit, what do you bid?
+        Work through the tree top to bottom. First match wins.
+      steps:
+        - question: "Do you have a fit (3+ cards in partner's suit)?"
+          yes: >
+            Raise directly. 2x = 6-9 HCP, 3x = 10-12 (limit raise),
+            4M = distributional game raise. Forcing 1NT does NOT apply.
+          no: "Continue to next question."
+
+        - question: "Do you have a new suit to show at the 1-level?"
+          yes: >
+            Bid it. 1!H or 1!S over 1!C/1!D. Must be 5+ cards (always,
+            regardless of strength — DEC-6). Over 1!H, bid 1!S with 5+.
+          no: "Continue to next question."
+
+        - question: "Do you have 6-12 HCP?"
+          yes: >
+            Bid 1NT (forcing). Partner will describe their hand.
+            With 6-9: pass whatever partner rebids. With 10-12: bid again.
+          no_low: "Pass (0-5 HCP)."
+          no_high: "Bid 2/1 game force (13+ HCP)."
+
+      examples:
+        - title: "Partner opens 1!H"
+          hands:
+            - hand: "!S:Q43 !H:K76 !D:J432 !C:932"
+              hcp: 7
+              bid: "2!H — fit (3 hearts), weak (6-9). Raise directly."
+            - hand: "!S:Q43 !H:K76 !D:J432 !C:A32"
+              hcp: 10
+              bid: "2!H — fit (3 hearts), invitational. Still a single raise
+                (not enough for limit raise without 4-card support)."
+            - hand: "!S:QJ432 !H:K7 !D:J43 !C:932"
+              hcp: 7
+              bid: "1!S — 5+ spades, show at 1-level."
+            - hand: "!S:Q43 !H:K7 !D:J432 !C:Q932"
+              hcp: 8
+              bid: "1NT (forcing) — no fit, no 5-card spade suit. Pass
+                partner's rebid."
+            - hand: "!S:QJ43 !H:K7 !D:A432 !C:932"
+              hcp: 10
+              bid: "1NT (forcing) — 4 spades but not 5, can't bid 1!S.
+                After partner's rebid, bid again to show invitational values."
+
+        - title: "Partner opens 1!C"
+          hands:
+            - hand: "!S:QJ43 !H:K76 !D:A432 !C:93"
+              hcp: 10
+              bid: "1NT (forcing) — 4!S but not 5, can't bid 1!S (promises 5+).
+                After partner rebids, show spades at the second turn (inv+)."
+            - hand: "!S:QJ432 !H:K76 !D:A43 !C:93"
+              hcp: 10
+              bid: "1!S — 5+ spades, bid at 1-level. This always promises 5+."
+            - hand: "!S:K43 !H:QJ43 !D:J432 !C:93"
+              hcp: 7
+              bid: "1NT (forcing) — 4!H but not 5, no fit for clubs. Pass
+                partner's rebid."
+            - hand: "!S:K43 !H:Q7 !D:J432 !C:9432"
+              hcp: 6
+              bid: "1NT (forcing) — no fit (only 4!C is a fit, but that's
+                marginal and we have no new suit at the 1-level). Pass rebid."
+
+        - title: "Partner opens 1!S"
+          hands:
+            - hand: "!S:K7 !H:QJ432 !D:J43 !C:932"
+              hcp: 7
+              bid: "1NT (forcing) — 5!H but can't bid at 1-level over 1!S.
+                This is exactly why forcing 1NT helps over majors. Pass rebid."
+            - hand: "!S:K7 !H:QJ43 !D:A432 !C:932"
+              hcp: 10
+              bid: "1NT (forcing) — can't show hearts at 1-level. After
+                partner's rebid, show hearts or bid 2NT (invitational)."
+
     example_rebids:
       title: "Opener's rebids after 1!C - 1!H"
       bids:
