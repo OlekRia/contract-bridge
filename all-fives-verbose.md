@@ -112,6 +112,63 @@ After Pass — Pass — **XX** = SOS with non-touching pairs (♣+♥ or ♦+♠
 
 **3rd seat:** 8+ HCP, 2+ clubs. In 3rd seat, 1♣ promises only 2+ clubs (not 5+) because 12-14 balanced hands cannot open 1NT (which is 15-17 here). A 4432 or 4333 hand with 12-14 HCP opens 1♣ as a prepared bid, planning to rebid 1NT to show 12-14 balanced.
 
+**Responder rules:**
+
+- Do NOT jump-raise clubs without 5+ clubs.
+- Bid a new suit or 1NT — wait for opener's rebid.
+- After 1♣, a 1NT rebid = 12-14 balanced (prepared 1♣).
+- After 1♣, a 2♣ rebid = real clubs (5+).
+
+#### Continuations after 3rd seat 1♣ (prepared)
+
+> Responder is a passed hand (max ~11 HCP). Opener shows 12-14 balanced with a 1NT rebid, or real clubs with a 2♣ rebid. Combined maximum is ~25 HCP — game is marginal at best. Play natural; no checkback convention needed.
+
+##### After 1♣ - 1♥/♠ - 1NT (12-14 balanced)
+
+> Opener's 1NT rebid confirms the prepared 1♣ — a 12-14 balanced hand that could not open 1NT (15-17 in 3rd seat). Responder's major promised 5+ if weak, 4+ if invitational.
+
+| Action | Meaning |
+|---|---|
+| Pass | Weak (6-8 HCP), satisfied with 1NT |
+| 2♥ / 2♠ (own major) | 5+ card suit, weak or invitational — to play or correction. Opener passes with 2-card support, raises with 3+ and a maximum. |
+| 2NT | 10-11 HCP, 4-card major, invitational. Natural invite. Opener passes with minimum, bids 3NT with maximum. |
+| 2♣ / 2♦ | Long minor, weak — signoff |
+| 3NT | 11 HCP with a good source of tricks — to play |
+
+##### After 1♣ - 1♥/♠ - 2♣ (real clubs, 5+)
+
+> Opener has a real club suit (5+). May be minimum (8-11) or sound (12+).
+
+| Action | Meaning |
+|---|---|
+| Pass | No fit for clubs, nothing more to say |
+| 2♥ / 2♠ (own major) | 5+ card suit, preference — to play |
+| 2NT | 10-11 HCP, invitational with club tolerance |
+
+##### After 1♣ - 1♦ - 1NT (12-14 balanced)
+
+> Same principle as after 1M. Responder's 1♦ showed 4+ diamonds.
+
+| Action | Meaning |
+|---|---|
+| Pass | Weak, satisfied with 1NT |
+| 2♦ | 5+ diamonds, weak — to play |
+| 2NT | 10-11 HCP, invitational |
+
+##### Opener's rebids after 3rd seat 1♣ - 1♥
+
+> Compare with 1st/2nd seat rebids below — the key difference is 1NT = 12-14.
+
+| Rebid | Meaning |
+|---|---|
+| 1♠ | 4+ spades, any strength (not a reverse — still at 1-level) |
+| 1NT | 12-14 HCP, balanced (prepared 1♣ confirmed) |
+| 2♣ | 5+ real clubs |
+| 2♦ | Reverse — 16+ HCP, 4+ ♦ (forcing) |
+| 2♥ | Simple raise — 3+ ♥ support |
+| 2NT | 18-19 HCP, balanced |
+| 3♣ | 6+ clubs, invitational |
+
 **3rd seat:** 8+ HCP, 5+ cards (may be lighter than 1st/2nd seat). This is a passed-hand opening. Partner already passed, so there is no risk of missing game. The lighter range is tactical — competing for the partscore and directing the lead.
 
 #### Continuations
@@ -145,7 +202,7 @@ When opponents intervene after our suit opening, both partners must re-evaluate 
 
 #### 1NT Response
 
-6-9 HCP, no fit (at most 3 cards), no 5-card major, no game ambitions. We may miss a 4-4 fit, but if we are weak the opponents will bid. If not, everyone has misfit or balanced — NT is the right spot. See hypothesis H-2 for forcing 1NT as a future improvement.
+6-12 HCP, FORCING one round. Forcing 1NT acknowledges that after a 5+ card opening, 1NT almost never survives as a final contract. Opener was going to bid again with 95% of hands anyway. DD simulation proved +1.118 tricks/deal over non-forcing (F-SIM-001, DEC-6).
 
 #### Opener's rebids after 1♣ - 1♥
 
