@@ -40,6 +40,10 @@ openings:
     hcp: "8+"
     promise: "2+ clubs (prepared: 12-14 bal opens 1♣, rebids 1NT)"
     responder: "Do NOT raise clubs without 5+. Wait for rebid."
+    continuations:
+      after_1C_1M_1NT: "Natural (no checkback). Pass=weak, 2M=5+ to play, 2NT=inv 10-11"
+      after_1C_1M_2C: "Real clubs (5+). Pass/2M preference/2NT inv"
+      opener_rebids: "1NT=12-14 bal, 2♣=real clubs, 1♠=4+ nat, 2♦=reverse 16+"
 
   1_suit:
     1st_2nd: 12+ HCP (~7 losers), 5+ cards (4+ with 15-17 bal, rebid NT)
@@ -48,7 +52,27 @@ openings:
       - "Two 4-card suits: open lower"
       - "15-17 bal: open 4 cards, rebid NT"
       - "2NT rebid confirms 4 cards in opened suit"
-    1NT_response: "6-9, no fit, no 5M (non-forcing; see H-2)"
+    1NT_response:
+      meaning: "6-12 HCP, FORCING one round (DEC-6)"
+      conditions: "No fit (≤3 cards), no new suit at 1-level. OFF in competition."
+      opener_rebids:
+        after_1M:
+          2_new_suit: "4+ cards, any strength"
+          2M: "6+ in opened major, minimum"
+          2NT: "15-17 balanced (4-card opening)"
+          3M: "6+ in opened major, invitational"
+          note: "After 1!S: 2!H is NOT a reverse (below 2!S)"
+        after_1m:
+          2_new_suit: "4+ cards (may be convenient rebid)"
+          2m: "6+ in opened minor, minimum"
+          2H_2S: "Reverse — 16+ HCP, 4+ (forcing)"
+          2NT: "15-17 balanced (4-card opening)"
+          3m: "6+ in opened minor, invitational"
+      responder_second_bid:
+        weak_6_9: "Pass"
+        inv_10_12: "Bid again: raise, preference, or 2NT"
+        hidden_4M: "After 1m: show 4-card major now (inv+ values)"
+      1m_1M_clarification: "1m - 1M always promises 5+ (4M inv+ routes through 1NT)"
     raises:
       single: "6-9 HCP, 3+ support, 9-10 losers"
       limit: "10-12 HCP, 4+ support, 7-8 losers"

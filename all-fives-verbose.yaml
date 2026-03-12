@@ -193,6 +193,70 @@ openings:
       - "After 1!C, a 1NT rebid = 12-14 balanced (prepared 1!C)."
       - "After 1!C, a 2!C rebid = real clubs (5+)."
     see_also: "H-9 (prepared 1!C trap)"
+    continuations:
+      title: "Continuations after 3rd seat 1!C (prepared)"
+      context: >
+        Responder is a passed hand (max ~11 HCP). Opener shows 12-14
+        balanced with a 1NT rebid, or real clubs with a 2!C rebid.
+        Combined maximum is ~25 HCP — game is marginal at best.
+        Play natural; no checkback convention needed.
+      after_1C_1M_1NT:
+        title: "After 1!C - 1!H/!S - 1NT (12-14 balanced)"
+        note: >
+          Opener's 1NT rebid confirms the prepared 1!C — a 12-14
+          balanced hand that could not open 1NT (15-17 in 3rd seat).
+          Responder's major promised 5+ if weak, 4+ if invitational.
+        responses:
+          - action: "Pass"
+            meaning: "Weak (6-8 HCP), satisfied with 1NT"
+          - action: "2!H / 2!S (own major)"
+            meaning: "5+ card suit, weak or invitational — to play or correction"
+            note: "Opener passes with 2-card support, raises with 3+ and a maximum."
+          - action: "2NT"
+            meaning: "10-11 HCP, 4-card major, invitational"
+            note: "Natural invite. Opener passes with minimum, bids 3NT with maximum."
+          - action: "2!C / 2!D"
+            meaning: "Long minor, weak — signoff"
+          - action: "3NT"
+            meaning: "11 HCP with a good source of tricks — to play"
+      after_1C_1M_2C:
+        title: "After 1!C - 1!H/!S - 2!C (real clubs, 5+)"
+        note: "Opener has a real club suit (5+). May be minimum (8-11) or sound (12+)."
+        responses:
+          - action: "Pass"
+            meaning: "No fit for clubs, nothing more to say"
+          - action: "2!H / 2!S (own major)"
+            meaning: "5+ card suit, preference — to play"
+          - action: "2NT"
+            meaning: "10-11 HCP, invitational with club tolerance"
+      after_1C_1D_1NT:
+        title: "After 1!C - 1!D - 1NT (12-14 balanced)"
+        note: "Same principle as after 1M. Responder's 1!D showed 4+ diamonds."
+        responses:
+          - action: "Pass"
+            meaning: "Weak, satisfied with 1NT"
+          - action: "2!D"
+            meaning: "5+ diamonds, weak — to play"
+          - action: "2NT"
+            meaning: "10-11 HCP, invitational"
+      opener_rebids:
+        title: "Opener's rebids after 3rd seat 1!C - 1!H"
+        note: "Compare with 1st/2nd seat rebids below — the key difference is 1NT = 12-14."
+        bids:
+          - rebid: "1!S"
+            meaning: "4+ spades, any strength (not a reverse — still at 1-level)"
+          - rebid: "1NT"
+            meaning: "12-14 HCP, balanced (prepared 1!C confirmed)"
+          - rebid: "2!C"
+            meaning: "5+ real clubs"
+          - rebid: "2!D"
+            meaning: "Reverse — 16+ HCP, 4+ !D (forcing)"
+          - rebid: "2!H"
+            meaning: "Simple raise — 3+ !H support"
+          - rebid: "2NT"
+            meaning: "18-19 HCP, balanced"
+          - rebid: "3!C"
+            meaning: "6+ clubs, invitational"
 
   - bid: "1!D / 1!H / 1!S"
     seat: "3rd"
@@ -236,18 +300,119 @@ openings:
 
     after_1minor_1major:
       rule: >
-        After 1!C or 1!D, a response of 1!H or 1!S promises 5 cards
-        if weak. With invitational+ strength, may show only 4 (with a
-        plan to rebid NT or raise). Therefore, opener may support with
-        just 3 cards.
+        After 1!C or 1!D, a response of 1!H or 1!S always promises 5+ cards
+        regardless of strength. Invitational+ hands with only 4-card major
+        route through forcing 1NT and show the major on the second round.
+        Opener may raise with 3-card support, knowing it's a real fit.
+      note: >
+        This is a direct benefit of DEC-6 (forcing 1NT). The old ambiguity
+        (5 if weak, 4 if strong) is eliminated. See F-SIM-003.
 
     response_1nt:
-      meaning: "6-9 HCP, no fit (at most 3 cards), no 5-card major, no game ambitions"
-      ltc: "10+ losers (no fit found — LTC less relevant here)"
+      meaning: "6-12 HCP, FORCING one round"
+      conditions:
+        - "No fit (at most 3 cards in opener's suit)"
+        - "No new suit available at the 1-level"
+        - "1st/2nd seat openings only"
+      off_in_competition: >
+        If opponents bid or double, 1NT is OFF (reverts to natural).
+      ltc: "10+ losers typically (no fit found)"
       note: >
-        We may miss a 4-4 fit, but if we are weak the opponents will bid.
-        If not, everyone has misfit or balanced — NT is the right spot.
-        See hypothesis H-2 for forcing 1NT as a future improvement.
+        Forcing 1NT acknowledges that after a 5+ card opening, 1NT
+        almost never survives as a final contract. Opener was going to
+        bid again with 95% of hands anyway. DD simulation proved +1.118
+        tricks/deal over non-forcing (F-SIM-001, DEC-6).
+
+    forcing_1nt_opener_rebids:
+      title: "Opener's Rebids After Forcing 1NT"
+      principle: >
+        Opener MUST bid again. Describe your hand naturally: show a second
+        suit, rebid a long suit, or show balanced strength with 2NT.
+        With a dead minimum 5-3-3-2 and no 4-card side suit, rebid the
+        5-card suit (this is rare — 0.4% of deals are "awkward").
+      after_1H_1NT:
+        title: "After 1!H - 1NT (forcing)"
+        bids:
+          - rebid: "2!C"
+            meaning: "4+ clubs, any strength"
+          - rebid: "2!D"
+            meaning: "4+ diamonds, any strength"
+          - rebid: "2!H"
+            meaning: "6+ hearts, minimum (12-14)"
+          - rebid: "2!S"
+            meaning: "Reverse — 16+ HCP, 4+ spades (forcing)"
+          - rebid: "2NT"
+            meaning: "15-17 balanced (confirms 4-card !H opening)"
+          - rebid: "3!H"
+            meaning: "6+ hearts, invitational (15-17)"
+      after_1S_1NT:
+        title: "After 1!S - 1NT (forcing)"
+        bids:
+          - rebid: "2!C"
+            meaning: "4+ clubs, any strength"
+          - rebid: "2!D"
+            meaning: "4+ diamonds, any strength"
+          - rebid: "2!H"
+            meaning: "4+ hearts, any strength (NOT a reverse — below 2!S)"
+          - rebid: "2!S"
+            meaning: "6+ spades, minimum (12-14)"
+          - rebid: "2NT"
+            meaning: "15-17 balanced (confirms 4-card !S opening)"
+          - rebid: "3!S"
+            meaning: "6+ spades, invitational (15-17)"
+      after_1D_1NT:
+        title: "After 1!D - 1NT (forcing)"
+        bids:
+          - rebid: "2!C"
+            meaning: "4+ clubs, any strength"
+          - rebid: "2!D"
+            meaning: "6+ diamonds, minimum (12-14)"
+          - rebid: "2!H"
+            meaning: "Reverse — 16+ HCP, 4+ hearts (forcing)"
+          - rebid: "2!S"
+            meaning: "Reverse — 16+ HCP, 4+ spades (forcing)"
+          - rebid: "2NT"
+            meaning: "15-17 balanced (confirms 4-card !D opening)"
+          - rebid: "3!D"
+            meaning: "6+ diamonds, invitational (15-17)"
+      after_1C_1NT:
+        title: "After 1!C - 1NT (forcing)"
+        bids:
+          - rebid: "2!C"
+            meaning: "6+ clubs, minimum (12-14)"
+          - rebid: "2!D"
+            meaning: "4+ diamonds (may be convenient rebid with 5-3-3-2)"
+          - rebid: "2!H"
+            meaning: "Reverse — 16+ HCP, 4+ hearts (forcing)"
+          - rebid: "2!S"
+            meaning: "Reverse — 16+ HCP, 4+ spades (forcing)"
+          - rebid: "2NT"
+            meaning: "15-17 balanced (confirms 4-card !C opening)"
+          - rebid: "3!C"
+            meaning: "6+ clubs, invitational (15-17)"
+
+    forcing_1nt_responder_continuations:
+      title: "Responder's Second Bid After Forcing 1NT"
+      principle: >
+        After hearing opener's rebid, responder places the contract.
+        With 6-9 HCP: pass. With 10-12 HCP: bid again (raise, preference,
+        or 2NT). With a hidden 4-card major (after 1m): show it now.
+      weak_6_9:
+        action: "Pass opener's rebid"
+        note: "You've done your job — partner described their hand, you stop."
+      invitational_10_12:
+        actions:
+          - "Raise opener's second suit with 4+ support"
+          - "Give preference back to opener's first suit"
+          - "Bid 2NT with scattered values"
+          - "Raise to 3 of opener's rebid suit (invitational)"
+        note: "Opener knows you have 10-12 (you bid again after forcing 1NT)."
+      hidden_4_card_major:
+        trigger: "After 1m - 1NT(f) - rebid, responder has 4-card major with inv+ values"
+        action: "Show the major at the second turn"
+        note: >
+          This is the structural insight: 1m-1M always promises 5+,
+          so 4-card major inv+ hands route through here. See F-SIM-003.
 
     example_rebids:
       title: "Opener's rebids after 1!C - 1!H"
