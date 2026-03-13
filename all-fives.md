@@ -61,6 +61,13 @@ After 2♦ denial:
 | 1st/2nd | 12+ HCP (~7 losers) |
 | 3rd | 8+ HCP (light, tactical). 1♣ see above. |
 
+| Suit | Promise |
+|---|---|
+| 1C | 5+ clubs (always — 12-14 bal opens 1NT) |
+| 1D | 4+ diamonds (may be 4 with 15+ bal, no 5-card suit) |
+| 1H | 5+ hearts (may be 4 with 4333, 15+ bal, no 4+ minor) |
+| 1S | 5+ spades (may be 4: 4-3-3-3 or 4-4 majors, 15+ bal, no 4+ minor — 1st/2nd only) |
+
 - 4-4 majors with 4+ minor: open the minor, show majors naturally
 - 4-4 majors, no 4+ minor (1st/2nd, 15): open 1♠, bid 2♥ next
 - 4-4 majors, no 4+ minor (1st/2nd, 16-17): open 1♠, rebid 2NT

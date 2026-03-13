@@ -102,31 +102,63 @@ After Pass — Pass — **XX** = SOS with non-touching pairs (♣+♥ or ♦+♠
 
 ---
 
-### 1♣ / 1♦ / 1♥ / 1♠
+### 1♣
 
-**1st/2nd seat:** 12+ HCP, See individual suit promises below. LTC: 7 losers typical (range 5-8).
+**1st/2nd seat:** 12+ HCP, 5+ clubs (always — 12-14 balanced opens 1NT). LTC: 7 losers typical (range 5-8).
 
-| Suit | Promise | Note |
-|---|---|---|
-| 1♣ | 5+ clubs | 12-14 balanced opens 1NT, so 1♣ is always a real suit. |
-| 1♦ | 4+ diamonds | Usually 5+, but 4 with 15+ balanced and no 5-card suit. Example: ♠:AQ43 ♥:KJ7 ♦:AQ32 ♣:43 (16 HCP, 4-3-4-2) — open 1♦, rebid 2NT to show 15-17 balanced. |
-| 1♥ | 5+ hearts (usually). 4 hearts only with 4333 and 15+ HCP | With 4-3-3-3 and 4 hearts, no minor has 4+ cards, so 1♥ is the only opening available. Rebid 2NT (15-17). Example: ♠:Q32 ♥:AKJ3 ♦:A32 ♣:432 (15 HCP, 3-4-3-3) — open 1♥, rebid 2NT. |
-| 1♠ | 5+ spades (usually). 4 spades only with 4-3-3-3 shape and 15+ HCP, or 4-4 majors with no 4+ minor | Two cases for 1♠ with 4 cards (1st/2nd seat only): (A) 4-3-3-3 with 4 spades — no other suit to open. Rebid 2NT. (B) 4-4 majors, no 4+ minor — open 1♠ to find hearts cheaply. After 1♠-1NT(f), opener rebids by strength: With 15 HCP: bid 2♥ (4 hearts, not a reverse — below 2♠). Partner with 4 hearts raises. Partscore-range hand. With 16-17 HCP: bid 2NT (15-17 balanced). Partner with 4 hearts and inv+ values bids 3♥. At 16+8=24+ you're in game territory, so the 3-level exploration is fine. In 3rd/4th seat this doesn't apply — 12-14 opens prepared 1♣, 15-17 opens 1NT. |
+In 1st/2nd seat, a balanced 12-14 hand opens 1NT. So every 1♣ opening is a real club suit with 5+ cards. No exceptions.
 
-**1♠ examples:**
+### 1♦
 
-- ♠:AQ43 ♥:KJ43 ♦:Q32 ♣:43 (15 HCP): Open 1♠. After 1♠-1NT(f), bid 2♥ (15 HCP, show hearts cheaply).
-- ♠:AQ43 ♥:KJ43 ♦:AQ2 ♣:43 (17 HCP): Open 1♠. After 1♠-1NT(f), bid 2NT (16-17, game zone).
-- ♠:AKJ4 ♥:Q32 ♦:A32 ♣:432 (15 HCP): Open 1♠ (4-3-3-3, only 4-card suit). Rebid 2NT.
+**1st/2nd seat:** 12+ HCP, 4+ diamonds. LTC: 7 losers typical (range 5-8).
+
+Usually 5+, but may be 4 with 15+ balanced and no 5-card suit. This is the catch-all for strong balanced hands with 4+ diamonds and no 5-card major or club suit. Opener rebids 2NT (15-17).
+
+> **Example:** ♠:AQ43 ♥:KJ7 ♦:AQ32 ♣:43 (16 HCP) — Open 1♦ (4-3-4-2, 16 HCP). Rebid 2NT after any response.
+
+### 1♥
+
+**1st/2nd seat:** 12+ HCP, 5+ hearts (usually). 4 with 4333 shape and 15+ HCP. LTC: 7 losers typical (range 5-8).
+
+Usually 5+. The only exception: 3-4-3-3 with 15+ HCP. No minor has 4+ cards, so 1♥ is the only available opening. Rebid 2NT.
+
+> **Example:** ♠:Q32 ♥:AKJ3 ♦:A32 ♣:432 (15 HCP) — Open 1♥ (3-4-3-3, 15 HCP). Rebid 2NT — 15-17 balanced.
+
+### 1♠
+
+**1st/2nd seat:** 12+ HCP, 5+ spades (usually). 4 with 4333 or 4-4 majors, 15+ HCP. LTC: 7 losers typical (range 5-8).
+
+Usually 5+. Two exceptions (1st/2nd seat only, 15+ HCP): (A) 4-3-3-3 with 4 spades — no other suit to open. Rebid 2NT. (B) 4-4 majors, no 4+ minor — open 1♠ to find hearts cheaply.
+
+#### 4-4 Majors — the 1♠ Solution (1st/2nd seat, 15+ HCP)
+
+With 4♠-4♥ and no 4+ minor, open 1♠ because after 1♠-1NT(f), bidding 2♥ is NOT a reverse (below 2♠). Opening 1♥ instead would require 3♠ to show spades — too high, forces game.
+
+**15 HCP** → rebid **2♥**: Show 4 hearts cheaply. Not a reverse. Partner with 4 hearts raises. Partscore-range hand (15+6=21, 15+9=24).
+
+> ♠:AQ43 ♥:KJ43 ♦:Q32 ♣:43 (15 HCP): Open 1♠. After 1♠-1NT(f), bid 2♥.
+
+**16-17 HCP** → rebid **2NT**: Show 15-17 balanced. Partner with 4 hearts and inv+ (10+) bids 3♥ — at 16+10=26, game is on. The 3-level is fine because you have the values.
+
+> ♠:AQ43 ♥:KJ43 ♦:AQ2 ♣:43 (17 HCP): Open 1♠. After 1♠-1NT(f), bid 2NT (game zone).
+
+> This exception does NOT apply in 3rd/4th seat: 12-14 balanced opens prepared 1♣, 15-17 opens 1NT. No need for the 1♠ trick.
+
+#### Opening Rules
 
 - With two 5-card suits, open the higher one.
 - With 5-4, open the 5-card suit.
 - With 4-4 majors and a 4+ minor: open the minor, show majors naturally.
-- With 4-4 majors, no 4+ minor (1st/2nd, 15+): open 1♠. Rebid 2♥ (15) or 2NT (16-17).
+- With 4-4 majors, no 4+ minor (1st/2nd, 15): open 1♠, rebid 2♥.
+- With 4-4 majors, no 4+ minor (1st/2nd, 16-17): open 1♠, rebid 2NT.
 - With 4333 and 15+ balanced: open the 4-card suit, rebid 2NT.
-- A 2NT rebid after any opening confirms balanced (the opening suit may be only 4).
+- A 2NT rebid after any opening confirms balanced (opening suit may be only 4).
 
-**3rd seat:** 8+ HCP, 2+ clubs. In 3rd seat, 1♣ promises only 2+ clubs (not 5+) because 12-14 balanced hands cannot open 1NT (which is 15-17 here). A 4432 or 4333 hand with 12-14 HCP opens 1♣ as a prepared bid, planning to rebid 1NT to show 12-14 balanced.
+**3rd seat:** 8+ HCP, 2+ clubs (prepared). 12-14 balanced hands cannot open 1NT (15-17 in 3rd/4th seat). They open 1♣ as a prepared bid (may be as short as 2 clubs) and plan to rebid 1NT to show 12-14 balanced.
+
+> **Forcing 1NT:** Forcing 1NT is OFF after prepared 1♣. Why? Opener with 4432 (doubleton clubs) has no good rebid after 1♣-1NT(f): can't rebid 2♣ (only 2), can't bid 2NT (that's 15-17), can't bid 1NT (responder took it). So 1NT = NATURAL, NON-FORCING (6-10).
+
+> **Major responses:** Because forcing 1NT is off: 1♥/1♠ = 5+ if weak (6-9), 4+ if invitational+ (10+). This is the ONLY exception to DEC-6 "always 5+".
 
 **Responder rules:**
 
@@ -141,7 +173,7 @@ After Pass — Pass — **XX** = SOS with non-touching pairs (♣+♥ or ♦+♠
 
 ##### After 1♣ - 1♥/♠ - 1NT (12-14 balanced)
 
-> Opener's 1NT rebid confirms the prepared 1♣ — a 12-14 balanced hand that could not open 1NT (15-17 in 3rd seat). Responder's major promised 5+ if weak, 4+ if invitational (DEC-6 "always 5+" does NOT apply after prepared 1♣ — forcing 1NT is off here, so 4-card inv+ hands bid the major directly).
+> Opener's 1NT rebid confirms the prepared 1♣ — a 12-14 balanced hand that could not open 1NT (15-17 in 3rd seat).
 
 | Action | Meaning |
 |---|---|
@@ -185,13 +217,9 @@ After Pass — Pass — **XX** = SOS with non-touching pairs (♣+♥ or ♦+♠
 | 2NT | 18-19 HCP, balanced |
 | 3♣ | 6+ clubs, invitational |
 
-**3rd seat:** 8+ HCP, 5+ cards (may be lighter than 1st/2nd seat). This is a passed-hand opening. Partner already passed, so there is no risk of missing game. The lighter range is tactical — competing for the partscore and directing the lead.
+**3rd seat:** 8+ HCP, 5+ cards (same as 1st/2nd seat — real suit, not prepared). Forcing 1NT is ON after 3rd/4th seat 1♦/1♥/1♠. These openings promise 5+ cards, DEC-6 "always 5+" applies, all rebids work as in 1st/2nd seat. May be lighter HCP (passed-hand opening — tactical, competing for partscore and directing the lead).
 
 #### Continuations
-
-> **Not every suit opening promises 5+ cards. Responder must keep this in mind: - 1♣ in 1st/2nd seat: always 5+. No exception. - 1♣ in 3rd/4th seat: may be 2+ (prepared, 12-14 balanced — see H-9). - 1♦ in any seat: may be 4 (15+ balanced with no 5-card suit). - 1♥/1♠: usually 5+, but may be 4 with 15+ balanced and no 4+ minor
-  (4333 or 4-4 majors with short minors). 1st/2nd seat only.
-In all cases, wait for opener's rebid before assuming suit length. A 2NT rebid = balanced (opening suit may be only 4). A rebid of the same suit = real length (5+, usually 6+).**
 
 | Raise | Meaning | LTC |
 |---|---|---|
@@ -234,23 +262,7 @@ When opponents intervene after our suit opening, both partners must re-evaluate 
 
 **Competition:** If opponents bid or double, 1NT is OFF (reverts to natural).
 
-##### Forcing 1NT by Seat Position
-
-**1st/2nd Seat (1NT = 12-14):** In 1st/2nd seat, 1NT opening = 12-14 balanced. 1♣ promises 5+, 1♦ promises 4+, 1♥/1♠ promise 5+ (with rare 4-card exceptions for 15+ balanced — see opening promises). Forcing 1NT applies in full after all suit openings.
-
-> Opener with 15-17 balanced rebids 2NT. Opener with a real second suit bids it (reverse = 16+). Example: 1♣ with ♠:AQ43 ♥:K7 ♦:Q32 ♣:AJ43 (16 HCP, 5♣-4♠). After 1♣ - 1NT(f), bid 2♠ (reverse, 16+). Correct — you have the strength.
-
-> The one real cost: opener with 5m-4M and 12-15 HCP cannot show the 4-card major without reversing (which promises 16+). Example: ♠:KJ43 ♥:Q7 ♦:32 ♣:AQ432 (12 HCP, 5♣-4♠). After 1♣ - 1NT(f), must bid 2♣ — the 4♠ stays hidden. But this only matters when BOTH hands are minimum (partscore fight at best), and the simulation proves the trade-off is overwhelmingly positive.
-
-**3rd/4th Seat (1NT = 15-17):** In 3rd/4th seat, 1NT opening = 15-17 balanced. Hands with 12-14 balanced cannot open 1NT, so they open 1♣ as a prepared bid (may be as short as 2 clubs) and rebid 1NT.
-
-> Forcing 1NT is OFF after 3rd/4th seat prepared 1♣. Why? Opener with 4432 (doubleton clubs) has NO good rebid after 1♣ - 1NT(f): can't rebid 2♣ (only 2), can't bid 2NT (that's 15-17), can't bid 1NT (responder took it). The whole point of prepared 1♣ was to rebid 1NT — if responder bids 1NT first, the plan is destroyed. So after 3rd/4th seat 1♣, 1NT = NATURAL, NON-FORCING, to play (6-10 HCP).
-
-> Because forcing 1NT is off after prepared 1♣, DEC-6 "always 5+" does NOT apply here. After 3rd/4th seat 1♣: 1♥/1♠ = 5+ if weak (6-9), 4+ if invitational+ (10+). This is the one exception to the "always 5+" rule.
-
-> Do NOT jump-raise clubs — opener may have only 2. Wait for the rebid: 1NT = 12-14 balanced (prepared), 2♣ = real clubs (5+). See H-9.
-
-> After 3rd/4th seat 1♦/1♥/1♠, forcing 1NT is ON and works normally. These openings promise 5+ cards (not prepared), DEC-6 "always 5+" applies, all rebids work as in 1st/2nd seat.
+> **Seat rule:** Forcing 1NT is ON after all suit openings EXCEPT 3rd/4th seat prepared 1♣ (where 1NT = natural, non-forcing — see prepared 1♣ section above). After 3rd/4th seat 1♦/1♥/1♠, forcing 1NT works normally.
 
 #### Opener's Rebids After Forcing 1NT
 
@@ -301,10 +313,6 @@ In 1st/2nd seat, 1♣ always promises 5+ clubs. A balanced 12-14 hand opens 1NT,
 | 2♠ | Reverse — 16+ HCP, 4+ spades (forcing) |
 | 2NT | 15-17 balanced (why didn't you open 1NT? Because 5♣-3-3-2 with 15-17 — valid choice) |
 | 3♣ | 6+ clubs, invitational (15-17) |
-
-**Hidden major example:**
-
-> ♠:KJ43 ♥:Q7 ♦:32 ♣:AQ432 (12 HCP) — 1♣ (5+ clubs, can't open 1NT with 12). After 1NT(f): 2♣ — can't bid 2♠ (reverse = 16+). The 4♠ stays hidden.. Partner has 6-12 HCP with no 5-card spade suit (would have bid 1♠). Even if partner has 4♠, combined max is ~24 HCP — a partscore hand. The simulation proves this trade-off is correct.
 
 #### Responder's Second Bid After Forcing 1NT
 
