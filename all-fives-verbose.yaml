@@ -190,11 +190,17 @@ openings:
   - bid: "1!C"
     seat: "1st/2nd"
     hcp: "12+"
-    promise: "5+ clubs (always — 12-14 balanced opens 1NT)"
+    promise: "4+ clubs"
     ltc: "7 losers typical (range 5-8)"
     note: >
-      In 1st/2nd seat, a balanced 12-14 hand opens 1NT. So every
-      1!C opening is a real club suit with 5+ cards. No exceptions.
+      Usually 5+, but may be 4 with 15+ balanced and 3-3-3-4 shape.
+      A balanced 12-14 hand opens 1NT, so 1!C with 12-14 is always 5+.
+      The 4-card exception only applies to strong balanced hands (15+)
+      where clubs is the longest suit. Opener rebids 2NT (15-17).
+    example:
+      hand: "!S:A32 !H:KJ3 !D:Q32 !C:AKJ4"
+      hcp: 16
+      action: "Open 1!C (3-3-3-4, 16 HCP). Rebid 2NT after any response."
 
   - bid: "1!D"
     seat: "1st/2nd"

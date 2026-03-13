@@ -63,7 +63,7 @@ After 2♦ denial:
 
 | Suit | Promise |
 |---|---|
-| 1C | 5+ clubs (always — 12-14 bal opens 1NT) |
+| 1C | 4+ clubs (may be 4 with 15+ bal, 3-3-3-4) |
 | 1D | 4+ diamonds (may be 4 with 15+ bal, no 5-card suit) |
 | 1H | 5+ hearts (may be 4 with 4333, 15+ bal, no 4+ minor) |
 | 1S | 5+ spades (may be 4: 4-3-3-3 or 4-4 majors, 15+ bal, no 4+ minor — 1st/2nd only) |

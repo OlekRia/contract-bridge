@@ -104,9 +104,11 @@ After Pass — Pass — **XX** = SOS with non-touching pairs (♣+♥ or ♦+♠
 
 ### 1♣
 
-**1st/2nd seat:** 12+ HCP, 5+ clubs (always — 12-14 balanced opens 1NT). LTC: 7 losers typical (range 5-8).
+**1st/2nd seat:** 12+ HCP, 4+ clubs. LTC: 7 losers typical (range 5-8).
 
-In 1st/2nd seat, a balanced 12-14 hand opens 1NT. So every 1♣ opening is a real club suit with 5+ cards. No exceptions.
+Usually 5+, but may be 4 with 15+ balanced and 3-3-3-4 shape. A balanced 12-14 hand opens 1NT, so 1♣ with 12-14 is always 5+. The 4-card exception only applies to strong balanced hands (15+) where clubs is the longest suit. Opener rebids 2NT (15-17).
+
+> **Example:** ♠:A32 ♥:KJ3 ♦:Q32 ♣:AKJ4 (16 HCP) — Open 1♣ (3-3-3-4, 16 HCP). Rebid 2NT after any response.
 
 ### 1♦
 
