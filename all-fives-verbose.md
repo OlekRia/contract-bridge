@@ -108,7 +108,7 @@ After Pass — Pass — **XX** = SOS with non-touching pairs (♣+♥ or ♦+♠
 
 Usually 5+, but may be 4 with 15+ balanced and 3-3-3-4 shape. A balanced 12-14 hand opens 1NT, so 1♣ with 12-14 is always 5+. The 4-card exception only applies to strong balanced hands (15+) where clubs is the longest suit. Opener rebids 2NT (15-17).
 
-> **Example:** ♠:A32 ♥:KJ3 ♦:Q32 ♣:AKJ4 (16 HCP) — Open 1♣ (3-3-3-4, 16 HCP). Rebid 2NT after any response.
+> **Example:** ♠:A32 ♥:KJ3 ♦:Q32 ♣:AK54 (16 HCP) — Open 1♣ (3-3-3-4, 16 HCP). Rebid 2NT after any response.
 
 ### 1♦
 
@@ -124,7 +124,7 @@ Usually 5+, but may be 4 with 15+ balanced and no 5-card suit. This is the catch
 
 Usually 5+. The only exception: 3-4-3-3 with 15+ HCP. No minor has 4+ cards, so 1♥ is the only available opening. Rebid 2NT.
 
-> **Example:** ♠:Q32 ♥:AKJ3 ♦:A32 ♣:432 (15 HCP) — Open 1♥ (3-4-3-3, 15 HCP). Rebid 2NT — 15-17 balanced.
+> **Example:** ♠:Q32 ♥:AKJ3 ♦:AJ2 ♣:432 (15 HCP) — Open 1♥ (3-4-3-3, 15 HCP). Rebid 2NT — 15-17 balanced.
 
 ### 1♠
 
@@ -138,11 +138,11 @@ With 4♠-4♥ and no 4+ minor, open 1♠ because after 1♠-1NT(f), bidding 2�
 
 **15 HCP** → rebid **2♥**: Show 4 hearts cheaply. Not a reverse. Partner with 4 hearts raises. Partscore-range hand (15+6=21, 15+9=24).
 
-> ♠:AQ43 ♥:KJ43 ♦:Q32 ♣:43 (15 HCP): Open 1♠. After 1♠-1NT(f), bid 2♥.
+> ♠:AQ43 ♥:KJ43 ♦:A32 ♣:43 (15 HCP): Open 1♠. After 1♠-1NT(f), bid 2♥.
 
 **16-17 HCP** → rebid **2NT**: Show 15-17 balanced. Partner with 4 hearts and inv+ (10+) bids 3♥ — at 16+10=26, game is on. The 3-level is fine because you have the values.
 
-> ♠:AQ43 ♥:KJ43 ♦:AQ2 ♣:43 (17 HCP): Open 1♠. After 1♠-1NT(f), bid 2NT (game zone).
+> ♠:AQ43 ♥:KJ43 ♦:AK2 ♣:43 (17 HCP): Open 1♠. After 1♠-1NT(f), bid 2NT (game zone).
 
 > This exception does NOT apply in 3rd/4th seat: 12-14 balanced opens prepared 1♣, 15-17 opens 1NT. No need for the 1♠ trick.
 
@@ -361,7 +361,7 @@ This is the practical guide: partner opens a suit, what do you bid? Work through
 
 | Hand | HCP | Bid |
 |---|---|---|
-| ♠:Q43 ♥:K76 ♦:J432 ♣:932 | 7 | 2♥ — fit (3 hearts), weak (6-9). Raise directly. |
+| ♠:Q43 ♥:K76 ♦:J432 ♣:J32 | 7 | 2♥ — fit (3 hearts), weak (6-9). Raise directly. |
 | ♠:Q43 ♥:K76 ♦:J432 ♣:A32 | 10 | 2♥ — fit (3 hearts), invitational. Still a single raise (not enough for limit raise without 4-card support). |
 | ♠:QJ432 ♥:K7 ♦:J43 ♣:932 | 7 | 1♠ — 5+ spades, show at 1-level. |
 | ♠:Q43 ♥:K7 ♦:J432 ♣:Q932 | 8 | 1NT (forcing) — no fit, no 5-card spade suit. Pass partner's rebid. |
@@ -382,7 +382,7 @@ This is the practical guide: partner opens a suit, what do you bid? Work through
 |---|---|---|
 | ♠:K7 ♥:QJ432 ♦:J43 ♣:932 | 7 | 1NT (forcing) — 5♥ but can't bid at 1-level over 1♠. This is exactly why forcing 1NT helps over majors. Pass rebid. |
 | ♠:K7 ♥:QJ43 ♦:A432 ♣:932 | 10 | 1NT (forcing) — can't show hearts at 1-level. After partner's rebid, show hearts or bid 2NT (invitational). |
-| ♠:72 ♥:KJ8743 ♦:Q43 ♣:92 | 7 | 1NT (forcing) — 6♥ but can't bid 2♥ directly (that's 2/1 GF, 10+ HCP). After partner rebids (say 2♣ or 2♦), bid 2♥ = weak, long hearts, TO PLAY. Not invitational! |
+| ♠:72 ♥:KJ8743 ♦:Q43 ♣:J2 | 7 | 1NT (forcing) — 6♥ but can't bid 2♥ directly (that's 2/1 GF, 10+ HCP). After partner rebids (say 2♣ or 2♦), bid 2♥ = weak, long hearts, TO PLAY. Not invitational! |
 
 ##### Opener's view — hidden 4-card major after minor opening (1st/2nd seat)
 
@@ -390,7 +390,7 @@ This is the practical guide: partner opens a suit, what do you bid? Work through
 |---|---|---|
 | ♠:KJ43 ♥:Q7 ♦:32 ♣:AQ432 | 12 | Open 1♣. After 1♣ - 1NT(f), bid 2♣. Can't bid 2♠ (reverse = 16+). The 4♠ stays hidden — but partner with 5+ spades would have bid 1♠, so at worst we miss a 4-4 fit in a partscore. |
 | ♠:AQ43 ♥:K7 ♦:Q32 ♣:AJ43 | 16 | Open 1♣. After 1♣ - 1NT(f), bid 2♠ (reverse, 16+). With 16 HCP you CAN show the 4♠ — the reverse is correct. |
-| ♠:K7 ♥:AJ43 ♦:32 ♣:AQ432 | 13 | Open 1♣. After 1♣ - 1NT(f), bid 2♣. Can't bid 2♥ (reverse = 16+). 4♥ stays hidden. Same principle — partner with 5+ hearts would have bid 1♥. |
+| ♠:K7 ♥:A543 ♦:32 ♣:AQ432 | 13 | Open 1♣. After 1♣ - 1NT(f), bid 2♣. Can't bid 2♥ (reverse = 16+). 4♥ stays hidden. Same principle — partner with 5+ hearts would have bid 1♥. |
 
 ##### Opener's view — 4-4 majors, no 4+ minor (1st/2nd seat)
 
@@ -398,13 +398,13 @@ This is the practical guide: partner opens a suit, what do you bid? Work through
 |---|---|---|
 | ♠:AQ43 ♥:KJ43 ♦:Q32 ♣:43 | 15 | Open 1♠ (4-4 majors, 15 HCP). After 1♠ - 1NT(f), bid 2♥ — shows 4 hearts cheaply (not a reverse). Partner with 4 hearts raises. With 15 HCP this is partscore zone. |
 | ♠:AQ43 ♥:KJ43 ♦:AQ2 ♣:43 | 17 | Open 1♠ (4-4 majors, 17 HCP). After 1♠ - 1NT(f), bid 2NT (15-17 balanced). At 17+8=25+ you're in game zone. Partner with 4 hearts and inv+ bids 3♥. 3-level is fine because you have the values. |
-| ♠:AQ43 ♥:KJ43 ♦:K32 ♣:43 | 16 | Open 1♠ (4-4 majors, 16 HCP). After 1♠ - 1NT(f), bid 2NT (16-17 balanced). Partner explores at the 3-level with inv+ values. With 16+10=26, game is on. |
+| ♠:AQ43 ♥:KJ43 ♦:KQ2 ♣:43 | 16 | Open 1♠ (4-4 majors, 16 HCP). After 1♠ - 1NT(f), bid 2NT (16-17 balanced). Partner explores at the 3-level with inv+ values. With 16+10=26, game is on. |
 
 ##### 3rd/4th seat — prepared 1♣
 
 | Hand | HCP | Bid |
 |---|---|---|
-| ♠:KQ43 ♥:A76 ♦:Q432 ♣:J3 | 13 | In 3rd seat: open 1♣ (prepared — can't open 1NT which is 15-17). Plan to rebid 1NT showing 12-14 balanced. If partner bids 1♥, you bid 1♠ (4+ spades, still at 1-level — not a reverse). If partner bids 1NT(f), you bid... but wait — partner is a passed hand, game is unlikely. Bid 1NT? No, you opened 1♣. Rebid 2♣ or the prepared 1NT. |
+| ♠:KQ43 ♥:A76 ♦:QJ32 ♣:J3 | 13 | In 3rd seat: open 1♣ (prepared — can't open 1NT which is 15-17). Plan to rebid 1NT showing 12-14 balanced. If partner bids 1♥, you bid 1♠ (4+ spades, still at 1-level — not a reverse). If partner bids 1NT(f), you bid... but wait — partner is a passed hand, game is unlikely. Bid 1NT? No, you opened 1♣. Rebid 2♣ or the prepared 1NT. |
 | ♠:A76 ♥:K43 ♦:QJ32 ♣:Q32 | 12 | In 3rd seat: open 1♣ (prepared, only 3 clubs). After any response, rebid 1NT to show 12-14 balanced. Do NOT rebid 2♣ — you only have 3 clubs. The 1NT rebid is the point of the prepared opening. |
 
 #### Opener's rebids after 1♣ - 1♥ (1st/2nd seat)
@@ -798,7 +798,7 @@ Once the suit is known, treat exactly as defense to a standard weak two. Lebenso
 
 - **Multi 2♦, you hold ♠:AQ43 ♥:K52 ♦:J76 ♣:A32 (14 HCP balanced)**
   → Double (12-15 balanced). Partner places contract.
-- **Multi 2♦, you hold ♠:AKQ2 ♥:AK4 ♦:K76 ♣:Q32 (22 HCP)**
+- **Multi 2♦, you hold ♠:AKQ2 ♥:AK4 ♦:KJ6 ♣:Q32 (22 HCP)**
   → Double (19+). You will bid again strongly after partner's response.
 - **Multi 2♦, you hold ♠:KQJ84 ♥:A3 ♦:72 ♣:KJ54 (14 HCP)**
   → 2♠ natural (5+ spades, 10+ HCP). Lead-directing and constructive.
@@ -872,7 +872,7 @@ The key rule: double of a major preempt at game level = penalty-oriented (partne
   → Double (penalty). Expect to defeat 4♠.
 - **(4♦), you hold ♠:AQ43 ♥:KJ76 ♦:2 ♣:AJ32 (15 HCP, short diamonds)**
   → Double (takeout). Partner bids best major.
-- **(4♥), you hold ♠:3 ♥:— ♦:KQJ876 ♣:AQJ54 (extreme shape)**
+- **(4♥), you hold ♠:32 ♥:— ♦:KQJ876 ♣:AQJ54 (extreme shape)**
   → 4NT (two-suited takeout). Both minors.
 
 ### Balancing (Protection)
@@ -922,7 +922,7 @@ Key insight: cuebid = good raise, jump raise = weak. This reverses what many clu
   → 2♥ (cuebid = limit raise+). Shows 10+ with spade support.
 - **(1♥) - 1♠ - Pass - ?, you hold ♠:QJ43 ♥:2 ♦:J9763 ♣:843 (4 HCP)**
   → 3♠ (jump raise = preemptive, 4 trumps, weak).
-- **(1♦) - 1♠ - Pass - ?, you hold ♠:K3 ♥:AQJ84 ♦:76 ♣:J543 (10 HCP)**
+- **(1♦) - 1♠ - Pass - ?, you hold ♠:K3 ♥:AQ984 ♦:76 ♣:J543 (10 HCP)**
   → 2♥ (new suit, non-forcing). Constructive but partner may pass.
 
 ### Advancing Partner's Takeout Double (of 1-Level)
@@ -944,7 +944,7 @@ The most common use of a takeout double. Partner has asked you to bid — you MU
 
 #### Examples
 
-- **(1♥) - X - Pass - ?, you hold ♠:J743 ♥:852 ♦:964 ♣:Q32 (2 HCP)**
+- **(1♥) - X - Pass - ?, you hold ♠:J743 ♥:852 ♦:964 ♣:932 (1 HCP)**
   → 1♠ (cheapest 4-card suit). Forced — even with nothing.
 - **(1♥) - X - Pass - ?, you hold ♠:KQ43 ♥:52 ♦:A76 ♣:J832 (10 HCP)**
   → 2♠ (jump = invitational, shows 9-11 and 4+ spades).
@@ -1159,7 +1159,7 @@ Add HCP + length of two longest suits. If total >= 20, open the bidding.
 
 | Hand | HCP | Lengths | Total | Verdict |
 |---|---|---|---|---|
-| ♠:AQxxx ♥:KJxxx ♦:xx ♣:x | 11 | 5+5=10 | 21 | Open |
+| ♠:AQxxx ♥:KJxxx ♦:Jx ♣:x | 11 | 5+5=10 | 21 | Open |
 | ♠:AQxx ♥:KJx ♦:Qxx ♣:xxx | 12 | 4+3=7 | 19 | Pass (flat shape, poor controls) |
 
 ### Working vs Wasted Honours
@@ -1293,7 +1293,7 @@ Examine only the top three cards in each suit. Each missing top honour (Ace, Kin
 
 A cover card is a card that covers one of partner's losers — typically an ace or king in the right suit. When partner opens and you hold fitting honours, count cover cards rather than HCP to decide whether to bid game or slam.
 
-> Partner opens 1♠ showing 5+ spades. You hold ♠:Kxxx ♥:Axx ♦:xxxx ♣:xx (9 HCP, 9 losers). Count cover cards for partner's likely hand: the ♠:K covers one spade loser, the ♥:A covers a heart loser — 2 cover cards. If partner has 7 losers, combined = 14 - 2 = 12 tricks? No — the loser count method is more accurate. 24 - (7+9) = 8 tricks. But if partner's 7-loser hand has specific losers in hearts and spades, your covers are perfectly placed.
+> Partner opens 1♠ showing 5+ spades. You hold ♠:Kxxx ♥:Axx ♦:Qxxx ♣:xx (9 HCP, 9 losers). Count cover cards for partner's likely hand: the ♠:K covers one spade loser, the ♥:A covers a heart loser — 2 cover cards. If partner has 7 losers, combined = 14 - 2 = 12 tricks? No — the loser count method is more accurate. 24 - (7+9) = 8 tricks. But if partner's 7-loser hand has specific losers in hearts and spades, your covers are perfectly placed.
 
 ### Typical Loser Count by Common Bidding Actions
 

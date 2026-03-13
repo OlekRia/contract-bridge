@@ -198,7 +198,7 @@ openings:
       The 4-card exception only applies to strong balanced hands (15+)
       where clubs is the longest suit. Opener rebids 2NT (15-17).
     example:
-      hand: "!S:A32 !H:KJ3 !D:Q32 !C:AKJ4"
+      hand: "!S:A32 !H:KJ3 !D:Q32 !C:AK54"
       hcp: 16
       action: "Open 1!C (3-3-3-4, 16 HCP). Rebid 2NT after any response."
 
@@ -226,7 +226,7 @@ openings:
       Usually 5+. The only exception: 3-4-3-3 with 15+ HCP. No minor
       has 4+ cards, so 1!H is the only available opening. Rebid 2NT.
     example:
-      hand: "!S:Q32 !H:AKJ3 !D:A32 !C:432"
+      hand: "!S:Q32 !H:AKJ3 !D:AJ2 !C:432"
       hcp: 15
       action: "Open 1!H (3-4-3-3, 15 HCP). Rebid 2NT — 15-17 balanced."
 
@@ -253,7 +253,7 @@ openings:
             Show 4 hearts cheaply. Not a reverse. Partner with 4 hearts
             raises. Partscore-range hand (15+6=21, 15+9=24).
           example:
-            hand: "!S:AQ43 !H:KJ43 !D:Q32 !C:43"
+            hand: "!S:AQ43 !H:KJ43 !D:A32 !C:43"
             hcp: 15
             action: "Open 1!S. After 1!S-1NT(f), bid 2!H."
         - strength: "16-17 HCP"
@@ -263,7 +263,7 @@ openings:
             bids 3!H — at 16+10=26, game is on. The 3-level is fine
             because you have the values.
           example:
-            hand: "!S:AQ43 !H:KJ43 !D:AQ2 !C:43"
+            hand: "!S:AQ43 !H:KJ43 !D:AK2 !C:43"
             hcp: 17
             action: "Open 1!S. After 1!S-1NT(f), bid 2NT (game zone)."
       not_in_3rd_4th: >
@@ -588,7 +588,7 @@ openings:
       examples:
         - title: "Partner opens 1!H"
           hands:
-            - hand: "!S:Q43 !H:K76 !D:J432 !C:932"
+            - hand: "!S:Q43 !H:K76 !D:J432 !C:J32"
               hcp: 7
               bid: "2!H — fit (3 hearts), weak (6-9). Raise directly."
             - hand: "!S:Q43 !H:K76 !D:J432 !C:A32"
@@ -635,7 +635,7 @@ openings:
               hcp: 10
               bid: "1NT (forcing) — can't show hearts at 1-level. After
                 partner's rebid, show hearts or bid 2NT (invitational)."
-            - hand: "!S:72 !H:KJ8743 !D:Q43 !C:92"
+            - hand: "!S:72 !H:KJ8743 !D:Q43 !C:J2"
               hcp: 7
               bid: "1NT (forcing) — 6!H but can't bid 2!H directly (that's
                 2/1 GF, 10+ HCP). After partner rebids (say 2!C or 2!D),
@@ -653,7 +653,7 @@ openings:
               hcp: 16
               bid: "Open 1!C. After 1!C - 1NT(f), bid 2!S (reverse, 16+).
                 With 16 HCP you CAN show the 4!S — the reverse is correct."
-            - hand: "!S:K7 !H:AJ43 !D:32 !C:AQ432"
+            - hand: "!S:K7 !H:A543 !D:32 !C:AQ432"
               hcp: 13
               bid: "Open 1!C. After 1!C - 1NT(f), bid 2!C. Can't bid 2!H
                 (reverse = 16+). 4!H stays hidden. Same principle — partner
@@ -672,7 +672,7 @@ openings:
                 bid 2NT (15-17 balanced). At 17+8=25+ you're in game zone.
                 Partner with 4 hearts and inv+ bids 3!H. 3-level is fine
                 because you have the values."
-            - hand: "!S:AQ43 !H:KJ43 !D:K32 !C:43"
+            - hand: "!S:AQ43 !H:KJ43 !D:KQ2 !C:43"
               hcp: 16
               bid: "Open 1!S (4-4 majors, 16 HCP). After 1!S - 1NT(f),
                 bid 2NT (16-17 balanced). Partner explores at the 3-level
@@ -680,7 +680,7 @@ openings:
 
         - title: "3rd/4th seat — prepared 1!C"
           hands:
-            - hand: "!S:KQ43 !H:A76 !D:Q432 !C:J3"
+            - hand: "!S:KQ43 !H:A76 !D:QJ32 !C:J3"
               hcp: 13
               bid: "In 3rd seat: open 1!C (prepared — can't open 1NT which is
                 15-17). Plan to rebid 1NT showing 12-14 balanced. If partner
@@ -1337,7 +1337,7 @@ competitive:
     examples:
       - scenario: "Multi 2!D, you hold !S:AQ43 !H:K52 !D:J76 !C:A32 (14 HCP balanced)"
         action: "Double (12-15 balanced). Partner places contract."
-      - scenario: "Multi 2!D, you hold !S:AKQ2 !H:AK4 !D:K76 !C:Q32 (22 HCP)"
+      - scenario: "Multi 2!D, you hold !S:AKQ2 !H:AK4 !D:KJ6 !C:Q32 (22 HCP)"
         action: "Double (19+). You will bid again strongly after partner's response."
       - scenario: "Multi 2!D, you hold !S:KQJ84 !H:A3 !D:72 !C:KJ54 (14 HCP)"
         action: "2!S natural (5+ spades, 10+ HCP). Lead-directing and constructive."
@@ -1426,7 +1426,7 @@ competitive:
         action: "Double (penalty). Expect to defeat 4!S."
       - scenario: "(4!D), you hold !S:AQ43 !H:KJ76 !D:2 !C:AJ32 (15 HCP, short diamonds)"
         action: "Double (takeout). Partner bids best major."
-      - scenario: "(4!H), you hold !S:3 !H:— !D:KQJ876 !C:AQJ54 (extreme shape)"
+      - scenario: "(4!H), you hold !S:32 !H:— !D:KQJ876 !C:AQJ54 (extreme shape)"
         action: "4NT (two-suited takeout). Both minors."
 
   # ── Balancing / Protection ───────────────────
@@ -1487,7 +1487,7 @@ competitive:
         action: "2!H (cuebid = limit raise+). Shows 10+ with spade support."
       - scenario: "(1!H) - 1!S - Pass - ?, you hold !S:QJ43 !H:2 !D:J9763 !C:843 (4 HCP)"
         action: "3!S (jump raise = preemptive, 4 trumps, weak)."
-      - scenario: "(1!D) - 1!S - Pass - ?, you hold !S:K3 !H:AQJ84 !D:76 !C:J543 (10 HCP)"
+      - scenario: "(1!D) - 1!S - Pass - ?, you hold !S:K3 !H:AQ984 !D:76 !C:J543 (10 HCP)"
         action: "2!H (new suit, non-forcing). Constructive but partner may pass."
 
   # ── Advancing Partner's Takeout Double ───────
@@ -1517,7 +1517,7 @@ competitive:
       opener's suit with good honours (e.g., KQJ9x). Partner must lead a trump.
       Do NOT pass just because you have nothing — bid your cheapest suit instead.
     examples:
-      - scenario: "(1!H) - X - Pass - ?, you hold !S:J743 !H:852 !D:964 !C:Q32 (2 HCP)"
+      - scenario: "(1!H) - X - Pass - ?, you hold !S:J743 !H:852 !D:964 !C:932 (1 HCP)"
         action: "1!S (cheapest 4-card suit). Forced — even with nothing."
       - scenario: "(1!H) - X - Pass - ?, you hold !S:KQ43 !H:52 !D:A76 !C:J832 (10 HCP)"
         action: "2!S (jump = invitational, shows 9-11 and 4+ spades)."
@@ -1769,7 +1769,7 @@ hand_evaluation:
     name: "Bergen's Rule of 20"
     rule: "Add HCP + length of two longest suits. If total >= 20, open the bidding."
     examples:
-      - hand: "!S:AQxxx !H:KJxxx !D:xx !C:x"
+      - hand: "!S:AQxxx !H:KJxxx !D:Jx !C:x"
         hcp: 11
         lengths: "5+5=10"
         total: 21
@@ -2064,7 +2064,7 @@ losing_trick_count:
       to decide whether to bid game or slam.
     example: >
       Partner opens 1!S showing 5+ spades. You hold
-      !S:Kxxx !H:Axx !D:xxxx !C:xx (9 HCP, 9 losers).
+      !S:Kxxx !H:Axx !D:Qxxx !C:xx (9 HCP, 9 losers).
       Count cover cards for partner's likely hand: the !S:K covers one spade
       loser, the !H:A covers a heart loser — 2 cover cards.
       If partner has 7 losers, combined = 14 - 2 = 12 tricks? No —
