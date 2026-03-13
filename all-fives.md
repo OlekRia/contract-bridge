@@ -11,7 +11,6 @@
 | Seat | HCP | Shape |
 |---|---|---|
 | 1st/2nd | 12-14 HCP, balanced (4333/4432/5332 incl. 5M) |  |
-| 3rd | 15-17 HCP, balanced |  |
 
 #### Responses to 1NT
 

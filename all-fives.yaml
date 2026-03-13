@@ -9,7 +9,7 @@ tagline: "Every 1-level suit opening promises 5+ cards (with known exceptions)."
 openings:
   1NT:
     1st_2nd: 12-14 HCP, balanced (4333/4432/5332 incl. 5M)
-    3rd: 15-17 HCP, balanced
+    3rd_4th: 15-17 HCP, balanced
     responses:
       2C: "Puppet Stayman (asks 5-card major)"
       2D: "Transfer to !H"
@@ -35,8 +35,8 @@ openings:
       delayed_XX: "Non-touching (!C+!H or !D+!S)"
       strong_10plus: "Pass for penalty"
 
-  1C_3rd:
-    seat: 3rd
+  1C_3rd_4th:
+    seat: "3rd/4th"
     hcp: "8+"
     promise: "2+ clubs (prepared: 12-14 bal opens 1♣, rebids 1NT)"
     responder: "Do NOT raise clubs without 5+. Wait for rebid."

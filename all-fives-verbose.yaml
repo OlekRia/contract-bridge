@@ -38,8 +38,9 @@ known_problems:
       blocks us without a chance at game. After a 3rd/4th-seat suit
       opening, the NT rebid shows 12-14 balanced. Responder must not
       jump-raise clubs without 5+ clubs (the "prepared 1!C trap").
-      Addressed by H-9: explicit 4th seat entry, prepared !C warning,
-      and upgrade policy added to spec.
+      RESOLVED (AMD-8): 4th seat 1NT codified, prepared !C guidance
+      in spec, upgrade policy in openings section. DEC-6 (forcing 1NT
+      OFF after prepared 1!C) further mitigates the trap.
   - id: 2
     problem: "The 4441 distribution. Every system struggles with this."
   - id: 3
@@ -297,7 +298,7 @@ openings:
       - "Bid a new suit or 1NT — wait for opener's rebid."
       - "After 1!C, a 1NT rebid = 12-14 balanced (prepared 1!C)."
       - "After 1!C, a 2!C rebid = real clubs (5+)."
-    see_also: "H-9 (prepared 1!C trap)"
+    see_also: "AMD-8 (prepared 1!C trap — resolved)"
     forcing_1nt_off: >
       Forcing 1NT is OFF after prepared 1!C. Why? Opener with 4432
       (doubleton clubs) has no good rebid after 1!C-1NT(f): can't

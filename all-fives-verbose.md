@@ -18,7 +18,7 @@
 
 | # | Problem |
 |---|---|
-| 1 | 3rd/4th seat 1NT is 15-17 HCP (not 12-14), because a weak NT blocks us without a chance at game. After a 3rd/4th-seat suit opening, the NT rebid shows 12-14 balanced. Responder must not jump-raise clubs without 5+ clubs (the "prepared 1♣ trap"). Addressed by H-9: explicit 4th seat entry, prepared ♣ warning, and upgrade policy added to spec. |
+| 1 | 3rd/4th seat 1NT is 15-17 HCP (not 12-14), because a weak NT blocks us without a chance at game. After a 3rd/4th-seat suit opening, the NT rebid shows 12-14 balanced. Responder must not jump-raise clubs without 5+ clubs (the "prepared 1♣ trap"). RESOLVED (AMD-8): 4th seat 1NT codified, prepared ♣ guidance in spec, upgrade policy in openings section. DEC-6 (forcing 1NT OFF after prepared 1♣) further mitigates the trap. |
 | 2 | The 4441 distribution. Every system struggles with this. |
 | 3 | 1♥ and 1♠ usually promise 5, but with 15+ balanced and no 4+ minor (4333 or 4-4-3-2 majors) they may show only 4. Partner must be aware: after opener rebids 2NT (15-17 balanced), the opening suit may be only 4. This is rare but requires partnership understanding. |
 | 4 | New defensive bidding package (CRASH, Michaels, Lebensohl) is adopted but untested at the table. See H-7 for the effectiveness tracking plan. |
