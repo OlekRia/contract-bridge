@@ -1,6 +1,6 @@
 # All Fives — Convention Card
 
-> _Every 1-level suit opening promises 5+ cards._
+> _Every 1-level suit opening promises 5+ cards (with known exceptions)._
 
 ---
 
@@ -58,12 +58,14 @@ After 2♦ denial:
 
 | Seat | Requirements |
 |---|---|
-| 1st/2nd | 12+ HCP (~7 losers), 5+ cards (4+ with 15-17 bal, rebid NT) |
-| 3rd | 8+ HCP, 5+ cards (light, tactical). 1♣ see above. |
+| 1st/2nd | 12+ HCP (~7 losers) |
+| 3rd | 8+ HCP (light, tactical). 1♣ see above. |
 
-- Two 4-card suits: open lower
-- 15-17 bal: open 4 cards, rebid NT
-- 2NT rebid confirms 4 cards in opened suit
+- 4-4 majors with 4+ minor: open the minor, show majors naturally
+- 4-4 majors, no 4+ minor (1st/2nd, 15): open 1♠, bid 2♥ next
+- 4-4 majors, no 4+ minor (1st/2nd, 16-17): open 1♠, rebid 2NT
+- 4333 with 15+ bal: open the 4-card suit, rebid 2NT
+- 2NT rebid = balanced (opening suit may be only 4)
 
 ---
 

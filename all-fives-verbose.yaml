@@ -6,15 +6,23 @@
 system:
   name: All Fives
   tagline: "A natural, disciplined bidding system built on common sense."
-  central_idea: "Every 1-level suit opening promises 5+ cards."
+  central_idea: "Every 1-level suit opening promises 5+ cards, with known exceptions."
   exceptions:
     - >
-      With extra strength (15-17 balanced), opener may hold only 4 cards
-      and escapes to NT on the next bid, or makes a reverse (16+ HCP).
+      1!C in 3rd/4th seat: prepared (2+ clubs). A 12-14 balanced hand
+      cannot open 1NT (15-17 in 3rd/4th seat), so it opens 1!C and
+      rebids 1NT.
     - >
-      In 3rd seat, 1!C promises only 2+ clubs. A 12-14 balanced hand
-      cannot open 1NT (15-17 in 3rd seat), so it opens 1!C as a
-      prepared bid and rebids 1NT.
+      1!D in any seat: 4+ cards (not always 5). Balanced 15+ hands
+      with no 5-card suit open 1!D when they have 4+ diamonds.
+    - >
+      1!H in any seat: usually 5+, but 4 with 4333 shape and 15+ HCP
+      when no 4+ minor is available. Rebid 2NT to show balanced.
+    - >
+      1!S in 1st/2nd seat: usually 5+, but 4 with 4-4 majors and no
+      4+ minor (4-4-3-2 or 4-4-2-3, 15+ HCP). Open 1!S to bid 2!H
+      cheaply on the next round (not a reverse). 3rd/4th seat does
+      not need this — 12-14 opens prepared 1!C, 15-17 opens 1NT.
 
 philosophy:
   - "No crazy openings. Bids mean what they look like."
@@ -36,8 +44,10 @@ known_problems:
     problem: "The 4441 distribution. Every system struggles with this."
   - id: 3
     problem: >
-      1!S usually promises 5 spades, but with a strong 4333 hand
-      it may show only 4 — which feels awkward.
+      1!H and 1!S usually promise 5, but with 15+ balanced and no 4+ minor
+      (4333 or 4-4-3-2 majors) they may show only 4. Partner must be aware:
+      after opener rebids 2NT (15-17 balanced), the opening suit may be only 4.
+      This is rare but requires partnership understanding.
   - id: 4
     problem: >
       New defensive bidding package (CRASH, Michaels, Lebensohl) is adopted but
@@ -172,11 +182,55 @@ openings:
     seat: "1st/2nd"
     hcp: "12+"
     ltc: "7 losers typical (range 5-8)"
-    promise: "5+ cards (4+ with extra strength and NT escape)"
+    promise: "See individual suit promises below"
+    suit_promises:
+      - suit: "1!C"
+        promise: "5+ clubs"
+        note: "12-14 balanced opens 1NT, so 1!C is always a real suit."
+      - suit: "1!D"
+        promise: "4+ diamonds"
+        note: >
+          Usually 5+, but 4 with 15+ balanced and no 5-card suit.
+          Example: !S:AQ43 !H:KJ7 !D:AQ32 !C:43 (16 HCP, 4-3-4-2) — open 1!D,
+          rebid 2NT to show 15-17 balanced.
+      - suit: "1!H"
+        promise: "5+ hearts (usually). 4 hearts only with 4333 and 15+ HCP"
+        note: >
+          With 4-3-3-3 and 4 hearts, no minor has 4+ cards, so 1!H is the only
+          opening available. Rebid 2NT (15-17).
+          Example: !S:Q32 !H:AKJ3 !D:A32 !C:432 (15 HCP, 3-4-3-3) — open 1!H,
+          rebid 2NT.
+      - suit: "1!S"
+        promise: "5+ spades (usually). 4 spades only with 4-3-3-3 shape and 15+ HCP, or 4-4 majors with no 4+ minor"
+        note: >
+          Two cases for 1!S with 4 cards (1st/2nd seat only):
+          (A) 4-3-3-3 with 4 spades — no other suit to open. Rebid 2NT.
+          (B) 4-4 majors, no 4+ minor — open 1!S to find hearts cheaply.
+          After 1!S-1NT(f), opener rebids by strength:
+          With 15 HCP: bid 2!H (4 hearts, not a reverse — below 2!S).
+          Partner with 4 hearts raises. Partscore-range hand.
+          With 16-17 HCP: bid 2NT (15-17 balanced). Partner with 4 hearts
+          and inv+ values bids 3!H. At 16+8=24+ you're in game territory,
+          so the 3-level exploration is fine.
+          In 3rd/4th seat this doesn't apply — 12-14 opens prepared 1!C,
+          15-17 opens 1NT.
+        examples:
+          - hand: "!S:AQ43 !H:KJ43 !D:Q32 !C:43"
+            hcp: 15
+            action: "Open 1!S. After 1!S-1NT(f), bid 2!H (15 HCP, show hearts cheaply)."
+          - hand: "!S:AQ43 !H:KJ43 !D:AQ2 !C:43"
+            hcp: 17
+            action: "Open 1!S. After 1!S-1NT(f), bid 2NT (16-17, game zone)."
+          - hand: "!S:AKJ4 !H:Q32 !D:A32 !C:432"
+            hcp: 15
+            action: "Open 1!S (4-3-3-3, only 4-card suit). Rebid 2NT."
     rules:
-      - "With two 4-card suits, open the lower one first."
-      - "With 15-17 balanced, open 4 cards and rebid NT."
-      - "A 2NT rebid confirms 4 cards (not 5) in the opening suit."
+      - "With two 5-card suits, open the higher one."
+      - "With 5-4, open the 5-card suit."
+      - "With 4-4 majors and a 4+ minor: open the minor, show majors naturally."
+      - "With 4-4 majors, no 4+ minor (1st/2nd, 15+): open 1!S. Rebid 2!H (15) or 2NT (16-17)."
+      - "With 4333 and 15+ balanced: open the 4-card suit, rebid 2NT."
+      - "A 2NT rebid after any opening confirms balanced (the opening suit may be only 4)."
 
   - bid: "1!C"
     seat: "3rd"
@@ -205,7 +259,10 @@ openings:
         note: >
           Opener's 1NT rebid confirms the prepared 1!C — a 12-14
           balanced hand that could not open 1NT (15-17 in 3rd seat).
-          Responder's major promised 5+ if weak, 4+ if invitational.
+          Responder's major promised 5+ if weak, 4+ if invitational
+          (DEC-6 "always 5+" does NOT apply after prepared 1!C —
+          forcing 1NT is off here, so 4-card inv+ hands bid the major
+          directly).
         responses:
           - action: "Pass"
             meaning: "Weak (6-8 HCP), satisfied with 1NT"
@@ -269,16 +326,17 @@ openings:
 
   - bid: "1!C / 1!D / 1!H / 1!S"
     section: continuations
-    minor_opening_warning: >
-      1-minor openings may be shorter than the system's 5+ promise when
-      opener has a balanced hand. Responder must keep this in mind:
-      - 1st/2nd seat: 1!C or 1!D may be 4 cards with 15-17 balanced
-        (opener plans to rebid NT). Majors always promise 5+.
-      - 3rd seat: 1!C may be as short as 2 cards with 12-14 balanced
-        (opener cannot open 1NT, which is 15-17 here — see H-9).
-      In all cases, wait for opener's rebid before committing to a minor
-      fit. A 1NT or 2NT rebid confirms the opening was prepared (short).
-      A 2!C or 2!D rebid confirms real length (5+).
+    opening_length_warning: >
+      Not every suit opening promises 5+ cards. Responder must keep this
+      in mind:
+      - 1!C in 1st/2nd seat: always 5+. No exception.
+      - 1!C in 3rd/4th seat: may be 2+ (prepared, 12-14 balanced — see H-9).
+      - 1!D in any seat: may be 4 (15+ balanced with no 5-card suit).
+      - 1!H/1!S: usually 5+, but may be 4 with 15+ balanced and no 4+ minor
+        (4333 or 4-4 majors with short minors). 1st/2nd seat only.
+      In all cases, wait for opener's rebid before assuming suit length.
+      A 2NT rebid = balanced (opening suit may be only 4).
+      A rebid of the same suit = real length (5+, usually 6+).
     raises:
       - sequence: "1x - 2x (single raise)"
         meaning: "6-9 HCP, 3+ card support"
@@ -304,16 +362,23 @@ openings:
         regardless of strength. Invitational+ hands with only 4-card major
         route through forcing 1NT and show the major on the second round.
         Opener may raise with 3-card support, knowing it's a real fit.
+      exception: >
+        EXCEPTION: After 3rd/4th seat prepared 1!C, forcing 1NT is off.
+        Here 1!H/1!S = 5+ if weak (6-9), 4+ if invitational+ (10+).
+        This is the ONLY exception to the "always 5+" rule. After 3rd/4th
+        seat 1!D (which is always 5+ real diamonds, not prepared), the
+        "always 5+" rule applies normally.
       note: >
         This is a direct benefit of DEC-6 (forcing 1NT). The old ambiguity
-        (5 if weak, 4 if strong) is eliminated. See F-SIM-003.
+        (5 if weak, 4 if strong) is eliminated everywhere except after
+        prepared 1!C. See F-SIM-003.
 
     response_1nt:
       meaning: "6-12 HCP, FORCING one round"
       conditions:
         - "No fit (at most 3 cards in opener's suit)"
         - "No new suit available at the 1-level"
-        - "1st/2nd seat openings only"
+        - "All seats EXCEPT 3rd/4th seat prepared 1!C (see seat differences below)"
       off_in_competition: >
         If opponents bid or double, 1NT is OFF (reverts to natural).
       ltc: "10+ losers typically (no fit found)"
@@ -322,6 +387,56 @@ openings:
         almost never survives as a final contract. Opener was going to
         bid again with 95% of hands anyway. DD simulation proved +1.118
         tricks/deal over non-forcing (F-SIM-001, DEC-6).
+      seat_differences:
+        title: "Forcing 1NT by Seat Position"
+        first_second:
+          nt_range: "12-14"
+          note: >
+            In 1st/2nd seat, 1NT opening = 12-14 balanced. 1!C promises
+            5+, 1!D promises 4+, 1!H/1!S promise 5+ (with rare 4-card
+            exceptions for 15+ balanced — see opening promises). Forcing
+            1NT applies in full after all suit openings.
+          key_consequence: >
+            Opener with 15-17 balanced rebids 2NT. Opener with a real
+            second suit bids it (reverse = 16+). Example: 1!C with
+            !S:AQ43 !H:K7 !D:Q32 !C:AJ43 (16 HCP, 5!C-4!S). After
+            1!C - 1NT(f), bid 2!S (reverse, 16+). Correct — you have
+            the strength.
+          hidden_major_cost: >
+            The one real cost: opener with 5m-4M and 12-15 HCP cannot
+            show the 4-card major without reversing (which promises 16+).
+            Example: !S:KJ43 !H:Q7 !D:32 !C:AQ432 (12 HCP, 5!C-4!S).
+            After 1!C - 1NT(f), must bid 2!C — the 4!S stays hidden.
+            But this only matters when BOTH hands are minimum (partscore
+            fight at best), and the simulation proves the trade-off is
+            overwhelmingly positive.
+        third_fourth:
+          nt_range: "15-17"
+          note: >
+            In 3rd/4th seat, 1NT opening = 15-17 balanced. Hands with
+            12-14 balanced cannot open 1NT, so they open 1!C as a
+            prepared bid (may be as short as 2 clubs) and rebid 1NT.
+          prepared_1C_exception: >
+            Forcing 1NT is OFF after 3rd/4th seat prepared 1!C. Why?
+            Opener with 4432 (doubleton clubs) has NO good rebid after
+            1!C - 1NT(f): can't rebid 2!C (only 2), can't bid 2NT
+            (that's 15-17), can't bid 1NT (responder took it). The
+            whole point of prepared 1!C was to rebid 1NT — if responder
+            bids 1NT first, the plan is destroyed. So after 3rd/4th seat
+            1!C, 1NT = NATURAL, NON-FORCING, to play (6-10 HCP).
+          prepared_1C_major_rule: >
+            Because forcing 1NT is off after prepared 1!C, DEC-6 "always
+            5+" does NOT apply here. After 3rd/4th seat 1!C:
+            1!H/1!S = 5+ if weak (6-9), 4+ if invitational+ (10+).
+            This is the one exception to the "always 5+" rule.
+          prepared_1C_trap: >
+            Do NOT jump-raise clubs — opener may have only 2. Wait for
+            the rebid: 1NT = 12-14 balanced (prepared), 2!C = real clubs
+            (5+). See H-9.
+          after_1DHS: >
+            After 3rd/4th seat 1!D/1!H/1!S, forcing 1NT is ON and works
+            normally. These openings promise 5+ cards (not prepared),
+            DEC-6 "always 5+" applies, all rebids work as in 1st/2nd seat.
 
     forcing_1nt_opener_rebids:
       title: "Opener's Rebids After Forcing 1NT"
@@ -376,20 +491,35 @@ openings:
           - rebid: "3!D"
             meaning: "6+ diamonds, invitational (15-17)"
       after_1C_1NT:
-        title: "After 1!C - 1NT (forcing)"
+        title: "After 1!C - 1NT (forcing) — 1st/2nd seat"
+        note: >
+          In 1st/2nd seat, 1!C always promises 5+ clubs. A balanced
+          12-14 hand opens 1NT, not 1!C. So opener has a real club suit.
+          This means a 4-card side major often stays hidden with minimum
+          hands (can't reverse with only 12-15 HCP).
         bids:
           - rebid: "2!C"
-            meaning: "6+ clubs, minimum (12-14)"
+            meaning: "5-6 clubs, minimum (12-14), no 4-card side suit"
+            example: "!S:J43 !H:Q7 !D:K32 !C:AQ432 — rebid your suit"
           - rebid: "2!D"
-            meaning: "4+ diamonds (may be convenient rebid with 5-3-3-2)"
+            meaning: "4+ diamonds, real second suit (not a 'convenient' rebid — opener has 5!C-4!D+)"
           - rebid: "2!H"
             meaning: "Reverse — 16+ HCP, 4+ hearts (forcing)"
           - rebid: "2!S"
             meaning: "Reverse — 16+ HCP, 4+ spades (forcing)"
           - rebid: "2NT"
-            meaning: "15-17 balanced (confirms 4-card !C opening)"
+            meaning: "15-17 balanced (why didn't you open 1NT? Because 5!C-3-3-2 with 15-17 — valid choice)"
           - rebid: "3!C"
             meaning: "6+ clubs, invitational (15-17)"
+        hidden_major_example:
+          hand: "!S:KJ43 !H:Q7 !D:32 !C:AQ432"
+          hcp: 12
+          opening: "1!C (5+ clubs, can't open 1NT with 12)"
+          after_1NT_forcing: "2!C — can't bid 2!S (reverse = 16+). The 4!S stays hidden."
+          why_ok: >
+            Partner has 6-12 HCP with no 5-card spade suit (would have bid
+            1!S). Even if partner has 4!S, combined max is ~24 HCP — a
+            partscore hand. The simulation proves this trade-off is correct.
 
     forcing_1nt_responder_continuations:
       title: "Responder's Second Bid After Forcing 1NT"
@@ -398,8 +528,17 @@ openings:
         With 6-9 HCP: pass. With 10-12 HCP: bid again (raise, preference,
         or 2NT). With a hidden 4-card major (after 1m): show it now.
       weak_6_9:
-        action: "Pass opener's rebid"
-        note: "You've done your job — partner described their hand, you stop."
+        action: "Place the contract — usually pass, but correct with a long suit"
+        actions:
+          - "Pass opener's rebid (most hands)"
+          - "Bid your own 6+ card suit to play there (e.g. 1!S-1NT(f)-2!C-2!H = weak, long hearts)"
+          - "Give preference back to opener's first suit with 2-card support"
+        note: >
+          The goal is to find the best partscore, not just pass blindly.
+          With a 6-card suit, playing in your suit beats a 2-level misfit.
+          IMPORTANT: a new suit here is TO PLAY (weak), NOT invitational.
+          Compare: 1!S - 2!H directly = 2/1 game force (10+ HCP).
+          But 1!S - 1NT(f) - 2!C - 2!H = weak with long hearts.
       invitational_10_12:
         actions:
           - "Raise opener's second suit with 4+ support"
@@ -430,12 +569,17 @@ openings:
           yes: >
             Bid it. 1!H or 1!S over 1!C/1!D. Must be 5+ cards (always,
             regardless of strength — DEC-6). Over 1!H, bid 1!S with 5+.
+            EXCEPTION: after 3rd/4th seat prepared 1!C, 4+ is enough
+            with inv+ values (forcing 1NT is off, so 4M can't route
+            through 1NT).
           no: "Continue to next question."
 
         - question: "Do you have 6-12 HCP?"
           yes: >
             Bid 1NT (forcing). Partner will describe their hand.
             With 6-9: pass whatever partner rebids. With 10-12: bid again.
+            EXCEPTION: after 3rd/4th seat prepared 1!C, 1NT is NATURAL
+            and NON-FORCING (6-10, to play). Opener may pass.
           no_low: "Pass (0-5 HCP)."
           no_high: "Bid 2/1 game force (13+ HCP)."
 
@@ -489,32 +633,94 @@ openings:
               hcp: 10
               bid: "1NT (forcing) — can't show hearts at 1-level. After
                 partner's rebid, show hearts or bid 2NT (invitational)."
+            - hand: "!S:72 !H:KJ8743 !D:Q43 !C:92"
+              hcp: 7
+              bid: "1NT (forcing) — 6!H but can't bid 2!H directly (that's
+                2/1 GF, 10+ HCP). After partner rebids (say 2!C or 2!D),
+                bid 2!H = weak, long hearts, TO PLAY. Not invitational!"
+
+        - title: "Opener's view — hidden 4-card major after minor opening (1st/2nd seat)"
+          hands:
+            - hand: "!S:KJ43 !H:Q7 !D:32 !C:AQ432"
+              hcp: 12
+              bid: "Open 1!C. After 1!C - 1NT(f), bid 2!C. Can't bid 2!S
+                (reverse = 16+). The 4!S stays hidden — but partner with
+                5+ spades would have bid 1!S, so at worst we miss a 4-4 fit
+                in a partscore."
+            - hand: "!S:AQ43 !H:K7 !D:Q32 !C:AJ43"
+              hcp: 16
+              bid: "Open 1!C. After 1!C - 1NT(f), bid 2!S (reverse, 16+).
+                With 16 HCP you CAN show the 4!S — the reverse is correct."
+            - hand: "!S:K7 !H:AJ43 !D:32 !C:AQ432"
+              hcp: 13
+              bid: "Open 1!C. After 1!C - 1NT(f), bid 2!C. Can't bid 2!H
+                (reverse = 16+). 4!H stays hidden. Same principle — partner
+                with 5+ hearts would have bid 1!H."
+
+        - title: "Opener's view — 4-4 majors, no 4+ minor (1st/2nd seat)"
+          hands:
+            - hand: "!S:AQ43 !H:KJ43 !D:Q32 !C:43"
+              hcp: 15
+              bid: "Open 1!S (4-4 majors, 15 HCP). After 1!S - 1NT(f),
+                bid 2!H — shows 4 hearts cheaply (not a reverse). Partner
+                with 4 hearts raises. With 15 HCP this is partscore zone."
+            - hand: "!S:AQ43 !H:KJ43 !D:AQ2 !C:43"
+              hcp: 17
+              bid: "Open 1!S (4-4 majors, 17 HCP). After 1!S - 1NT(f),
+                bid 2NT (15-17 balanced). At 17+8=25+ you're in game zone.
+                Partner with 4 hearts and inv+ bids 3!H. 3-level is fine
+                because you have the values."
+            - hand: "!S:AQ43 !H:KJ43 !D:K32 !C:43"
+              hcp: 16
+              bid: "Open 1!S (4-4 majors, 16 HCP). After 1!S - 1NT(f),
+                bid 2NT (16-17 balanced). Partner explores at the 3-level
+                with inv+ values. With 16+10=26, game is on."
+
+        - title: "3rd/4th seat — prepared 1!C"
+          hands:
+            - hand: "!S:KQ43 !H:A76 !D:Q432 !C:J3"
+              hcp: 13
+              bid: "In 3rd seat: open 1!C (prepared — can't open 1NT which is
+                15-17). Plan to rebid 1NT showing 12-14 balanced. If partner
+                bids 1!H, you bid 1!S (4+ spades, still at 1-level — not a
+                reverse). If partner bids 1NT(f), you bid... but wait —
+                partner is a passed hand, game is unlikely. Bid 1NT? No, you
+                opened 1!C. Rebid 2!C or the prepared 1NT."
+            - hand: "!S:A76 !H:K43 !D:QJ32 !C:Q32"
+              hcp: 12
+              bid: "In 3rd seat: open 1!C (prepared, only 3 clubs). After any
+                response, rebid 1NT to show 12-14 balanced. Do NOT rebid 2!C
+                — you only have 3 clubs. The 1NT rebid is the point of the
+                prepared opening."
 
     example_rebids:
-      title: "Opener's rebids after 1!C - 1!H"
+      title: "Opener's rebids after 1!C - 1!H (1st/2nd seat)"
+      note: >
+        1!C = 5+ clubs in 1st/2nd seat (balanced 12-14 opens 1NT).
+        Responder's 1!H = 5+ hearts (DEC-6). Opener describes shape.
       bids:
         - rebid: 1!S
           meaning: "4+ spades, any strength (not a reverse — still at the 1-level)"
         - rebid: 1NT
-          meaning: "15-17 HCP, balanced (confirms 4-card !C opening)"
+          meaning: "15-17 HCP, balanced (5!C-3-3-2 that chose 1!C over 1NT)"
         - rebid: 2!C
-          meaning: "6+ clubs, or 5 with extra strength"
+          meaning: "5-6 clubs, minimum (12-14)"
         - rebid: 2!D
           meaning: "Reverse — 16+ HCP, 4+ !D (forcing)"
         - rebid: 2!H
-          meaning: "Simple raise — 3+ !H support, not a reverse"
+          meaning: "Simple raise — 3+ !H support"
         - rebid: 2!S
           meaning: "Reverse — 16+ HCP, 4+ !S (forcing)"
         - rebid: 2NT
-          meaning: "18-19 HCP, balanced (confirms 4-card !C opening)"
+          meaning: "18-19 HCP, balanced"
         - rebid: 3!C
-          meaning: "6+ clubs, invitational"
+          meaning: "6+ clubs, invitational (15-17)"
 
     quick_reference:
       - sequence: "1!C - 1!D"
         meaning: "Natural, 4+ diamonds, waiting"
       - sequence: "1!C - 1!H/!S"
-        meaning: "5+ if weak; 4+ if strong (invitational+)"
+        meaning: "Always 5+ (DEC-6). 4-card major inv+ routes through 1NT forcing."
 
     competitive_revaluation:
       title: "Competitive Re-evaluation with LTC"

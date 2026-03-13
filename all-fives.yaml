@@ -2,7 +2,7 @@
 # Quick reference for table use. Full specification: all-fives-verbose.yaml
 
 system: All Fives
-tagline: "Every 1-level suit opening promises 5+ cards."
+tagline: "Every 1-level suit opening promises 5+ cards (with known exceptions)."
 
 # ── Openings ──────────────────────────────────────
 
@@ -46,12 +46,19 @@ openings:
       opener_rebids: "1NT=12-14 bal, 2♣=real clubs, 1♠=4+ nat, 2♦=reverse 16+"
 
   1_suit:
-    1st_2nd: 12+ HCP (~7 losers), 5+ cards (4+ with 15-17 bal, rebid NT)
-    3rd: 8+ HCP, 5+ cards (light, tactical). 1♣ see above.
+    1st_2nd: "12+ HCP (~7 losers)"
+    3rd: "8+ HCP (light, tactical). 1♣ see above."
+    suit_promises:
+      1C: "5+ clubs (always — 12-14 bal opens 1NT)"
+      1D: "4+ diamonds (may be 4 with 15+ bal, no 5-card suit)"
+      1H: "5+ hearts (may be 4 with 4333, 15+ bal, no 4+ minor)"
+      1S: "5+ spades (may be 4: 4-3-3-3 or 4-4 majors, 15+ bal, no 4+ minor — 1st/2nd only)"
     rules:
-      - "Two 4-card suits: open lower"
-      - "15-17 bal: open 4 cards, rebid NT"
-      - "2NT rebid confirms 4 cards in opened suit"
+      - "4-4 majors with 4+ minor: open the minor, show majors naturally"
+      - "4-4 majors, no 4+ minor (1st/2nd, 15): open 1♠, bid 2♥ next"
+      - "4-4 majors, no 4+ minor (1st/2nd, 16-17): open 1♠, rebid 2NT"
+      - "4333 with 15+ bal: open the 4-card suit, rebid 2NT"
+      - "2NT rebid = balanced (opening suit may be only 4)"
     1NT_response:
       meaning: "6-12 HCP, FORCING one round (DEC-6)"
       conditions: "No fit (≤3 cards), no new suit at 1-level. OFF in competition."
@@ -69,7 +76,7 @@ openings:
           2NT: "15-17 balanced (4-card opening)"
           3m: "6+ in opened minor, invitational"
       responder_second_bid:
-        weak_6_9: "Pass"
+        weak_6_9: "Place the contract: pass, correct to long suit, or give preference"
         inv_10_12: "Bid again: raise, preference, or 2NT"
         hidden_4M: "After 1m: show 4-card major now (inv+ values)"
       1m_1M_clarification: "1m - 1M always promises 5+ (4M inv+ routes through 1NT)"
