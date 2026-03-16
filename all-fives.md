@@ -62,14 +62,15 @@ After 2♦ denial:
 
 | Suit | Promise |
 |---|---|
-| 1C | 4+ clubs (may be 4 with 15+ bal, 3-3-3-4) |
-| 1D | 4+ diamonds (may be 4 with 15+ bal, no 5-card suit) |
-| 1H | 5+ hearts (may be 4 with 4333, 15+ bal, no 4+ minor) |
-| 1S | 5+ spades (may be 4: 4-3-3-3 or 4-4 majors, 15+ bal, no 4+ minor — 1st/2nd only) |
+| 1C | 4+ clubs (1st/2nd: 4 only with 15+ bal 3334. 3rd/4th: always 4+, real) |
+| 1D | 4+ diamonds (may be 4 with balanced hand, no 5-card suit) |
+| 1H | 5+ hearts (may be 4: 4333 with 15+ bal, or 3rd/4th 12-14 bal) |
+| 1S | 5+ spades (may be 4: 4333 or 4-4 majors, no 4+ minor — any seat, any strength) |
 
 - 4-4 majors with 4+ minor: open the minor, show majors naturally
-- 4-4 majors, no 4+ minor (1st/2nd, 15): open 1♠, bid 2♥ next
+- 4-4 majors, no 4+ minor (15 or 3rd/4th 12-14): open 1♠, bid 2♥ next
 - 4-4 majors, no 4+ minor (1st/2nd, 16-17): open 1♠, rebid 2NT
+- 4-4 majors, no 4+ minor (3rd/4th, 15-17): open 1NT
 - 4333 with 15+ bal: open the 4-card suit, rebid 2NT
 - 2NT rebid = balanced (opening suit may be only 4)
 
