@@ -105,45 +105,95 @@ openings:
 
   - bid: 1NT
     section: responses
+    note: >
+      H-10 Split Stayman replaces Puppet Stayman + transfers. Two asking bids
+      (2!C = 4-card ask, 2!D = 5-card ask) plus natural sign-offs (2!H/2!S).
+      No transfers — weak major hands bid naturally. Artificial 2!H denial after
+      2!D keeps 2NT free for responder's invitation.
     responses:
       - bid: 2!C
-        meaning: "Puppet Stayman — asks for a 5-card major"
+        meaning: "Split Stayman — 4-card major ask (inv+)"
         continuations:
           - bid: 2!D
-            meaning: "Denies 5-card major"
+            meaning: "No 4-card major (denial)"
           - bid: 2!H
-            meaning: "5 hearts"
+            meaning: "4+ hearts (may also have 4 spades)"
           - bid: 2!S
-            meaning: "5 spades"
+            meaning: "4 spades, not 4 hearts"
         after_2d_denial:
+          - bid: Pass
+            by: responder
+            meaning: "Weak, no 4M — drop in 1NT"
           - bid: 2!H
             by: responder
-            meaning: "4 spades (not 4 hearts). Opener bids 2!S with a fit, 2NT without."
-          - bid: 2!S
-            by: responder
-            meaning: "4 hearts (not 4 spades). Opener bids 3!H with a fit, 2NT without."
+            meaning: "Crawling Stayman — weak 4-4 majors. Opener passes (4!H) or corrects to 2!S (4!S)."
           - bid: 2NT
             by: responder
-            meaning: "No 4-card major, invitational"
+            meaning: "Invitational, no 4-card major"
+          - bid: 3!H
+            by: responder
+            meaning: "Smolen — 5!S + 4!H, GF. Opener bids 3!S with 3-card support, 3NT without."
+          - bid: 3!S
+            by: responder
+            meaning: "Smolen — 5!H + 4!S, GF. Opener bids 4!H with 3-card support, 3NT without."
           - bid: 3NT
             by: responder
-            meaning: "No 4-card major, game values"
+            meaning: "Game values, no 4-card major"
           - note: >
-              After 2!C - 2!D, responder's major bids are TRANSFER-LIKE:
-              bidding 2!H shows spades (the other major), 2!S shows hearts.
-              This lets the strong hand (opener) become declarer.
+              Crawling Stayman (2!H after denial): responder has weak 4-4 majors,
+              wants to play in 2!H or 2!S. Opener passes with 4!H, corrects to 2!S
+              with 4!S, or passes with neither (2!H is the safer partscore).
+              Smolen (3!H/3!S): shows 5 of the OTHER major + 4 of the bid major, GF.
+              This right-sides 5-3 fits — opener declares from the strong side.
       - bid: 2!D
-        meaning: "Transfer to !H"
-        completion: "Opener bids 2!H (or 3!H with maximum and 4-card support — see H-4)"
+        meaning: "5-card major ask (inv+, 8+ HCP)"
+        note: >
+          Asks opener for a 5-card major. The artificial 2!H denial (= no 5M) keeps
+          bidding one level lower than Puppet's 2NT denial, preserving 2NT for
+          responder's invitation bid. This makes 2!D usable for invitational hands
+          (not just game-forcing), finding inv-level 5-3 major fits.
+        continuations:
+          - bid: 2!H
+            meaning: "No 5-card major (artificial denial)"
+          - bid: 2!S
+            meaning: "5 spades"
+          - bid: 2NT
+            meaning: "5 hearts"
+        after_2h_denial:
+          - bid: Pass
+            by: responder
+            meaning: "Weak (rare — usually uses natural 2!H/2!S instead)"
+          - bid: 2!S
+            by: responder
+            meaning: "Natural invite, 5+ spades"
+          - bid: 2NT
+            by: responder
+            meaning: "Invitational, no fit"
+          - bid: 3NT
+            by: responder
+            meaning: "Game values, no fit"
+        after_2s_five_spades:
+          - bid: 3!S
+            by: responder
+            meaning: "Invite with spade support"
+          - bid: 4!S
+            by: responder
+            meaning: "Game with spade support"
+        after_2nt_five_hearts:
+          - bid: 3!H
+            by: responder
+            meaning: "Invite with heart support"
+          - bid: 4!H
+            by: responder
+            meaning: "Game with heart support"
       - bid: 2!H
-        meaning: "Transfer to !S"
-        completion: "Opener bids 2!S (or 3!S with maximum and 4-card support — see H-4)"
+        meaning: "Natural, to play — weak hand with 5+ hearts"
       - bid: 2!S
-        meaning: "Transfer to !C"
-        completion: "Opener bids 3!C"
-      - bid: 3!C
-        meaning: "Transfer to !D"
-        completion: "Opener bids 3!D"
+        meaning: "Natural, to play — weak hand with 5+ spades"
+      - bid: 2NT
+        meaning: "Natural invitation (no 4M, no 5M)"
+      - bid: 3!C / 3!D / 3!H / 3!S
+        meaning: "Undefined (reserved for future hypothesis)"
 
   - bid: 1NT
     section: escape_1ntx

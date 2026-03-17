@@ -11,20 +11,40 @@ openings:
     1st_2nd: 12-14 HCP, balanced (4333/4432/5332 incl. 5M)
     3rd_4th: 15-17 HCP, balanced
     responses:
-      2C: "Puppet Stayman (asks 5-card major)"
-      2D: "Transfer to !H"
-      2H: "Transfer to !S"
-      2S: "Transfer to !C"
-      3C: "Transfer to !D"
-    puppet_stayman:
-      2D: "Denies 5M"
-      2H: "5 hearts"
-      2S: "5 spades"
+      2C: "Split Stayman — 4-card major ask (inv+). Crawling: weak 4-4 majors"
+      2D: "5-card major ask (inv+, 8+ HCP). Artificial 2!H denial"
+      2H: "Natural, to play (weak, 5+ !H)"
+      2S: "Natural, to play (weak, 5+ !S)"
+      2NT: "Natural invitation (no 4M, no 5M)"
+      3C_3D_3H_3S: "Undefined (future hypothesis)"
+    split_stayman_2C:
+      opener_rebids:
+        2D: "No 4M (denial)"
+        2H: "4+ hearts (may also have 4 spades)"
+        2S: "4 spades, not 4 hearts"
       after_2D_denial:
-        2H: "4 spades (transfer-like), opener bids 2!S or 2NT"
-        2S: "4 hearts (transfer-like), opener bids 3!H or 2NT"
-        2NT: "No 4M, invitational"
-        3NT: "No 4M, game values"
+        pass: "Weak, no 4M (drop)"
+        2H: "Crawling — weak 4-4 majors. Opener passes or corrects to 2!S"
+        2NT: "Invitational, no 4M"
+        3H: "Smolen — 5!S + 4!H, GF (right-sides 5-3 !S fit)"
+        3S: "Smolen — 5!H + 4!S, GF (right-sides 5-3 !H fit)"
+        3NT: "Game values, no 4M"
+    five_card_ask_2D:
+      opener_rebids:
+        2H: "No 5M (artificial denial — keeps 2NT free for invite)"
+        2S: "5 spades"
+        2NT: "5 hearts"
+      after_2H_denial:
+        pass: "Weak hand (rare — usually uses 2H/2S natural instead)"
+        2S: "Natural invite, 5+ !S"
+        2NT: "Invitational, no fit"
+        3NT: "Game values, no fit"
+      after_2S_five_spades:
+        3S: "Invite with !S support"
+        4S: "Game with !S support"
+      after_2NT_five_hearts:
+        3H: "Invite with !H support"
+        4H: "Game with !H support"
     escape_1NTx:
       name: Helvic Wriggle
       XX: "One-suited (opener bids 2!C, pass or correct)"

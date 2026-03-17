@@ -16,28 +16,39 @@
 
 | Bid | Meaning |
 |---|---|
-| 2♣ | Puppet Stayman (asks 5-card major) |
-| 2♦ | Transfer to ♥ |
-| 2♥ | Transfer to ♠ |
-| 2♠ | Transfer to ♣ |
-| 3♣ | Transfer to ♦ |
+| 2♣ | Split Stayman — 4-card major ask (inv+). Crawling: weak 4-4 majors |
+| 2♦ | 5-card major ask (inv+, 8+ HCP). Artificial 2♥ denial |
+| 2♥ | Natural, to play (weak, 5+ ♥) |
+| 2♠ | Natural, to play (weak, 5+ ♠) |
+| 2NT | Natural invitation (no 4M, no 5M) |
+| 3♣/3♦/3♥/3♠ | Undefined (future hypothesis) |
 
-#### Puppet Stayman Continuations
+#### Split Stayman (2♣) Continuations
 
 | Opener Rebid | Meaning |
 |---|---|
-| 2♦ | Denies 5M |
-| 2♥ | 5 hearts |
-| 2♠ | 5 spades |
+| 2♦ | No 4M (denial) |
+| 2♥ | 4+ hearts (may also have 4 spades) |
+| 2♠ | 4 spades, not 4 hearts |
 
 After 2♦ denial:
 
 | Bid | Meaning |
 |---|---|
-| 2♥ | 4 spades (transfer-like), opener bids 2♠ or 2NT |
-| 2♠ | 4 hearts (transfer-like), opener bids 3♥ or 2NT |
-| 2NT | No 4M, invitational |
-| 3NT | No 4M, game values |
+| pass | Weak, no 4M (drop) |
+| 2♥ | Crawling — weak 4-4 majors. Opener passes or corrects to 2♠ |
+| 2NT | Invitational, no 4M |
+| 3♥ | Smolen — 5♠ + 4♥, GF (right-sides 5-3 ♠ fit) |
+| 3♠ | Smolen — 5♥ + 4♠, GF (right-sides 5-3 ♥ fit) |
+| 3NT | Game values, no 4M |
+
+#### 5-Card Major Ask (2♦) Continuations
+
+| Opener Rebid | Meaning |
+|---|---|
+| 2♥ | No 5M (artificial denial — keeps 2NT free for invite) |
+| 2♠ | 5 spades |
+| 2NT | 5 hearts |
 
 #### Escaping 1NTx — Helvic Wriggle
 

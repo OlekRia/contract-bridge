@@ -49,34 +49,68 @@ Stronger range in 3rd seat. With a weak 12-14 hand we risk blocking ourselves fr
 
 | Bid | Meaning |
 |---|---|
-| 2♣ | **Puppet Stayman — asks for a 5-card major** |
-| 2♦ | **Transfer to ♥** |
-| 2♥ | **Transfer to ♠** |
-| 2♠ | **Transfer to ♣** |
-| 3♣ | **Transfer to ♦** |
+| 2♣ | **Split Stayman — 4-card major ask (inv+)** |
+| 2♦ | **5-card major ask (inv+, 8+ HCP)** |
+| 2♥ | **Natural, to play — weak hand with 5+ hearts** |
+| 2♠ | **Natural, to play — weak hand with 5+ spades** |
+| 2NT | **Natural invitation (no 4M, no 5M)** |
+| 3♣ / 3♦ / 3♥ / 3♠ | **Undefined (reserved for future hypothesis)** |
 
-#### Puppet Stayman Continuations
+#### Split Stayman (2♣) Continuations
 
 After 2♣, opener replies:
 
 | Bid | Meaning |
 |---|---|
-| 2♦ | Denies 5-card major |
-| 2♥ | 5 hearts |
-| 2♠ | 5 spades |
+| 2♦ | No 4-card major (denial) |
+| 2♥ | 4+ hearts (may also have 4 spades) |
+| 2♠ | 4 spades, not 4 hearts |
 
-After 2♣ — 2♦ (denial), responder continues:
+After 2♣ — 2♦ (no 4M), responder continues:
 
 | Bid | Meaning |
 |---|---|
-| 2♥ | 4 spades (not 4 hearts). Opener bids 2♠ with a fit, 2NT without. |
-| 2♠ | 4 hearts (not 4 spades). Opener bids 3♥ with a fit, 2NT without. |
-| 2NT | No 4-card major, invitational |
-| 3NT | No 4-card major, game values |
+| Pass | Weak, no 4M — drop in 1NT |
+| 2♥ | Crawling Stayman — weak 4-4 majors. Opener passes (4♥) or corrects to 2♠ (4♠). |
+| 2NT | Invitational, no 4-card major |
+| 3♥ | Smolen — 5♠ + 4♥, GF. Opener bids 3♠ with 3-card support, 3NT without. |
+| 3♠ | Smolen — 5♥ + 4♠, GF. Opener bids 4♥ with 3-card support, 3NT without. |
+| 3NT | Game values, no 4-card major |
 
-> After the denial, responder's major bids are **transfer-like**: 2♥ shows spades, 2♠ shows hearts. This lets the strong hand (opener) become declarer.
+> Crawling Stayman (2♥ after denial): responder has weak 4-4 majors, wants to play in 2♥ or 2♠. Opener passes with 4♥, corrects to 2♠ with 4♠, or passes with neither (2♥ is the safer partscore). Smolen (3♥/3♠): shows 5 of the OTHER major + 4 of the bid major, GF. This right-sides 5-3 fits — opener declares from the strong side.
 
-Opener completes transfers normally. With maximum (13–14) and 4-card support, opener may super-accept by jumping to 3 of the major (see H-4).
+#### 5-Card Major Ask (2♦) Continuations
+
+After 2♦, opener replies:
+
+| Bid | Meaning |
+|---|---|
+| 2♥ | No 5-card major (artificial denial) |
+| 2♠ | 5 spades |
+| 2NT | 5 hearts |
+
+After 2♦ — 2♥ (no 5M, artificial), responder continues:
+
+| Bid | Meaning |
+|---|---|
+| Pass | Weak (rare — usually uses natural 2♥/2♠ instead) |
+| 2♠ | Natural invite, 5+ spades |
+| 2NT | Invitational, no fit |
+| 3NT | Game values, no fit |
+
+After 2♦ — 2♠ (5 spades):
+
+| Bid | Meaning |
+|---|---|
+| 3♠ | Invite with spade support |
+| 4♠ | Game with spade support |
+
+After 2♦ — 2NT (5 hearts):
+
+| Bid | Meaning |
+|---|---|
+| 3♥ | Invite with heart support |
+| 4♥ | Game with heart support |
 
 #### Escaping 1NTx — Helvic Wriggle
 
