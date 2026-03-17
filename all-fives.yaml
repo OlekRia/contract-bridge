@@ -16,7 +16,10 @@ openings:
       2H: "Natural, to play (weak, 5+ !H)"
       2S: "Natural, to play (weak, 5+ !S)"
       2NT: "Natural invitation (no 4M, no 5M)"
-      3C_3D_3H_3S: "Undefined (future hypothesis)"
+      3C: "5-5 minors, slam interest"
+      3D: "5-5 majors, GF"
+      3H: "Splinter — short !H, 5-4+ minors, slam interest"
+      3S: "Splinter — short !S, 5-4+ minors, slam interest"
     split_stayman_2C:
       opener_rebids:
         2D: "No 4M (denial)"

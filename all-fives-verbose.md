@@ -54,7 +54,10 @@ Stronger range in 3rd seat. With a weak 12-14 hand we risk blocking ourselves fr
 | 2♥ | **Natural, to play — weak hand with 5+ hearts** |
 | 2♠ | **Natural, to play — weak hand with 5+ spades** |
 | 2NT | **Natural invitation (no 4M, no 5M)** |
-| 3♣ / 3♦ / 3♥ / 3♠ | **Undefined (reserved for future hypothesis)** |
+| 3♣ | **5-5 minors, slam interest** |
+| 3♦ | **5-5 majors, GF** |
+| 3♥ | **Splinter — short hearts, 5-4+ minors, slam interest** |
+| 3♠ | **Splinter — short spades, 5-4+ minors, slam interest** |
 
 #### Split Stayman (2♣) Continuations
 

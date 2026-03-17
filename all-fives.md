@@ -21,7 +21,10 @@
 | 2♥ | Natural, to play (weak, 5+ ♥) |
 | 2♠ | Natural, to play (weak, 5+ ♠) |
 | 2NT | Natural invitation (no 4M, no 5M) |
-| 3♣/3♦/3♥/3♠ | Undefined (future hypothesis) |
+| 3♣ | 5-5 minors, slam interest |
+| 3♦ | 5-5 majors, GF |
+| 3♥ | Splinter — short ♥, 5-4+ minors, slam interest |
+| 3♠ | Splinter — short ♠, 5-4+ minors, slam interest |
 
 #### Split Stayman (2♣) Continuations
 

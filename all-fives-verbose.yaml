@@ -192,8 +192,14 @@ openings:
         meaning: "Natural, to play — weak hand with 5+ spades"
       - bid: 2NT
         meaning: "Natural invitation (no 4M, no 5M)"
-      - bid: 3!C / 3!D / 3!H / 3!S
-        meaning: "Undefined (reserved for future hypothesis)"
+      - bid: 3!C
+        meaning: "5-5 minors, slam interest"
+      - bid: 3!D
+        meaning: "5-5 majors, GF"
+      - bid: 3!H
+        meaning: "Splinter — short hearts, 5-4+ minors, slam interest"
+      - bid: 3!S
+        meaning: "Splinter — short spades, 5-4+ minors, slam interest"
 
   - bid: 1NT
     section: escape_1ntx
