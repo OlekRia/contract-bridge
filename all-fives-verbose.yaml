@@ -186,6 +186,29 @@ openings:
           - bid: 4!H
             by: responder
             meaning: "Game with heart support"
+        interference_after_2D:
+          - trigger: "1NT - 2!D - (X)"
+            rule: "System ON. Opener bids normally (2!H = no 5M, 2!S = 5!S, 2NT = 5!H). Responder may XX for penalty (strong diamonds)."
+          - trigger: "1NT - 2!D - (2!H)"
+            rule: "Pass = no 5M (denial). X = 5 hearts. 2!S = 5 spades."
+            responder_after_pass: "X = penalty, 2!S = natural, 2NT = invite, 3NT = game."
+          - trigger: "1NT - 2!D - (2!S)"
+            rule: "Pass = no 5M (denial). X = 5 spades. 2NT = 5 hearts."
+            responder_after_pass: "X = penalty, 2NT = invite, 3NT = game."
+          - trigger: "1NT - 2!D - (3-level+)"
+            rule: "System OFF. Natural bidding. X = penalty-oriented."
+        interference_after_2C:
+          - trigger: "1NT - 2!C - (X)"
+            rule: "System ON. Opener bids normally (2!D = no 4M, 2!H = 4+!H, 2!S = 4!S). Responder may XX for penalty (strong clubs)."
+          - trigger: "1NT - 2!C - (2!D)"
+            rule: "Pass = no 4M (denial). X = diamonds (opener has length). 2!H = 4+!H. 2!S = 4!S."
+          - trigger: "1NT - 2!C - (2!H or 2!S)"
+            rule: "Pass = no 4M. X = their suit. Bid = natural."
+          - trigger: "1NT - 2!C - (3-level+)"
+            rule: "System OFF. Natural bidding. X = penalty-oriented."
+          - note: >
+              Unified principle: Pass replaces stolen denial. X shows opener's holding
+              in opponent's suit. Direct bids are natural. At 3-level+, system OFF.
       - bid: 2!H
         meaning: "Natural, to play — weak hand with 5+ hearts"
       - bid: 2!S
@@ -395,6 +418,70 @@ openings:
       expected tricks. A hand with 10 HCP but 7 losers (e.g. !S:KQxxx !H:x
       !D:Axxx !C:xxx) is a limit raise by LTC, though HCP says only a single
       raise. Trust LTC in suit contracts — see H-8.
+
+    jump_responses_over_1M:
+      title: "Jump Responses After 1-Major Opening"
+      seat_note: >
+        Seat-dependent meanings. In 1st/2nd seat, forcing 1NT routes invitational
+        hands through 1NT, freeing 3M for preemptive use. In 3rd/4th seat, forcing
+        1NT is OFF — 3M stays as limit raise (traditional).
+      first_second_seat:
+        - bid: 2NT
+          meaning: "Jacoby — forcing raise, 4+ trumps, GF (13+ HCP)"
+          note: >
+            Opener describes hand: shortness, strength, or side suit. Forces
+            to game — responder has committed. Only in 1st/2nd seat (unpassed hand).
+          opener_continuations:
+            - bid: "3 new suit"
+              meaning: "Singleton or void in that suit"
+            - bid: 3M
+              meaning: "Minimum (12-14), no shortness"
+            - bid: 3NT
+              meaning: "15-17, no shortness, semi-balanced"
+            - bid: 4M
+              meaning: "Minimum, no shortness, nothing more to say"
+            - bid: "4 new suit"
+              meaning: "Good 5+ side suit, slam interest"
+        - bid: "3 new suit"
+          meaning: "Fit jump — good 5+ suit (2+ of top 4 honours) + 3+ support, inv (10-12)"
+          note: >
+            Two pieces of information in one bid: lead direction AND support.
+            Example: 1!S - 3!D = 5+ !D (KQxxx type), 3+ !S, 10-12 HCP.
+            Applies in any seat.
+        - bid: 3M
+          meaning: "Preemptive raise — 4+ trumps, weak (5-8 HCP)"
+          note: >
+            Freed by forcing 1NT: invitational hands (10-12) route through 1NT
+            and raise on round 2. So 3M is purely preemptive. Takes bidding
+            space from opponents.
+        - bid: 4M
+          meaning: "To play — distributional, 5+ support, not slam interest"
+          ltc: "6-7 losers"
+      third_fourth_seat:
+        - bid: 2NT
+          meaning: "Natural invitation, balanced, 11-12 HCP"
+          note: "Passed hand cannot have GF values. No Jacoby."
+        - bid: "3 new suit"
+          meaning: "Fit jump — same as 1st/2nd (good suit + support, inv)"
+        - bid: 3M
+          meaning: "Limit raise — 10-12 HCP, 4+ support"
+          note: "No forcing 1NT to route through, so 3M stays traditional."
+        - bid: 4M
+          meaning: "To play — distributional"
+
+    jump_responses_over_1m:
+      title: "Jump Responses After 1-Minor Opening"
+      note: "Same in any seat. No Jacoby (no trump fit implied by minor opening)."
+      bids:
+        - bid: 2NT
+          meaning: "Natural invitation, balanced, 11-12 HCP"
+        - bid: 3m
+          meaning: "Invitational raise — 5+ support, 10-12 HCP"
+        - bid: "Jump in new major (e.g. 1!C-2!H)"
+          meaning: "Strong jump shift — 16+ HCP, 5+ suit, GF"
+          note: "Rare. Self-sufficient suit. Opener rebids naturally."
+        - bid: "Jump in other minor (e.g. 1!C-3!D)"
+          meaning: "Invitational, 5+ suit, 10-12 HCP"
 
     new_suit_at_1_level:
       rule_1st_2nd: >

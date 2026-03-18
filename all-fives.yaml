@@ -48,6 +48,15 @@ openings:
       after_2NT_five_hearts:
         3H: "Invite with !H support"
         4H: "Game with !H support"
+    interference_after_asks:
+      principle: "Pass = stolen denial. X = their suit. 3-level+ = system OFF."
+      after_2D_X: "System ON (opener bids normally). Responder XX = penalty."
+      after_2D_2H: "Pass = no 5M. X = 5!H. 2!S = 5!S."
+      after_2D_2S: "Pass = no 5M. X = 5!S. 2NT = 5!H."
+      after_2D_3plus: "System OFF. X = penalty-oriented."
+      after_2C_X: "System ON (opener bids normally). Responder XX = penalty."
+      after_2C_overcall: "Pass = no 4M. X = their suit. Bid = natural."
+      after_2C_3plus: "System OFF. X = penalty-oriented."
     escape_1NTx:
       name: Helvic Wriggle
       XX: "One-suited (opener bids 2!C, pass or correct)"
@@ -106,6 +115,23 @@ openings:
       limit: "10-12 HCP, 4+ support, 7-8 losers"
       game: "Distributional, 5+ support, 6-7 losers"
     raise_note: "After fit, use LTC: 24 - combined losers = tricks (H-8)"
+    jump_responses_over_1M:
+      seat_note: "1st/2nd seat (forcing 1NT ON) vs 3rd/4th (OFF) changes 2NT and 3M meaning."
+      first_second:
+        2NT: "Jacoby — GF raise, 4+ trumps (opener: 3x=short, 3M=min, 3NT=15-17, 4M=min flat)"
+        3_new_suit: "Fit jump — good 5+ suit + 3+ support, inv 10-12"
+        3M: "Preemptive raise — 4+ trumps, weak 5-8"
+        4M: "To play, distributional, not slam"
+      third_fourth:
+        2NT: "Natural inv 11-12"
+        3_new_suit: "Fit jump (same as 1st/2nd)"
+        3M: "Limit raise 10-12, 4+ support"
+        4M: "To play, distributional"
+    jump_responses_over_1m:
+      2NT: "Natural inv 11-12 balanced"
+      3m: "Inv raise, 5+ support, 10-12"
+      jump_major: "Strong jump shift — 16+ GF, 5+ suit"
+      jump_other_minor: "Inv, 5+ suit, 10-12"
 
   2C:
     name: Benji
