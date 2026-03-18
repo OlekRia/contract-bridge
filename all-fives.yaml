@@ -70,21 +70,22 @@ openings:
   1C_3rd_4th:
     seat: "3rd/4th"
     hcp: "8+"
-    promise: "4+ clubs (real — no prepared 1♣). 12-14 bal without 4+♣ opens its 4-card suit."
+    promise: "3+ clubs (best minor — SAYC style). 12-14 bal opens longest minor, 3-3 = 1♣."
     forcing_1nt: "OFF (responder is a passed hand — cannot force). 1NT = natural 6-10."
-    note: "Old prepared 1♣ (2+) eliminated. 4-4 majors open 1♠, others open their 4-card suit."
+    note: "Best minor for balanced hands. 1♣ may be 3. 1♦ = 4+. 1♥/1♠ = strict 5+ in 3rd/4th."
 
   1_suit:
     1st_2nd: "12+ HCP (~7 losers)"
     3rd: "8+ HCP (light, tactical). 1♣ see above."
     suit_promises:
-      1C: "4+ clubs (1st/2nd: 4 only with 15+ bal 3334. 3rd/4th: always 4+, real)"
-      1D: "4+ diamonds (may be 4 with balanced hand, no 5-card suit)"
-      1H: "5+ hearts (may be 4: 4333 with 15+ bal, or 3rd/4th 12-14 bal)"
-      1S: "5+ spades (may be 4: 4333 or 4-4 majors, no 4+ minor — any seat, any strength)"
+      1C: "4+ clubs (1st/2nd: 4 only with 15+ bal 3334. 3rd/4th: 3+ best minor)"
+      1D: "4+ diamonds (any seat)"
+      1H: "5+ hearts (may be 4: 4333 with 15+ bal in 1st/2nd only. 3rd/4th: strict 5+)"
+      1S: "5+ spades (may be 4: 4333 or 4-4 majors in 1st/2nd. 3rd/4th: strict 5+)"
     rules:
       - "4-4 majors with 4+ minor: open the minor, show majors naturally"
-      - "4-4 majors, no 4+ minor (15 or 3rd/4th 12-14): open 1♠, bid 2♥ next"
+      - "4-4 majors, no 4+ minor (15 HCP 1st/2nd): open 1♠, bid 2♥ next"
+      - "4-4 majors, no 4+ minor (3rd/4th 12-14): open 1♣ (best minor)"
       - "4-4 majors, no 4+ minor (1st/2nd, 16-17): open 1♠, rebid 2NT"
       - "4-4 majors, no 4+ minor (3rd/4th, 15-17): open 1NT"
       - "4333 with 15+ bal: open the 4-card suit, rebid 2NT"

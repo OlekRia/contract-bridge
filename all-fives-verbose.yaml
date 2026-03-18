@@ -263,7 +263,7 @@ openings:
   # cannot open 1NT (12-14 in 1st/2nd, 15-17 in 3rd/4th).
   #
   # 1st/2nd seat: 12-14 balanced → 1NT. Suit opening = real suit (5+, or 4+ strong bal).
-  # 3rd/4th seat: 15-17 balanced → 1NT. 12-14 balanced → open 4-card suit, 1NT non-forcing.
+  # 3rd/4th seat: 15-17 balanced → 1NT. 12-14 balanced → best minor (SAYC), 1NT non-forcing.
 
   # ── 1-Minor Openings ────────────────────
   - bid: "1!C"
@@ -347,11 +347,11 @@ openings:
             hcp: 17
             action: "Open 1!S. After 1!S-1NT, bid 2NT (game zone)."
       in_3rd_4th: >
-        In 3rd/4th seat, this applies with 12-14 HCP too: can't open 1NT
-        (15-17), so open 1!S. After 1NT (natural, non-forcing — passed
-        hand), bid 2!H or pass. Opener can pass 1NT with a balanced
-        minimum — no "convenient rebid" problem. This eliminates the
-        old prepared 1!C entirely — 3rd/4th seat 1!C is now 4+ real clubs.
+        In 3rd/4th seat with 12-14 HCP and 4-4 majors: if you have a 4+
+        minor, open it (unchanged). If no 4+ minor (3-3 in minors), open
+        1!C (best minor). Bid majors naturally over responder's suit bid.
+        If responder bids 1NT (non-forcing — passed hand), pass with
+        minimum. The 1!S workaround is no longer needed in 3rd/4th.
 
   # ── Opening Rules ───────────────────────
   - bid: "1!C / 1!D / 1!H / 1!S"
@@ -360,41 +360,57 @@ openings:
       - "With two 5-card suits, open the higher one."
       - "With 5-4, open the 5-card suit."
       - "With 4-4 majors and a 4+ minor: open the minor, show majors naturally."
-      - "With 4-4 majors, no 4+ minor (15 or 3rd/4th 12-14): open 1!S, rebid 2!H."
+      - "With 4-4 majors, no 4+ minor (15 HCP 1st/2nd): open 1!S, rebid 2!H."
+      - "With 4-4 majors, no 4+ minor (3rd/4th 12-14): open 1!C (best minor)."
       - "With 4-4 majors, no 4+ minor (1st/2nd 16-17): open 1!S, rebid 2NT."
       - "With 4-4 majors, no 4+ minor (3rd/4th 15-17): open 1NT."
       - "With 4333 and 15+ balanced: open the 4-card suit, rebid 2NT."
       - "A 2NT rebid after any opening confirms balanced (opening suit may be only 4)."
 
   # ── 3rd/4th Seat Openings ───────────────
+  #
+  # SAYC-style best minor for balanced 12-14 hands.
+  # 1H/1S = strict 5+ in 3rd/4th (no balanced exceptions).
+  # Forcing 1NT OFF (responder is a passed hand).
+  #
   - bid: "1!C"
-    seat: "3rd"
+    seat: "3rd/4th"
     hcp: "8+"
-    promise: "4+ clubs"
+    promise: "3+ clubs (best minor — may be short with balanced hand)"
     note: >
-      12-14 balanced hands without 4+ clubs open their 4-card suit
-      directly (1!D/1!H/1!S) — the "prepared 1!C" is eliminated.
-      With 4-4 majors and no 4+ minor, open 1!S. With a single
-      4-card suit, open it — if partner bids 1NT (non-forcing),
-      opener can simply pass with a balanced minimum.
+      SAYC-style best minor: 12-14 balanced hands open the longer minor.
+      With 3-3 minors, open 1!C. With 4-4 majors and no 4+ minor, open
+      1!C (best minor). 1!C could be as short as 3 cards — responder
+      should not jump-raise without 5+ support.
     forcing_1nt: >
       Forcing 1NT is OFF in 3rd/4th seat — responder is a passed hand
       and cannot force. 1NT = natural, non-forcing (6-10). Opener may
       pass. New suit responses show 4+ cards (no "always 5+" rule —
       there is no forcing 1NT route for 4-card hands to use).
-    note_on_prepared: >
-      The old "prepared 1!C" (2+ clubs) is eliminated. All 12-14
-      balanced hands without 4+ clubs open their 4-card suit directly.
-      4-4 majors open 1!S.
+    examples:
+      - hand: "!S:KJ43 !H:AQ43 !D:J32 !C:43"
+        hcp: 12
+        action: "Open 1!C (4-4-3-2, best minor is 3-card !C). Bid majors naturally."
+      - hand: "!S:Q32 !H:AK43 !D:J32 !C:432"
+        hcp: 12
+        action: "Open 1!C (3-4-3-3, best minor = !C with 3-3). Rebid 1!H if possible."
 
-  - bid: "1!D / 1!H / 1!S"
-    seat: "3rd"
+  - bid: "1!D"
+    seat: "3rd/4th"
     hcp: "8+"
-    promise: "Usually 5+. May be 4 with 12-14 balanced (can't open 1NT)."
+    promise: "4+ diamonds"
     note: >
-      Forcing 1NT is OFF — responder is a passed hand. 1NT = natural,
-      non-forcing. New suit responses = 4+ (not "always 5+"). May be
-      lighter HCP (passed-hand opening — tactical, competing for
+      Best minor: with 4+ diamonds and fewer clubs, open 1!D. With 4-4
+      in both minors, open 1!D (longer = equal, prefer diamonds per SAYC).
+
+  - bid: "1!H / 1!S"
+    seat: "3rd/4th"
+    hcp: "8+"
+    promise: "Strict 5+ cards. No 4-card balanced exceptions."
+    note: >
+      Unlike 1st/2nd seat, there are NO 4-card exceptions for majors in
+      3rd/4th. Balanced 12-14 hands open best minor, not a 4-card major.
+      May be lighter HCP (passed-hand opening — tactical, competing for
       partscore and directing the lead).
 
   # ── Continuations After Suit Openings ───

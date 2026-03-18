@@ -186,15 +186,18 @@ With 4♠-4♥ and no 4+ minor, open 1♠ because after 1♠-1NT, bidding 2♥ i
 - With two 5-card suits, open the higher one.
 - With 5-4, open the 5-card suit.
 - With 4-4 majors and a 4+ minor: open the minor, show majors naturally.
-- With 4-4 majors, no 4+ minor (15 or 3rd/4th 12-14): open 1♠, rebid 2♥.
+- With 4-4 majors, no 4+ minor (15 HCP 1st/2nd): open 1♠, rebid 2♥.
+- With 4-4 majors, no 4+ minor (3rd/4th 12-14): open 1♣ (best minor).
 - With 4-4 majors, no 4+ minor (1st/2nd 16-17): open 1♠, rebid 2NT.
 - With 4-4 majors, no 4+ minor (3rd/4th 15-17): open 1NT.
 - With 4333 and 15+ balanced: open the 4-card suit, rebid 2NT.
 - A 2NT rebid after any opening confirms balanced (opening suit may be only 4).
 
-**3rd seat:** 8+ HCP, 4+ clubs. 12-14 balanced hands without 4+ clubs open their 4-card suit directly (1♦/1♥/1♠) — the "prepared 1♣" is eliminated. With 4-4 majors and no 4+ minor, open 1♠. With a single 4-card suit, open it — if partner bids 1NT (non-forcing), opener can simply pass with a balanced minimum.
+**3rd seat:** 8+ HCP, 3+ clubs (best minor — may be short with balanced hand). SAYC-style best minor: 12-14 balanced hands open the longer minor. With 3-3 minors, open 1♣. With 4-4 majors and no 4+ minor, open 1♣ (best minor). 1♣ could be as short as 3 cards — responder should not jump-raise without 5+ support.
 
-**3rd seat:** 8+ HCP, Usually 5+. May be 4 with 12-14 balanced (can't open 1NT).. Forcing 1NT is OFF — responder is a passed hand. 1NT = natural, non-forcing. New suit responses = 4+ (not "always 5+"). May be lighter HCP (passed-hand opening — tactical, competing for partscore and directing the lead).
+**3rd seat:** 8+ HCP, 4+ diamonds. Best minor: with 4+ diamonds and fewer clubs, open 1♦. With 4-4 in both minors, open 1♦ (longer = equal, prefer diamonds per SAYC).
+
+**3rd seat:** 8+ HCP, Strict 5+ cards. No 4-card balanced exceptions.. Unlike 1st/2nd seat, there are NO 4-card exceptions for majors in 3rd/4th. Balanced 12-14 hands open best minor, not a 4-card major. May be lighter HCP (passed-hand opening — tactical, competing for partscore and directing the lead).
 
 #### Continuations
 
