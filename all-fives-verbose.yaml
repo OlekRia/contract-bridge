@@ -860,8 +860,48 @@ openings:
           - "At least 3 top honours (A, K, Q)"
           - "Partner needs roughly 2 fillers to make game"
       - type: 3
-        name: "Reserved"
-        note: "Under investigation for strong two-suiters (18-21, 5-5+). See hypothesis H-6."
+        name: "Strong Two-Suiter"
+        hcp: "18-21"
+        shape: "5-5+ in two suits"
+        sequence: "2!C - 2!D - 3!C/3!D/3!H"
+        note: >
+          After 2!C-2!D (waiting), opener's 3-level rebid shows a strong two-suiter.
+          The 3 rebids cover all 10 possible suit pairs via a logical grouping:
+          3!C = clubs + a higher suit, 3!D = diamonds + a major, 3!H = both majors.
+        continuations:
+          after_3C:
+            meaning: "Clubs + a higher suit"
+            ask: "3!D asks which higher suit"
+            responses:
+              - bid: 3!H
+                meaning: "Clubs + hearts"
+              - bid: 3!S
+                meaning: "Clubs + spades"
+              - bid: 3NT
+                meaning: "Clubs + diamonds (both minors)"
+          after_3D:
+            meaning: "Diamonds + a major"
+            ask: "3!H asks which major"
+            responses:
+              - bid: 3!S
+                meaning: "Diamonds + spades"
+              - bid: 3NT
+                meaning: "Diamonds + hearts"
+          after_3H:
+            meaning: "Both majors (hearts + spades)"
+            note: "No ask needed — suits are known."
+            responder:
+              - bid: 3!S
+                meaning: "Preference for spades"
+              - bid: 3NT
+                meaning: "To play"
+              - bid: 4!H
+                meaning: "Game in hearts"
+              - bid: 4!S
+                meaning: "Game in spades"
+          general_continuations: >
+            After suits are identified: raise = support, cheapest NT = sign off,
+            game in a major = to play, new suit = cue-bid (slam interest).
 
     responses:
       - bid: 2!D

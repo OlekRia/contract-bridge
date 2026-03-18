@@ -96,7 +96,6 @@ After 2♦ denial:
 |---|---|
 | type 1 | 22-23 bal (2♣-2♦-2NT) |
 | type 2 | Strong major, ~5 losers, 5+ suit, 3 top honours (2♣-2♦-2♥/2♠) |
-| type 3 | Reserved (see H-6: strong two-suiters 18-21, 5-5+) |
 
 #### Responses to 2♣
 

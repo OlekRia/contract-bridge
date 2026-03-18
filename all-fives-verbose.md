@@ -422,11 +422,11 @@ This is the practical guide: partner opens a suit, what do you bid? Work through
 - At least 3 top honours (A, K, Q)
 - Partner needs roughly 2 fillers to make game
 
-#### Type 3 — Reserved
+#### Type 3 — Strong Two-Suiter
 
+**18-21 HCP:** 2♣ - 2♦ - 3♣/3♦/3♥
 
-
-Under investigation for strong two-suiters (18-21, 5-5+). See hypothesis H-6.
+After 2♣-2♦ (waiting), opener's 3-level rebid shows a strong two-suiter. The 3 rebids cover all 10 possible suit pairs via a logical grouping: 3♣ = clubs + a higher suit, 3♦ = diamonds + a major, 3♥ = both majors.
 
 #### Responses to 2♣
 
