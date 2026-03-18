@@ -195,7 +195,7 @@ With 4♠-4♥ and no 4+ minor, open 1♠ because after 1♠-1NT, bidding 2♥ i
 
 **3rd seat:** 8+ HCP, 3+ clubs (best minor — may be short with balanced hand). SAYC-style best minor: 12-14 balanced hands open the longer minor. With 3-3 minors, open 1♣. With 4-4 majors and no 4+ minor, open 1♣ (best minor). 1♣ could be as short as 3 cards — responder should not jump-raise without 5+ support.
 
-**3rd seat:** 8+ HCP, 4+ diamonds. Best minor: with 4+ diamonds and fewer clubs, open 1♦. With 4-4 in both minors, open 1♦ (longer = equal, prefer diamonds per SAYC).
+**3rd seat:** 8+ HCP, 3+ diamonds. Best minor: with longer diamonds than clubs, open 1♦. With 4-4 in both minors, open 1♦ (equal length, prefer diamonds per SAYC). With 3-3 minors, open 1♣. 1♦ can be as short as 3 (e.g., 4-4-3-2).
 
 **3rd seat:** 8+ HCP, Strict 5+ cards. No 4-card balanced exceptions.. Unlike 1st/2nd seat, there are NO 4-card exceptions for majors in 3rd/4th. Balanced 12-14 hands open best minor, not a 4-card major. May be lighter HCP (passed-hand opening — tactical, competing for partscore and directing the lead).
 

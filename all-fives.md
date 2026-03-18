@@ -77,7 +77,7 @@ After 2♦ denial:
 | Suit | Promise |
 |---|---|
 | 1C | 4+ clubs (1st/2nd: 4 only with 15+ bal 3334. 3rd/4th: 3+ best minor) |
-| 1D | 4+ diamonds (any seat) |
+| 1D | 4+ diamonds (1st/2nd). 3+ diamonds (3rd/4th best minor) |
 | 1H | 5+ hearts (may be 4: 4333 with 15+ bal in 1st/2nd only. 3rd/4th: strict 5+) |
 | 1S | 5+ spades (may be 4: 4333 or 4-4 majors in 1st/2nd. 3rd/4th: strict 5+) |
 

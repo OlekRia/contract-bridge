@@ -72,14 +72,14 @@ openings:
     hcp: "8+"
     promise: "3+ clubs (best minor — SAYC style). 12-14 bal opens longest minor, 3-3 = 1♣."
     forcing_1nt: "OFF (responder is a passed hand — cannot force). 1NT = natural 6-10."
-    note: "Best minor for balanced hands. 1♣ may be 3. 1♦ = 4+. 1♥/1♠ = strict 5+ in 3rd/4th."
+    note: "Best minor for balanced hands. 1♣ may be 3. 1♦ may be 3. 1♥/1♠ = strict 5+ in 3rd/4th."
 
   1_suit:
     1st_2nd: "12+ HCP (~7 losers)"
     3rd: "8+ HCP (light, tactical). 1♣ see above."
     suit_promises:
       1C: "4+ clubs (1st/2nd: 4 only with 15+ bal 3334. 3rd/4th: 3+ best minor)"
-      1D: "4+ diamonds (any seat)"
+      1D: "4+ diamonds (1st/2nd). 3+ diamonds (3rd/4th best minor)"
       1H: "5+ hearts (may be 4: 4333 with 15+ bal in 1st/2nd only. 3rd/4th: strict 5+)"
       1S: "5+ spades (may be 4: 4333 or 4-4 majors in 1st/2nd. 3rd/4th: strict 5+)"
     rules:

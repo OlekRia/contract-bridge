@@ -13,8 +13,8 @@ system:
       15+ balanced 3-3-3-4. In 3rd/4th: 4+ always (12-14 balanced
       without 4+!C opens its 4-card suit instead).
     - >
-      1!D: 4+ diamonds in any seat (not always 5). Balanced hands
-      with no 5-card suit open 1!D when they have 4+ diamonds.
+      1!D: 4+ diamonds in 1st/2nd seat (not always 5). 3+ in 3rd/4th (best minor).
+      Balanced hands with no 5-card suit open 1!D when they have 4+ diamonds.
     - >
       1!H: usually 5+, but 4 with 4333 shape when no 4+ minor is
       available. In 1st/2nd: 15+ HCP only. In 3rd/4th: also 12-14
@@ -398,10 +398,11 @@ openings:
   - bid: "1!D"
     seat: "3rd/4th"
     hcp: "8+"
-    promise: "4+ diamonds"
+    promise: "3+ diamonds"
     note: >
-      Best minor: with 4+ diamonds and fewer clubs, open 1!D. With 4-4
-      in both minors, open 1!D (longer = equal, prefer diamonds per SAYC).
+      Best minor: with longer diamonds than clubs, open 1!D. With 4-4
+      in both minors, open 1!D (equal length, prefer diamonds per SAYC).
+      With 3-3 minors, open 1!C. 1!D can be as short as 3 (e.g., 4-4-3-2).
 
   - bid: "1!H / 1!S"
     seat: "3rd/4th"
