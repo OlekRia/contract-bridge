@@ -2192,78 +2192,369 @@ defensive_carding:
         example: "If partner might need to lead through dummy's ♠AQ, keep your low spades for partner to lead to."
 
   opening_leads:
-    rule: "Lead 3rd or 5th highest from length"
-    rationale: >
-      Information-theoretic analysis: leading low from xxx (3rd highest) provides ~1.0 bit
-      of first-card information. MUD provides only ~0.4 bits because the middle card is
-      ambiguous with top-of-doubleton. Low from xxx immediately distinguishes from a doubleton.
-    vs_suits: "Prefer top-of-sequence leads. Avoid leading from unsupported honours into declarer's strength."
-    vs_nt: "Lead your longest suit unless the bidding clearly shows opponents hold it."
+    # ── The Most Important Defensive Card ──────────
+    #
+    # The opening lead is the only card played with ZERO information from the play.
+    # It is also the single most informative card for partner — it reveals your
+    # longest/strongest suit, your holding type (sequence vs length), and your count.
+    # A good lead gains more IMPs over a session than any signal.
+    #
+    # DECISION ORDER:
+    # 1. WHICH SUIT? (bidding analysis + hand evaluation)
+    # 2. WHICH CARD? (sequence rule → 3rd/5th rule → Jack exception)
 
-    from_length:
-      - holding: "K95"
-        lead: "5"
-        rule: "3rd highest"
-      - holding: "KQ752"
-        lead: "2"
-        rule: "5th highest"
+    master_rule: "3rd or 5th highest from length. Top of touching honours. Jack in the suit → lead 4th best."
 
-    from_sequences:
-      - holding: "AKx(x)"
-        lead: "K (A asks for count)"
-      - holding: "KQx(x)"
-        lead: "K"
-      - holding: "QJx(x)"
-        lead: "Q"
-      - holding: "JTx(x)"
-        lead: "J"
-      - holding: "T9x(x)"
-        lead: "T"
-      - holding: "AKQx(x)"
-        lead: "A (then K — showing the sequence)"
+    # ── Step 1: Which Suit to Lead ─────────────────
 
-    from_short_holdings:
-      - holding: "xx"
-        lead: "Higher card"
-      - holding: "xxx"
-        lead: "Lowest (3rd highest)"
-      - holding: "xxxx"
-        lead: "Highest safe, then low"
+    suit_selection:
+      vs_suits:
+        priorities:
+          - priority: 1
+            rule: "Partner's bid suit"
+            why: "Partner has shown values here. Trust the bidding."
+            example:
+              auction: "1♥-1♠-2♥-4♥"
+              your_hand: "♠953 ♥64 ♦KJ82 ♣Q1074"
+              lead: "♠9 (partner's suit)"
+              why: "Partner bid spades. Lead their suit even though your diamonds look better."
+          - priority: 2
+            rule: "Top of a sequence (KQ, QJ, J10, 109)"
+            why: "Safe and informative. Never costs a trick."
+            example:
+              auction: "1♠-2♠-4♠"
+              your_hand: "♠83 ♥QJ104 ♦K73 ♣J962"
+              lead: "♥Q (top of QJ10)"
+              why: "Three touching honours. Safe lead that establishes tricks without giving anything away."
+          - priority: 3
+            rule: "A singleton (vs suit contracts)"
+            why: "Sets up a ruff. Best when you have trump entries or short trumps."
+            example:
+              auction: "1♠-2♣-2♠-4♠"
+              your_hand: "♠752 ♥A93 ♦8 ♣J87642"
+              lead: "♦8 (singleton)"
+              why: "Singleton diamond. You hold ♥A as an entry — win it later, get a diamond ruff."
+          - priority: 4
+            rule: "Your longest suit (if no sequence available)"
+            why: "Length = tricks. Even without honours, length can establish winners."
+            example:
+              auction: "1♠-4♠"
+              your_hand: "♠62 ♥A94 ♦87643 ♣K52"
+              lead: "♦6 (3rd from 5)"
+              why: "No sequence, no singleton, partner didn't bid. Lead longest suit."
+        avoid:
+          - "Leading from unsupported honours into declarer's known strength (e.g., Kxx into opener's suit)"
+          - "Leading a suit bid and rebid by declarer"
+          - "Underleading an Ace vs suit contracts (high risk of losing a trick)"
+          - "Leading from Qxx or Jxx — very likely to give declarer a free finesse"
 
-    special: >
-      If you hold the J, lead 4th highest.
-      Example: from KJ732, lead the 3 (not the 2).
+      vs_nt:
+        priorities:
+          - priority: 1
+            rule: "Your longest suit"
+            why: "Establishing length tricks is the primary weapon against NT."
+            example:
+              auction: "1NT-3NT"
+              your_hand: "♠KJ742 ♥Q63 ♦95 ♣Q84"
+              lead: "♠4 (4th best — Jack in the suit)"
+              why: "5-card suit. Lead 4th best because you have the Jack."
+          - priority: 2
+            rule: "Partner's bid suit"
+            why: "Partner has entries and length there."
+            example:
+              auction: "(1♦)-1♥-(1NT)-P-(3NT)"
+              your_hand: "♠J83 ♥1072 ♦Q64 ♣K952"
+              lead: "♥10 (top of interior sequence in partner's suit)"
+              why: "Partner overcalled hearts. Lead their suit. Top of doubleton honour."
+          - priority: 3
+            rule: "Unbid suit (especially a major)"
+            why: "If they didn't bid it, partner might have it."
+            example:
+              auction: "1♦-1♠-1NT-3NT"
+              your_hand: "♠64 ♥QJ1082 ♦74 ♣K953"
+              lead: "♥Q (top of sequence in unbid suit)"
+              why: "Hearts are unbid. You have sequence + length."
+        avoid:
+          - "Leading declarer's bid suit"
+          - "Leading dummy's bid suit"
+          - "Short-suit leads (seeking a ruff doesn't work in NT — there are no trumps)"
+
+    # ── Step 2: Which Card from the Chosen Suit ────
+
+    card_selection:
+      # ─ Honours: Top of Touching ──────────────────
+      from_sequences:
+        rule: "Lead the top of touching honours. Two+ touching = a sequence."
+        table:
+          - holding: "AKx(x)"
+            lead: "K"
+            note: "K from AK. If you lead the A instead, partner gives COUNT (Ace asks for count)."
+          - holding: "AKQx(x)"
+            lead: "A"
+            note: "A then K — shows the solid sequence."
+          - holding: "KQx(x)"
+            lead: "K"
+            note: "Standard top of sequence."
+          - holding: "KQJx(x)"
+            lead: "K"
+            note: "K then Q — shows the 3-card+ sequence."
+          - holding: "QJx(x)"
+            lead: "Q"
+            note: "Top of sequence."
+          - holding: "QJ10x(x)"
+            lead: "Q"
+            note: "Q then J — shows the deep sequence."
+          - holding: "JTx(x)"
+            lead: "J"
+            note: "Top of sequence."
+          - holding: "J109x(x)"
+            lead: "J"
+            note: "J then 10 — deep sequence."
+          - holding: "T9x(x)"
+            lead: "10"
+            note: "Top of sequence."
+        interior_sequences:
+          rule: "When you have an honour backed by a non-touching honour + touching, lead the top of the interior."
+          examples:
+            - holding: "KJ10x(x)"
+              lead: "J"
+              note: "Interior sequence under the King."
+            - holding: "AQJ10x"
+              lead: "Q"
+              note: "Interior sequence under the Ace."
+            - holding: "AJ109x"
+              lead: "J"
+              note: "Interior sequence under the Ace (J-10-9)."
+            - holding: "KJ10x"
+              lead: "J"
+              note: "Interior sequence — J backed by 10."
+            - holding: "Q109x"
+              lead: "10"
+              note: "Interior sequence — 10 backed by 9."
+
+      # ─ Length: 3rd or 5th ────────────────────────
+      from_length:
+        rule: >
+          3rd highest from 3 or 4 cards. 5th highest from 5+ cards.
+          This tells partner your length immediately: 3rd/5th encodes parity.
+          From 3 cards: 3rd = lowest. From 4 cards: 3rd = second lowest.
+          From 5 cards: 5th = lowest. From 6 cards: 5th = second lowest.
+        why_not_mud: >
+          MUD (Middle-Up-Down from xxx) provides only ~0.4 bits because the middle
+          card is ambiguous with top-of-doubleton. Leading low from xxx (3rd highest)
+          immediately distinguishes from a doubleton — ~1.0 bit of information.
+          We gain ~0.6 bits per lead by playing 3rd/5th instead of MUD.
+        table:
+          - holding: "9 5 3"
+            lead: "3 (3rd = lowest)"
+            partner_reads: "3+ cards (not a doubleton)"
+          - holding: "9 7 5 3"
+            lead: "5 (3rd = second lowest)"
+            partner_reads: "4+ cards (the 3 will come next)"
+          - holding: "K 9 7 5 3"
+            lead: "3 (5th = lowest)"
+            partner_reads: "5+ cards"
+          - holding: "K 9 7 5 3 2"
+            lead: "3 (5th = second lowest)"
+            partner_reads: "6+ cards (the 2 will come next)"
+        examples:
+          - holding: "K 9 5"
+            lead: "5"
+            rule: "3rd highest from 3"
+          - holding: "K 9 5 2"
+            lead: "5"
+            rule: "3rd highest from 4"
+          - holding: "K Q 7 5 2"
+            lead: "2"
+            rule: "5th highest from 5 (but with KQ, consider leading the K instead — sequence takes priority)"
+
+      # ─ The Jack Exception ───────────────────────
+      jack_exception:
+        rule: "If your suit contains the Jack, lead 4th highest instead of 3rd/5th."
+        why: >
+          The Jack is a card that matters — it can take tricks. Leading 3rd highest
+          from Jxxx would mean leading the Jack itself (wasting it) or leading too
+          close to it. 4th best protects the Jack while still showing length.
+        table:
+          - holding: "J 8 5 3"
+            normal_3rd: "5 (but this is fine — J is 1st, not 3rd)"
+            actual_lead: "3 (4th best)"
+            why: "4th best protects the Jack."
+          - holding: "K J 7 3 2"
+            normal_5th: "2"
+            actual_lead: "3 (4th best)"
+            why: "The 2 would be 5th. Lead the 3 (4th) to protect the J."
+          - holding: "A J 8 6 3"
+            normal_5th: "3"
+            actual_lead: "6 (4th best)"
+            why: "4th best. Partner can apply Rule of 11 more accurately."
+          - holding: "Q J 10 x(x)"
+            actual_lead: "Q"
+            why: "QJ10 is a SEQUENCE — lead top of sequence, not 4th best. Sequence always takes priority."
+        key_point: >
+          The Jack exception does NOT apply when you have a sequence involving the Jack
+          (QJx, J10x). Sequence leads always take priority over the 4th-best rule.
+
+      # ─ Short Holdings ───────────────────────────
+      from_short_holdings:
+        table:
+          - holding: "x x"
+            lead: "Higher card"
+            note: "Top of doubleton. Partner will see you play the lower next — knows it's a doubleton."
+          - holding: "x x x"
+            lead: "Lowest (3rd highest)"
+            note: "NOT MUD. Low from three immediately tells partner this isn't a doubleton."
+          - holding: "x x x x (no honour)"
+            lead: "2nd highest, then lowest"
+            note: "From 8643, lead the 6 then the 3. Partner sees the count."
+          - holding: "Singleton"
+            lead: "The card (only option)"
+            note: "Vs suits only. Sets up a ruff if you can regain the lead."
+
+      # ─ Ace Leads and Count Request ──────────────
+      ace_king_agreement:
+        rule: "K from AK. A asks partner for COUNT."
+        detail: >
+          When partner leads the ACE (not from AKQ), they are asking you for COUNT —
+          not attitude. Give count: high-low = even number, low = odd number.
+          This helps leader decide whether to cash the King or switch.
+        examples:
+          - scenario: "Partner leads ♥A vs 4♠. You hold ♥863."
+            signal: "♥3 (low = odd count)"
+            result: "Partner knows you have 3 hearts. If dummy has 2, declarer has 4 — don't cash King."
+          - scenario: "Partner leads ♥A vs 4♠. You hold ♥82."
+            signal: "♥8 (high-low = even count)"
+            result: "Partner knows you have 2 hearts. Cash King, then give you a ruff on the third round."
+          - scenario: "Partner leads ♥K vs 4♠. You hold ♥Q73."
+            signal: "♥Q (unblock!)"
+            result: "Drop the Queen under the King. Partner continues with Ace, you play low to show 3."
+
+    # ── When NOT to Lead Your Suit ─────────────────
+
+    lead_avoidance:
+      principle: "Some leads are too dangerous. Recognise when to avoid your natural lead."
+      situations:
+        - situation: "Declarer bid your suit"
+          action: "Switch to unbid suit or partner's suit"
+          example:
+            auction: "1♠-2♦-2♠-4♠"
+            your_hand: "♠J4 ♥K73 ♦QJ1063 ♣952"
+            lead: "♥K? No — ♣9 (passive, unbid suit)"
+            why: "Declarer bid and raised spades, dummy bid diamonds (your suit). Leading diamonds gives declarer a free finesse. Lead passively."
+        - situation: "Both opponents bid NT naturally"
+          action: "Consider a passive lead — they have everything covered"
+          example:
+            auction: "1NT-2♣-2♥-3NT"
+            your_hand: "♠J742 ♥854 ♦K1063 ♣92"
+            lead: "♠2 (4th best, passive)"
+            why: "Declarer has hearts, dummy asked for them. Your diamonds are behind declarer's strength. Spades is the least-known suit."
+        - situation: "Underlead an Ace vs suits"
+          action: "Almost never do this. The Ace may never take a trick."
+          example:
+            auction: "1♥-4♥"
+            your_hand: "♠J73 ♥42 ♦A9643 ♣K85"
+            lead: "♣K? No — ♠J (top of sequence)"
+            why: "Never underlead the ♦A vs a suit contract. If declarer has ♦K, your Ace never scores. Lead a safe ♠J instead."
+
+    # ── Suit vs NT Lead Differences ────────────────
+
+    suit_vs_nt:
+      principle: "The lead strategy is fundamentally different vs suits and vs NT."
+      differences:
+        - aspect: "Goal"
+          vs_suits: "Set up ruffs, cash winners quickly, cut dummy's entries"
+          vs_nt: "Establish your long suit to run it later"
+        - aspect: "Singleton leads"
+          vs_suits: "Excellent — sets up a ruff"
+          vs_nt: "Terrible — you're helping declarer. No trumps to ruff with."
+        - aspect: "Leading from length"
+          vs_suits: "Good but secondary to sequences"
+          vs_nt: "Primary strategy — length = tricks"
+        - aspect: "Passive leads"
+          vs_suits: "OK when declarer seems to have everything"
+          vs_nt: "Risky — letting declarer play first often lets them set up 9 tricks"
+        - aspect: "Ace leads"
+          vs_suits: "A from AK is standard. Asks count."
+          vs_nt: "Avoid leading unsupported Aces — you give declarer a free trick"
+
+    # ── Complete Examples ──────────────────────────
 
     examples:
-      - auction: "1NT-3NT"
-        your_hand: "♠J8742 ♥K63 ♦95 ♣Q84"
-        lead: "♠4 (5th highest from length)"
-        why: "Lead your longest suit vs NT. 5th from 5 cards"
-
+      # ─ vs Suit Contracts ─────────────────────────
       - auction: "1♥-2♥-4♥"
         your_hand: "♠KQ3 ♥85 ♦J7643 ♣952"
-        lead: "♠K (top of sequence KQ)"
-        why: "Top of touching honours. Safe and informative"
+        lead: "♠K (top of KQ sequence)"
+        why: "Two touching honours in spades — safe, informative lead. Never costs a trick."
 
       - auction: "1♠-2♠-4♠"
         your_hand: "♠73 ♥K9642 ♦A8 ♣J753"
-        lead: "♥4 (3rd highest from 5)"
-        why: "3rd from odd length. Partner knows you have 5 hearts (3rd/5th leads)"
+        lead: "♥4 (3rd from 5)"
+        why: "No sequence. Lead your longest suit. 3rd from odd length (3rd/5th). Partner knows 5 hearts."
 
       - auction: "1♠-2♠-4♠"
         your_hand: "♠954 ♥AK83 ♦J72 ♣Q63"
-        lead: "♥A then ♥K (AK sequence, A asks for count)"
-        why: "Lead K from AK. Partner gives count. If doubleton, continue for ruff"
+        lead: "♥K (K from AK)"
+        why: "K from AK. Partner gives count. If doubleton, cash Ace and give partner a ruff."
+
+      - auction: "1♠-4♠"
+        your_hand: "♠62 ♥A94 ♦87543 ♣K52"
+        lead: "♦5 (3rd from 5)"
+        why: "Low from xxx — NOT MUD. 3rd highest immediately tells partner this isn't a doubleton."
+
+      - auction: "1♠-2♣-3♣-5♣"
+        your_hand: "♠AQ83 ♥K4 ♦J1095 ♣72"
+        lead: "♦J (top of interior sequence J-10-9)"
+        why: "Solid interior sequence. Safe lead that doesn't sacrifice a trick."
+
+      - auction: "1♥-3♥-4♥"
+        your_hand: "♠85 ♥72 ♦6 ♣KQJ10943"
+        lead: "♣K (top of solid sequence)"
+        why: "KQJ is a running sequence. Cash what you can before declarer draws trumps."
+
+      - auction: "1♦-1♠-2♠-4♠"
+        your_hand: "♠1063 ♥AJ742 ♦9 ♣J853"
+        lead: "♦9 (singleton)"
+        why: "Singleton diamond. Dummy bid diamonds. Win the ♥A later, get a diamond ruff."
+
+      - auction: "1♥-2♥-4♥"
+        your_hand: "♠J842 ♥53 ♦A963 ♣K74"
+        lead: "♠2 (4th best — Jack in the suit)"
+        why: "Jack exception: with J in the suit, lead 4th best, not 3rd. Protects the Jack."
+
+      # ─ vs NT ─────────────────────────────────────
+      - auction: "1NT-3NT"
+        your_hand: "♠KJ742 ♥Q63 ♦95 ♣Q84"
+        lead: "♠4 (4th best — Jack in the suit)"
+        why: "Longest suit vs NT. Lead 4th best (not 5th) because you have the Jack. Rule of 11: 11−4=7 higher cards in other hands."
+
+      - auction: "1NT-3NT"
+        your_hand: "♠Q10843 ♥K72 ♦J63 ♣95"
+        lead: "♠3 (5th highest from 5)"
+        why: "Longest suit. No Jack, no sequence — standard 3rd/5th applies. 5 cards → lead 5th highest = lowest card."
 
       - auction: "1♦-1♠-1NT-3NT"
         your_hand: "♠J6 ♥QJ1082 ♦74 ♣K953"
         lead: "♥Q (top of interior sequence QJ10)"
-        why: "Don't lead declarer's spade suit. Lead your own long suit, top of sequence"
+        why: "Don't lead declarer's spade suit. Lead your own length + sequence in unbid hearts."
 
-      - auction: "1♠-4♠"
-        your_hand: "♠62 ♥A94 ♦J8743 ♣K52"
-        lead: "♦4 (3rd highest from xxx)"
-        why: "Low from xxx — NOT MUD. 3rd highest immediately tells partner this isn't a doubleton"
+      - auction: "1♣-1♦-1NT-3NT"
+        your_hand: "♠AJ953 ♥Q84 ♦72 ♣J63"
+        lead: "♠5 (4th best — Jack in the suit)"
+        why: "Longest suit, unbid. Jack exception applies: 4th best, not 5th."
+
+      - auction: "(1♣)-1♠-(2NT)-(3NT)"
+        your_hand: "♠83 ♥J742 ♦K963 ♣1084"
+        lead: "♠8 (top of doubleton in partner's suit)"
+        why: "Partner overcalled spades. Lead their suit. Top of doubleton."
+
+    # ── Quick Decision Flowchart ───────────────────
+
+    decision_flowchart:
+      step_1: "Did partner bid a suit? → Lead it (top of doubleton, low from 3+, or sequence if you have one)"
+      step_2: "Do you have a sequence (2+ touching honours)? → Lead top of sequence in that suit"
+      step_3: "Do you have a singleton vs suits? → Lead it (if you have trump entries)"
+      step_4: "Lead your longest suit. Apply card selection rules (sequence > Jack exception > 3rd/5th)"
+      step_5: "If nothing stands out → lead passively (unbid suit, low from 3 small)"
 
 # ──────────────────────────────────────────────
 # Additional Materials — Hand Evaluation

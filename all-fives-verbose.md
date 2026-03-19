@@ -1069,40 +1069,6 @@ After dummy appears, choose signal type using three axes. This is mechanical, no
 
 ### 4. Opening Leads
 
-**Lead 3rd or 5th highest from length.**
-
-**Vs suits:** Prefer top-of-sequence leads. Avoid leading from unsupported honours into declarer's strength.
-
-**Vs NT:** Lead your longest suit unless the bidding clearly shows opponents hold it.
-
-#### From Length
-
-| Holding | Lead | Rule |
-|---|---|---|
-| K95 | **5** | 3rd highest |
-| KQ752 | **2** | 5th highest |
-
-#### From Sequences
-
-| Holding | Lead |
-|---|---|
-| AKx(x) | K (A asks for count) |
-| KQx(x) | K |
-| QJx(x) | Q |
-| JTx(x) | J |
-| T9x(x) | T |
-| AKQx(x) | A (then K — showing the sequence) |
-
-#### From Short Holdings
-
-| Holding | Lead |
-|---|---|
-| xx | Higher card |
-| xxx | Lowest (3rd highest) |
-| xxxx | Highest safe, then low |
-
-> **Special rule:** If you hold the J, lead 4th highest. Example: from KJ732, lead the 3 (not the 2).
-
 ---
 
 ## Additional Materials — Hand Evaluation
