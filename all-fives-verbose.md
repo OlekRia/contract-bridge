@@ -1009,71 +1009,21 @@ Acting between two bidding opponents is dangerous — both have values. Be cauti
 
 After dummy appears, choose signal type using three axes. This is mechanical, not creative. Declarer reads your signals too — factor in adversarial cost.
 
-#### Axis 1: What does partner need? (Dummy-dependent)
-
-| Condition | Signal |
-|---|---|
-| Partner leads the Ace | Always give count |
-| Dummy has a threatening long suit declarer needs to establish | Give count (tells partner when to win the Ace) |
-| The defensive question is which suit to shift to | Give suit preference |
-| Neither count nor shift is the issue | Give attitude (default) |
-| Following in trumps | Trump Suit Preference (high-low = higher side suit) |
-
-#### Axis 2: What is cheapest? (Discard discipline)
-
-Signal with the cheapest card that conveys the message. Never signal with a potential trick.
-
-#### Axis 3: What does declarer already know? (Free vs Costly)
-
-A FREE signal encodes information declarer can already deduce from own hand + dummy + bidding. It helps partner at zero adversarial cost. A COSTLY signal reveals information declarer couldn't deduce — it helps both partner and declarer. When declarer has a critical guess, avoid costly signals.
-
-**Free signals** (zero adversarial cost):
-- Count in a suit declarer bid naturally (declarer knows own length + dummy → can compute split)
-- Attitude about partner's overcalled suit (everyone knows overcall = values)
-- Suit preference when dummy's shape makes the obvious shift clear to all
-- Count late in the hand when declarer has already inferred the layout
-
-**Costly signals** (declarer gains information):
-- Count in an unbid suit (declarer gains split information)
-- Attitude in an ambiguous suit (reveals holding declarer is guessing about)
-- Any signal about a suit where declarer has a critical finesse or placement guess
-
-> **Prefer free signals. Give costly signals only when defensive gain clearly outweighs declarer gain.**
-
 ### 1. Attitude (Encourage / Discourage) (Encourage / Discourage)
 
 | Signal | Meaning |
 |---|---|
-| **Low card** | Encouraging — continue this suit |
-| **High card** | Discouraging — please switch |
-
-#### Obvious Shift (Granovetter) — Trick 1 refinement
-
-At trick 1, attitude refers to the "obvious shift suit" identified by dummy. Encouragement = wants continuation (denies tolerance for the obvious shift). Discouragement = wants the obvious shift (has tolerance/values there).
-
-**Identifying the obvious shift suit:**
-
-- **Vs suits:** Dummy's shortest side suit with at most one honor (excluding trump, led suit, declarer's bid suits).
-- **Vs NT:** Dummy's shortest suit.
-- **Priority:** Leader's bid suit takes priority as the obvious shift.
-
-**Adversarial cost:** FREE — dummy is visible to all four players
-
-- **Partner leads ♠K vs 4♥. Dummy: ♠754 ♥Q862 ♦KJ3 ♣A95** (obvious shift: ♣ (3 cards, one honor, shortest non-trump side suit)) — You hold ♠82 ♥J3 ♦A764 ♣Q1083 → Play ♠8 (high = discourage = wants the obvious shift to clubs — you have ♣Q1083)
-- **Partner leads ♠K vs 4♥. Dummy: ♠754 ♥Q862 ♦KJ3 ♣A95** (obvious shift: ♣) — You hold ♠82 ♥J3 ♦Q764 ♣7632 → Play ♠2 (low = encourage = wants spade continuation, no club tolerance)
+| **Low card (2, 3, 4)** | Encouraging — I have values here, continue this suit |
+| **High card (7, 8, 9)** | Discouraging — I have nothing here, please switch |
 
 ### 2. Count (Even / Odd) (Even / Odd)
 
 | Signal | Meaning |
 |---|---|
-| **High card** | Even number of cards |
-| **Low card** | Odd number of cards |
-
-Easy to remember: From a doubleton (even), play high.
+| **High card (8, 7, 6)** | Even number of cards (2 or 4) |
+| **Low card (2, 3, 4)** | Odd number of cards (3 or 5) |
 
 ### Reverse Smith Echo (vs NT only)
-
-**When:** Against NT contracts, at trick 2+, when following to declarer's suit
 
 **Information:** 1.0 bit of delayed cross-suit attitude
 
@@ -1081,16 +1031,17 @@ Easy to remember: From a doubleton (even), play high.
 
 | Signal | Meaning |
 |---|---|
-| **Low card in declarer's suit** | Encourage continuation of the opening lead suit |
-| **High card in declarer's suit** | Discourage — switch when you regain the lead |
+| **Low card in declarer's suit** | I LIKE the opening lead suit — continue it when you get in |
+| **High card in declarer's suit** | I DON'T LIKE the opening lead suit — switch when you get in |
 
 > **Exception:** When dummy has an entryless long suit threatening to run, count overrides Smith Echo. Partner needs to know WHEN to win, not WHETHER to continue.
 
 #### Examples
 
-- **Partner led ♠5 vs 3NT, declarer won ♠A, leads ♥Q** — You hold ♠KJ83 ♥764 → Play ♥4 (low = encourage spades, partner should continue)
-- **Partner led ♠5 vs 3NT, declarer won ♠A, leads ♥Q** — You hold ♠92 ♥764 → Play ♥7 (high = discourage spades, partner should switch)
-- **Partner led ♦7 vs 3NT, declarer won ♦A, leads ♣K** — You hold ♦QJ4 ♣862 → Play ♣2 (low = encourage diamonds). When partner wins ♣A, they continue ♦
+- **Partner led ♠5 vs 3NT. Declarer won ♠A. Declarer now leads ♥Q.** —  → Play ♥4 (LOW = like spades — you have ♠KJ83)
+- **Partner led ♠5 vs 3NT. Declarer won ♠A. Declarer now leads ♥Q.** —  → Play ♥7 (HIGH = don't like spades — you have only ♠92)
+- **Partner led ♦7 vs 3NT. Declarer won ♦A. Declarer leads ♣K.** —  → Play ♣2 (LOW = like diamonds — you have ♦QJ sitting behind declarer's ♦A)
+- **Partner led ♥4 vs 3NT. Dummy: ♥3, ♦AKQJ73 (no side entry).** —  → DO NOT play Smith. Give COUNT instead (♦8 = even). Partner needs to know when to win the diamond stopper, not whether to continue hearts.
 
 > Reverse Smith (low = like). Matches our attitude convention. Near-mandatory at expert level.
 
@@ -1098,35 +1049,23 @@ Easy to remember: From a doubleton (even), play high.
 
 | Signal | Meaning |
 |---|---|
-| **High-low in trumps** | Prefer higher-ranking side suit |
-| **Low-high in trumps** | Prefer lower-ranking side suit |
+| **High-low in trumps (e.g., ♠8 then ♠4)** | I want the HIGHER-ranking side suit led |
+| **Low-high in trumps (e.g., ♠4 then ♠8)** | I want the LOWER-ranking side suit led |
 
-> **Caution:** Never signal with potential trump tricks (e.g., Qxx of trumps). The signal must not cost a trick.
+> **Caution:** NEVER signal with potential trump tricks. If you hold Qxx or Jxx of trumps, just follow low — keep your honor guarded. The signal MUST NOT cost a trick. Safety first, information second.
 
 ### 3. Suit Preference on Discards (Italian Style) on Discards
 
 | Discard | Meaning |
 |---|---|
-| **Odd card (3, 5, 7, 9)** | Interest in the suit being discarded |
-| **Low even card (2, 4)** | Interest in the lower-ranking side suit |
-| **High even card (6, 8)** | Interest in the higher-ranking side suit |
+| **Odd card (3, 5, 7, 9)** | I WANT this suit led — I have values here |
+| **Low even card (2, 4)** | I DON'T want this suit. Lead the LOWER remaining suit. |
+| **High even card (6, 8)** | I DON'T want this suit. Lead the HIGHER remaining suit. |
 
-#### Signalling by Elimination
+> The higher the discard, the less reliable (you might need that card). The second discard confirms.
 
-| Sequence | Meaning |
-|---|---|
-| 4 then 2 | Denies interest in the lower suit |
-| 9 then 3 | Denies interest in the discarded suit |
-| 8 then 6 | Denies interest in the higher suit |
+### Discard Discipline — Four Iron Rules
 
-> The higher the discard, the less reliable. The second discard confirms.
-
-### Discard Discipline
-
-- Never signal with a card that could be a trick
-- Use the cheapest card that conveys the intended message
-- Never bare an honour or unguard a critical suit
-- Preserve cards partner might need for communication
 
 ### 4. Opening Leads
 
