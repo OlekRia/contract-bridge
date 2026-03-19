@@ -76,7 +76,7 @@ openings:
 
   1_suit:
     1st_2nd: "12+ HCP (~7 losers)"
-    3rd: "8+ HCP (light, tactical). 1♣ see above."
+    3rd: "8+ HCP (light, tactical). Best minor: 1♣ may be 3, 1♦ may be 3. 1♥/1♠ strict 5+."
     suit_promises:
       1C: "4+ clubs (1st/2nd: 4 only with 15+ bal 3334. 3rd/4th: 3+ best minor)"
       1D: "4+ diamonds (1st/2nd). 3+ diamonds (3rd/4th best minor)"

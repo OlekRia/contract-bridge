@@ -72,7 +72,7 @@ After 2♦ denial:
 | Seat | Requirements |
 |---|---|
 | 1st/2nd | 12+ HCP (~7 losers) |
-| 3rd | 8+ HCP (light, tactical). 1♣ see above. |
+| 3rd | 8+ HCP (light, tactical). Best minor: 1♣ may be 3, 1♦ may be 3. 1♥/1♠ strict 5+. |
 
 | Suit | Promise |
 |---|---|
