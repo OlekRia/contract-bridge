@@ -454,7 +454,7 @@ X of any artificial bid = lead that suit
 
 ### Signal Selection
 
-**Partner need:** Ace lead → count. Dummy threatens → count. Shift question → suit preference. Default → attitude. Trumps → peter.
+**Partner need:** Ace lead → count. Dummy threatens → count. Shift question → suit preference. Default → attitude. Trumps → suit preference (TSP).
 **Card cost:** Cheapest card that conveys the message. Never signal with a trick.
 **Adversarial cost:** FREE signal = declarer already knows (bid suit count, obvious shift, overcalled suit). COSTLY signal = declarer gains info (unbid suit count, ambiguous attitude, critical guess). Prefer free. Costly only when defensive gain outweighs declarer gain.
 
@@ -465,6 +465,8 @@ X of any artificial bid = lead that suit
 | Low | encourage |
 | High | discourage |
 
+**Obvious Shift (trick 1):** Trick 1: attitude refers to the obvious shift suit (dummy's shortest side suit, ≤1 honor, excluding trump/led/declarer's suits; vs NT = shortest). Encourage = continue (no shift tolerance). Discourage = wants the obvious shift. FREE signal.
+
 ### Count
 
 | Signal | Meaning |
@@ -472,14 +474,27 @@ X of any artificial bid = lead that suit
 | High | even |
 | Low | odd |
 
+### Smith Echo (vs NT)
+
+**When:** vs NT only, trick 2+, following to declarer's suit
+
+| Card | Meaning |
+|---|---|
+| High | Like the opening lead suit (continue) |
+| Low | Don't like it (switch) |
+
+**Adversarial cost:** FREE
+
+> **Exception:** Count overrides when dummy has entryless long suit
+
 ### Trump Signals
 
 | Signal | Meaning |
 |---|---|
-| High-low | Odd count + desire to ruff |
-| Low-high | Denies ruffing interest |
+| High-low | Prefer higher-ranking side suit (TSP) |
+| Low-high | Prefer lower-ranking side suit (TSP) |
 
-> **Caution:** Never peter with potential trump tricks (Qxx)
+> **Caution:** Never signal with potential trump tricks (Qxx)
 
 ### Italian Style (on discards)
 

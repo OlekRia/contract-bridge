@@ -1778,7 +1778,7 @@ defensive_carding:
         - condition: "Neither count nor shift is the issue"
           signal: "Give attitude (default)"
         - condition: "Following in trumps"
-          signal: "Peter (high-low) = odd count + desire to ruff"
+          signal: "Trump Suit Preference (high-low = higher side suit)"
     axis_2_card_cost:
       name: "What is cheapest? (Discard discipline)"
       rule: "Signal with the cheapest card that conveys the message. Never signal with a potential trick."
@@ -1808,6 +1808,28 @@ defensive_carding:
         meaning: "Encouraging — continue this suit"
       - signal: "High card"
         meaning: "Discouraging — please switch"
+    obvious_shift:
+      name: "Obvious Shift (Granovetter) — Trick 1 refinement"
+      description: >
+        At trick 1, attitude refers to the "obvious shift suit" identified by dummy.
+        Encouragement = wants continuation (denies tolerance for the obvious shift).
+        Discouragement = wants the obvious shift (has tolerance/values there).
+      identifying_obvious_shift:
+        vs_suits: >
+          Dummy's shortest side suit with at most one honor
+          (excluding trump, led suit, declarer's bid suits).
+        vs_nt: "Dummy's shortest suit."
+        priority: "Leader's bid suit takes priority as the obvious shift."
+      adversarial_cost: "FREE — dummy is visible to all four players"
+      examples:
+        - situation: "Partner leads ♠K vs 4♥. Dummy: ♠754 ♥Q862 ♦KJ3 ♣A95"
+          obvious_shift: "♣ (3 cards, one honor, shortest non-trump side suit)"
+          holding: "You hold ♠82 ♥J3 ♦A764 ♣Q1083"
+          action: "Play ♠2 (discourage = wants the obvious shift to clubs)"
+        - situation: "Partner leads ♠K vs 4♥. Dummy: ♠754 ♥Q862 ♦KJ3 ♣A95"
+          obvious_shift: "♣"
+          holding: "You hold ♠82 ♥J3 ♦Q764 ♣7632"
+          action: "Play ♠8 (encourage = wants continuation, no club tolerance)"
 
   count:
     name: "Count (Even / Odd)"
@@ -1819,15 +1841,42 @@ defensive_carding:
         meaning: "Odd number of cards"
     mnemonic: "From a doubleton (even), play high."
 
+  smith_echo:
+    name: "Smith Echo (vs NT only)"
+    info_content: "1.0 bit of delayed cross-suit attitude"
+    adversarial_cost: "FREE — signal in declarer's suit about the led suit"
+    when: "Against NT contracts, at trick 2+, when following to declarer's suit"
+    signals:
+      - signal: "High card in declarer's suit"
+        meaning: "Encourage continuation of the opening lead suit"
+      - signal: "Low card in declarer's suit"
+        meaning: "Discourage — switch when you regain the lead"
+    exception: >
+      When dummy has an entryless long suit threatening to run, count overrides
+      Smith Echo. Partner needs to know WHEN to win, not WHETHER to continue.
+    examples:
+      - situation: "Partner led ♠5 vs 3NT, declarer won ♠A, leads ♥Q"
+        holding: "You hold ♠KJ83 ♥764"
+        action: "Play ♥7 (high = like spades, partner should continue)"
+      - situation: "Partner led ♠5 vs 3NT, declarer won ♠A, leads ♥Q"
+        holding: "You hold ♠92 ♥764"
+        action: "Play ♥4 (low = don't like spades, partner should switch)"
+    note: "Standard Smith (not Reverse). Near-mandatory at expert level."
+
   trump_signals:
-    name: "Trump Peter"
+    name: "Trump Suit Preference (TSP)"
+    info_content: "1.0 bit of suit preference (replaces Trump Peter count)"
     signals:
       - signal: "High-low in trumps"
-        meaning: "Odd number of trumps — desire to ruff"
+        meaning: "Prefer higher-ranking side suit"
       - signal: "Low-high in trumps"
-        meaning: "Denies ruffing interest"
+        meaning: "Prefer lower-ranking side suit"
+    rationale: >
+      TSP answers "which suit should partner lead?" — more actionable than
+      trump count ("how many trumps?"). Ruff desire is usually inferable from
+      dummy + auction. Same 1.0 bit, better question answered.
     caution: >
-      Never peter with potential trump tricks (e.g., Qxx of trumps).
+      Never signal with potential trump tricks (e.g., Qxx of trumps).
       The signal must not cost a trick.
 
   suit_preference:

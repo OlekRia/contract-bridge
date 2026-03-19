@@ -1017,7 +1017,7 @@ After dummy appears, choose signal type using three axes. This is mechanical, no
 | Dummy has a threatening long suit declarer needs to establish | Give count (tells partner when to win the Ace) |
 | The defensive question is which suit to shift to | Give suit preference |
 | Neither count nor shift is the issue | Give attitude (default) |
-| Following in trumps | Peter (high-low) = odd count + desire to ruff |
+| Following in trumps | Trump Suit Preference (high-low = higher side suit) |
 
 #### Axis 2: What is cheapest? (Discard discipline)
 
@@ -1047,6 +1047,21 @@ A FREE signal encodes information declarer can already deduce from own hand + du
 | **Low card** | Encouraging — continue this suit |
 | **High card** | Discouraging — please switch |
 
+#### Obvious Shift (Granovetter) — Trick 1 refinement
+
+At trick 1, attitude refers to the "obvious shift suit" identified by dummy. Encouragement = wants continuation (denies tolerance for the obvious shift). Discouragement = wants the obvious shift (has tolerance/values there).
+
+**Identifying the obvious shift suit:**
+
+- **Vs suits:** Dummy's shortest side suit with at most one honor (excluding trump, led suit, declarer's bid suits).
+- **Vs NT:** Dummy's shortest suit.
+- **Priority:** Leader's bid suit takes priority as the obvious shift.
+
+**Adversarial cost:** FREE — dummy is visible to all four players
+
+- **Partner leads ♠K vs 4♥. Dummy: ♠754 ♥Q862 ♦KJ3 ♣A95** (obvious shift: ♣ (3 cards, one honor, shortest non-trump side suit)) — You hold ♠82 ♥J3 ♦A764 ♣Q1083 → Play ♠2 (discourage = wants the obvious shift to clubs)
+- **Partner leads ♠K vs 4♥. Dummy: ♠754 ♥Q862 ♦KJ3 ♣A95** (obvious shift: ♣) — You hold ♠82 ♥J3 ♦Q764 ♣7632 → Play ♠8 (encourage = wants continuation, no club tolerance)
+
 ### 2. Count (Even / Odd) (Even / Odd)
 
 | Signal | Meaning |
@@ -1056,14 +1071,36 @@ A FREE signal encodes information declarer can already deduce from own hand + du
 
 Easy to remember: From a doubleton (even), play high.
 
-### Trump Peter
+### Smith Echo (vs NT only)
+
+**When:** Against NT contracts, at trick 2+, when following to declarer's suit
+
+**Information:** 1.0 bit of delayed cross-suit attitude
+
+**Adversarial cost:** FREE — signal in declarer's suit about the led suit
 
 | Signal | Meaning |
 |---|---|
-| **High-low in trumps** | Odd number of trumps — desire to ruff |
-| **Low-high in trumps** | Denies ruffing interest |
+| **High card in declarer's suit** | Encourage continuation of the opening lead suit |
+| **Low card in declarer's suit** | Discourage — switch when you regain the lead |
 
-> **Caution:** Never peter with potential trump tricks (e.g., Qxx of trumps). The signal must not cost a trick.
+> **Exception:** When dummy has an entryless long suit threatening to run, count overrides Smith Echo. Partner needs to know WHEN to win, not WHETHER to continue.
+
+#### Examples
+
+- **Partner led ♠5 vs 3NT, declarer won ♠A, leads ♥Q** — You hold ♠KJ83 ♥764 → Play ♥7 (high = like spades, partner should continue)
+- **Partner led ♠5 vs 3NT, declarer won ♠A, leads ♥Q** — You hold ♠92 ♥764 → Play ♥4 (low = don't like spades, partner should switch)
+
+> Standard Smith (not Reverse). Near-mandatory at expert level.
+
+### Trump Suit Preference (TSP)
+
+| Signal | Meaning |
+|---|---|
+| **High-low in trumps** | Prefer higher-ranking side suit |
+| **Low-high in trumps** | Prefer lower-ranking side suit |
+
+> **Caution:** Never signal with potential trump tricks (e.g., Qxx of trumps). The signal must not cost a trick.
 
 ### 3. Suit Preference on Discards (Italian Style) on Discards
 

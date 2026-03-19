@@ -402,7 +402,7 @@ carding:
   signal_selection:
     axis_1_partner_need: >
       Ace lead → count. Dummy threatens → count. Shift question → suit preference.
-      Default → attitude. Trumps → peter.
+      Default → attitude. Trumps → suit preference (TSP).
     axis_2_card_cost: "Cheapest card that conveys the message. Never signal with a trick."
     axis_3_adversarial_cost: >
       FREE signal = declarer already knows (bid suit count, obvious shift, overcalled suit).
@@ -412,15 +412,26 @@ carding:
   attitude:
     low: encourage
     high: discourage
+    obvious_shift: >
+      Trick 1: attitude refers to the obvious shift suit (dummy's shortest side suit,
+      ≤1 honor, excluding trump/led/declarer's suits; vs NT = shortest). Encourage =
+      continue (no shift tolerance). Discourage = wants the obvious shift. FREE signal.
 
   count:
     high: even
     low: odd
 
+  smith_echo:
+    when: "vs NT only, trick 2+, following to declarer's suit"
+    high: "Like the opening lead suit (continue)"
+    low: "Don't like it (switch)"
+    adversarial_cost: "FREE"
+    exception: "Count overrides when dummy has entryless long suit"
+
   trump_signals:
-    high_low: "Odd count + desire to ruff"
-    low_high: "Denies ruffing interest"
-    caution: "Never peter with potential trump tricks (Qxx)"
+    high_low: "Prefer higher-ranking side suit (TSP)"
+    low_high: "Prefer lower-ranking side suit (TSP)"
+    caution: "Never signal with potential trump tricks (Qxx)"
 
   suit_preference:
     name: Italian Style (on discards)
