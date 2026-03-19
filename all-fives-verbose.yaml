@@ -1860,15 +1860,171 @@ defensive_carding:
             → Follow ♠8 then ♠4 (high-low = prefer hearts, the higher side suit).
 
     step_2_card_cost:
-      name: "Axis 2 — Use the cheapest card"
-      rule: >
-        Signal with the cheapest card that conveys the message.
-        NEVER signal with a card that could win a trick.
+      name: "Axis 2 — Signal Freedom Score (SFS)"
+      master_rule: >
+        NEVER signal with a card that could win a trick. Use the cheapest FREE card.
+        Your Signal Freedom Score determines how much information you can transmit.
+
+      # ── What is Signal Freedom Score? ──────────
+      signal_freedom_score:
+        definition: >
+          SFS = the number of cards in your holding that are FREE for signaling —
+          meaning playing them cannot cost a trick in any plausible layout.
+          Potential trick cards (A, K, Q, J, 10, and intermediates in touching sequences)
+          are excluded. Cards 8 and below are generally free.
+        the_paradox: >
+          Holdings with the most defensive value (AKQ, KQJ) have the LEAST signaling
+          capacity. Holdings with maximum signaling capacity (xxxxx) have the LEAST
+          defensive value. The correlation is negative and strong.
+
+        table:
+          - holding: "AKQxx"
+            tricks: "A, K, Q"
+            free: "xx"
+            sfs: 2
+            capacity: "1 bit (binary: high/low)"
+          - holding: "KQxxx"
+            tricks: "K, Q"
+            free: "xxx"
+            sfs: 3
+            capacity: "~1.6 bits"
+          - holding: "Kxxxx"
+            tricks: "K"
+            free: "xxxx"
+            sfs: 4
+            capacity: "2 bits"
+          - holding: "xxxxx"
+            tricks: "none"
+            free: "xxxxx"
+            sfs: 5
+            capacity: "~2.3 bits (maximum)"
+          - holding: "AKx"
+            tricks: "A, K"
+            free: "x"
+            sfs: 1
+            capacity: "0 bits (forced play)"
+          - holding: "Kxx"
+            tricks: "K"
+            free: "xx"
+            sfs: 2
+            capacity: "1 bit"
+          - holding: "Qxx"
+            tricks: "Q"
+            free: "xx"
+            sfs: 2
+            capacity: "1 bit"
+          - holding: "xxx"
+            tricks: "none"
+            free: "xxx"
+            sfs: 3
+            capacity: "~1.6 bits"
+          - holding: "Kx"
+            tricks: "K"
+            free: "x"
+            sfs: 1
+            capacity: "0 bits (forced play)"
+          - holding: "xx"
+            tricks: "none"
+            free: "xx"
+            sfs: 2
+            capacity: "1 bit"
+
+      # ── SFS Capacity Levels ───────────────────
+      capacity_levels:
+        - sfs: "0"
+          bits: "0"
+          meaning: "Cannot signal at all. You have no cards (void or all tricks)."
+          example: "Holding AKQ tight — every card is a winner."
+        - sfs: "1"
+          bits: "0"
+          meaning: "Forced play — only one free card, must play it. No choice = no information for partner."
+          example: "Holding K4 — the 4 is your only free card. Partner sees it, but can't distinguish encourage from discourage."
+        - sfs: "2"
+          bits: "1.0"
+          meaning: "BINARY signal only. High or low — one signal type, one bit."
+          example: "Holding Q74 — can play 7 (discourage) or 4 (encourage). One bit. Choose the most valuable signal."
+        - sfs: "3"
+          bits: "~1.6"
+          meaning: "Good capacity. High/mid/low or two signals over two tricks (high-then-low = even count + attitude)."
+          example: "Holding K853 — can play 8, 5, or 3. Attitude on first trick, count refinement later."
+        - sfs: "4+"
+          bits: "2.0+"
+          meaning: "Full signaling. Can give attitude AND count over two tricks. Luxury."
+          example: "Holding 97542 — complete freedom. Give any signal type partner needs."
+
+      # ── Priority When Scarce (SFS = 2) ────────
+      priority_under_scarcity:
+        rule: >
+          When you have only 1 bit (SFS = 2), you must choose the single most
+          valuable signal type. The choice depends on what partner needs (Axis 1).
+        table:
+          - situation: "Partner leads Ace"
+            priority: "COUNT"
+            why: "Partner deciding whether to cash K or switch. Count answers this."
+          - situation: "Partner leads from sequence"
+            priority: "ATTITUDE"
+            why: "Continue or switch? Binary question = perfect 1-bit match."
+          - situation: "Trick 1 following suit"
+            priority: "ATTITUDE (or Obvious Shift)"
+            why: "The fundamental trick-1 question: like or switch?"
+          - situation: "First discard"
+            priority: "SUIT PREFERENCE (Italian)"
+            why: "Which suit do you want? Italian discards encode suit identity."
+          - situation: "Trump play"
+            priority: "TSP"
+            why: "Higher or lower side suit? Binary match."
+          - situation: "Declarer's suit vs NT"
+            priority: "SMITH ECHO"
+            why: "Continue lead? Binary match."
+          - situation: "Running threat in dummy"
+            priority: "COUNT"
+            why: "Partner needs hold-up timing, not attitude."
+          - situation: "Flat dummy, no threats"
+            priority: "ATTITUDE"
+            why: "Simple like/dislike."
+
+      # ── The Silence Inference Rule ─────────────
+      silence_inference:
+        rule: >
+          When SFS = 0 or 1, you CANNOT signal. But your silence is itself information.
+          Partner should infer: "Defender played a forced card → they hold honours in this suit."
+          The inability to signal IS the signal.
+        for_partner: >
+          If defender plays a card and you can't read a clear signal, consider:
+          do they have any free cards? If their holding is likely AKx or Kx,
+          their play is forced — they HAVE values there.
+        adversarial_cost: >
+          WARNING: Declarer can also see the forced play. If declarer notices
+          you always play small from honour holdings and varied from junk,
+          your silence reveals your hand. Play in tempo. Don't hesitate.
+        example:
+          situation: "4♠. Partner leads ♥A. You hold ♥K3."
+          play: "♥3 (forced — only free card)"
+          partner_reads: "Partner sees the 3. Looks like odd count (3 hearts). But you actually have K3 (SFS = 1). Partner should consider: could you have Kx?"
+          key_point: "Partner's counting ability fills the gap. 40 minus visible HCP narrows your holding."
+
+      # ── Examples ───────────────────────────────
       examples:
-        - bad: "From ♥KJ2, playing ♥J to encourage — wastes a trick"
-          good: "Play ♥2 (low = encourage, costs nothing)"
-        - bad: "From ♦Q74, playing ♦Q to discourage"
-          good: "Play ♦7 (high enough to discourage, ♦Q preserved)"
+        - situation: "4♠. You hold ♥KJ2. Partner leads ♥A."
+          sfs: "2 (free cards: 2)"
+          bad: "Play ♥J to 'encourage' — wastes the Jack, a potential trick"
+          good: "Play ♥2 (low = encourage per priority table: count under Ace). Shows odd count AND preserves the Jack."
+          result: "Partner cashes ♥K (your ♥J drops), then plays a third heart. Your ♥J would have been a trick."
+
+        - situation: "3NT. You hold ♦Q74. Partner leads ♦K."
+          sfs: "2 (free cards: 7, 4)"
+          play: "Play ♦4 (low = encourage, continue diamonds)"
+          why: "♦Q is a potential trick — never signal with it. Use the cheapest free card."
+
+        - situation: "4♥. You hold ♠AK3. Following to declarer's ♠Q."
+          sfs: "1 (only free card: 3)"
+          play: "♠3 (forced play — no choice)"
+          silence: "Partner infers from your forced play + HCP count that you hold ♠AK."
+
+        - situation: "3NT. You hold ♣87432. Discarding."
+          sfs: "5 (all cards free)"
+          play: "♣8 (high = Italian even = interest in clubs)"
+          luxury: "Maximum signal freedom. Can afford high card for clear signal AND keep small cards for count later."
 
     step_3_adversarial_cost:
       name: "Axis 3 — Is this signal FREE or COSTLY?"

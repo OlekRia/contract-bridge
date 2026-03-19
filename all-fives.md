@@ -506,7 +506,7 @@ X of any artificial bid = lead that suit
 
 ### Discard Discipline
 
-Never signal with potential tricks. Cheapest card that conveys the message.
+Never signal with potential tricks. Cheapest FREE card (SFS-aware).
 
 ### Opening Leads
 

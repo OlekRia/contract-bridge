@@ -441,7 +441,15 @@ carding:
     low_even: "Interest in lower suit"
     high_even: "Interest in higher suit"
 
-  discard_discipline: "Never signal with potential tricks. Cheapest card that conveys the message."
+  signal_freedom:
+    definition: "SFS = count of free (non-trick) cards. Determines signal capacity."
+    sfs_0_1: "0 bits — forced play. Silence = you hold honours (inference rule)."
+    sfs_2: "1 bit — binary only. Use priority table: Ace lead→count, sequence→attitude, trump→TSP."
+    sfs_3: "~1.6 bits — good. Attitude + count over 2 tricks."
+    sfs_4_plus: "2+ bits — full signaling."
+    paradox: "More tricks = less signal capacity. AKQxx has 1 bit, xxxxx has 2.3 bits."
+
+  discard_discipline: "Never signal with potential tricks. Cheapest FREE card (SFS-aware)."
 
   leads:
     from_length: "3rd or 5th highest"
