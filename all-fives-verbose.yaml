@@ -2347,6 +2347,313 @@ defensive_carding:
       - rule: "Preserve cards partner might need for communication"
         example: "If partner might need to lead through dummy's ♠AQ, keep your low spades for partner to lead to."
 
+  # ── Step 4: READING Partner's Signal — DECODE → DEDUCE → ACT ──
+  #
+  # You've learned WHAT to signal and HOW. Now: how to READ partner's signal
+  # and convert it into a concrete defensive action. This is the receiving
+  # side — the part most defenders skip. A signal without a reader is wasted.
+  #
+  # Three steps, every time partner signals:
+  #   1. DECODE — What message did partner send?
+  #   2. DEDUCE — Combine with your hand + dummy + auction → what does declarer hold?
+  #   3. ACT   — Execute the play the deduction implies.
+
+  signal_reading_protocol:
+    name: "Signal Reading Protocol — DECODE → DEDUCE → ACT"
+    description: >
+      Most defensive errors come not from wrong signals but from failure to ACT on
+      correct signals. This protocol converts passive observation ("partner played
+      low") into active reasoning and a concrete play. Apply it every time partner
+      plays a card that carries signal meaning.
+    master_rule: >
+      Never just register a signal — complete the chain. If you decoded but didn't
+      deduce, the signal was wasted. If you deduced but didn't act, you defended
+      on auto-pilot instead of on information.
+
+    # ── Chain 1: Attitude ──────────────────────────────────────
+    reading_attitude:
+      name: "Reading Attitude"
+      decode:
+        low: "Partner LIKES this suit — has values, wants continuation"
+        high: "Partner DISLIKES this suit — wants a switch"
+        ambiguous: >
+          Middle cards (5, 6) can be ambiguous. Use context: with which cards
+          is partner signalling? If partner's remaining cards are higher, it's
+          encouraging. If lower, discouraging. When truly ambiguous, consider
+          what makes sense from the auction and dummy.
+      deduce:
+        encouraging: >
+          Partner has a useful honour in this suit (Ace, King, or Queen sitting
+          over dummy). Count your side's winners: your tricks + partner's
+          implied tricks. Can you defeat the contract by continuing?
+        discouraging: >
+          Partner has nothing useful here. You need to SWITCH — but to which
+          suit? Look at dummy: which suit is dummy weakest in? Which suit did
+          the auction suggest? If using Obvious Shift (trick 1), the target
+          suit is already identified.
+      act:
+        on_encourage:
+          - action: "CONTINUE the suit"
+            when: "You have more cards to lead in this suit"
+          - action: "CASH your winner then continue"
+            when: "You hold the Ace — take it, then play partner's encouraged suit"
+          - action: "DUCK to maintain communication"
+            when: "Holding Ace, but need to preserve entry to partner's hand"
+        on_discourage:
+          - action: "SWITCH to the obvious shift suit"
+            when: "Trick 1 with Obvious Shift in force"
+          - action: "SWITCH to the unbid suit"
+            when: "One remaining suit is clearly weakest in dummy"
+          - action: "SWITCH to dummy's short suit"
+            when: "Two remaining suits — pick the one dummy is shorter in"
+      examples:
+        - situation: "You lead ♠K vs 4♥. Dummy: ♠754. Partner plays ♠2."
+          decode: "LOW = encouraging"
+          deduce: "Partner has ♠A or ♠Q. Two spade winners for our side."
+          act: "Continue ♠A. Partner wins or we establish a third-round winner."
+
+        - situation: "You lead ♠K vs 4♥. Dummy: ♠754. Partner plays ♠9."
+          decode: "HIGH = discouraging"
+          deduce: "Partner has nothing in spades. Declarer has ♠AQx or ♠AJx. Continuing spades sets up declarer's honour."
+          act: "Switch. Obvious shift from dummy identifies the target suit."
+
+        - situation: "You lead ♣K vs 3NT. Dummy: ♣J74. Partner plays ♣2."
+          decode: "LOW = encouraging"
+          deduce: "Partner has ♣A or ♣Q behind dummy's ♣J. Continue clubs to establish the suit."
+          act: "Continue ♣. Even if declarer ducks, persist — you need to clear the suit before declarer runs tricks elsewhere."
+
+    # ── Chain 2: Obvious Shift ─────────────────────────────────
+    reading_obvious_shift:
+      name: "Reading Obvious Shift (Trick 1 Only)"
+      prerequisite: >
+        Before reading, both defenders must have identified the SAME obvious shift
+        suit from dummy. If you're unsure which suit it is, the signal is unreliable.
+      decode:
+        low: "Partner wants CONTINUATION of the led suit (no tolerance for the obvious shift suit)"
+        high: "Partner wants you to SHIFT to the obvious shift suit (has values there)"
+      deduce:
+        on_shift_request: >
+          Partner has values in the obvious shift suit — typically an honour sitting
+          behind dummy or a source of tricks. Your job: switch to that suit NOW,
+          before declarer draws trumps or establishes discards.
+        on_continue_request: >
+          Partner has nothing in the obvious shift suit. Continuing the led suit is
+          productive — partner holds values there (Ace, Queen, or wants a ruff).
+      act:
+        on_shift:
+          - action: "SWITCH to the obvious shift suit immediately"
+            when: "Standard case — partner has shown values there"
+          - action: "Cash one winner first, THEN switch"
+            when: "You can cash a sure trick without losing tempo"
+        on_continue:
+          - action: "Continue the led suit"
+            when: "You have more cards to lead"
+          - action: "Lead a different card in the led suit for suit preference"
+            when: "Continuing — you can use WHICH card you continue with to show suit preference between the remaining two suits"
+      examples:
+        - situation: "You lead ♠K vs 4♥. Dummy: ♠754 ♥Q862 ♦KJ3 ♣A95. Obvious shift = ♣. Partner plays ♠8."
+          decode: "HIGH = shift to clubs"
+          deduce: "Partner has club values (♣Q or ♣K) behind dummy's ♣A. Clubs is where our tricks are."
+          act: "Switch to ♣. Lead low to partner's honour. If partner has ♣Q10xx, the switch through dummy's ♣A is devastating."
+
+        - situation: "You lead ♠K vs 4♥. Dummy: ♠754 ♥Q862 ♦KJ3 ♣A95. Obvious shift = ♣. Partner plays ♠2."
+          decode: "LOW = continue spades, no club values"
+          deduce: "Partner has ♠A or wants a ruff. Clubs is a dead end for our side."
+          act: "Continue ♠A. If partner started with ♠Ax, they win the second round and can return through dummy's weakness."
+
+    # ── Chain 3: Count ─────────────────────────────────────────
+    reading_count:
+      name: "Reading Count"
+      decode:
+        high: "Partner has an EVEN number of cards (2 or 4)"
+        low: "Partner has an ODD number of cards (3 or 5)"
+      deduce:
+        method: >
+          The power of count is ARITHMETIC. You see dummy's length, you know your
+          length, partner tells you their length → declarer's length = 13 minus
+          (dummy + yours + partner's). This tells you WHEN to win and when to duck.
+        formula: "Declarer's length = 13 − (dummy's length + your length + partner's signalled length)"
+        key_deductions:
+          - if: "Declarer has 2 cards in the suit"
+            then: "Win the second round. Ducking further lets declarer win cheaply."
+          - if: "Declarer has 3 cards in the suit"
+            then: "Duck twice, win the third round. This exhausts declarer AND cuts dummy's communication."
+          - if: "Declarer has 1 card (singleton)"
+            then: "Win immediately — declarer can ruff the next round."
+          - if: "Dummy's suit is blocked (no entry)"
+            then: "Duck until declarer runs out. Dummy's remaining winners are stranded."
+      act:
+        - action: "DUCK until declarer plays their last card, then win"
+          when: "Dummy has a long suit with no outside entry — the classic hold-up"
+        - action: "WIN immediately"
+          when: "Declarer is short (singleton or doubleton) — ducking gifts a cheap trick"
+        - action: "CASH from your end"
+          when: "You know declarer is out — your remaining cards are all winners"
+      examples:
+        - situation: "3NT. Declarer leads ♦K toward dummy's ♦AQJ84 (no side entry). You hold ♦1096. Partner plays ♦3."
+          decode: "LOW = odd = 3 diamonds (partner has ♦xxx)"
+          deduce: "Dummy 5 + yours 3 + partner 3 = 11. Declarer has 2 diamonds. Duck twice, win the third."
+          act: "Duck ♦K. Duck the next diamond. Win the third round. Dummy's ♦J84 are stranded — no entry."
+
+        - situation: "3NT. Declarer leads ♦K toward dummy's ♦AQJ84 (no side entry). You hold ♦1096. Partner plays ♦7."
+          decode: "HIGH = even = 2 diamonds (partner has ♦xx)"
+          deduce: "Dummy 5 + yours 3 + partner 2 = 10. Declarer has 3 diamonds. Duck only once, win the second."
+          act: "Duck ♦K. Win the next diamond. Declarer still has one diamond, so dummy's ♦J84 are accessible — but you've limited them to 3 diamond tricks instead of 5."
+
+        - situation: "4♠. You lead ♣A. Dummy: ♣J74. Partner plays ♣8."
+          decode: "HIGH = even = doubleton (♣8x)"
+          deduce: "Partner has 2 clubs. Cash ♣K, then lead a third club — partner ruffs."
+          act: "Cash ♣K, then lead ♣ low for partner's ruff."
+
+    # ── Chain 4: Reverse Smith Echo ────────────────────────────
+    reading_smith:
+      name: "Reading Reverse Smith Echo (vs NT)"
+      context: >
+        Smith operates in DECLARER'S suit but sends a message about the OPENING
+        LEAD suit. You're reading a cross-suit signal. This only applies vs NT.
+      decode:
+        low: "Partner LIKES the opening lead suit — continue it when you regain the lead"
+        high: "Partner DISLIKES the opening lead suit — switch to something better"
+      deduce:
+        on_like: >
+          Partner has values in the opening lead suit — honours sitting behind
+          declarer, or length to run the suit. Plan to continue the opening lead
+          suit when you regain the lead. Preserve your entries to reach partner.
+        on_dislike: >
+          Partner's opening lead hit nothing — declarer has that suit stopped.
+          When you regain the lead, switch to an unbid suit or the suit where
+          your own values lie. Don't stubbornly continue a dead suit.
+      act:
+        on_like:
+          - action: "Continue the opening lead suit when you regain the lead"
+            when: "Standard — partner has shown values there"
+          - action: "Duck declarer's tricks to preserve communication"
+            when: "You need to keep partner's hand connected for the suit to run"
+        on_dislike:
+          - action: "Switch to an unbid suit"
+            when: "There's a clearly unbid suit to try"
+          - action: "Switch to YOUR best suit"
+            when: "All suits were bid — try your own longest/strongest"
+          - action: "Lead through dummy's weakness"
+            when: "Dummy has a tenace position you can attack"
+      override: >
+        When dummy has a running long suit without side entry, COUNT overrides
+        Smith. Partner needs to know WHEN to win, not WHETHER to continue.
+        If you're in a count-required position, ignore the Smith signal.
+      examples:
+        - situation: "You led ♠5 vs 3NT. Declarer won ♠K. Declarer leads ♥Q. Partner plays ♥3."
+          decode: "LOW in hearts = LIKES spades (Reverse Smith)"
+          deduce: "Partner has spade values — ♠A or ♠QJ. When I regain the lead, continue spades."
+          act: "Win when you can. Return ♠. Partner runs the spade suit."
+
+        - situation: "You led ♠5 vs 3NT. Declarer won ♠K. Declarer leads ♥Q. Partner plays ♥8."
+          decode: "HIGH in hearts = DISLIKES spades"
+          deduce: "Partner has nothing useful in spades. Declarer has spades well stopped. Switch."
+          act: "When you win, DON'T continue spades. Switch to your secondary suit or lead through dummy's weakness."
+
+        - situation: "You led ♦7 vs 3NT. Dummy: ♦3, ♣AKQJ73 (no side entry). Partner plays ♣5."
+          decode: "STOP — count overrides Smith here. ♣5 is partner's COUNT in clubs, not Smith."
+          deduce: "Partner is showing length in clubs to help you time the hold-up in ♣. Read as count, not Smith."
+          act: "Count partner's clubs, calculate declarer's length, duck accordingly."
+
+    # ── Chain 5: Trump Suit Preference ─────────────────────────
+    reading_trump_sp:
+      name: "Reading Trump Suit Preference"
+      decode:
+        high_low: "Partner prefers the HIGHER-ranking side suit"
+        low_high: "Partner prefers the LOWER-ranking side suit"
+        no_signal: >
+          If partner just follows low once (can't give high-low), they either
+          have a trump honour to protect or don't have enough trumps to signal.
+          No inference available — use auction and dummy instead.
+      deduce:
+        method: >
+          Partner is telling you WHERE their entry or values are. When you next
+          gain the lead (or when deciding what to lead after winning a trump
+          trick), you know which suit to play.
+        key_question: "Which suit does partner want me to lead?"
+      act:
+        - action: "Lead the indicated side suit when you next gain the lead"
+          when: "Standard — partner has shown values in that suit"
+        - action: "Give partner a ruff in the indicated suit"
+          when: "Partner is short in the indicated suit and you have an entry to give the ruff"
+        - action: "Lead the indicated suit to give partner a ruff, THEN they return through declarer"
+          when: "The indicated suit sets up a ruff-and-return play"
+      examples:
+        - situation: "4♠. Partner follows ♥8 then ♥3 in trumps. Side suits: ♦ (higher), ♣ (lower)."
+          decode: "HIGH-LOW = prefer diamonds (higher side suit)"
+          deduce: "Partner has ♦A or ♦KQ — their entry is in diamonds."
+          act: "When you gain the lead, play ♦. Partner wins and can return through declarer."
+
+        - situation: "4♠. Partner follows ♥3 then ♥8 in trumps. Side suits: ♦ (higher), ♣ (lower)."
+          decode: "LOW-HIGH = prefer clubs (lower side suit)"
+          deduce: "Partner's values are in clubs. Maybe ♣A or ♣KQ."
+          act: "Lead ♣ when you gain the lead."
+
+    # ── Chain 6: Italian Discards ──────────────────────────────
+    reading_italian_discards:
+      name: "Reading Italian Discards"
+      decode:
+        odd_card: "Partner WANTS this suit — has values here"
+        low_even: "Partner DOESN'T want this suit. Wants the LOWER remaining suit."
+        high_even: "Partner DOESN'T want this suit. Wants the HIGHER remaining suit."
+      deduce:
+        on_positive: >
+          Partner has honour strength in the discarded suit. Plan to lead that
+          suit when you gain the lead. If partner discards an odd card from a
+          suit where dummy is strong, partner has a specific holding behind
+          dummy (e.g., partner discards ♦5 when dummy has ♦AQ — partner likely
+          has ♦K sitting behind the Ace).
+        on_redirect: >
+          Partner is pointing AWAY from the discarded suit toward another suit.
+          Low even = lower remaining suit. High even = higher remaining suit.
+          Rank the three remaining suits (excluding the one partner discarded
+          and trumps) from low to high and pick the indicated one.
+      act:
+        - action: "Lead the indicated suit when you gain the lead"
+          when: "Partner has shown values — lead toward them"
+        - action: "Protect the indicated suit in your own hand"
+          when: "You might be squeezed — know which suit partner is guarding"
+        - action: "Combine with count: two discards in the same suit confirm"
+          when: "Second discard from the same suit intensifies the first message"
+      ranking_reminder: >
+        To identify "lower" and "higher" remaining suits, mentally rank the
+        non-trump suits excluding the discarded suit from low (♣) to high (♠).
+        Low even → lowest of the remaining. High even → highest of the remaining.
+      examples:
+        - situation: "3NT. Declarer runs diamonds. Partner discards ♣3 (odd)."
+          decode: "ODD = wants clubs"
+          deduce: "Partner has club values — ♣A or ♣KQ. When I get in, lead clubs."
+          act: "Lead ♣ when you win a trick. Partner's club holding provides tricks."
+
+        - situation: "4♠. Declarer draws trumps. Partner discards ♥4 (low even). Remaining suits (non-trump): ♦ (lower), ♣ (higher)."
+          decode: "LOW EVEN = doesn't want hearts, wants the LOWER remaining suit = diamonds"
+          deduce: "Partner has diamond values. Hearts is a dead suit for partner."
+          act: "Lead ♦ when you get in."
+
+        - situation: "3NT. Declarer runs hearts. Partner discards ♦8 (high even). Remaining suits: ♣ (lower), ♠ (higher)."
+          decode: "HIGH EVEN = doesn't want diamonds, wants the HIGHER remaining suit = spades"
+          deduce: "Partner has spade values. Lead spades when you gain the lead."
+          act: "Switch to ♠ when you win a trick."
+
+    # ── Common Reading Errors ──────────────────────────────────
+    common_errors:
+      - error: "Registering the signal but not deducing"
+        description: "You notice partner played low (encouraging) but don't calculate what that means for declarer's hand."
+        fix: "Always complete step 2. Ask: 'What does declarer have?'"
+      - error: "Confusing count and attitude"
+        description: "Partner gives count (high = even) and you read it as attitude (high = discourage)."
+        fix: "Context tells you which signal is in force. Count is given when dummy threatens or on Ace leads. Attitude is the default."
+      - error: "Ignoring Smith because it's in a different suit"
+        description: "Partner plays high in declarer's suit (dislike the lead suit) but you don't notice because you're focused on the suit being played."
+        fix: "Vs NT, trick 2+: always check whether partner's card in declarer's suit is a Smith signal."
+      - error: "Reading a forced card as a signal"
+        description: "Partner plays their only card in the suit and you treat it as informative."
+        fix: "Apply the Silence Inference Rule (F-DEF-018). When SFS = 0-1, partner's play is forced. The absence of choice IS the information — infer their honours from what they couldn't signal."
+      - error: "Seeing the signal but freezing — not acting"
+        description: "You correctly decode and deduce but then play passively, failing to execute the switch or duck."
+        fix: "Step 3 is mandatory. Name the action to yourself before playing: 'I am switching to clubs because...' Articulation prevents autopilot."
+
   opening_leads:
     # ── The Most Important Defensive Card ──────────
     #
@@ -3008,6 +3315,94 @@ dummy_analysis:
       step_3: "Does dummy have ruffing value (short suit + trumps)? → Line 4 (CUT RUFFS)"
       step_4: "Do you have 4+ trumps? → Line 5 (FORCE DECLARER)"
       step_5: "Dummy is flat with no threats? → Line 3 (PASSIVE)"
+
+    # Quick reference: 8 dummy types with primary → fallback lines
+    # Derived from F-DEF-019 (theorem) + F-DEF-020/021 (simulation profiles)
+    dummy_type_quick_reference:
+      title: "8 Dummy Types — Quick Reference (sorted by frequency)"
+      two_lines_rule: >
+        75% of all dummies need only RACE TO CASH or PASSIVE. Master these two
+        lines first. ATTACK ENTRIES (16%) is the next priority. The remaining 9%
+        (Force Declarer + Cut Ruffs) are specialist trump-control lines.
+      types:
+        - type: "NT WITH THREAT"
+          frequency: "43.9%"
+          avg_hcp: "10.5"
+          typical_shapes: "4432, 5332, 5431"
+          primary: "RACE TO CASH"
+          fallback: "ATTACK ENTRIES — if can't race, cut the entry"
+          signal_t1: "Reverse Smith Echo"
+          signal_t2: "Count"
+
+        - type: "STRANDED"
+          frequency: "20.3%"
+          avg_hcp: "9.1"
+          typical_shapes: "4432, 5431, 5422"
+          primary: "PASSIVE"
+          fallback: "RACE TO CASH — if declarer finds entry, must race"
+          signal_t1: "Count"
+          signal_t2: "Count"
+          warning: >
+            THE STRANDED TRAP: dummy has visible honours (avg 9.1 HCP) but no
+            entry. Defenders who see honours and attack CREATE the entry declarer
+            needs. Discipline: see honours, do nothing. Hardest defensive skill.
+
+        - type: "WORKSHOP"
+          frequency: "16.1%"
+          avg_hcp: "12.3"
+          typical_shapes: "4432, 5332, 5431"
+          primary: "ATTACK ENTRIES"
+          fallback: "PASSIVE — once entry removed, go quiet"
+          signal_t1: "Attitude"
+          signal_t2: "Suit Preference"
+
+        - type: "MIRROR DUMMY"
+          frequency: "8.7%"
+          avg_hcp: "8.5"
+          typical_shapes: "5332, 4432, 4333"
+          primary: "FORCE DECLARER"
+          fallback: "PASSIVE — if can't force, wait"
+          signal_t1: "Count"
+          signal_t2: "Count"
+
+        - type: "NT BALANCED"
+          frequency: "5.7%"
+          avg_hcp: "5.9"
+          typical_shapes: "5332, 4333, 4432"
+          primary: "PASSIVE"
+          fallback: "RACE TO CASH — if declarer develops threat, race"
+          signal_t1: "Reverse Smith Echo"
+          signal_t2: "Attitude"
+
+        - type: "BARREN"
+          frequency: "3.8%"
+          avg_hcp: "6.2"
+          typical_shapes: "5332, 4333, 4432"
+          primary: "PASSIVE"
+          fallback: "none — pure passive, no secondary needed"
+          signal_t1: "Attitude"
+          signal_t2: "Count"
+
+        - type: "POWERHOUSE"
+          frequency: "1.4%"
+          avg_hcp: "15.8"
+          typical_shapes: "5332, 4432, 5431"
+          primary: "RACE TO CASH"
+          fallback: "ATTACK ENTRIES — if can't cash enough, cut entries"
+          signal_t1: "Attitude"
+          signal_t2: "Suit Preference"
+
+        - type: "RUFFING DUMMY"
+          frequency: "0.1%"
+          avg_hcp: "3.7"
+          typical_shapes: "7321, 5521, 6421"
+          primary: "CUT RUFFS"
+          fallback: "FORCE DECLARER — once ruffs cut, force remaining trumps"
+          signal_t1: "Obvious Shift"
+          signal_t2: "Trump Suit Preference"
+          note: >
+            0.1% in random deals but much higher in real contracts — bidding
+            selects for dummy with trump support + short suit.
 
   # ── Complete Worked Examples ─────────────────
 
