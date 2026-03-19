@@ -1779,6 +1779,31 @@ defensive_carding:
           signal: "Give attitude (default)"
         - condition: "Following in trumps"
           signal: "Trump Suit Preference (high-low = higher side suit)"
+      examples:
+        - situation: "4♠ contract. Partner leads ♦A. Dummy: ♦KJ74"
+          signal_type: "Count"
+          why: "Partner led the Ace — always give count"
+          you_hold: "♦83"
+          action: "Play ♦8 (high = even, doubleton)"
+
+        - situation: "3NT. Partner leads ♠6. Dummy: ♠Q74, ♦AKQ873 (no side entry)"
+          signal_type: "Count"
+          why: "Dummy threatens to run diamonds — partner needs to know when to win ♠A"
+          you_hold: "♠J92, ♦J6"
+          action: "Play ♠9 (even count, 3 spades). Partner ducks, wins 3rd round, diamonds are stranded"
+
+        - situation: "4♥. Partner leads ♠A (you raised spades). Dummy: ♠63, ♣K2"
+          signal_type: "Suit preference"
+          why: "The question is which suit to shift to — not whether to continue spades"
+          you_hold: "♠K72, ♣A85"
+          action: "Play ♠7 (high = prefer higher suit = spades continuation). But if you held ♣A instead: play ♠2 (low = clubs)"
+
+        - situation: "3NT. Partner leads ♥4. Dummy: ♥Q73"
+          signal_type: "Attitude"
+          why: "Neither count nor shift is the issue — partner wants to know if hearts are right"
+          you_hold: "♥KJ92"
+          action: "Play ♥2 (low = encouraging, standard attitude)"
+
     axis_2_card_cost:
       name: "What is cheapest? (Discard discipline)"
       rule: "Signal with the cheapest card that conveys the message. Never signal with a potential trick."
@@ -1799,6 +1824,19 @@ defensive_carding:
         - "Attitude in an ambiguous suit (reveals holding declarer is guessing about)"
         - "Any signal about a suit where declarer has a critical finesse or placement guess"
       principle: "Prefer free signals. Give costly signals only when defensive gain clearly outweighs declarer gain."
+      examples:
+        - situation: "3NT. Declarer bid 1♥-1♠-2NT-3NT. Partner leads ♣5. You follow in ♥"
+          classification: "FREE"
+          why: "Declarer bid hearts — count in declarer's bid suit is free. Declarer already knows their own length"
+          action: "Give count in hearts without worry"
+        - situation: "3NT. No suit bid. Declarer leads toward dummy's ♦AQ. You hold ♦K742"
+          classification: "COSTLY"
+          why: "Declarer has a critical finesse guess. Showing count reveals ♦K position"
+          action: "Play ♦2 smoothly — do not give count. Declarer should guess, not read your signal"
+        - situation: "4♠. Partner overcalled 2♥. Declarer draws trumps. You discard from ♥"
+          classification: "FREE"
+          why: "Everyone knows partner has hearts from the overcall. Attitude about partner's suit is free"
+          action: "Give attitude freely — declarer already knows hearts is your suit"
 
   attitude:
     name: "Attitude (Encourage / Discourage)"
@@ -1808,6 +1846,16 @@ defensive_carding:
         meaning: "Encouraging — continue this suit"
       - signal: "High card"
         meaning: "Discouraging — please switch"
+    examples:
+      - situation: "4♠. Partner leads ♥K. Dummy: ♥J53"
+        holding: "You hold ♥A72"
+        action: "Play ♥2 (low = encouraging, you have the Ace)"
+      - situation: "4♠. Partner leads ♥K. Dummy: ♥J53"
+        holding: "You hold ♥864"
+        action: "Play ♥8 (high = discouraging, nothing useful in hearts)"
+      - situation: "3NT. Partner leads ♦6. Dummy: ♦Q93"
+        holding: "You hold ♦KJ2"
+        action: "Play ♦2 (low = encouraging). Declarer plays ♦Q from dummy — you duck. Partner continues and you collect ♦KJ"
     obvious_shift:
       name: "Obvious Shift (Granovetter) — Trick 1 refinement"
       description: >
@@ -1825,11 +1873,11 @@ defensive_carding:
         - situation: "Partner leads ♠K vs 4♥. Dummy: ♠754 ♥Q862 ♦KJ3 ♣A95"
           obvious_shift: "♣ (3 cards, one honor, shortest non-trump side suit)"
           holding: "You hold ♠82 ♥J3 ♦A764 ♣Q1083"
-          action: "Play ♠2 (discourage = wants the obvious shift to clubs)"
+          action: "Play ♠8 (high = discourage = wants the obvious shift to clubs — you have ♣Q1083)"
         - situation: "Partner leads ♠K vs 4♥. Dummy: ♠754 ♥Q862 ♦KJ3 ♣A95"
           obvious_shift: "♣"
           holding: "You hold ♠82 ♥J3 ♦Q764 ♣7632"
-          action: "Play ♠8 (encourage = wants continuation, no club tolerance)"
+          action: "Play ♠2 (low = encourage = wants spade continuation, no club tolerance)"
 
   count:
     name: "Count (Even / Odd)"
@@ -1840,28 +1888,44 @@ defensive_carding:
       - signal: "Low card"
         meaning: "Odd number of cards"
     mnemonic: "From a doubleton (even), play high."
+    examples:
+      - situation: "3NT. Declarer leads ♦Q from hand. Dummy: ♦AKJ84 (no outside entry)"
+        holding: "You hold ♦753"
+        action: "Play ♦3 (low = odd, 3 cards). Partner holds ♦96, knows declarer has ♦Q10x — ducks twice, wins third round"
+      - situation: "4♠. Partner leads ♣A. Dummy: ♣J74"
+        holding: "You hold ♣82"
+        action: "Play ♣8 (high = even, doubleton). Partner continues ♣K, then low for your ruff"
+      - situation: "4♥. Declarer draws trumps. You follow with ♥3 then ♥7"
+        holding: "You started with ♥732"
+        action: "Low-high = odd (3 cards). Partner deduces declarer started with 4 trumps"
 
   smith_echo:
-    name: "Smith Echo (vs NT only)"
+    name: "Reverse Smith Echo (vs NT only)"
     info_content: "1.0 bit of delayed cross-suit attitude"
     adversarial_cost: "FREE — signal in declarer's suit about the led suit"
     when: "Against NT contracts, at trick 2+, when following to declarer's suit"
     signals:
-      - signal: "High card in declarer's suit"
-        meaning: "Encourage continuation of the opening lead suit"
       - signal: "Low card in declarer's suit"
+        meaning: "Encourage continuation of the opening lead suit"
+      - signal: "High card in declarer's suit"
         meaning: "Discourage — switch when you regain the lead"
+    consistency: >
+      Reverse Smith matches our attitude convention (low = encourage, high = discourage).
+      Standard Smith uses the opposite mapping — we invert for consistency.
     exception: >
       When dummy has an entryless long suit threatening to run, count overrides
       Smith Echo. Partner needs to know WHEN to win, not WHETHER to continue.
     examples:
       - situation: "Partner led ♠5 vs 3NT, declarer won ♠A, leads ♥Q"
         holding: "You hold ♠KJ83 ♥764"
-        action: "Play ♥7 (high = like spades, partner should continue)"
+        action: "Play ♥4 (low = encourage spades, partner should continue)"
       - situation: "Partner led ♠5 vs 3NT, declarer won ♠A, leads ♥Q"
         holding: "You hold ♠92 ♥764"
-        action: "Play ♥4 (low = don't like spades, partner should switch)"
-    note: "Standard Smith (not Reverse). Near-mandatory at expert level."
+        action: "Play ♥7 (high = discourage spades, partner should switch)"
+      - situation: "Partner led ♦7 vs 3NT, declarer won ♦A, leads ♣K"
+        holding: "You hold ♦QJ4 ♣862"
+        action: "Play ♣2 (low = encourage diamonds). When partner wins ♣A, they continue ♦"
+    note: "Reverse Smith (low = like). Matches our attitude convention. Near-mandatory at expert level."
 
   trump_signals:
     name: "Trump Suit Preference (TSP)"
@@ -1878,6 +1942,13 @@ defensive_carding:
     caution: >
       Never signal with potential trump tricks (e.g., Qxx of trumps).
       The signal must not cost a trick.
+    examples:
+      - situation: "4♠. Trumps are ♠. Declarer draws trumps. You hold ♠84, ♥A63, ♦752, ♣J984"
+        action: "Follow ♠8 then ♠4 (high-low = prefer higher side suit = hearts). Partner shifts to ♥ when in"
+      - situation: "4♠. Trumps are ♠. You hold ♠84, ♥752, ♦A63, ♣J984"
+        action: "Follow ♠4 then ♠8 (low-high = prefer lower side suit = diamonds or clubs). Partner shifts low"
+      - situation: "4♥. You hold ♥Q53 — potential trump trick"
+        action: "Do NOT signal. Follow low (♥3) — keep ♥Q guarded. Signal must not cost a trick"
 
   suit_preference:
     name: "Suit Preference on Discards (Italian Style)"
@@ -1897,6 +1968,19 @@ defensive_carding:
       - sequence: "8 then 6"
         meaning: "Denies interest in the higher suit"
     note: "The higher the discard, the less reliable. The second discard confirms."
+    examples:
+      - situation: "3NT. You must discard on declarer's long suit. You want partner to lead ♦"
+        holding: "♦KJ73, ♣964"
+        action: "Discard ♦3 (odd = interest in diamonds). Partner leads ♦ when in"
+      - situation: "4♠. You must discard. You don't want ♥, you want ♣ (lower remaining suit)"
+        holding: "♥J742, ♣AQ5"
+        action: "Discard ♥2 (even + low = interest in lower remaining suit = clubs)"
+      - situation: "4♠. You must discard. You don't want ♦, you want ♥ (higher remaining suit)"
+        holding: "♦8643, ♥KQ5"
+        action: "Discard ♦8 (even + high = interest in higher remaining suit = hearts)"
+      - situation: "3NT. Confirming discard after first signal"
+        holding: "First discarded ♦9 (odd = want diamonds). Now discard ♦3"
+        action: "♦9 then ♦3 — reinforces diamond interest (two odd cards in same suit)"
 
   discard_discipline:
     name: "Discard Discipline"
@@ -1948,6 +2032,37 @@ defensive_carding:
     special: >
       If you hold the J, lead 4th highest.
       Example: from KJ732, lead the 3 (not the 2).
+
+    examples:
+      - auction: "1NT-3NT"
+        your_hand: "♠J8742 ♥K63 ♦95 ♣Q84"
+        lead: "♠4 (5th highest from length)"
+        why: "Lead your longest suit vs NT. 5th from 5 cards"
+
+      - auction: "1♥-2♥-4♥"
+        your_hand: "♠KQ3 ♥85 ♦J7643 ♣952"
+        lead: "♠K (top of sequence KQ)"
+        why: "Top of touching honours. Safe and informative"
+
+      - auction: "1♠-2♠-4♠"
+        your_hand: "♠73 ♥K9642 ♦A8 ♣J753"
+        lead: "♥4 (3rd highest from 5)"
+        why: "3rd from odd length. Partner knows you have 5 hearts (3rd/5th leads)"
+
+      - auction: "1♠-2♠-4♠"
+        your_hand: "♠954 ♥AK83 ♦J72 ♣Q63"
+        lead: "♥A then ♥K (AK sequence, A asks for count)"
+        why: "Lead K from AK. Partner gives count. If doubleton, continue for ruff"
+
+      - auction: "1♦-1♠-1NT-3NT"
+        your_hand: "♠J6 ♥QJ1082 ♦74 ♣K953"
+        lead: "♥Q (top of interior sequence QJ10)"
+        why: "Don't lead declarer's spade suit. Lead your own long suit, top of sequence"
+
+      - auction: "1♠-4♠"
+        your_hand: "♠62 ♥A94 ♦J8743 ♣K52"
+        lead: "♦4 (3rd highest from xxx)"
+        why: "Low from xxx — NOT MUD. 3rd highest immediately tells partner this isn't a doubleton"
 
 # ──────────────────────────────────────────────
 # Additional Materials — Hand Evaluation

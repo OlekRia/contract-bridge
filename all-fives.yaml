@@ -422,10 +422,12 @@ carding:
     low: odd
 
   smith_echo:
+    name: "Reverse Smith Echo"
     when: "vs NT only, trick 2+, following to declarer's suit"
-    high: "Like the opening lead suit (continue)"
-    low: "Don't like it (switch)"
+    low: "Like the opening lead suit (continue)"
+    high: "Don't like it (switch)"
     adversarial_cost: "FREE"
+    note: "Reverse Smith — matches our attitude (low = encourage)"
     exception: "Count overrides when dummy has entryless long suit"
 
   trump_signals:

@@ -480,8 +480,8 @@ X of any artificial bid = lead that suit
 
 | Card | Meaning |
 |---|---|
-| High | Like the opening lead suit (continue) |
-| Low | Don't like it (switch) |
+| High | Don't like it (switch) |
+| Low | Like the opening lead suit (continue) |
 
 **Adversarial cost:** FREE
 

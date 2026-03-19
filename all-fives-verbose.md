@@ -1059,8 +1059,8 @@ At trick 1, attitude refers to the "obvious shift suit" identified by dummy. Enc
 
 **Adversarial cost:** FREE — dummy is visible to all four players
 
-- **Partner leads ♠K vs 4♥. Dummy: ♠754 ♥Q862 ♦KJ3 ♣A95** (obvious shift: ♣ (3 cards, one honor, shortest non-trump side suit)) — You hold ♠82 ♥J3 ♦A764 ♣Q1083 → Play ♠2 (discourage = wants the obvious shift to clubs)
-- **Partner leads ♠K vs 4♥. Dummy: ♠754 ♥Q862 ♦KJ3 ♣A95** (obvious shift: ♣) — You hold ♠82 ♥J3 ♦Q764 ♣7632 → Play ♠8 (encourage = wants continuation, no club tolerance)
+- **Partner leads ♠K vs 4♥. Dummy: ♠754 ♥Q862 ♦KJ3 ♣A95** (obvious shift: ♣ (3 cards, one honor, shortest non-trump side suit)) — You hold ♠82 ♥J3 ♦A764 ♣Q1083 → Play ♠8 (high = discourage = wants the obvious shift to clubs — you have ♣Q1083)
+- **Partner leads ♠K vs 4♥. Dummy: ♠754 ♥Q862 ♦KJ3 ♣A95** (obvious shift: ♣) — You hold ♠82 ♥J3 ♦Q764 ♣7632 → Play ♠2 (low = encourage = wants spade continuation, no club tolerance)
 
 ### 2. Count (Even / Odd) (Even / Odd)
 
@@ -1071,7 +1071,7 @@ At trick 1, attitude refers to the "obvious shift suit" identified by dummy. Enc
 
 Easy to remember: From a doubleton (even), play high.
 
-### Smith Echo (vs NT only)
+### Reverse Smith Echo (vs NT only)
 
 **When:** Against NT contracts, at trick 2+, when following to declarer's suit
 
@@ -1081,17 +1081,18 @@ Easy to remember: From a doubleton (even), play high.
 
 | Signal | Meaning |
 |---|---|
-| **High card in declarer's suit** | Encourage continuation of the opening lead suit |
-| **Low card in declarer's suit** | Discourage — switch when you regain the lead |
+| **Low card in declarer's suit** | Encourage continuation of the opening lead suit |
+| **High card in declarer's suit** | Discourage — switch when you regain the lead |
 
 > **Exception:** When dummy has an entryless long suit threatening to run, count overrides Smith Echo. Partner needs to know WHEN to win, not WHETHER to continue.
 
 #### Examples
 
-- **Partner led ♠5 vs 3NT, declarer won ♠A, leads ♥Q** — You hold ♠KJ83 ♥764 → Play ♥7 (high = like spades, partner should continue)
-- **Partner led ♠5 vs 3NT, declarer won ♠A, leads ♥Q** — You hold ♠92 ♥764 → Play ♥4 (low = don't like spades, partner should switch)
+- **Partner led ♠5 vs 3NT, declarer won ♠A, leads ♥Q** — You hold ♠KJ83 ♥764 → Play ♥4 (low = encourage spades, partner should continue)
+- **Partner led ♠5 vs 3NT, declarer won ♠A, leads ♥Q** — You hold ♠92 ♥764 → Play ♥7 (high = discourage spades, partner should switch)
+- **Partner led ♦7 vs 3NT, declarer won ♦A, leads ♣K** — You hold ♦QJ4 ♣862 → Play ♣2 (low = encourage diamonds). When partner wins ♣A, they continue ♦
 
-> Standard Smith (not Reverse). Near-mandatory at expert level.
+> Reverse Smith (low = like). Matches our attitude convention. Near-mandatory at expert level.
 
 ### Trump Suit Preference (TSP)
 
