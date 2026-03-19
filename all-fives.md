@@ -454,7 +454,9 @@ X of any artificial bid = lead that suit
 
 ### Signal Selection
 
-Dummy-dependent: Ace lead → count. Dummy threatens → count. Shift question → suit preference. Default → attitude. Trumps → peter.
+**Partner need:** Ace lead → count. Dummy threatens → count. Shift question → suit preference. Default → attitude. Trumps → peter.
+**Card cost:** Cheapest card that conveys the message. Never signal with a trick.
+**Adversarial cost:** FREE signal = declarer already knows (bid suit count, obvious shift, overcalled suit). COSTLY signal = declarer gains info (unbid suit count, ambiguous attitude, critical guess). Prefer free. Costly only when defensive gain outweighs declarer gain.
 
 ### Attitude
 

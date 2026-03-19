@@ -399,9 +399,15 @@ competitive:
 carding:
   principle: "Use your head first. Signals are a last resort."
 
-  signal_selection: >
-    Dummy-dependent: Ace lead → count. Dummy threatens → count.
-    Shift question → suit preference. Default → attitude. Trumps → peter.
+  signal_selection:
+    axis_1_partner_need: >
+      Ace lead → count. Dummy threatens → count. Shift question → suit preference.
+      Default → attitude. Trumps → peter.
+    axis_2_card_cost: "Cheapest card that conveys the message. Never signal with a trick."
+    axis_3_adversarial_cost: >
+      FREE signal = declarer already knows (bid suit count, obvious shift, overcalled suit).
+      COSTLY signal = declarer gains info (unbid suit count, ambiguous attitude, critical guess).
+      Prefer free. Costly only when defensive gain outweighs declarer gain.
 
   attitude:
     low: encourage

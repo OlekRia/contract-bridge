@@ -1762,21 +1762,43 @@ defensive_carding:
     the bidding and dummy tell you everything. Signals are a last resort.
 
   signal_selection:
-    name: "Dummy-Dependent Signal Protocol"
+    name: "Three-Axis Signal Protocol"
     description: >
-      After dummy appears, choose signal type algorithmically based on dummy and auction.
-      This is mechanical, not creative.
-    decision_tree:
-      - condition: "Partner leads the Ace"
-        signal: "Always give count"
-      - condition: "Dummy has a threatening long suit declarer needs to establish"
-        signal: "Give count (tells partner when to win the Ace)"
-      - condition: "The defensive question is which suit to shift to"
-        signal: "Give suit preference"
-      - condition: "Neither count nor shift is the issue"
-        signal: "Give attitude (default)"
-      - condition: "Following in trumps"
-        signal: "Peter (high-low) = odd count + desire to ruff"
+      After dummy appears, choose signal type using three axes. This is mechanical,
+      not creative. Declarer reads your signals too — factor in adversarial cost.
+    axis_1_partner_need:
+      name: "What does partner need? (Dummy-dependent)"
+      decision_tree:
+        - condition: "Partner leads the Ace"
+          signal: "Always give count"
+        - condition: "Dummy has a threatening long suit declarer needs to establish"
+          signal: "Give count (tells partner when to win the Ace)"
+        - condition: "The defensive question is which suit to shift to"
+          signal: "Give suit preference"
+        - condition: "Neither count nor shift is the issue"
+          signal: "Give attitude (default)"
+        - condition: "Following in trumps"
+          signal: "Peter (high-low) = odd count + desire to ruff"
+    axis_2_card_cost:
+      name: "What is cheapest? (Discard discipline)"
+      rule: "Signal with the cheapest card that conveys the message. Never signal with a potential trick."
+    axis_3_adversarial_cost:
+      name: "What does declarer already know? (Free vs Costly)"
+      description: >
+        A FREE signal encodes information declarer can already deduce from own hand +
+        dummy + bidding. It helps partner at zero adversarial cost. A COSTLY signal
+        reveals information declarer couldn't deduce — it helps both partner and declarer.
+        When declarer has a critical guess, avoid costly signals.
+      free_signals:
+        - "Count in a suit declarer bid naturally (declarer knows own length + dummy → can compute split)"
+        - "Attitude about partner's overcalled suit (everyone knows overcall = values)"
+        - "Suit preference when dummy's shape makes the obvious shift clear to all"
+        - "Count late in the hand when declarer has already inferred the layout"
+      costly_signals:
+        - "Count in an unbid suit (declarer gains split information)"
+        - "Attitude in an ambiguous suit (reveals holding declarer is guessing about)"
+        - "Any signal about a suit where declarer has a critical finesse or placement guess"
+      principle: "Prefer free signals. Give costly signals only when defensive gain clearly outweighs declarer gain."
 
   attitude:
     name: "Attitude (Encourage / Discourage)"

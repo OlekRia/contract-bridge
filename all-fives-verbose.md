@@ -1005,9 +1005,11 @@ Acting between two bidding opponents is dangerous — both have values. Be cauti
 
 > **Use your head first, not partner's signals. In most situations, the bidding and dummy tell you everything. Signals are a last resort.**
 
-### Dummy-Dependent Signal Protocol
+### Three-Axis Signal Protocol
 
-After dummy appears, choose signal type algorithmically based on dummy and auction. This is mechanical, not creative.
+After dummy appears, choose signal type using three axes. This is mechanical, not creative. Declarer reads your signals too — factor in adversarial cost.
+
+#### Axis 1: What does partner need? (Dummy-dependent)
 
 | Condition | Signal |
 |---|---|
@@ -1016,6 +1018,27 @@ After dummy appears, choose signal type algorithmically based on dummy and aucti
 | The defensive question is which suit to shift to | Give suit preference |
 | Neither count nor shift is the issue | Give attitude (default) |
 | Following in trumps | Peter (high-low) = odd count + desire to ruff |
+
+#### Axis 2: What is cheapest? (Discard discipline)
+
+Signal with the cheapest card that conveys the message. Never signal with a potential trick.
+
+#### Axis 3: What does declarer already know? (Free vs Costly)
+
+A FREE signal encodes information declarer can already deduce from own hand + dummy + bidding. It helps partner at zero adversarial cost. A COSTLY signal reveals information declarer couldn't deduce — it helps both partner and declarer. When declarer has a critical guess, avoid costly signals.
+
+**Free signals** (zero adversarial cost):
+- Count in a suit declarer bid naturally (declarer knows own length + dummy → can compute split)
+- Attitude about partner's overcalled suit (everyone knows overcall = values)
+- Suit preference when dummy's shape makes the obvious shift clear to all
+- Count late in the hand when declarer has already inferred the layout
+
+**Costly signals** (declarer gains information):
+- Count in an unbid suit (declarer gains split information)
+- Attitude in an ambiguous suit (reveals holding declarer is guessing about)
+- Any signal about a suit where declarer has a critical finesse or placement guess
+
+> **Prefer free signals. Give costly signals only when defensive gain clearly outweighs declarer gain.**
 
 ### 1. Attitude (Encourage / Discourage) (Encourage / Discourage)
 
