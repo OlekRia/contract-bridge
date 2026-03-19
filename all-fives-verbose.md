@@ -1071,6 +1071,223 @@ After dummy appears, choose signal type using three axes. This is mechanical, no
 
 ---
 
+## Dummy Analysis — Systematic Defense from Trick 1
+
+> **Every defensive decision flows from two questions: (1) How many tricks can declarer take if I do nothing? (2) Can I do something about it? If declarer has enough tricks → ACTIVE defence (race to cash, attack, switch). If declarer is short → PASSIVE defence (don't help, make declarer work). The dummy taxonomy and bidding reconstruction ANSWER these questions.**
+
+### Dummy Suit Taxonomy
+
+Every suit in dummy falls into one of five categories. Classify all four suits before playing to trick 1. The classification drives your entire defence plan.
+
+**RUNNING THREAT**: 5+ cards with 3+ honours or solid sequence (e.g., AKQxx, KQJ9x, AQJ10x, KQJ74)
+- Defence: RACE or CUT. Either cash your winners before this suit runs (active), or attack entries so declarer can never reach it (entry attack).
+- *Example*: Dummy: ♠754 ♥Q862 ♦KQJ93 ♣5 → Diamonds are a RUNNING THREAT (5 cards, KQJ). If declarer has ♦A, that's 5 tricks. Race to cash or cut diamond entries.
+
+**ESTABLISHABLE SOURCE**: 4+ cards with 1-2 honours — needs development (e.g., KJ84, Q10753, A8642, K9743)
+- Defence: HOLD UP or ATTACK ENTRIES. Duck the first round to exhaust declarer's communication. If dummy has limited side entries, the suit dies on the vine.
+- *Example*: Dummy: ♠Q4 ♥K63 ♦J10742 ♣852 → Diamonds are an ESTABLISHABLE SOURCE (5 cards, J-10 combo). Declarer needs to knock out ♦A and ♦K. Hold up to strand the suit.
+
+**ATTACK TARGET**: ≤3 cards or long without honours — safe for defenders to lead (e.g., 73, xxx, 8642, 9754)
+- Defence: LEAD IT. When you need to switch, go here. This is your safe suit. Also the likely obvious shift suit for Granovetter signaling.
+- *Example*: Dummy: ♠KJ95 ♥Q862 ♦A3 ♣742 → Clubs (742) are an ATTACK TARGET. No honours, 3 small. Switch here freely.
+
+**ENTRY SUIT**: Contains A or K as a side entry to reach another suit (e.g., A3, Kx, AJ5, KQ4)
+- Defence: ATTACK ENTRIES when dummy has a running/establishable suit elsewhere. Lead this suit to force out the entry prematurely. If you can remove all entries, the long suit is stranded.
+- *Example*: Dummy: ♠74 ♥AKJ93 ♦853 ♣Q64 → Hearts are a RUNNING THREAT. But how does declarer reach them? ♥A and ♥K ARE the entries. If you force declarer to use hearts as entries (by ducking), the suit doesn't fully run.
+
+**TRUMP HOLDING**: Dummy's trump length and shape — determines ruffing potential
+- *Example*: Dummy: ♠Q83 ♥6 ♦KJ742 ♣A963 → 3 trumps + singleton heart = RUFFING VALUE. Lead trumps to cut heart ruffs. Diamonds are an ESTABLISHABLE SOURCE but secondary concern.
+
+#### Dummy Profile
+
+After classifying all 4 suits, write a one-sentence DUMMY PROFILE.
+
+- **Dummy**: ♠754 ♥KQJ93 ♦A5 ♣842 → *Running threat in hearts, entry in diamonds (♦A), attack target in clubs, 3 trumps no ruffing value.* → **ACTIVE — hearts will run. Cash or attack the ♦A entry.**
+- **Dummy**: ♠Q83 ♥942 ♦K63 ♣J1075 → *No threat suits, no entries worth attacking, flat dummy.* → **PASSIVE — declarer has no source of tricks in dummy. Don't break new suits.**
+- **Dummy**: ♠6 ♥K1074 ♦QJ953 ♣A82 → *Singleton spade (ruffing value), establishable source in diamonds, entry in clubs (♣A).* → **ACTIVE — lead trumps to cut spade ruffs. Secondary: hold up in diamonds if possible.**
+- **Dummy**: ♠AJ5 ♥73 ♦Q108742 ♣95 → *Establishable source in diamonds (6 cards!), entry in spades (♠A), attack targets in hearts and clubs.* → **ACTIVE — diamonds WILL run if declarer gets in. Attack the ♠A entry. If you lead spades, the entry is gone before diamonds are set up.**
+
+### Bidding Reconstruction
+
+The auction is a conversation. Every bid tells you something about declarer's hand. Every PASS tells you something too. Before dummy appears, you should have a shape skeleton and HCP range. After dummy appears, refine it to near-certainty.
+
+#### During the auction — before dummy appears
+
+**HCP RANGE**: Opening bid constrains range: 1NT = 12-14, 1-suit = 12+, 2C = 22+. Each rebid narrows it: 1♥-2NT = 15-17 bal, 1♥-1♠-2♥ = 12-14 with 6 hearts, 1♥-1♠-3♥ = 15-17 with 6 hearts.
+
+- `1NT-3NT` → Declarer: 12-14, balanced. Dummy: 11-13 (invited or blasted).
+- `1♥-2♥-4♥` → Declarer: 15-17 (jumped to game over single raise). Dummy: 6-9.
+- `1♠-2♣-2♠` → Declarer: 12-14, 5+ spades, clubs not rebiddable. Minimum.
+- `1♦-1♠-2NT` → Declarer: 15-17, balanced, 4+ diamonds, denies 4 hearts or 4 spades.
+
+**SHAPE SKELETON**: Bids show suits: 1♠ then 2♥ = 5+ spades, 4+ hearts. 1NT = balanced (no singleton, no 6-card suit). NEGATIVE INFERENCES (Reese's 'dog that didn't bark'): No Stayman = no 4-card major. No transfer = no 5-card major. Raised immediately = minimum for the raise, no side suit to show. Didn't rebid the suit = probably only 5 (not 6).
+
+- `1♠-2♣-2♠` → 5-6 spades (rebid without jump = no extra values, just length). ≤3 hearts (didn't bid them). Clubs not rebiddable (probably 3). So roughly 5-2-3-3 or 6-2-3-2.
+- `1♥-1♠-2♦-2NT-3NT` → Opener: 4+ hearts, 4+ diamonds, 12-14 (didn't jump). Probably 1-4-4-4 or 2-4-4-3.
+- `(1♣)-1♠-(2♣)-(3♣)-3♠` → Overcaller: 5+ spades (overcall), minimum (didn't jump). Competitive, probably 5-3-3-2 or 5-4 somewhere.
+
+**TRICK ESTIMATE**: Contract level = tricks needed. 3NT = 9, 4♥ = 10, 5♦ = 11. Count your sure tricks against this.
+
+#### Dummy appears — refine the picture
+
+**HCP PINPOINT**: 40 - your HCP - dummy's HCP = declarer + partner combined. Bidding narrows declarer's range → partner's range follows.
+
+*40 - 6 - 11 = 23 between declarer and partner. Auction was 1NT(12-14)-3NT → declarer has 12-14. Partner has 23 - (12 to 14) = 9-11 HCP.*
+
+→ Partner has an Ace and a King at minimum. You know roughly where the honours are.
+
+**SHAPE REFINEMENT**: Dummy's shape is visible. Subtract from 13 to constrain declarer. Combined with the shape skeleton from the auction → near-complete picture.
+
+*Dummy: 3-3-3-4. Declarer opened 1♥ → 5+ hearts. Jumped to 4♥ over 2♥ → extras (15-17). With 5 hearts and extras: likely 5-3-3-2 or 5-4-2-2.*
+
+**TRICK RECOUNT**: Count dummy's sure tricks. Add declarer's expected tricks. Compare to contract. This is Kelsey's trick count — the most actionable of the three counts.
+
+### Five Lines of Defence
+
+Dummy taxonomy + bidding reconstruction → one of five defence lines. Choose your line BEFORE playing to trick 1. Then execute consistently.
+
+**Line 1: RACE TO CASH**
+- When: Running threat in dummy + entries available. Declarer has enough tricks.
+- Action: Cash your winners NOW. Don't try to establish — declarer will run before you.
+- *Example*: 4♠ — Dummy: ♠74 ♥Q862 ♦AKQ93 ♣85 → Diamonds are a running threat with internal entries. Cash ♥AK immediately. Hope partner has a trick somewhere.
+
+**Line 2: ATTACK ENTRIES**
+- When: Establishable source in dummy + limited entries. Suit needs development.
+- Action: Lead the entry suit to remove access BEFORE the long suit is established.
+- *Example*: 3NT — Dummy: ♠653 ♥A4 ♦QJ10742 ♣83 → Diamonds are establishable (need ♦A knocked out). ♥A is the only entry. Win ♦A, then attack hearts (lead ♥J). If ♥A is gone before diamonds are set up, declarer can't reach them.
+
+**Line 3: PASSIVE DEFENCE**
+- When: Flat dummy, no threat suits, declarer is short of tricks.
+- Action: Don't break new suits. Make declarer do the work. Return partner's lead or lead safe suits.
+- *Example*: 3NT — Dummy: ♠Q83 ♥J74 ♦K63 ♣J1075 → Dummy is completely flat — no running suit, no entries worth attacking. Declarer has to find 9 tricks from nowhere. Lead passively, don't give free finesses. Every suit you break potentially gives declarer a trick they couldn't get alone.
+
+**Line 4: CUT THE RUFFS**
+- When: Dummy has trumps + singleton/void. Declarer plans to ruff losers.
+- Action: Lead trumps at every opportunity. Each trump lead cuts one ruff.
+- *Example*: 4♠ — Dummy: ♠Q83 ♥5 ♦KJ742 ♣A963 → Singleton heart + 3 trumps = ruffing value. Lead a trump. Win hearts later, lead another trump. Cut as many ruffs as possible.
+
+**Line 5: FORCE DECLARER**
+- When: You have 4+ trumps. Declarer has a two-suited hand.
+- Action: Lead your longest side suit repeatedly. Force declarer to ruff, shortening their trumps below yours.
+- *Example*: 4♥ — Dummy: ♠73 ♥KJ9642 ♦A5 ♣Q84 → You have 4 trumps! Force declarer to ruff spades. Lead ♠K, then ♠Q, then ♠J. If declarer ruffs three times, they have fewer trumps than you. Your ♥Q1083 scores extra tricks.
+
+#### Decision Flowchart
+
+1. Is there a RUNNING THREAT in dummy? → Line 1 (RACE) or Line 2 (ATTACK ENTRIES)
+2. Is there an ESTABLISHABLE SOURCE? → Line 2 (ATTACK ENTRIES) — hold up and cut access
+3. Does dummy have ruffing value (short suit + trumps)? → Line 4 (CUT RUFFS)
+4. Do you have 4+ trumps? → Line 5 (FORCE DECLARER)
+5. Dummy is flat with no threats? → Line 3 (PASSIVE)
+
+### Worked Examples
+
+#### Running threat — race to cash
+
+**Contract**: 4♠ (1♠-2♦-3♠-4♠)
+
+**Your hand**: ♠J6 ♥AK83 ♦1054 ♣Q972
+
+**Dummy**: ♠Q74 ♥652 ♦AKQ93 ♣85
+
+- ♠ TRUMP (3 cards, no short suit — no ruffing value)
+- ♥ ATTACK TARGET (3 small)
+- ♦ RUNNING THREAT (5 cards, AKQ — will produce 5 tricks)
+- ♣ ATTACK TARGET (2 small)
+
+**Reconstruction**: Auction: 1♠ = 5+ spades. 2♦ raised to 3♠ by partner (dummy). Dummy has 3 spades and AKQ diamonds — dummy bid 2♦ showing the source. Declarer: 5+ spades, some side values, accepted game try. Likely 5-3-2-3 or 5-4-1-3.
+
+**Trick count**: Dummy's ♦AKQ = 3 tricks (declarer has 2 diamonds). Declarer's trumps = 5. ♠Q = 1 more. That's 9. Need 10. The 4th and 5th diamonds are the source.
+
+**Plan**: ACTIVE — Line 1. Race to cash hearts. ♥A, then ♥K, then a heart to partner. Cash 3 hearts before diamonds run.
+
+**Result**: ♥A, ♥K, ♥3 to partner's ♥Q. Partner cashes ♣A. Down 1.
+
+#### Attack entries — strand the long suit
+
+**Contract**: 3NT (1NT-3NT)
+
+**Your hand**: ♠KQ1074 ♥J93 ♦A8 ♣K65
+
+**Dummy**: ♠53 ♥A42 ♦Q109642 ♣83
+
+- ♠ ATTACK TARGET (2 small — lead freely)
+- ♥ ENTRY SUIT (♥A is the only side entry to diamonds)
+- ♦ ESTABLISHABLE SOURCE (6 cards, Q-10-9 — needs ♦A and ♦K knocked out)
+- ♣ ATTACK TARGET (2 small)
+
+**Reconstruction**: 1NT-3NT: declarer 12-14 balanced. Dummy: weak hand with long diamonds, no major, just gambled 3NT. Declarer: 12-14 HCP, probably ♦Kx or ♦KJx. Balanced = no singleton.
+
+**Trick count**: If diamonds come in: ♥A + 5 diamonds = 6. Declarer has 12-14 HCP = likely 2-3 more tricks. That's 8-9. Tight.
+
+**Plan**: ACTIVE — Line 2. Lead ♠K (your suit). When you win ♦A, switch to ♥J to attack the ♥A entry. If hearts are removed before diamonds are established, the suit is stranded.
+
+**Result**: ♠K lead, win 2 spades. Declarer leads ♦K — you duck! Declarer leads ♦J — win ♦A, switch to ♥J. ♥A is forced out. Declarer has 4 diamond tricks but only if they can reach dummy — they can't. Down 1.
+
+#### Passive defence — flat dummy
+
+**Contract**: 3NT (1♣-1♠-1NT-3NT)
+
+**Your hand**: ♠1042 ♥Q963 ♦J85 ♣K72
+
+**Dummy**: ♠KJ85 ♥J74 ♦Q63 ♣J105
+
+- ♠ No threat (K-J with stoppers both sides)
+- ♥ ATTACK TARGET (J-7-4, but leading into J is risky)
+- ♦ No threat (Q-6-3, positional)
+- ♣ No threat (J-10-5, positional)
+
+**Reconstruction**: 1♣ = 4+ clubs. 1NT rebid = 12-14 balanced. Dummy bid 1♠ = 4+ spades, 6-13 HCP. Declarer: 12-14, balanced, 4+ clubs, denies 4 hearts (didn't bid them), denies 4 spades (rebid 1NT not 2♠). Probably 2-3-3-5 or 3-3-2-5 or 2-3-4-4.
+
+**Trick count**: Dummy has no running suit. Declarer has clubs but no outside source. Count: ♣AQ (2), ♠A (1), ♦AK (2) = 5 sure tricks. Needs 4 more. Where from?
+
+**Plan**: PASSIVE — Line 3. Declarer needs to develop 4 tricks from broken holdings. Every suit you break gives declarer a free finesse. Lead partner's suit if they bid, otherwise sit tight.
+
+**Result**: Partner led ♦A then ♦K then ♦4. You play ♦J, ♦8, ♦5. Passive. Declarer struggles to find 9 tricks without help. Down 1.
+
+#### Cut the ruffs — singleton in dummy
+
+**Contract**: 4♥ (1♥-2♣-2♥-4♥)
+
+**Your hand**: ♠A63 ♥K4 ♦KJ82 ♣Q1074
+
+**Dummy**: ♠8 ♥Q10763 ♦A953 ♣A85
+
+- ♠ Singleton = RUFFING VALUE (!!!)
+- ♥ TRUMP (5 cards — strong support)
+- ♦ No immediate threat (A-9-5-3, but ♦A is an entry)
+- ♣ ENTRY SUIT (♣A provides access)
+
+**Reconstruction**: 1♥ = 5+ hearts. 2♣ by dummy = 4+ clubs. 2♥ = minimum. 4♥ = dummy has game values with the fit. Declarer: 5+ hearts, 12-14, probably 4-5-2-2 or 3-5-2-3.
+
+**Trick count**: Dummy has ♠ singleton → 2-3 spade ruffs if not stopped. Declarer's spade losers can disappear. With ♥Q10763 as trumps, each ruff is valuable.
+
+**Plan**: ACTIVE — Line 4. Win ♠A at first opportunity, lead a trump. Win ♥K later, lead another trump. Cut the ruffs.
+
+**Result**: Partner leads ♠K. You signal low (TSP — prefer lower suit = diamonds). Partner leads ♠Q, you overtake with ♠A. Lead ♥4 — cutting first ruff. Win ♥K later, lead ♥ again. Two ruffs cut. Down 1.
+
+#### Force declarer — 4 trumps
+
+**Contract**: 4♠ (1♠-2♠-4♠)
+
+**Your hand**: ♠J1083 ♥4 ♦AKQ63 ♣J75
+
+**Dummy**: ♠K74 ♥J9653 ♦72 ♣A84
+
+- ♠ TRUMP (K-7-4 support)
+- ♥ No threat (J-9-6-5-3, no outside honour to set up)
+- ♦ ATTACK TARGET (7-2, you have AKQ!)
+- ♣ ENTRY SUIT (♣A)
+
+**Reconstruction**: 1♠ = 5+ spades. 2♠ = 6-9, 3+ spades. 4♠ = extras. Declarer: 15-17, 5+ spades. Likely ♠AQ9xx with ♥AKxx type.
+
+**Trick count**: Declarer has ~5 spade tricks + ♥AK (2) + ♣A (1) = 8. Needs 2 more — will try to ruff diamonds or set up hearts.
+
+**Plan**: ACTIVE — Line 5. You have 4 trumps (J-10-8-3). Force declarer! Lead ♦A, ♦K, ♦Q. Declarer must ruff. After 2 forces, declarer has fewer trumps than you. Your ♠J108 will score.
+
+**Result**: ♦A, ♦K, ♦Q — declarer ruffs the third. Declarer draws 2 rounds of trumps but can't draw yours without running out. You score ♠J and ♠10. Down 1.
+
+---
+
 ## Additional Materials — Hand Evaluation
 
 > High Card Points are the lingua franca of bridge, but HCP alone misjudge distributional hands, honour placement, and fit quality. A complete evaluation combines HCP with distributional adjustments, Losing Trick Count, controls, working honours, and suit quality.

@@ -523,3 +523,32 @@ Never signal with potential tricks. Cheapest card that conveys the message.
 **Vs suits:** Prefer sequences; avoid unsupported honours
 **Vs NT:** Longest suit unless bidding says opponents hold it
 
+---
+
+### Dummy Analysis
+
+Classify dummy's suits → reconstruct declarer from bidding → choose defence line
+
+| Category | Definition |
+|---|---|
+| RUNNING THREAT | 5+ cards, 3+ honours (AKQxx, KQJ9x) — RACE to cash or CUT entries |
+| ESTABLISHABLE SOURCE | 4+ cards, 1-2 honours (KJ84, Q10753) — HOLD UP, attack entries |
+| ATTACK TARGET | ≤3 cards or long without honours (73, xxx) — safe to LEAD |
+| ENTRY SUIT | Contains A or K as side entry — attack to strand long suit |
+| TRUMP RUFFING | Short side suit + trumps = lead trumps to CUT RUFFS |
+
+| Line | When |
+|---|---|
+| 1 race | Running threat + entries → cash winners NOW |
+| 2 entries | Establishable source + limited entries → attack entries |
+| 3 passive | Flat dummy, no threats → don't break new suits |
+| 4 cut ruffs | Singleton + trumps → lead trumps |
+| 5 force | You have 4+ trumps → force declarer to ruff, shorten their trumps |
+
+**Bidding clues**:
+
+- `1NT-3NT`: Balanced ~25 HCP, no long suit. Lead longest, then passive.
+- `1M-2M-4M`: Dummy 6-9. Check for singleton. Flat = passive.
+- `1M-3M-4M`: Dummy 10-12, 4+ trumps. More entries. Be active.
+- `Weak two-4M`: Shape but no tricks. Cash fast.
+
