@@ -399,14 +399,22 @@ competitive:
 carding:
   principle: "Use your head first. Signals are a last resort."
 
+  signal_selection: >
+    Dummy-dependent: Ace lead → count. Dummy threatens → count.
+    Shift question → suit preference. Default → attitude. Trumps → peter.
+
   attitude:
     low: encourage
     high: discourage
-    exception: "Ace lead → give count (even/odd)"
 
   count:
     high: even
     low: odd
+
+  trump_signals:
+    high_low: "Odd count + desire to ruff"
+    low_high: "Denies ruffing interest"
+    caution: "Never peter with potential trump tricks (Qxx)"
 
   suit_preference:
     name: Italian Style (on discards)
@@ -414,12 +422,14 @@ carding:
     low_even: "Interest in lower suit"
     high_even: "Interest in higher suit"
 
+  discard_discipline: "Never signal with potential tricks. Cheapest card that conveys the message."
+
   leads:
     from_length: "3rd or 5th highest"
     from_sequences: "Top of sequence (AKx→K, KQx→K, QJx→Q, JTx→J, T9x→T)"
     AK_agreement: "K lead from AK; A asks for count"
     from_xx: "Higher"
-    from_xxx: "MUD (middle-up-down)"
+    from_xxx: "Lowest (3rd highest)"
     from_xxxx: "Highest safe, then low"
     with_J: "Lead 4th highest (KJ732→3)"
     vs_suits: "Prefer sequences; avoid unsupported honours"

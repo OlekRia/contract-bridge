@@ -452,6 +452,10 @@ X of any artificial bid = lead that suit
 
 > **Use your head first. Signals are a last resort.**
 
+### Signal Selection
+
+Dummy-dependent: Ace lead → count. Dummy threatens → count. Shift question → suit preference. Default → attitude. Trumps → peter.
+
 ### Attitude
 
 | Signal | Meaning |
@@ -459,14 +463,21 @@ X of any artificial bid = lead that suit
 | Low | encourage |
 | High | discourage |
 
-**Exception:** Ace lead → give count (even/odd)
-
 ### Count
 
 | Signal | Meaning |
 |---|---|
 | High | even |
 | Low | odd |
+
+### Trump Signals
+
+| Signal | Meaning |
+|---|---|
+| High-low | Odd count + desire to ruff |
+| Low-high | Denies ruffing interest |
+
+> **Caution:** Never peter with potential trump tricks (Qxx)
 
 ### Italian Style (on discards)
 
@@ -476,6 +487,10 @@ X of any artificial bid = lead that suit
 | Low even | Interest in lower suit |
 | High even | Interest in higher suit |
 
+### Discard Discipline
+
+Never signal with potential tricks. Cheapest card that conveys the message.
+
 ### Opening Leads
 
 | From | Lead |
@@ -484,7 +499,7 @@ X of any artificial bid = lead that suit
 | Sequences | Top of sequence (AKx→K, KQx→K, QJx→Q, JTx→J, T9x→T) |
 | AK | K lead from AK; A asks for count |
 | xx | Higher |
-| xxx | MUD (middle-up-down) |
+| xxx | Lowest (3rd highest) |
 | xxxx | Highest safe, then low |
 | With J | Lead 4th highest (KJ732→3) |
 

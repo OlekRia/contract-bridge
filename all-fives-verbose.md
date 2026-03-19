@@ -1005,14 +1005,24 @@ Acting between two bidding opponents is dangerous — both have values. Be cauti
 
 > **Use your head first, not partner's signals. In most situations, the bidding and dummy tell you everything. Signals are a last resort.**
 
+### Dummy-Dependent Signal Protocol
+
+After dummy appears, choose signal type algorithmically based on dummy and auction. This is mechanical, not creative.
+
+| Condition | Signal |
+|---|---|
+| Partner leads the Ace | Always give count |
+| Dummy has a threatening long suit declarer needs to establish | Give count (tells partner when to win the Ace) |
+| The defensive question is which suit to shift to | Give suit preference |
+| Neither count nor shift is the issue | Give attitude (default) |
+| Following in trumps | Peter (high-low) = odd count + desire to ruff |
+
 ### 1. Attitude (Encourage / Discourage) (Encourage / Discourage)
 
 | Signal | Meaning |
 |---|---|
 | **Low card** | Encouraging — continue this suit |
 | **High card** | Discouraging — please switch |
-
-**Exception:** When partner leads the Ace, give count (even/odd) instead of attitude. If partner wants continuation from AK, he leads the King.
 
 ### 2. Count (Even / Odd) (Even / Odd)
 
@@ -1022,6 +1032,15 @@ Acting between two bidding opponents is dangerous — both have values. Be cauti
 | **Low card** | Odd number of cards |
 
 Easy to remember: From a doubleton (even), play high.
+
+### Trump Peter
+
+| Signal | Meaning |
+|---|---|
+| **High-low in trumps** | Odd number of trumps — desire to ruff |
+| **Low-high in trumps** | Denies ruffing interest |
+
+> **Caution:** Never peter with potential trump tricks (e.g., Qxx of trumps). The signal must not cost a trick.
 
 ### 3. Suit Preference on Discards (Italian Style) on Discards
 
@@ -1040,6 +1059,13 @@ Easy to remember: From a doubleton (even), play high.
 | 8 then 6 | Denies interest in the higher suit |
 
 > The higher the discard, the less reliable. The second discard confirms.
+
+### Discard Discipline
+
+- Never signal with a card that could be a trick
+- Use the cheapest card that conveys the intended message
+- Never bare an honour or unguard a critical suit
+- Preserve cards partner might need for communication
 
 ### 4. Opening Leads
 
@@ -1072,7 +1098,7 @@ Easy to remember: From a doubleton (even), play high.
 | Holding | Lead |
 |---|---|
 | xx | Higher card |
-| xxx | Middle, then high (MUD) |
+| xxx | Lowest (3rd highest) |
 | xxxx | Highest safe, then low |
 
 > **Special rule:** If you hold the J, lead 4th highest. Example: from KJ732, lead the 3 (not the 2).
