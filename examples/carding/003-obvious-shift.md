@@ -104,3 +104,33 @@ At trick 1, both defenders identify dummy's weakest side suit. Your
 play in the led suit isn't just "like / dislike" — it's "continue"
 vs "shift to THAT suit." This turns a vague preference into a
 precise instruction.
+
+## Copilot asks:
+
+            "how I understand it was discourage , what if I have a weak Clubs ?"
+
+ Good question. You only have 1 bit — two choices:
+
+  - LOW = "continue the led suit"
+  - HIGH = "shift to the obvious suit"
+
+  If you have weak clubs (the obvious shift suit), you play LOW — meaning "don't
+  shift, continue spades." You're not saying "I love spades." You're saying "clubs is
+   worse."
+
+  Using the same deal, imagine you held ♠82 ♥J3 ♦A764 ♣7632 instead:
+
+  - ♣7632 is worthless — you do NOT want the club shift
+  - Play ♠2 (LOW = "continue spades, no shift tolerance")
+
+  Partner cashes ♠K, then plays ♠J. Declarer covers ♠Q, you ruff (or declarer wins
+  but partner's spade trick is established). Meanwhile your ♦A is a trick later.
+
+  The logic: partner led spades for a reason (they have AKJ). LOW says "your suit is
+  fine, keep going." HIGH says "abandon your suit, I have the obvious shift covered."
+   If you have nothing in the obvious shift suit, LOW is always correct — let partner
+   continue what they started.
+
+  The only time you play HIGH is when you genuinely have values in the obvious shift
+  suit and want partner to go there. It's not "discourage" in the old sense — it's a
+  specific instruction: "shift to THAT suit."I have a weak Clubs ?

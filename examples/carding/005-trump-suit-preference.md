@@ -17,67 +17,92 @@ the order you play your trumps.
 
 ```
             North (Dummy)
-            ♠ A Q 7 3
-            ♥ 10 8 5 4 2
-            ♦ K 6
-            ♣ 9 3
+            ♠ J 10 4
+            ♥ K 8 3
+            ♦ Q J 5 2
+            ♣ A 7 4
 
 West (Partner)              East (You)
-♠ 10 8 6 4                  ♠ K 9 5
-♥ 9 3                       ♥ 7 6
-♦ J 8 5                     ♦ A 9 7 3 2
-♣ A Q 7 2                   ♣ 10 8 4
+♠ Q 7 2                     ♠ 8 3
+♥ Q J 10 9                  ♥ 7 4 2
+♦ 8 6 3                     ♦ A K 9 6
+♣ 9 5 2                     ♣ J 10 8 3
 
             South (Declarer)
-            ♠ J 2
-            ♥ A K Q J
-            ♦ Q 10 4
-            ♣ K J 6 5
+            ♠ A K 9 6 5
+            ♥ A 6 5
+            ♦ 10 4
+            ♣ K Q 6
 ```
 
-Contract: **4♥ by South**
+Contract: **4♠ by South** (16 HCP opposite 11, 8-card fit)
 
-Auction: 1♥ – Pass – 2♥ – Pass – 4♥ (all pass)
+Auction: 1♠ – Pass – 3♠ – Pass – 4♠ (all pass)
 
 ---
 
 ## The Play
 
-**Trick 1**: Partner leads ♣2 (4th best). Dummy plays ♣3.
-You play ♣10 (third hand high, cheapest of equals). Declarer wins ♣J.
+**Trick 1**: Partner leads ♥Q (top of sequence QJ109 — textbook
+safe lead). Dummy ♥3. You play ♥7 (high = discouraging, nothing
+useful in hearts). Declarer wins ♥A.
 
-Declarer starts drawing trumps.
+Declarer starts drawing trumps. This is where TSP kicks in.
 
-**Trick 2**: Declarer plays ♥A. Dummy ♥2, you play ♥7.
-**Trick 3**: Declarer plays ♥K. Dummy ♥4, you play ♥6.
+**Trick 2**: Declarer plays ♠A. Partner ♠2, you play ♠8 (HIGH first).
+**Trick 3**: Declarer plays ♠K. Partner ♠7, you play ♠3 (LOW second).
 
-You followed ♥7 then ♥6 — LOW-HIGH (no echo).
+♠8 then ♠3 = **HIGH-LOW (echo) = prefer the HIGHER side suit.**
 
-Side suits excluding trumps: ♠ (higher) and ♦ (lower). Clubs already
-established.
+Hearts are partner's suit (established). The two remaining side suits
+are ♦ (higher) and ♣ (lower).
 
-**LOW-HIGH = prefer the LOWER side suit = DIAMONDS.**
+**HIGH-LOW = DIAMONDS.** You hold ♦AK96 — you need partner to find
+the diamond switch.
 
-You hold ♦A9732 — you absolutely want a diamond shift.
-
----
-
-## What Partner Does
-
-When partner wins ♣A (if declarer leads clubs later, or when partner
-gets in), they know from your trump signal: you want diamonds, not
-spades. Partner switches to ♦J. You win ♦A, cash ♦9 (if it's good),
-and the defence takes ♣A + ♦A + more.
+**Trick 4**: Declarer leads ♠6. Partner wins ♠Q — the natural trump
+trick.
 
 ---
 
-## The Alternative: HIGH-LOW
+## The Critical Moment
 
-If instead you held ♠K95 ♥76 ♦10432 ♣1084 (♠K instead of ♦A),
-you'd follow ♥6 then ♥7 — wait, that's low-high again. But suppose
-you held ♥86 — then ♥8 then ♥6 = HIGH-LOW = prefer the HIGHER
-side suit = spades. That tells partner to lead a spade so you can
-play ♠K through dummy's ♠AQ.
+Partner is on lead with ♠Q. Without TSP, partner guesses: diamonds
+or clubs? They have nothing in either suit — no clue from their own
+hand.
+
+But partner read your trumps: ♠8 then ♠3 = HIGH-LOW = diamonds.
+
+**Trick 5**: Partner leads ♦8. Dummy ♦2. You win ♦A.
+**Trick 6**: You cash ♦K.
+**Trick 7**: You return ♥4. Partner wins ♥J.
+
+**Defence: ♠Q + ♦A + ♦K + ♥J = 4 tricks. Down 1.**
+
+---
+
+## The Wrong Defence (No TSP)
+
+If partner ignores your trump signal and leads ♣9 instead:
+
+Dummy wins ♣A. Declarer draws the last trump, plays ♥ to dummy's ♥K,
+cashes ♣K and ♣Q. Declarer makes: 5 spades + ♥A + ♥K + ♣AKQ = 10
+tricks. **Contract makes.** Your ♦AK are stranded — you never get in.
+
+The diamond switch was the ONLY defence. TSP found it.
+
+---
+
+## The Alternative: LOW-HIGH (Wanting Clubs)
+
+Imagine you held ♠83 ♥742 ♦10863 ♣AK93 instead (♣AK, not ♦AK).
+
+**Trick 2**: Declarer plays ♠A. You play ♠3 (LOW first).
+**Trick 3**: Declarer plays ♠K. You play ♠8 (HIGH second).
+
+♠3 then ♠8 = **LOW-HIGH (no echo) = prefer the LOWER side suit = CLUBS.**
+
+Partner wins ♠Q, switches to ♣9. You cash ♣AK. Same result — down 1.
 
 ---
 
@@ -85,21 +110,9 @@ play ♠K through dummy's ♠AQ.
 
 1. Only in SUIT contracts (not NT — use Reverse Smith vs NT)
 2. Only when following in the TRUMP suit
-3. Ignore the led suit and trumps — "higher" and "lower" refer only
-   to the two remaining side suits
-4. If one side suit is obviously dead (e.g., dummy has AKQxx), TSP
-   refers to the other two suits
-
----
-
-## SFS Consideration
-
-You need at least 2 trumps to give TSP (high-low or low-high requires
-2 plays). With only 1 trump, you have no choice — partner gets no
-TSP information (SFS = 0 in the trump suit).
-
-With 3+ trumps, your first two plays carry the TSP message. The
-third is just following suit.
+3. "Higher" and "lower" refer to the side suits partner must choose
+   between — exclude trumps and any suit already established
+4. You need at least 2 trumps to give TSP (2 plays = 1 bit)
 
 ---
 
@@ -108,3 +121,5 @@ third is just following suit.
 Your trump plays aren't wasted — they carry a message about which
 side suit you want. Think of it as pointing with your trumps.
 HIGH-LOW = "go high" (higher suit). LOW-HIGH = "go low" (lower suit).
+In this deal, TSP was the difference between down 1 and making —
+partner had no other way to find the diamond switch.

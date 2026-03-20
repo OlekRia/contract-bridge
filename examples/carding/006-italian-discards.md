@@ -19,77 +19,94 @@ attitude (1.0 bit). They encode WHICH suit you want, not just
 
 ```
             North (Dummy)
-            ♠ K Q J 10
+            ♠ Q J 10 9
             ♥ 8 5 3
-            ♦ A K Q 6
-            ♣ 7 4
+            ♦ K J 7 4
+            ♣ Q 6
 
 West (Partner)              East (You)
-♠ 8 7 5 3                   ♠ 9 4
+♠ 8 6 4 2                   ♠ 7 3
 ♥ Q 10 4                    ♥ A K J 9 2
-♦ 9 8 5                     ♦ 10 7 3
-♣ J 10 2                    ♣ 9 6 5
+♦ 9 5 3                     ♦ 10 8 2
+♣ A 9 5                     ♣ 10 7 3
 
             South (Declarer)
-            ♠ A 6 2
+            ♠ A K 5
             ♥ 7 6
-            ♦ J 4 2
-            ♣ A K Q 8 3
+            ♦ A Q 6
+            ♣ K J 8 4 2
 ```
 
 Contract: **3NT by South**
 
-Auction: 1♣ – Pass – 1♠ – Pass – 1NT – Pass – 3NT (all pass)
+Auction: 1♣ – Pass – 1♠ – Pass – 2NT – Pass – 3NT (all pass)
 
 ---
 
 ## The Play
 
-**Trick 1**: Partner leads ♥4 (4th best). Dummy ♥3. You play ♥9
-(third hand high from AKJ92 — win cheaply). Declarer follows ♥7.
+**Trick 1**: Partner leads ♥4 (4th best from Q104). Dummy ♥3.
+You play ♥9 (third hand high, cheapest winner from AKJ92).
+Declarer plays ♥6.
 
-**Trick 2**: You cash ♥A. Declarer ♥6, partner ♥10, dummy ♥5.
+**Trick 2**: You cash ♥A. Declarer ♥7, partner ♥10, dummy ♥5.
 
-**Trick 3**: You cash ♥K. Declarer discards ♣3, partner ♥Q, dummy ♥8.
+**Trick 3**: You cash ♥K. Partner ♥Q (unblocking), dummy ♥8,
+declarer discards ♣2.
 
-**Trick 4**: You play ♥J. Declarer discards ♣8, dummy discards ♠10.
+**Trick 4**: You play ♥J. Dummy discards ♠9. Declarer discards ♣4.
 
-Partner must discard. Partner holds: ♠875 ♦985 ♣J102.
+Partner must discard. Four hearts cashed — you need ONE more trick
+to beat 3NT. You still have ♥2 to lead. But which suit?
 
-The defence has cashed 4 heart tricks. You need one more trick to
-beat 3NT. Where is it? Partner holds ♣J102 — the ♣J could be a
-trick if declarer can't finesse against it.
-
-But partner needs to tell you what to lead next (you still have ♥2).
-
-**Partner's discard: ♣J** — ODD card in clubs = "I want clubs."
-
-Wait — the ♣J is a potential trick card! Is that wise?
-
-Actually, from partner's perspective: ♣J102 is under declarer's ♣AKQ.
-The Jack will never win a trick — declarer has AKQ. So the ♣J is a
-FREE card for signaling. Partner plays it as an odd card to say
-"lead a club" — or more precisely, "I have something in clubs."
-
-Hmm, that's actually the wrong message here. Let me reconsider.
+Partner holds: ♠864, ♦953, ♣A95. The ♣A is the setting trick —
+but only if YOU lead a club next.
 
 ---
 
-## Better Example: Partner Wants Diamonds
+## The Italian Discard
 
-Let's say instead partner holds ♠875 ♦K95 ♣1082 and needs a diamond
-return.
+**Partner's discard: ♣5** (ODD card in clubs = "I want clubs").
 
-**Partner's discard: ♦5** (ODD card in diamonds = "I want diamonds").
+You read it: odd club = partner has club values. You lead ♣3.
 
-You lead a diamond. Partner's ♦K wins. Down 1.
+Declarer plays ♣J. Partner wins ♣A.
+
+**Defence: 4 hearts + ♣A = 5 tricks. Down 1.**
+
+---
+
+## The Wrong Switch
+
+Without the Italian discard, you might lead ♦2 (hoping partner has
+♦K or ♦Q). Declarer wins ♦A, establishes clubs (♣K draws out
+nothing), and runs: ♠AKQJ + ♦AKQ + ♣KJ8 = 9+ tricks. **Contract
+makes.** Partner's ♣A is stranded — declarer never leads clubs
+toward partner.
+
+The club switch was the ONLY defence. Partner's ♣5 found it.
+
+---
+
+## The Even Card Redirect
+
+What if partner's clubs were ♣A82 (all even — no odd card available)?
+
+Partner can't discard an odd club. Instead, they redirect from
+another suit:
+
+**♠2** (EVEN LOW in spades) = "I want the LOWER of the remaining
+suits (♦ and ♣)." Lower = clubs. Same message, indirect route.
+
+The odd card is always clearest when available. Even cards are the
+fallback — they point away from the discarded suit toward one of the
+other two.
 
 ---
 
 ## The Encoding Explained
 
 Suppose the three side suits are ♠ (high), ♦ (middle), ♣ (low).
-You must discard from one of them.
 
 | Your Discard | Meaning |
 |---|---|
@@ -100,10 +117,6 @@ You must discard from one of them.
 | Even high ♠ (♠8, ♠10) | Want the HIGHER of ♦/♣ = diamonds |
 | Even low ♦ (♦2, ♦4) | Want the LOWER of ♠/♣ = clubs |
 | Even high ♦ (♦8, ♦10) | Want the HIGHER of ♠/♣ = spades |
-
-The odd card is simplest: discard an odd card in the suit you want.
-Even cards are a redirect — they point away from the discarded suit
-toward one of the remaining two.
 
 ---
 
@@ -120,5 +133,6 @@ toward one of the remaining two.
 
 Italian discards solve the discard problem: "which suit should
 partner attack?" An odd card says "I want THIS suit." An even card
-redirects. More information per card than standard discards, at
-no extra adversarial cost — declarer already sees the discard.
+redirects. More information per card than standard discards, and
+the adversarial cost is low — declarer sees the discard but still
+has to guess whether it's a genuine signal or a deceptive one.
