@@ -3733,6 +3733,652 @@ dummy_analysis:
       result: "♦A, ♦K, ♦Q — declarer ruffs the third. Declarer draws 2 rounds of trumps but can't draw yours without running out. You score ♠J and ♠10. Down 1."
 
 # ──────────────────────────────────────────────
+# Psychology — Competitive Protocols
+# ──────────────────────────────────────────────
+
+psychology:
+  title: "Psychology — Competitive Protocols"
+  principle: >
+    Bridge is not purely mathematical — psychological tactics have a legitimate
+    and critical role. Protocol-driven psychology converts book knowledge into
+    table performance across four pillars: reading opponents, table presence,
+    deception, and pressure management.
+
+  pillars:
+    reading_opponents:
+      name: "Reading Opponents"
+      description: >
+        Card reading is logical deduction, not guesswork. Every bid, every card,
+        every pass contains information — if you know how to read it. But bridge
+        is played by humans, and humans leak information through tempo, emotion,
+        body language, and behaviour. The expert reads ALL channels: cards, bids,
+        non-bids, hesitations, posture, mood, and session momentum.
+
+      # ── Logical Deduction Layer ────────────────
+      didd_method:
+        name: "DIDD Method — Distribute, Infer, Decide, Do"
+        steps:
+          - step: "Distribute"
+            action: "Gather all clues from bidding, opening lead, and early play"
+          - step: "Infer"
+            action: "Construct a hypothesis about the unseen hands"
+          - step: "Decide"
+            action: "Test the hypothesis against further evidence as tricks are played"
+          - step: "Do"
+            action: "Choose the line consistent with the most likely layout"
+        master_rule: >
+          By trick 8-9, aim to know all four suit lengths for both defenders.
+          Most bridge 'guesses' are not guesses at all — the available data has
+          narrowed the layout to one or two possibilities.
+        integration_with_intelligence: >
+          DIDD is the human layer on top of card counting (S-READ-*). The
+          Intelligence division handles mechanics: tracking cards, computing
+          splits, updating probabilities. Perception adds the human signals:
+          tempo, emotion, non-actions, opponent tendencies. The combined
+          pipeline: DIDD gathers clues (Perception) → counting refines the
+          hypothesis (Intelligence) → archetype and tempo adjust probabilities
+          (Perception) → decision.
+
+      negative_inferences:
+        name: "Negative Inferences — The Dog That Did Not Bark"
+        principle: >
+          Inferences from what opponents chose NOT to do are as important as
+          inferences from what they did. Every pass, every non-lead, every
+          non-double is a statement about their hand.
+        bidding_inferences:
+          - situation: "Opponent didn't open the bidding"
+            inference: "Fewer than 12 HCP (usually). Narrows HCP range immediately."
+          - situation: "Opponent overcalled but didn't lead his suit"
+            inference: "Likely lacks key honours in that suit — the overcall was for lead direction but the suit is too weak to lead"
+          - situation: "Opponent didn't raise partner's suit"
+            inference: "Likely fewer than 3 cards in support"
+          - situation: "Opponent didn't double for penalty"
+            inference: "Limited defensive strength — at most 1 trump trick"
+          - situation: "Opponent didn't bid 3NT with a balanced hand and stoppers"
+            inference: "Either unbalanced or lacks stopper — tells you about distribution"
+          - situation: "Opponent didn't preempt"
+            inference: "Doesn't have 7+ cards in any suit — more balanced than typical weak hand"
+          - situation: "Opponent passed partner's forcing bid"
+            inference: "System gap or minimum — but also places specific cards with the passing hand"
+        play_inferences:
+          - situation: "Defender didn't cover your honour with their honour"
+            inference: "They don't have the honour above yours — place it with the other defender"
+          - situation: "Defender didn't return partner's suit after winning a trick"
+            inference: "Likely has a singleton/void in that suit, or found a better attack"
+          - situation: "Defender didn't signal encouragement in partner's suit"
+            inference: "Likely odd count (doubleton or void) or weak holding — plan accordingly"
+          - situation: "Defender didn't split their honours when you led toward dummy"
+            inference: "Either has only one honour or has length and is waiting"
+          - situation: "Declarer didn't draw trumps immediately"
+            inference: "Needs ruffs, or has a side suit to establish first — signals distribution"
+
+      # ── Human Intelligence Layer ───────────────
+      tempo_reads:
+        name: "Reading Opponent Tempo"
+        principle: >
+          Opponent hesitations are legal to observe (not partner's). Tempo is the
+          richest source of human information at the bridge table. A single
+          hesitation can narrow a defender's hand to 2-3 possible holdings.
+        bidding_tempo:
+          - tell: "Long pause before passing"
+            meaning: "Had something to say — extra values or a borderline action. They're near the top of their range or had a competitive action they rejected."
+          - tell: "Long pause before bidding"
+            meaning: "Doubt about the action taken. The bid was close — they might have passed, or bid something different."
+          - tell: "Snap bid (immediate action)"
+            meaning: "Automatic — either very clear (strong hand) or pre-planned. No information about borderline holdings."
+          - tell: "Long pause then pass over your preempt"
+            meaning: "Had values but couldn't find a good call. Place them with 12-15 HCP and no clear suit to bid."
+          - tell: "Quick pass of partner's opening bid"
+            meaning: "Truly weak — didn't even consider responding. Likely < 6 HCP."
+          - tell: "Hesitation before raising partner"
+            meaning: "Borderline raise — minimum support or borderline strength. The raise is at the bottom of its range."
+        play_tempo:
+          - tell: "Defender hesitates before following suit with a small card"
+            meaning: "Had a choice — likely holds an honour in that suit they considered playing. Place the missing honour with them."
+          - tell: "Defender plays quickly to trick 1"
+            meaning: "Likely singleton or automatic play from a sequence. Low card fast = singleton or low from xx."
+          - tell: "Defender hesitates at trick 1 then plays small"
+            meaning: "Has the missing high card (Ace or King) and considered winning. Finesse away from them if possible."
+          - tell: "Defender thinks before discarding"
+            meaning: "Holds something worth keeping in multiple suits — distribution or honours revealed by what they're reluctant to release."
+          - tell: "Declarer pauses at trick 1 before playing from dummy"
+            meaning: "Declarer is planning — count winners/losers. Watch what they study in dummy: that's their problem suit."
+          - tell: "Opponent plays a card then immediately picks up the next trick's cards"
+            meaning: "Eager pace suggests confidence — they see a clear plan. Be more cautious with your defence."
+        caution: >
+          ETHICAL OBLIGATION: never act on PARTNER's tempo. Only opponents' tempo
+          is legal information. Be aware that strong opponents may use deliberate
+          tempo deception — but this is rare at club level. Most tempo tells are
+          genuine. The Laws of Bridge (Law 73) permit drawing inferences from
+          opponents' tempo but prohibit acting on partner's.
+
+      # ── Emotional and Behavioural Reads ─────────
+      emotional_reads:
+        name: "Reading Opponent Emotions and Behaviour"
+        principle: >
+          Bridge players are emotional beings. Frustration, confidence, anxiety,
+          and tilt leak through body language, pace of play, and bidding
+          aggression. Reading these signals gives you a competitive edge that
+          pure card reading misses.
+        pre_hand_reads:
+          - observation: "Opponent picks up hand eagerly, sits up straighter"
+            inference: "Good hand incoming. Be prepared for aggressive bidding. Consider a light competitive action to disrupt."
+          - observation: "Opponent glances at scorecard between boards"
+            inference: "Tracking the score — either winning (may get conservative) or losing (may get desperate). Both are exploitable."
+          - observation: "Opponent sighs, slumps, or shakes head before bidding starts"
+            inference: "Bad hand or residual frustration from previous board. Tilt risk. Push harder in competitive auctions."
+          - observation: "Opponents discuss the previous board before picking up cards"
+            inference: "Distracted. Not fully focused. Their first decision this board may be impulsive."
+          - observation: "Opponent carefully sorts hand, counts points visibly"
+            inference: "Borderline hand. They're calculating whether to act. If they bid, they're at the bottom of the range."
+        dummy_reactions:
+          - observation: "Declarer's face falls when dummy comes down"
+            inference: "Dummy is worse than expected. Contract may be in trouble — defend actively, don't give away tricks."
+          - observation: "Declarer brightens or relaxes when seeing dummy"
+            inference: "Dummy is better than expected or the contract is comfortable. Be aggressive on defence — tricks may disappear."
+          - observation: "Declarer studies dummy for a long time"
+            inference: "Complex hand with a difficult plan. They're counting winners/losers. What they study longest is their key problem."
+          - observation: "Declarer glances quickly at dummy and plays fast"
+            inference: "Either an easy hand (routine contract) or they've seen this position before. Standard technique will apply."
+        mid_play_reads:
+          - observation: "Defender's posture shifts — leans forward or backward"
+            inference: "Engagement change. Leaning forward = key moment, they have a card to play. Leaning back = nothing left to contribute."
+          - observation: "Opponent's tempo changes mid-hand — speeds up after being slow"
+            inference: "Decision made. They've figured out the position or given up on a suit. Their remaining plays are likely automatic."
+          - observation: "Opponent makes a face or visible reaction to partner's card"
+            inference: "Surprised by partner's play. Possible defensive miscommunication. Their defence may be uncoordinated."
+          - observation: "Opponent counts cards in their hand repeatedly"
+            inference: "Close hand. Counting is a stress response. They're near a critical decision. Apply time pressure by playing briskly."
+        frustration_exploitation:
+          name: "Exploiting Opponent Frustration"
+          principle: >
+            After a bad board, opponents are emotionally compromised for 2-3 boards.
+            Frustration manifests as: overbidding to 'get the score back', underbidding
+            from loss of confidence, impulsive doubles, or abandoning their system.
+          protocol:
+            - "After giving opponents a bottom: expect them to be aggressive on the next board. Be ready to double."
+            - "If opponents argued during the previous board: their partnership trust is damaged. Compete harder — they'll misdefend."
+            - "If an opponent made a visible error: they'll try to 'make up for it'. This usually means overbidding or taking anti-percentage lines."
+            - "If opponents have been losing all session: by round 4-5, their judgement is degraded. Push marginal competitive decisions."
+            - "NEVER exploit your own frustration. Apply the reset ritual instead."
+        session_arc_reads:
+          name: "Reading the Session Arc"
+          principle: >
+            Opponents' play quality changes over the course of a session. Track
+            the arc: fresh and sharp in round 1, potential fatigue or tilt by
+            round 3-4, desperation or resignation in the final rounds.
+          adjustments:
+            - phase: "Round 1-2"
+              opponent_state: "Fresh, focused, disciplined"
+              your_adjustment: "Play your system straight. Deception has lower success rate against fresh opponents."
+            - phase: "Round 3-4"
+              opponent_state: "Fatigue setting in. Accumulated frustration from bad boards possible."
+              your_adjustment: "Increase competitive aggression. Opponents make more errors in the middle of sessions."
+            - phase: "Final rounds"
+              opponent_state: "Tired, possibly tilted or resigned. Score-conscious pairs may panic-bid."
+              your_adjustment: "Maximum discipline. The field makes its worst decisions here. Solid play rises."
+            - phase: "After a top against current opponents"
+              opponent_state: "Demoralised. May overbid to compensate."
+              your_adjustment: "Conservative bidding, aggressive defence. Let them overreach."
+
+      # ── Counter-Deception ──────────────────────
+      counter_deception:
+        name: "Countering Opponents' Deception"
+        principle: >
+          Opponents false-card too. Recognising and neutralising their deception
+          is as important as executing your own.
+        five_methods:
+          - method: "Pattern recognition"
+            rule: "Against habitual false-carders, their 'honest' plays become the tell. If they always false-card, the straight play IS the deception."
+          - method: "Count the hand"
+            rule: "A complete count makes deception impossible to sustain. If you know the distribution, a 'singleton' King from a player who bid the suit is obviously from KQ or Kx."
+          - method: "Bidding constraints"
+            rule: "The bidding constrains possible holdings. A player who opened 1NT can't have a singleton. A player who preempted can't have side-suit honours."
+          - method: "Play-bidding consistency"
+            rule: "Does the card played make sense given the bidding? If not, suspect deception. A defender who passed but drops the King probably doesn't have KQ."
+          - method: "Trust math"
+            rule: "Percentage plays overcome psychological traps. If the finesse is 68% and the drop is 32%, take the finesse regardless of the defender's false-card."
+
+    table_presence:
+      name: "Table Presence"
+      description: >
+        How you conduct yourself at the table affects opponents' decisions.
+        Confidence projects strength. Calm unnerves the aggressive. Discipline
+        frustrates the creative.
+      half_a_loaf:
+        name: "Half-a-Loaf Principle"
+        rule: >
+          Aim for the best result possible, not the best possible result. Secure
+          consistent small wins rather than risking the contract for maximum gain.
+          Even a quarter of potential points is better than nothing.
+        applications:
+          - "When a greedy line risks the contract for an overtrick, prefer the safe line"
+          - "Take the sure plus rather than the speculative double"
+          - "Accept a quiet partscore rather than competing to a level you might not make"
+      opponent_archetypes:
+        name: "Opponent Archetype Recognition"
+        principle: >
+          Classify each opponent pair at the start of a round. Adjust strategy
+          to exploit their predictable patterns.
+        archetypes:
+          - type: "Aggressive"
+            pattern: "Overbids, competes aggressively, doubles readily"
+            counter: "Let them overbid; be ready to double; avoid pushing them into sacrifices"
+          - type: "Timid"
+            pattern: "Underbids, sells out quickly, avoids doubles"
+            counter: "Compete harder; steal partscores; they won't punish you"
+          - type: "Tilted"
+            pattern: "Emotional after bad boards, makes impulsive decisions"
+            counter: "Apply maximum pressure; bid aggressively on marginal hands"
+          - type: "Disciplined"
+            pattern: "Consistent tempo, sound bidding, accurate play"
+            counter: "Play your best bridge; deception has lower success rate; avoid gambles"
+      disciplined_tempo:
+        name: "Your Own Tempo Discipline"
+        rule: >
+          5-10 seconds per routine decision. Do not speed up with bad hands or
+          slow down with good ones. Consistent tempo denies opponents free
+          information and protects partnership ethics.
+
+    deception:
+      name: "Deception"
+      description: >
+        Deception is a legitimate competitive weapon — within the Laws and
+        without misleading partner. The key is distinguishing free deception
+        (always good) from costly deception (sometimes good).
+      free_vs_costly:
+        name: "Free vs Costly Deception"
+        definition:
+          free: >
+            Cannot cost a trick regardless of the layout. Example: dropping an
+            honour from equals (Q from QJ, K from KQ when partner holds the A).
+            Execute routinely.
+          costly: >
+            Risks a trick to mislead. Example: ducking the Ace, leading from
+            a tenace, false-carding with a unique card. Attempt only when
+            the expected gain exceeds the risk.
+        examples:
+          - type: "Free"
+            play: "Drop the Queen from QJ doubleton when partner leads the King"
+            why: "The Queen and Jack are equals — the false-card costs nothing"
+          - type: "Free"
+            play: "Win with the Ace (not the King) from AK when you want to conceal the King"
+            why: "You would win the trick with either card"
+          - type: "Costly"
+            play: "Duck the Ace at trick 1 to mislead declarer about its location"
+            why: "Declarer may not finesse again — you risk losing the trick entirely"
+          - type: "Costly"
+            play: "Lead the King from Kx to suggest a KQ holding"
+            why: "If partner reads it wrong, defence collapses"
+      cardinal_rule:
+        name: "The Cardinal Rule of Deceptive Play"
+        rule: >
+          Deception must be spontaneous. It must be effected as though it were the
+          perfectly normal and natural play — with neither undue haste nor undue
+          deliberation. Pre-plan deceptive plays before the critical moment arrives.
+        corollaries:
+          - "No hesitation — if you pause before false-carding, you telegraph the deception"
+          - "Pre-plan — decide your deceptive play during dummy's think time or before the hand begins"
+          - "Don't false-card every time — mix your plays to remain unpredictable"
+          - "Never mislead partner — deception targets opponents, not your own side"
+      reputation:
+        name: "Reputation as a Weapon"
+        principle: >
+          A reputation for honest, disciplined play makes occasional deception
+          devastating. Habitual false-carders become predictable — their 'honest'
+          plays become the tell. The optimal frequency is low enough to maintain
+          credibility but high enough to create doubt.
+
+      # ── Deception Catalogue ────────────────────
+      defender_catalogue:
+        name: "Standard Defensive Deceptive Positions"
+        principle: >
+          These ~13 positions recur frequently. Drill until recognition is
+          automatic (< 2 seconds). Free positions should be executed every time.
+        positions:
+          - id: 1
+            name: "QJ from QJ doubleton"
+            classification: "Free"
+            holding: "You: QJ, Dummy: K1092, Declarer leads toward dummy"
+            standard_play: "Play the Jack"
+            deceptive_play: "Drop the Queen — declarer may finesse the 10 next"
+            why_free: "Q and J are equals; neither costs a trick"
+          - id: 2
+            name: "Win high from AK"
+            classification: "Free"
+            holding: "You: AK(x), Declarer leads the suit"
+            standard_play: "Win with the King (standard)"
+            deceptive_play: "Win with the Ace — conceals the King's location"
+            why_free: "You win the trick either way"
+          - id: 3
+            name: "Drop honour from equals under Ace"
+            classification: "Free"
+            holding: "Partner leads A (from AK), you hold QJ(x)"
+            standard_play: "Play the Jack (lowest of touching)"
+            deceptive_play: "Play the Queen — declarer may place the Jack with partner"
+            why_free: "Q and J are equals; you can spare either"
+          - id: 4
+            name: "Smith Echo false count"
+            classification: "Free"
+            holding: "Any side suit on opening lead"
+            standard_play: "High-low = encouraging, low-high = discouraging"
+            deceptive_play: "Reverse your signal to mislead declarer about your attitude"
+            why_free: "Costs nothing if partner reads the position, not your card"
+          - id: 5
+            name: "False count signal"
+            classification: "Free (if partner reads position)"
+            holding: "Following suit with a choice of small cards"
+            standard_play: "High-low = even count, low-high = odd count"
+            deceptive_play: "Reverse the count signal to mislead declarer"
+            why_free: "Partner should read count from the bidding + hand, not solely from the signal"
+          - id: 6
+            name: "Duck the Ace"
+            classification: "Costly"
+            holding: "You: Axx(x), Declarer leads the suit"
+            standard_play: "Win the Ace"
+            deceptive_play: "Duck smoothly — declarer may finesse the wrong way next"
+            risk: "Declarer may never play the suit again; you lose the Ace trick"
+            when_to_use: "When declarer has a two-way finesse and you want to steer them wrong"
+          - id: 7
+            name: "Drop the King from Kx"
+            classification: "Costly"
+            holding: "You: Kx, Dummy: Qxxx, Declarer plays the Ace"
+            standard_play: "Play small"
+            deceptive_play: "Drop the King — declarer thinks it's singleton, finesses against partner next"
+            risk: "If declarer reads it as Kx, you've wasted the King"
+            when_to_use: "When partner's Jxx will win a trick if declarer finesses the wrong way"
+          - id: 8
+            name: "Lead the King from Kx (not KQ)"
+            classification: "Costly"
+            holding: "You: Kx on defence, leading through declarer"
+            standard_play: "Lead small"
+            deceptive_play: "Lead the King — suggests KQ sequence"
+            risk: "Partner may duck with the Ace, thinking you have KQ"
+            when_to_use: "Only when you can afford the confusion and need declarer to misjudge"
+          - id: 9
+            name: "Smoothly play small from Kx behind dummy's AQJ"
+            classification: "Costly"
+            holding: "Dummy: AQJ, You (behind dummy): Kx"
+            standard_play: "Cover or duck"
+            deceptive_play: "Duck quickly — declarer may finesse the Queen, losing to partner"
+            risk: "If declarer plays the Ace, your King is dead"
+            when_to_use: "When declarer has a choice of finesses and you want to steer them away"
+          - id: 10
+            name: "Split honours out of turn"
+            classification: "Costly"
+            holding: "You: KQ or QJ, Declarer leads toward dummy"
+            standard_play: "Play small if possible"
+            deceptive_play: "Split (play the higher honour) when you DON'T have to — suggests shortage"
+            risk: "Wastes an honour trick"
+            when_to_use: "When you want declarer to miscount the suit or misread your distribution"
+          - id: 11
+            name: "False-card the ten from 10xx"
+            classification: "Free"
+            holding: "You: 10xx, Partner leads high (K or A), Dummy: Jxxx"
+            standard_play: "Play low (count signal)"
+            deceptive_play: "Drop the 10 — declarer may misread as doubleton"
+            why_free: "The 10 has no trick-taking potential in this layout"
+          - id: 12
+            name: "Win with unnecessary high card (overtake)"
+            classification: "Free"
+            holding: "Partner leads the Queen, you hold AK"
+            standard_play: "Encourage with a high spot"
+            deceptive_play: "Overtake with the King — suggests a different honour layout to declarer"
+            why_free: "You hold both honours; overtaking costs nothing"
+          - id: 13
+            name: "Delayed duck"
+            classification: "Costly"
+            holding: "You: Axx in dummy's long suit (NT defence)"
+            standard_play: "Win the Ace immediately"
+            deceptive_play: "Win on the SECOND round (not third) — makes declarer think you ducked once with Ax"
+            risk: "If declarer can switch suits, you may not get the Ace trick"
+            when_to_use: "When you want declarer to miscount the suit and play a third round into your Ace"
+
+      declarer_catalogue:
+        name: "Standard Declarer Deceptive Positions"
+        principle: >
+          These ~8 positions are declarer's deceptive toolkit. Unlike defender
+          deception, declarer deception targets both defenders simultaneously.
+        positions:
+          - id: 1
+            name: "Win high to conceal length"
+            classification: "Free"
+            holding: "You: AKx(x), Defenders lead the suit"
+            deceptive_play: "Win with the Ace — conceal the King"
+            why_free: "You win the trick either way"
+            effect: "Defenders may think partner has the King and continue the suit"
+          - id: 2
+            name: "Lead toward weakness"
+            classification: "Free"
+            holding: "You: xxx, Dummy: Qxx"
+            deceptive_play: "Lead small toward dummy's Queen as if you hold the King"
+            why_free: "You'd lead toward the Queen anyway as a normal finesse attempt"
+            effect: "Left-hand defender may not cover with the King, or may waste the Ace"
+          - id: 3
+            name: "Steal a trick early"
+            classification: "Costly"
+            holding: "Dummy: Kx, Defender behind dummy has the Ace"
+            deceptive_play: "At trick 2, lead a low card toward dummy's King"
+            risk: "If the Ace takes, no deception; if it ducks, you steal a trick"
+            effect: "Works best early when defenders haven't counted tricks"
+          - id: 4
+            name: "Tempo deception (snap play)"
+            classification: "Free"
+            holding: "Any difficult decision"
+            deceptive_play: "Play quickly on hard decisions to project confidence"
+            why_free: "Tempo costs nothing"
+            effect: "Defenders second-guess their defence when declarer appears confident"
+          - id: 5
+            name: "Fake ruff attempt"
+            classification: "Costly"
+            holding: "Side suit you don't need to ruff"
+            deceptive_play: "Lead the side suit as if attempting to ruff in dummy"
+            risk: "Defenders may lead trumps (which you wanted) or may not be fooled"
+            effect: "Defenders waste a trump lead; or continue the wrong suit"
+          - id: 6
+            name: "False discard"
+            classification: "Costly"
+            holding: "Long suit you want to keep, short suit that looks like a discard"
+            deceptive_play: "Discard a card from the suit you want to run, suggesting weakness"
+            risk: "You weaken your actual suit"
+            effect: "Defenders attack the wrong suit or fail to hold up"
+          - id: 7
+            name: "Finesse into the 'wrong' hand"
+            classification: "Costly"
+            holding: "Two-way finesse available"
+            deceptive_play: "Finesse into the hand that DOESN'T have the dangerous shift"
+            risk: "The finesse may lose"
+            effect: "Even if it loses, the defender on lead can't damage you"
+          - id: 8
+            name: "Duck in dummy at trick 1"
+            classification: "Free (when automatic)"
+            holding: "Dummy: Kx, LHO leads Ace (from AQ)"
+            deceptive_play: "Duck smoothly — LHO may shift, saving your King"
+            why_free: "The King would lose to the Ace anyway"
+            effect: "LHO may think partner has the King and shift suits"
+
+    pressure_management:
+      name: "Pressure Management"
+      description: >
+        Managing your own psychology and exploiting opponents' emotional state
+        is a core competitive skill.
+      have_have_not:
+        name: "Have/Have-Not Dynamic"
+        rule: >
+          When you hold strong cards (HAVE): play constructive, accurate bridge.
+          When you hold weak cards (HAVE-NOT): deploy psychological weapons —
+          obstruction, deception, harassment. The best players seamlessly
+          transition between both roles.
+        key_insight: >
+          Opponents hold good cards roughly 50% of the time. Making a game by
+          deception counts exactly as much as making it by brute force.
+      reset_ritual:
+        name: "Reset Ritual"
+        protocol:
+          - "After a bad board: deep breath, 5 seconds of silence"
+          - "Clear the mind: the last board does not exist"
+          - "Treat the next board as if the session just started"
+          - "Never discuss results mid-session — save all analysis for post-mortem"
+        key_insight: >
+          One bad board becomes three when frustration infects decision-making.
+          The reset breaks the cascade.
+      session_momentum:
+        name: "Session Momentum"
+        principle: >
+          Track your emotional state, not just the boards. After a string of
+          bad boards, opponents often loosen — exploit this with precise, aggressive
+          play. After a string of good boards, guard against overconfidence.
+        strong_closing: >
+          Treat the last 5 boards as a new session. T1-T4 data shows consistent
+          second-half improvement when closing discipline is maintained.
+
+  decision_trees:
+    name: "Decision Trees"
+    when_to_deceive:
+      question: "Should I false-card here?"
+      tree:
+        - "Is it free (from equals)? → YES, always"
+        - "Is it costly? → Check: will declarer/opponent likely take a specific line without the false-card?"
+        - "If yes: does the false-card redirect them to a losing line? → YES, attempt with smooth tempo"
+        - "If no: the false-card gains nothing → PASS"
+        - "Can you execute without hesitation? → If not, DON'T — a telegraphed false-card is worse than none"
+    when_to_read:
+      question: "What do I know about the unseen hands?"
+      tree:
+        - "Step 1: HCP count — 40 minus (your hand + dummy + any shown cards)"
+        - "Step 2: Distribution — track cards played in each suit"
+        - "Step 3: Negative inferences — what didn't opponents do?"
+        - "Step 4: Tempo — any hesitations from opponents?"
+        - "Step 5: Construct hypothesis → test against next trick → decide"
+    when_to_reset:
+      question: "Am I tilted?"
+      tree:
+        - "Did the last board go badly? → Execute reset ritual before picking up cards"
+        - "Am I thinking about a previous board? → YES, you're tilted — reset"
+        - "Am I making decisions faster than usual? → Slow down to standard 5-10 second tempo"
+        - "Am I considering a line I wouldn't normally play? → Check: is this bold or reckless?"
+
+  common_errors:
+    name: "Common Errors"
+    errors:
+      - rank: 1
+        error: "Telegraphing the false-card"
+        description: "Hesitating before a deceptive play tells opponents exactly what you did"
+        fix: "Pre-plan deceptions during dummy think time. If you can't be smooth, don't attempt it"
+      - rank: 2
+        error: "Ignoring negative inferences"
+        description: "Focusing only on what opponents did, not what they chose not to do"
+        fix: "After every auction, ask: what did they NOT bid? What does that tell me?"
+      - rank: 3
+        error: "Playing the same way against all opponents"
+        description: "Treating the aggressive bidder and the conservative bidder identically"
+        fix: "Classify opponents at round start. Adjust your competitive threshold"
+      - rank: 4
+        error: "Greedy play (anti-Half-a-Loaf)"
+        description: "Risking the contract for an overtrick, or doubling for the thrill"
+        fix: "Ask: what do I gain vs what do I lose? If the loss is larger, take the safe line"
+      - rank: 5
+        error: "Tilt cascade — letting one bad board infect the next"
+        description: "Frustration from board N leads to impulsive decisions on board N+1"
+        fix: "Execute the reset ritual. Every single time. No exceptions"
+
+  # ── Worked Examples from Tournament Play ────
+  worked_examples:
+    - title: "Reading Opponents — Counterintuitive Trump Attack (T4, Board 14)"
+      pillar: "Reading Opponents"
+      contract: "E 3♠"
+      result: "Down 1 — NS +50 (TOP)"
+      your_hand: "♠J1083 ♥4 ♦AKQ63 ♣J75"
+      scenario: >
+        East opens with 6 spades + club void. Standard defence leads a club
+        or heart. But DIDD reveals the danger: East's void means ruff potential.
+      psychology_applied: >
+        NEGATIVE INFERENCE: East didn't bid 4♠ — limited strength despite shape.
+        DIDD: Distribute East's cards — 6 spades + void = extreme shape. The
+        danger is ruffs, not brute force. DECIDE: attack trumps with ♠J to
+        shorten East's trumps before the void becomes useful. DO: ♠J lead.
+      lesson: >
+        The field led 'normal' suits and gave East ruffs. Psychology pillar
+        (reading) + Intelligence pillar (counting distribution) combined to
+        find the only defence that beats the contract.
+
+    - title: "Half-a-Loaf — Penalty Defence Beats Declaring (T3, Board 12)"
+      pillar: "Table Presence"
+      contract: "E 3♥ doubled"
+      result: "Down 4 — NS +800 (TOP)"
+      your_hand: "♥AK84 behind East's weak 2♥ rebid"
+      scenario: >
+        East opened weak, raised to 3♥. Partner doubled (takeout). You hold
+        ♥AK84. Could declare 4♠ or pass for penalty.
+      psychology_applied: >
+        HALF-A-LOAF: +800 (penalty) vs +620 (making game) vs -100 (game goes
+        down). The safe defence is the CERTAIN result; declaring is speculative.
+        ARCHETYPE: East is desperate (weak preemptor pushed to 3♥) — likely
+        going down multiple tricks. DECIDE: pass for penalty.
+      lesson: >
+        The greedy play (declaring) risks -100. The safe play (defending) gets
+        +800. Half-a-Loaf says take the sure plus. The field bid and scored +620
+        at best. Discipline > brilliance.
+
+    - title: "Exploiting Opponent Tilt — Passive Lead from Shaken Pair (T4, Board 16)"
+      pillar: "Pressure Management"
+      contract: "S 2♠ +2"
+      result: "NS +170 (TOP)"
+      scenario: >
+        Round 4 — opponents have had a bad session. Previous board was a
+        disaster for them. East leads ♠8 into your ♠AQJ — a passive,
+        unfocused lead that gifts a trick.
+      psychology_applied: >
+        FRUSTRATION READ: opponents discussed previous board before picking up
+        cards — distracted. ARCHETYPE: tilted pair, impulsive decisions likely.
+        SESSION ARC: Round 4, opponents degraded. EXPLOIT: won the ♠ cheaply,
+        ran clubs, collected +170 when the field conceded -140.
+      lesson: >
+        Opponents' emotional state directly affected their lead quality. A
+        focused pair leads a club or diamond. A tilted pair leads passively
+        into declarer's strength. Read the mood, not just the cards.
+
+    - title: "Negative Inference in Defence — Elite Trick Extraction (T2, Board 6)"
+      pillar: "Reading Opponents"
+      contract: "E 4♥"
+      result: "Down 1 — NS +100 (TOP)"
+      scenario: >
+        DD analysis says 4♥ makes 10 tricks at every other table. Only our
+        table beat 4♥. South holds ♥AJ — the defensive holding.
+      psychology_applied: >
+        NEGATIVE INFERENCE: Declarer didn't draw trumps immediately — needs
+        side-suit tricks first. This means declarer's trumps are not solid.
+        DIDD: track the play; declarer's ♥ holding is KQ10xxx with a finesse
+        position. Partner's count signal shows even length. DECIDE: hold up
+        the ♥A to force declarer to misguess the position. DO: duck the first
+        heart, win the second, cash side winners.
+      lesson: >
+        Card reading via negative inference (declarer's tempo, non-actions)
+        found the only defence. The field's defenders played automatically;
+        our defenders read the position.
+
+    - title: "Free Deception — Defender False-Card from Equals"
+      pillar: "Deception"
+      contract: "S 3NT"
+      result: "Representative position"
+      your_hand: "♠QJ3 (as West, defending 3NT)"
+      dummy: "♠K1092"
+      scenario: >
+        Declarer leads small spade toward dummy's K1092. You hold ♠QJ3.
+        Standard play is the Jack (bottom of touching). Deceptive play
+        is the Queen.
+      psychology_applied: >
+        FREE DECEPTION: Q and J are equals — playing the Q costs nothing.
+        CARDINAL RULE: play the Q smoothly, without hesitation. EFFECT:
+        declarer may place the Jack with East and finesse the 10 on the next
+        round, losing to your J. If you played the J, declarer covers with K,
+        then finesses the 10 — your Q falls under the K and 10 scores.
+      lesson: >
+        This is position #1 from the Defender Catalogue. Free, automatic,
+        no risk. The hesitation-free drop of the Q is more effective than the
+        'correct' J. Drill until this is automatic.
+
+# ──────────────────────────────────────────────
 # Additional Materials — Hand Evaluation
 # ──────────────────────────────────────────────
 

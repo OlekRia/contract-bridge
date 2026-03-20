@@ -481,3 +481,28 @@ carding:
       "1M-2M-4M": "Dummy 6-9. Check for singleton. Flat = passive."
       "1M-3M-4M": "Dummy 10-12, 4+ trumps. More entries. Be active."
       "Weak two-4M": "Shape but no tricks. Cash fast."
+
+  psychology:
+    principle: "Protocol-driven psychology across 4 pillars."
+    reading_opponents:
+      didd: "Distribute → Infer → Decide → Do. By trick 8-9, know all suit lengths."
+      negative_inferences: "What they DIDN'T do constrains their hand. No overcall = weak suit. No raise = short."
+      tempo_reads: "Opponent hesitations are legal data. Partner's are not."
+    table_presence:
+      half_a_loaf: "Best result possible, not best possible result. Safe line > greedy line."
+      archetypes: "Aggressive → let them overbid. Timid → compete harder. Tilted → apply pressure."
+      tempo: "5-10 seconds per routine decision. Consistent speed = zero free info."
+    deception:
+      free: "From equals (Q from QJ) — always. Costs nothing."
+      costly: "Risks a trick — only when expected gain > risk AND you can be smooth."
+      cardinal_rule: "No hesitation before false-cards. Pre-plan or don't attempt."
+    pressure:
+      have_not: "Weak hand → obstruct, deceive, harass. Strong hand → construct."
+      reset: "Bad board → deep breath → next board is a new session."
+      momentum: "Last 5 boards = new session. Exploit opponent tilt."
+    common_errors:
+      1: "Telegraphing false-cards (hesitation)"
+      2: "Ignoring negative inferences"
+      3: "Same strategy vs all opponents"
+      4: "Greedy play (risking contract for overtrick)"
+      5: "Tilt cascade (one bad board infects the next)"
