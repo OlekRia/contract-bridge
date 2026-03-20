@@ -860,6 +860,228 @@ openings:
           (-300) is better than letting them make game (+420/+620).
         guideline: "Sacrifice with 16+ combined losers at favorable; never at unfavorable."
 
+    # ── 2/1 Game Force (13+ HCP, no 4-card fit) ──────────────
+    #
+    # With forcing 1NT handling 6-12 HCP, any new suit at the 2-level
+    # MUST be 13+ HCP — making it game-forcing by logical necessity.
+    # Neither player may pass below game after a 2/1 response.
+    #
+    # The three responses partition ALL hands:
+    #   6-12 HCP           → 1NT (forcing)
+    #   13+ with 4+ trumps → Jacoby 2NT (over 1M)
+    #   13+ without fit    → 2/1 new suit (game-forcing)
+
+    two_over_one_game_force:
+      title: "2/1 Game Force — Responder Has 13+ HCP Without 4-Card Fit"
+      prerequisite: "1st/2nd seat only. Forcing 1NT ON (DEC-6). Responder is unpassed."
+      master_rule: >
+        A new suit at the 2-level after partner's 1-suit opening is GAME-FORCING.
+        Neither player may pass below game. Both describe shape until the best
+        game (3NT, 4M, or 5m) is found.
+
+      why_game_forcing: >
+        DEC-6 (forcing 1NT) handles all 6-12 HCP hands without fit. So a 2-level
+        response CANNOT be 6-12 — it must be 13+. With opener's 12+ and responder's
+        13+, the partnership has 25+ combined HCP. Game is a near-certainty.
+        This is not a convention — it's a logical consequence of our system.
+
+      when_to_use:
+        - "13+ HCP and no 4-card support for opener's major (Jacoby 2NT = 4+ trumps)"
+        - "13+ HCP after 1m opening with a good suit to show"
+        - "Any hand too strong for 1NT(f) and without a direct raise"
+
+      available_2_1_bids:
+        after_1H:
+          - bid: "2!C"
+            meaning: "13+ HCP, 4+ clubs, GF"
+            note: "May be only 4 clubs when no better bid available"
+          - bid: "2!D"
+            meaning: "13+ HCP, 5+ diamonds, GF"
+        after_1S:
+          - bid: "2!C"
+            meaning: "13+ HCP, 4+ clubs, GF"
+          - bid: "2!D"
+            meaning: "13+ HCP, 5+ diamonds, GF"
+          - bid: "2!H"
+            meaning: "13+ HCP, 5+ hearts, GF"
+        after_1D:
+          - bid: "2!C"
+            meaning: "13+ HCP, 5+ clubs, GF"
+            note: "Less common — responder usually has a 1-level bid"
+        after_1C:
+          note: >
+            After 1!C, responder can bid 1!D/1!H/1!S at the 1-level with 4+ cards.
+            A 2-level response is rare (strong jump shift = 16+, see jump_responses_over_1m).
+
+      # ── Opener's Rebids After 2/1 ──────────────────────────
+      opener_rebids:
+        title: "Opener's Rebids After 2/1 GF"
+        principle: >
+          The auction is game-forcing. Opener describes shape and strength naturally.
+          There is no need to jump to show extras — the GF guarantees game.
+          Use slow bidding to explore for the BEST game or slam.
+        after_1H_2C:
+          title: "After 1!H - 2!C (GF)"
+          bids:
+            - rebid: "2!D"
+              meaning: "4+ diamonds, natural (second suit)"
+              note: "NOT a reverse in a GF auction — all bids are forcing"
+            - rebid: "2!H"
+              meaning: "6+ hearts, any strength (does NOT deny extras)"
+            - rebid: "2!S"
+              meaning: "4+ spades (natural — can now show second suit freely)"
+            - rebid: "2NT"
+              meaning: "12-14, balanced, no 4-card side suit"
+            - rebid: "3!C"
+              meaning: "4+ club support (at least Qxxx or xxxx)"
+            - rebid: "3!H"
+              meaning: "6+ hearts, strong suit (extras implied by jumping)"
+            - rebid: "3NT"
+              meaning: "15-17, balanced, all suits stopped"
+        after_1H_2D:
+          title: "After 1!H - 2!D (GF)"
+          bids:
+            - rebid: "2!H"
+              meaning: "6+ hearts, any strength"
+            - rebid: "2!S"
+              meaning: "4+ spades, natural"
+            - rebid: "2NT"
+              meaning: "12-14, balanced"
+            - rebid: "3!C"
+              meaning: "4+ clubs, natural (third suit)"
+            - rebid: "3!D"
+              meaning: "4+ diamond support"
+            - rebid: "3!H"
+              meaning: "6+ hearts, extras"
+            - rebid: "3NT"
+              meaning: "15-17, balanced, all stopped"
+        after_1S_2x:
+          title: "After 1!S - 2!C/2!D/2!H (GF)"
+          note: "Same structure. Opener describes shape naturally."
+          bids:
+            - rebid: "2!S"
+              meaning: "6+ spades, any strength"
+            - rebid: "new suit below 3!S"
+              meaning: "4+ cards, natural"
+            - rebid: "2NT"
+              meaning: "12-14, balanced"
+            - rebid: "raise responder"
+              meaning: "4+ support for responder's suit"
+            - rebid: "3!S"
+              meaning: "6+ spades, extras"
+            - rebid: "3NT"
+              meaning: "15-17, balanced, all stopped"
+
+      # ── Responder's Continuations After 2/1 ────────────────
+      responder_continuations:
+        title: "Responder's Continuations"
+        principle: >
+          After hearing opener's rebid, responder places the game or explores
+          for slam. Since the auction is GF, there is no rush — bid naturally.
+        key_actions:
+          - action: "Raise opener's major to 3M"
+            meaning: "3-card support, forcing (opener chooses 3NT or 4M)"
+            when: "You have 3 cards in opener's major"
+            note: >
+              This is the key safety net that prevents missed major-suit games.
+              With 3-card support, 3M says 'I have a fit but only 3 — you decide.'
+              Opener with 6+ bids 4M; with 5 and stoppers bids 3NT.
+          - action: "Raise opener's major to 4M"
+            meaning: "4+ support, game values (discovered fit)"
+            when: "Opener showed 6+ and you have 2+, or rebid showed 5 and you have 3+"
+          - action: "Bid 3NT"
+            meaning: "Balanced, all stopped, no major fit found"
+            when: "No 8-card major fit, stoppers in all unbid suits"
+          - action: "Bid a new suit"
+            meaning: "Natural, 4+ cards, still exploring"
+            when: "Shape not yet fully described"
+          - action: "Rebid your suit"
+            meaning: "6+ cards, good suit"
+            when: "Strong single-suited hand, still GF"
+          - action: "4NT"
+            meaning: "Blackwood — slam interest"
+            when: "Fit found, control-checking for slam"
+
+      # ── The 3-Card Support Rule ────────────────────────────
+      three_card_support:
+        title: "The Critical Case: 13+ HCP with Exactly 3-Card Major Support"
+        problem: >
+          This is the hand type that historically causes missed games. With 4+
+          trumps → Jacoby 2NT. With 0-2 trumps → 2/1 and explore. But with
+          exactly 3 trumps, responder must choose between raising directly
+          (simple raise = only 6-9) and bidding 2/1 to show strength.
+        solution: >
+          Bid 2/1 first (new suit, GF), then show the 3-card support later by
+          bidding 3M. This is forcing — opener chooses: 4M with 6+ trumps
+          (8-card fit guaranteed), or 3NT with only 5 and stoppers. The 2/1
+          route ensures game is reached while still finding the major fit.
+        examples:
+          - situation: "Partner opens 1!H. You hold: !S:AQ4 !H:K76 !D:A432 !C:932"
+            hcp: 14
+            wrong: "2!H (only shows 6-9 with 3-card support — stops in partscore)"
+            right: >
+              2!D (2/1 GF, 5+ diamonds... but you only have 4 diamonds). Problem:
+              2!D should show 5+. Better: bid 2!C (may be only 4 clubs in a GF
+              auction — acceptable when no 5-card suit is available). After opener
+              rebids, raise to 3!H to show delayed 3-card support. Opener with 6+
+              hearts bids 4!H; with 5 bids 3NT.
+          - situation: "Partner opens 1!S. You hold: !S:K73 !H:AQ54 !D:KJ3 !C:642"
+            hcp: 14
+            wrong: "2!S (only shows 6-9)"
+            right: >
+              2!H (2/1 GF, 5+ hearts... you have only 4. Acceptable? Yes — 2!H after
+              1!S promises 5+ in standard, but with this strength you MUST create a
+              GF. Better: 2!C with only 3 clubs? Ugly but acceptable in a GF auction).
+              The key: after opener rebids, bid 3!S to show delayed 3-card support.
+            note: >
+              With exactly 3-card support and 13-15 HCP, the 2/1 route is the ONLY
+              way to reach game. A simple raise (2M) stops at partscore. This is the
+              gap that H-22 closes.
+          - situation: "Partner opens 1!H. You hold: !S:K43 !H:A76 !D:QJ43 !C:K32"
+            hcp: 14
+            right: >
+              2!D (4+ diamonds is acceptable here since you have a real 4-card suit).
+              After opener rebids (say 2!H), bid 3!H (delayed 3-card support, GF).
+              Opener with AKxxx of hearts + your A76 → 4!H. With KQxxx + balanced →
+              3NT. Either way, game is reached.
+
+      # ── What is NOT 2/1 GF ─────────────────────────────────
+      exceptions:
+        title: "What is NOT 2/1 Game Force"
+        list:
+          - exception: "3rd/4th seat — forcing 1NT is OFF"
+            why: >
+              Responder is a passed hand. 2-level responses are natural but NOT
+              game-forcing — they show 8-11 HCP (passed hand can't have 13+).
+              Opener may pass.
+          - exception: "After interference (opponent bids/doubles)"
+            why: >
+              When opponents intervene, 1NT is no longer forcing — it reverts to
+              natural. So a 2-level bid no longer implies 13+. Standard competitive
+              bidding applies instead.
+          - exception: "1!C - 1!D"
+            why: "This is a 1-level response (4+ diamonds, any strength). Not 2/1."
+
+      # ── Quick Decision Tree for 13+ HCP ────────────────────
+      decision_tree:
+        title: "Responder's Decision Tree: 13+ HCP After Partner Opens 1-Suit"
+        steps:
+          - question: "4+ cards in opener's major?"
+            yes: "Jacoby 2NT (GF raise)"
+            no: "Continue"
+          - question: "5+ card suit to bid at the 2-level?"
+            yes: "Bid it (2/1 GF). Later show 3-card major support if applicable."
+            no: "Continue"
+          - question: "4+ clubs?"
+            yes: "Bid 2!C (2/1 GF). 4 clubs is acceptable in a GF auction."
+            no: "Continue"
+          - question: "Strong jump shift hand (16+ HCP, self-sufficient suit)?"
+            yes: "Jump shift (e.g., 1!H - 3!D = 16+ GF, 5+ diamonds)"
+            no: >
+              With 13-15 and no suit to bid, bid 2!C as a 'catch-all' GF.
+              This is the most flexible 2/1 bid — it creates the force while
+              leaving maximum room to describe shape later.
+
   # ── 2!C Semi-Strong (Benji) ───────────────
   - bid: 2!C
     name: "Semi-Strong (Benji)"
