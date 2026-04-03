@@ -503,9 +503,9 @@ After 3♣, opener replies: 3♦ = denies 5-card major, then check for 4-card fi
 | Opening | Meaning |
 |---|---|
 | 3♣ / 3♦ / 3♥ / 3♠ | **Preemptive** — Destructive block. Sound at unfavourable vulnerability., 7+ cards, ~5-10 HCP, LTC: 7-8 losers (favorable: 8-9; unfavorable: 7) |
-| 3NT | **CRASH Color** — Two same-color suits (♠♣ black or ♥♦ red), 5-5+, ≤3 losers |
-| 4♣ | **CRASH Rank** — Two same-rank suits (♠♥ majors or ♣♦ minors), 5-5+, ≤3 losers |
-| 4♦ | **CRASH Shape** — Two same-shape suits (♠♦ pointed or ♥♣ rounded), 5-5+, ≤3 losers |
+| 3NT | **CRASH Shape** — Two same-shape suits (♠♦ pointed or ♥♣ rounded), 5-5+, ≤3 losers |
+| 4♣ | **CRASH Color** — Two same-color suits (♥♦ red or ♠♣ black), 5-5+, ≤3 losers |
+| 4♦ | **CRASH Rank** — Two same-rank suits (♠♥ majors or ♣♦ minors), 5-5+, ≤3 losers |
 | 4♥ / 4♠ | To play — strong distributional hand or preemptive |
 | 5♣ / 5♦ | Extreme preempt or to play |
 

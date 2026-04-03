@@ -1335,42 +1335,42 @@ openings:
     meaning: "Destructive block. Sound at unfavourable vulnerability."
 
   - bid: 3NT
-    name: "CRASH Color"
-    meaning: "Two same-color suits (♠♣ black or ♥♦ red), 5-5+, ≤3 losers"
+    name: "CRASH Shape"
+    meaning: "Two same-shape suits (♠♦ pointed or ♥♣ rounded), 5-5+, ≤3 losers"
     relay: "4!C asks which pair"
     responses:
       - bid: 4!D
-        meaning: "Red (♥+♦)"
+        meaning: "Pointed (♠+♦)"
       - bid: 4!H
-        meaning: "Black (♠+♣)"
+        meaning: "Rounded (♥+♣)"
     then: "Partner cuebids honors in opener's suits; RKCB available"
 
   - bid: 4!C
-    name: "CRASH Rank"
-    meaning: "Two same-rank suits (♠♥ majors or ♣♦ minors), 5-5+, ≤3 losers"
+    name: "CRASH Color"
+    meaning: "Two same-color suits (♥♦ red or ♠♣ black), 5-5+, ≤3 losers"
     relay: "4!D asks which pair"
     responses:
       - bid: 4!H
-        meaning: "Majors (♠+♥)"
+        meaning: "Red (♥+♦)"
       - bid: 4!S
-        meaning: "Minors (♣+♦)"
+        meaning: "Black (♠+♣)"
     then: "Partner cuebids honors; RKCB available"
 
   - bid: 4!D
-    name: "CRASH Shape"
-    meaning: "Two same-shape suits (♠♦ pointed or ♥♣ rounded), 5-5+, ≤3 losers"
+    name: "CRASH Rank"
+    meaning: "Two same-rank suits (♠♥ majors or ♣♦ minors), 5-5+, ≤3 losers"
     relay: "4!H asks which pair"
     responses:
       - bid: 4!S
-        meaning: "Pointed (♠+♦)"
+        meaning: "Majors (♠+♥)"
       - bid: 4NT
-        meaning: "Rounded (♥+♣)"
+        meaning: "Minors (♣+♦)"
     then: "Partner cuebids honors; RKCB available"
     note: >
-      CRASH encoding: Color (same color), Rank (same rank), Shape (same shape).
-      Three openings cover all 6 possible suit pairs. After relay resolves the
-      pair, partner cuebids honors in opener's long suits for slam exploration.
-      Replaces Gambling 3NT and 4!C/4!D strong preempts (AMD-24).
+      CRASH encoding: Shape (same shape), Color (same color), Rank (same rank) —
+      UCM ordering. Three openings cover all 6 possible suit pairs. After relay
+      resolves the pair, partner cuebids honors in opener's long suits for slam
+      exploration. Replaces Gambling 3NT and 4!C/4!D strong preempts (AMD-24).
 
   - bid: "4!H / 4!S"
     meaning: "To play — strong distributional hand or preemptive"

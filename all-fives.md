@@ -177,7 +177,7 @@ Avoid: Void or strong 4-card side suit
 | Opening | Meaning |
 |---|---|
 | 3x | 7+ cards, ~5-10 HCP, 7-8 losers (fav: 8-9, unfav: 7), destructive |
-| 3NT | CRASH Color — two same-color suits (♠♣ or ♥♦), 5-5+, ≤3 losers. 4♣ asks: 4♦=red, 4♥=black |
+| 3NT | CRASH Shape — two same-shape suits (♠♦ or ♥♣), 5-5+, ≤3 losers. 4♣ asks: 4♦=pointed, 4♥=rounded |
 | 4♥/4♠ | To play (distributional or preemptive) |
 | 5♣/5♦ | Extreme preempt or to play |
 
