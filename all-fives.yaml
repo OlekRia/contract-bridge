@@ -161,6 +161,16 @@ openings:
     3C: "4"
     3D: "5"
     3H: "6"
+    interference:
+      principle: "DOPI/ROPI — preserve control steps. Penalties on second round (forcing pass)."
+      after_X: "ROPI: XX=0-1, Pass=2, 2H=3, 2S=4, 2NT=5, 3C=6"
+      after_2H: "DOPI: X=0-1, Pass=2, 2S=3, 2NT=4, 3C=5, 3D=6"
+      after_2S: "DOPI: X=0-1, Pass=2, 2NT=3, 3C=4, 3D=5, 3H=6"
+      after_2NT: "DOPI: X=0-1, Pass=2, 3C=3, 3D=4, 3H=5, 3S=6"
+      after_3_level: "DOPI compressed: X=0-1, Pass=2, cheapest=3, next=4..."
+      after_4_level: "DEPO: X=even (0,2,4,6), Pass=odd (1,3,5)"
+      after_5_level: "Forcing pass. Pull of X = slam values."
+      penalty: "Second-round X by either partner = PENALTY"
 
   2H_2S:
     name: Weak Two
@@ -199,6 +209,7 @@ openings:
     3NT: "Gambling (AKQxxxx+ minor, no outside A/K)"
     4H_4S: "To play (distributional or preemptive)"
     4C_4D: "Strong preempt (8+ minor)"
+    4NT: "Acol Specific Ace Ask (monster hand): 5C=none, 5D=♦A, 5H=♥A, 5S=♠A, 5NT=two, 6C=♣A"
     5C_5D: "Extreme preempt or to play"
 
 # ── Defensive Bidding (when opponents open) ───────

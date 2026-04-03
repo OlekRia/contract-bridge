@@ -1184,6 +1184,57 @@ openings:
     note: >
       Excellent for slam exploration. Opener immediately knows the
       combined control count and can place the contract or ask further.
+    interference_after_2D:
+      principle: >
+        DOPI/ROPI: preserve control-step responses when opponents interfere.
+        Double (or Redouble) = first step, Pass = second step, then bids
+        continue in order. At 4+ level, fall back to DEPO (Double = Even,
+        Pass = Odd). Extends existing DOPI used for Ogust interference.
+      penalty_mechanism: >
+        2!D is game-forcing — ALL passes are forcing. DOPI shows controls on
+        the first round; penalties come on the SECOND round. After responder's
+        DOPI call, opener doubles opponent's suit = PENALTY (has their suit).
+        After opener's rebid, responder doubles any subsequent opponent bid =
+        PENALTY. Either player can penalize on any subsequent round. The
+        forcing-pass auction guarantees another chance to double.
+      rules:
+        - trigger: "2!D - (X)"
+          name: "ROPI (Redouble = 0, Pass = 1)"
+          rule: "XX = 0-1 controls. Pass = 2. 2!H = 3. 2!S = 4. 2NT = 5. 3!C = 6."
+          note: "Double doesn't steal space — all steps preserved plus XX as extra step."
+        - trigger: "2!D - (2!H)"
+          name: "DOPI (Double = 0, Pass = 1)"
+          rule: "X = 0-1 controls. Pass = 2. 2!S = 3. 2NT = 4. 3!C = 5. 3!D = 6."
+          penalty: >
+            After Pass (2 controls): opener X = PENALTY (heart stack).
+            After X (0-1 controls): opener passes, penalizes on next round.
+            Responder with heart stack + 2 controls: Pass now, X later = penalty.
+        - trigger: "2!D - (2!S)"
+          name: "DOPI"
+          rule: "X = 0-1 controls. Pass = 2. 2NT = 3. 3!C = 4. 3!D = 5. 3!H = 6."
+          penalty: "Same principle: opener X after Pass = penalty. Subsequent X by either = penalty."
+        - trigger: "2!D - (2NT)"
+          name: "DOPI"
+          rule: "X = 0-1 controls. Pass = 2. 3!C = 3. 3!D = 4. 3!H = 5. 3!S = 6."
+          penalty: "Same principle: opener X after Pass = penalty. Subsequent X by either = penalty."
+        - trigger: "2!D - (3-level)"
+          name: "DOPI (compressed)"
+          rule: "X = 0-1 controls. Pass = 2. Cheapest bid = 3. Next = 4. Steps continue upward."
+          penalty: "Same principle. At this level, penalties are often the best score."
+        - trigger: "2!D - (4-level+)"
+          name: "DEPO (Double = Even, Pass = Odd)"
+          rule: "X = even controls (0, 2, 4, 6). Pass = odd controls (1, 3, 5)."
+          penalty: >
+            After DEPO exchange, opener knows even/odd controls. Any subsequent
+            double = PENALTY. At the 4-level, penalizing opponents is often
+            more profitable than bidding slam.
+          note: >
+            At this level, exact count is impossible — DEPO gives binary
+            information. Opener infers the likely count from hand strength.
+        - trigger: "2!D - (5-level+)"
+          name: "Forcing pass"
+          rule: "Pass forces opener to act. Pull of opener's double = slam values. Direct bid = to play."
+          penalty: "Opener doubles = penalty suggestion. Responder passes = agrees. Responder bids = overrules (slam)."
 
   # ── 2!H / 2!S Weak Two ───────────────────
   - bid: "2!H / 2!S"
@@ -1275,6 +1326,41 @@ openings:
 
   - bid: "4!C / 4!D"
     meaning: "Strong preempt (8+ card minor, some values)"
+
+  - bid: 4NT
+    name: "Specific Ace Ask (Acol 4NT)"
+    meaning: >
+      Monster hand that needs only specific ace locations to place the contract.
+      Too distributional for 2!D control-step responses (which show count, not
+      location). Typically 1-2 suited with extreme shape and voids.
+    responses:
+      - bid: 5!C
+        meaning: "No aces"
+      - bid: 5!D
+        meaning: "Ace of diamonds"
+      - bid: 5!H
+        meaning: "Ace of hearts"
+      - bid: 5!S
+        meaning: "Ace of spades"
+      - bid: 5NT
+        meaning: "Two aces"
+      - bid: 6!C
+        meaning: "Ace of clubs"
+    opener_continuation: >
+      Natural — bid slam in your suit if the right ace is held, sign off at
+      the 5-level if not, bid grand slam with two aces. Partner's ace
+      identity tells you whether your losers are covered.
+    examples:
+      - hand: "!SAKQJ976 !HAKQxx !D- !Cx"
+        action: "4NT. !HA response → 7!S. !DA → 6!S. No ace → 5!S."
+      - hand: "!SAKxxxx !HAKxxxx !D- !C-"
+        action: "4NT. Any ace → 6M. Two aces → 7M. No ace → 5!H."
+      - hand: "!S- !HAKQJTxxx !DAKQx !Cx"
+        action: "4NT. !DA → 7!H. Any other ace → 6!H. No ace → 5!H."
+    note: >
+      Do NOT confuse with defensive 4NT (two-suited takeout over opponents'
+      4!H/4!S). Opening 4NT = ace ask. Overcalling 4NT = two-suited.
+      If in doubt: did WE open? → ace ask. Did THEY open? → takeout.
 
   - bid: "5!C / 5!D"
     meaning: "Extreme preempt or to play"
