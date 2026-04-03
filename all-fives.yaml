@@ -141,11 +141,11 @@ openings:
     type_3:
       name: "Strong Two-Suiter (~4 losers, 5-5+)"
       after_2C_2D:
-        3C: "Clubs + any suit (3!D asks: 3!H=C+H, 3!S=C+S, 3NT=C+D)"
-        3D: "Diamonds + a major (3!H asks: 3!S=D+S, 3NT=D+H)"
+        3C: "Clubs + any suit. Suit=pass/correct (3!D nat, pass/3!H/3!S). 3NT asks (4!C=C+D, 4!D=C+H, 4!H=C+S)"
+        3D: "Diamonds + a major. 3!H=pass/correct (pass=D+H, 3!S=D+S). 3NT asks (4!C=D+H, 4!D=D+S)"
         3H: "Both majors (known — bid naturally)"
-        3S: "4!S + 6+ minor (3NT asks: 4!C=S+C, 4!D=S+D)"
-        3NT: "4!H + 6+ minor (4!C asks: 4!D=H+C, 4!H=H+D)"
+        3S: "4!S + 6+ minor. 4!C=pass/correct (pass=S+C, 4!D=S+D). 3NT asks (4!C=S+C, 4!D=S+D)"
+        3NT: "4!H + 6+ minor. 4!C=pass/correct only (pass=H+C, 4!D=H+D)"
     responses:
       2D: "Relay (always) — opener describes hand with rebid"
 

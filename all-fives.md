@@ -103,11 +103,11 @@ After 2♦ denial:
 
 | Rebid | Meaning |
 |---|---|
-| 3♣ | Clubs + any suit (3♦ asks: 3♥=C+H, 3♠=C+S, 3NT=C+D) |
-| 3♦ | Diamonds + a major (3♥ asks: 3♠=D+S, 3NT=D+H) |
+| 3♣ | Clubs + any suit. Suit=pass/correct (3♦ nat, pass/3♥/3♠). 3NT asks (4♣=C+D, 4♦=C+H, 4♥=C+S) |
+| 3♦ | Diamonds + a major. 3♥=pass/correct (pass=D+H, 3♠=D+S). 3NT asks (4♣=D+H, 4♦=D+S) |
 | 3♥ | Both majors (known — bid naturally) |
-| 3♠ | 4♠ + 6+ minor (3NT asks: 4♣=S+C, 4♦=S+D) |
-| 3NT | 4♥ + 6+ minor (4♣ asks: 4♦=H+C, 4♥=H+D) |
+| 3♠ | 4♠ + 6+ minor. 4♣=pass/correct (pass=S+C, 4♦=S+D). 3NT asks (4♣=S+C, 4♦=S+D) |
+| 3NT | 4♥ + 6+ minor. 4♣=pass/correct only (pass=H+C, 4♦=H+D) |
 
 #### Responses to 2♣
 

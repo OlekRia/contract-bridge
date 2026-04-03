@@ -1105,28 +1105,54 @@ openings:
         sequence: "2!C - 2!D - 3!C/3!D/3!H/3!S/3NT"
         note: >
           After 2!C-2!D (waiting), opener's 3-level rebid shows a strong two-suiter.
-          Five rebids cover all suit combinations: 3!C = clubs + any suit (relay to
-          identify), 3!D = diamonds + a major, 3!H = both majors (known), 3!S = 4!S +
+          Five rebids cover all suit combinations: 3!C = clubs + any suit,
+          3!D = diamonds + a major, 3!H = both majors (known), 3!S = 4!S +
           6+ minor (4-6 shape), 3NT = 4!H + 6+ minor (4-6 shape).
+          Responder continues with: suit = natural (pass/correct), NT = ask.
         continuations:
           after_3C:
             meaning: "Clubs + any other suit (5-5+)"
-            ask: "3!D asks which suit"
-            responses:
+            natural: "Suit bid = pass/correct (3!D natural, opener passes or corrects)"
+            pass_correct:
+              - bid: 3!D
+                by: responder
+                meaning: "Natural — I can play diamonds"
+              - bid: pass
+                by: opener
+                meaning: "Clubs + diamonds (agree diamonds)"
               - bid: 3!H
-                meaning: "Clubs + hearts"
+                by: opener
+                meaning: "Clubs + hearts (correct)"
               - bid: 3!S
+                by: opener
+                meaning: "Clubs + spades (correct)"
+            ask: "3NT asks which suit"
+            ask_responses:
+              - bid: 4!C
+                meaning: "Clubs + diamonds"
+              - bid: 4!D
+                meaning: "Clubs + hearts"
+              - bid: 4!H
                 meaning: "Clubs + spades"
-              - bid: 3NT
-                meaning: "Clubs + diamonds (both minors)"
           after_3D:
             meaning: "Diamonds + a major (5-5+)"
-            ask: "3!H asks which major"
-            responses:
+            natural: "Suit bid = pass/correct (3!H natural, opener passes or corrects)"
+            pass_correct:
+              - bid: 3!H
+                by: responder
+                meaning: "Natural — I can play hearts"
+              - bid: pass
+                by: opener
+                meaning: "Diamonds + hearts (agree hearts)"
               - bid: 3!S
-                meaning: "Diamonds + spades"
-              - bid: 3NT
+                by: opener
+                meaning: "Diamonds + spades (correct)"
+            ask: "3NT asks which major"
+            ask_responses:
+              - bid: 4!C
                 meaning: "Diamonds + hearts"
+              - bid: 4!D
+                meaning: "Diamonds + spades"
           after_3H:
             meaning: "Both majors — hearts + spades (5-5+)"
             note: "No ask needed — suits are known."
@@ -1141,20 +1167,36 @@ openings:
                 meaning: "Game in spades"
           after_3S:
             meaning: "4 spades + 6+ minor"
+            natural: "4!C = pass/correct (opener passes or corrects to 4!D)"
+            pass_correct:
+              - bid: 4!C
+                by: responder
+                meaning: "Natural — I can play clubs"
+              - bid: pass
+                by: opener
+                meaning: "Spades + clubs (agree clubs)"
+              - bid: 4!D
+                by: opener
+                meaning: "Spades + diamonds (correct)"
             ask: "3NT asks which minor"
-            responses:
+            ask_responses:
               - bid: 4!C
                 meaning: "Spades + clubs"
               - bid: 4!D
                 meaning: "Spades + diamonds"
           after_3NT:
             meaning: "4 hearts + 6+ minor"
-            ask: "4!C asks which minor"
-            responses:
+            note: "No NT ask available — use pass/correct only."
+            pass_correct:
+              - bid: 4!C
+                by: responder
+                meaning: "Natural — I can play clubs"
+              - bid: pass
+                by: opener
+                meaning: "Hearts + clubs (agree clubs)"
               - bid: 4!D
-                meaning: "Hearts + clubs"
-              - bid: 4!H
-                meaning: "Hearts + diamonds"
+                by: opener
+                meaning: "Hearts + diamonds (correct)"
           general_continuations: >
             After suits are identified: raise = support, cheapest NT = sign off,
             game in a major = to play, new suit = cue-bid (slam interest).

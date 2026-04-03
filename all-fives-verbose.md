@@ -429,26 +429,43 @@ This is the practical guide: partner opens a suit, what do you bid? Work through
 
 2♣ - 2♦ - 3♣/3♦/3♥/3♠/3NT
 
-After 2♣-2♦ (waiting), opener's 3-level rebid shows a strong two-suiter. Five rebids cover all suit combinations: 3♣ = clubs + any suit (relay to identify), 3♦ = diamonds + a major, 3♥ = both majors (known), 3♠ = 4♠ + 6+ minor (4-6 shape), 3NT = 4♥ + 6+ minor (4-6 shape).
+After 2♣-2♦ (waiting), opener's 3-level rebid shows a strong two-suiter. Five rebids cover all suit combinations: 3♣ = clubs + any suit, 3♦ = diamonds + a major, 3♥ = both majors (known), 3♠ = 4♠ + 6+ minor (4-6 shape), 3NT = 4♥ + 6+ minor (4-6 shape). Responder continues with: suit = natural (pass/correct), NT = ask.
 
 **After 3♣:** Clubs + any other suit (5-5+)
 
-3♦ asks which suit
+**Natural:** Suit bid = pass/correct (3♦ natural, opener passes or corrects)
+
+| Bid | By | Meaning |
+|---|---|---|
+| 3♦ | responder | Natural — I can play diamonds |
+| pass | opener | Clubs + diamonds (agree diamonds) |
+| 3♥ | opener | Clubs + hearts (correct) |
+| 3♠ | opener | Clubs + spades (correct) |
+
+**Ask:** 3NT asks which suit
 
 | Bid | Meaning |
 |---|---|
-| 3♥ | Clubs + hearts |
-| 3♠ | Clubs + spades |
-| 3NT | Clubs + diamonds (both minors) |
+| 4♣ | Clubs + diamonds |
+| 4♦ | Clubs + hearts |
+| 4♥ | Clubs + spades |
 
 **After 3♦:** Diamonds + a major (5-5+)
 
-3♥ asks which major
+**Natural:** Suit bid = pass/correct (3♥ natural, opener passes or corrects)
+
+| Bid | By | Meaning |
+|---|---|---|
+| 3♥ | responder | Natural — I can play hearts |
+| pass | opener | Diamonds + hearts (agree hearts) |
+| 3♠ | opener | Diamonds + spades (correct) |
+
+**Ask:** 3NT asks which major
 
 | Bid | Meaning |
 |---|---|
-| 3♠ | Diamonds + spades |
-| 3NT | Diamonds + hearts |
+| 4♣ | Diamonds + hearts |
+| 4♦ | Diamonds + spades |
 
 **After 3♥:** Both majors — hearts + spades (5-5+)
 
@@ -463,7 +480,15 @@ After 2♣-2♦ (waiting), opener's 3-level rebid shows a strong two-suiter. Fiv
 
 **After 3♠:** 4 spades + 6+ minor
 
-3NT asks which minor
+**Natural:** 4♣ = pass/correct (opener passes or corrects to 4♦)
+
+| Bid | By | Meaning |
+|---|---|---|
+| 4♣ | responder | Natural — I can play clubs |
+| pass | opener | Spades + clubs (agree clubs) |
+| 4♦ | opener | Spades + diamonds (correct) |
+
+**Ask:** 3NT asks which minor
 
 | Bid | Meaning |
 |---|---|
@@ -472,12 +497,13 @@ After 2♣-2♦ (waiting), opener's 3-level rebid shows a strong two-suiter. Fiv
 
 **After 3NT:** 4 hearts + 6+ minor
 
-4♣ asks which minor
+| Bid | By | Meaning |
+|---|---|---|
+| 4♣ | responder | Natural — I can play clubs |
+| pass | opener | Hearts + clubs (agree clubs) |
+| 4♦ | opener | Hearts + diamonds (correct) |
 
-| Bid | Meaning |
-|---|---|
-| 4♦ | Hearts + clubs |
-| 4♥ | Hearts + diamonds |
+*No NT ask available — use pass/correct only.*
 
 **After general_continuations:** 
 
