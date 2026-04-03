@@ -1161,24 +1161,11 @@ openings:
 
     responses:
       - bid: 2!D
-        meaning: "Waiting (0-7 HCP)"
-      - bid: 2!H
-        meaning: "Positive relay — balanced, no 5-card suit, 8+ HCP"
-        note: >
-          This is NOT natural hearts. It is a general positive
-          showing values without a 5-card suit to bid. Hearts are
-          shown via 2NT (see below).
-      - bid: 2!S
-        meaning: "5+ spades, 8+ HCP"
-      - bid: 2NT
-        meaning: "5+ hearts, 8+ HCP"
-        note: "Hearts and spades are swapped to let opener describe his hand at a low level."
-      - bid: "3!C / 3!D"
-        meaning: "5+ clubs/diamonds, game-force, slam interest opposite 22-23"
+        meaning: "Relay (always) — opener describes hand with rebid"
     note: >
-      All non-2!D responses are game-forcing (8+ HCP). This avoids the
-      problem where after 2!C - 2!D - 2!H, responder cannot show a
-      5-card major.
+      2!D is the only response to 2!C. Responder always relays;
+      opener's rebid shows the hand type (2NT = balanced, 2!H/!S =
+      strong major, 3-level = two-suiter).
 
   # ── 2!D Strong Game-Force ─────────────────
   - bid: 2!D

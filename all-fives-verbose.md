@@ -431,17 +431,65 @@ This is the practical guide: partner opens a suit, what do you bid? Work through
 
 After 2♣-2♦ (waiting), opener's 3-level rebid shows a strong two-suiter. Five rebids cover all suit combinations: 3♣ = clubs + any suit (relay to identify), 3♦ = diamonds + a major, 3♥ = both majors (known), 3♠ = 4♠ + 6+ minor (4-6 shape), 3NT = 4♥ + 6+ minor (4-6 shape).
 
+**After 3♣:** Clubs + any other suit (5-5+)
+
+3♦ asks which suit
+
+| Bid | Meaning |
+|---|---|
+| 3♥ | Clubs + hearts |
+| 3♠ | Clubs + spades |
+| 3NT | Clubs + diamonds (both minors) |
+
+**After 3♦:** Diamonds + a major (5-5+)
+
+3♥ asks which major
+
+| Bid | Meaning |
+|---|---|
+| 3♠ | Diamonds + spades |
+| 3NT | Diamonds + hearts |
+
+**After 3♥:** Both majors — hearts + spades (5-5+)
+
+*No ask needed — suits are known.*
+
+| Bid | Meaning |
+|---|---|
+| 3♠ | Preference for spades |
+| 3NT | To play |
+| 4♥ | Game in hearts |
+| 4♠ | Game in spades |
+
+**After 3♠:** 4 spades + 6+ minor
+
+3NT asks which minor
+
+| Bid | Meaning |
+|---|---|
+| 4♣ | Spades + clubs |
+| 4♦ | Spades + diamonds |
+
+**After 3NT:** 4 hearts + 6+ minor
+
+4♣ asks which minor
+
+| Bid | Meaning |
+|---|---|
+| 4♦ | Hearts + clubs |
+| 4♥ | Hearts + diamonds |
+
+**After general_continuations:** 
+
+*After suits are identified: raise = support, cheapest NT = sign off, game in a major = to play, new suit = cue-bid (slam interest).*
+
 #### Responses to 2♣
 
 | Response | Meaning |
 |---|---|
-| 2♦ | Waiting (0-7 HCP) |
-| 2♥ | Positive relay — balanced, no 5-card suit, 8+ HCP |
-| 2♠ | 5+ spades, 8+ HCP |
-| 2NT | 5+ hearts, 8+ HCP |
-| 3♣ / 3♦ | 5+ clubs/diamonds, game-force, slam interest opposite 22-23 |
+| 2♦ | Relay (always) — opener describes hand with rebid |
 
-All non-2♦ responses are game-forcing (8+ HCP). This avoids the problem where after 2♣ - 2♦ - 2♥, responder cannot show a 5-card major.
+2♦ is the only response to 2♣. Responder always relays; opener's rebid shows the hand type (2NT = balanced, 2♥/♠ = strong major, 3-level = two-suiter).
 
 ---
 

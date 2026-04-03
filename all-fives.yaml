@@ -147,11 +147,7 @@ openings:
         3S: "4!S + 6+ minor (3NT asks: 4!C=S+C, 4!D=S+D)"
         3NT: "4!H + 6+ minor (4!C asks: 4!D=H+C, 4!H=H+D)"
     responses:
-      2D: "Waiting (0-7)"
-      2H: "Positive relay, balanced, no 5-card suit, 8+"
-      2S: "5+ spades, 8+ (GF)"
-      2NT: "5+ hearts, 8+ (GF, swapped with 2!S)"
-      3C_3D: "5+ minor, GF, slam interest"
+      2D: "Relay (always) — opener describes hand with rebid"
 
   2D:
     name: Strong Game-Force

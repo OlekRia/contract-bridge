@@ -97,16 +97,23 @@ After 2♦ denial:
 |---|---|
 | type 1 | 22-23 bal (2♣-2♦-2NT) |
 | type 2 | Strong major, ~5 losers, 5+ suit, 3 top honours (2♣-2♦-2♥/2♠) |
+| type 3 | Strong Two-Suiter (~4 losers, 5-5+) |
+
+#### After 2♣ - 2♦ (Type 3 rebids)
+
+| Rebid | Meaning |
+|---|---|
+| 3♣ | Clubs + any suit (3♦ asks: 3♥=C+H, 3♠=C+S, 3NT=C+D) |
+| 3♦ | Diamonds + a major (3♥ asks: 3♠=D+S, 3NT=D+H) |
+| 3♥ | Both majors (known — bid naturally) |
+| 3♠ | 4♠ + 6+ minor (3NT asks: 4♣=S+C, 4♦=S+D) |
+| 3NT | 4♥ + 6+ minor (4♣ asks: 4♦=H+C, 4♥=H+D) |
 
 #### Responses to 2♣
 
 | Response | Meaning |
 |---|---|
-| 2♦ | Waiting (0-7) |
-| 2♥ | Positive relay, balanced, no 5-card suit, 8+ |
-| 2♠ | 5+ spades, 8+ (GF) |
-| 2NT | 5+ hearts, 8+ (GF, swapped with 2♠) |
-| 3♣/3♦ | 5+ minor, GF, slam interest |
+| 2♦ | Relay (always) — opener describes hand with rebid |
 
 ### 2♦ — Strong Game-Force
 
