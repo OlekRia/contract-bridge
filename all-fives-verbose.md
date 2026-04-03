@@ -507,6 +507,7 @@ After 3♣, opener replies: 3♦ = denies 5-card major, then check for 4-card fi
 | 4♣ | **UCM Color** — Two same-color suits (♥♦ red or ♠♣ black), 5-5+, ≤3 losers |
 | 4♦ | **UCM Rank** — Two same-rank suits (♠♥ majors or ♣♦ minors), 5-5+, ≤3 losers |
 | 4♥ / 4♠ | To play — strong distributional hand or preemptive |
+| 4NT | **Specific Ace Ask (Acol 4NT)** — Monster hand that needs only specific ace locations to place the contract. Too distributional for 2♦ control-step responses (which show count, not location). Typically 1-2 suited with extreme shape and voids. |
 | 5♣ / 5♦ | Extreme preempt or to play |
 
 ---

@@ -179,6 +179,7 @@ Avoid: Void or strong 4-card side suit
 | 3x | 7+ cards, ~5-10 HCP, 7-8 losers (fav: 8-9, unfav: 7), destructive |
 | 3NT | UCM Shape — two same-shape suits (♠♦ or ♥♣), 5-5+, ≤3 losers. 4♣ asks: 4♦=pointed, 4♥=rounded |
 | 4♥/4♠ | To play (distributional or preemptive) |
+| 4NT | Acol Specific Ace Ask (monster hand): 5C=none, 5D=♦A, 5H=♥A, 5S=♠A, 5NT=♣A, 6C=two aces |
 | 5♣/5♦ | Extreme preempt or to play |
 
 ---
