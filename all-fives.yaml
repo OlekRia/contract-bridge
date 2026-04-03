@@ -208,9 +208,9 @@ openings:
 
   preempts:
     3x: "7+ cards, ~5-10 HCP, 7-8 losers (fav: 8-9, unfav: 7), destructive"
-    3NT: "CRASH Shape — two same-shape suits (♠♦ or ♥♣), 5-5+, ≤3 losers. 4♣ asks: 4♦=pointed, 4♥=rounded"
-    4C: "CRASH Color — two same-color suits (♥♦ or ♠♣), 5-5+, ≤3 losers. 4♦ asks: 4♥=red, 4♠=black"
-    4D: "CRASH Rank — two same-rank suits (♠♥ or ♣♦), 5-5+, ≤3 losers. 4♥ asks: 4♠=majors, 4NT=minors"
+    3NT: "UCM Shape — two same-shape suits (♠♦ or ♥♣), 5-5+, ≤3 losers. 4♣ asks: 4♦=pointed, 4♥=rounded"
+    4C: "UCM Color — two same-color suits (♥♦ or ♠♣), 5-5+, ≤3 losers. 4♦ asks: 4♥=red, 4♠=black"
+    4D: "UCM Rank — two same-rank suits (♠♥ or ♣♦), 5-5+, ≤3 losers. 4♥ asks: 4♠=majors, 4NT=minors"
     4H_4S: "To play (distributional or preemptive)"
     4NT: "Acol Specific Ace Ask (monster hand): 5C=none, 5D=♦A, 5H=♥A, 5S=♠A, 5NT=♣A, 6C=two aces"
     5C_5D: "Extreme preempt or to play"

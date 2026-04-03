@@ -1100,7 +1100,7 @@ openings:
           - "Partner needs roughly 2 fillers to make game"
       - type: 3
         name: "Strong Two-Suiter"
-        ltc: "~4 losers (≤3 losers → CRASH opening instead)"
+        ltc: "~4 losers (≤3 losers → UCM opening instead)"
         shape: "5-5+ in two suits (or 4M+6m for 3!S/3NT types)"
         sequence: "2!C - 2!D - 3!C/3!D/3!H/3!S/3NT"
         note: >
@@ -1335,7 +1335,7 @@ openings:
     meaning: "Destructive block. Sound at unfavourable vulnerability."
 
   - bid: 3NT
-    name: "CRASH Shape"
+    name: "UCM Shape"
     meaning: "Two same-shape suits (♠♦ pointed or ♥♣ rounded), 5-5+, ≤3 losers"
     relay: "4!C asks which pair"
     responses:
@@ -1346,7 +1346,7 @@ openings:
     then: "Partner cuebids honors in opener's suits; RKCB available"
 
   - bid: 4!C
-    name: "CRASH Color"
+    name: "UCM Color"
     meaning: "Two same-color suits (♥♦ red or ♠♣ black), 5-5+, ≤3 losers"
     relay: "4!D asks which pair"
     responses:
@@ -1357,7 +1357,7 @@ openings:
     then: "Partner cuebids honors; RKCB available"
 
   - bid: 4!D
-    name: "CRASH Rank"
+    name: "UCM Rank"
     meaning: "Two same-rank suits (♠♥ majors or ♣♦ minors), 5-5+, ≤3 losers"
     relay: "4!H asks which pair"
     responses:
@@ -1367,10 +1367,10 @@ openings:
         meaning: "Minors (♣+♦)"
     then: "Partner cuebids honors; RKCB available"
     note: >
-      CRASH encoding: Shape (same shape), Color (same color), Rank (same rank) —
-      UCM ordering. Three openings cover all 6 possible suit pairs. After relay
-      resolves the pair, partner cuebids honors in opener's long suits for slam
-      exploration. Replaces Gambling 3NT and 4!C/4!D strong preempts (AMD-24).
+      UCM encoding: U=Shape (same shape), C=Color (same color), M=Rank (majors/minors).
+      Three openings cover all 6 possible suit pairs. After relay resolves the
+      pair, partner cuebids honors in opener's long suits for slam exploration.
+      Replaces Gambling 3NT and 4!C/4!D strong preempts (AMD-24).
 
   - bid: "4!H / 4!S"
     meaning: "To play — strong distributional hand or preemptive"
