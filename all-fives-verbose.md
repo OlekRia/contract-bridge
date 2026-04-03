@@ -427,9 +427,9 @@ This is the practical guide: partner opens a suit, what do you bid? Work through
 
 #### Type 3 — Strong Two-Suiter
 
-**18-21 HCP:** 2♣ - 2♦ - 3♣/3♦/3♥
+2♣ - 2♦ - 3♣/3♦/3♥/3♠/3NT
 
-After 2♣-2♦ (waiting), opener's 3-level rebid shows a strong two-suiter. The 3 rebids cover all 10 possible suit pairs via a logical grouping: 3♣ = clubs + a higher suit, 3♦ = diamonds + a major, 3♥ = both majors.
+After 2♣-2♦ (waiting), opener's 3-level rebid shows a strong two-suiter. Five rebids cover all suit combinations: 3♣ = clubs + any suit (relay to identify), 3♦ = diamonds + a major, 3♥ = both majors (known), 3♠ = 4♠ + 6+ minor (4-6 shape), 3NT = 4♥ + 6+ minor (4-6 shape).
 
 #### Responses to 2♣
 
@@ -503,9 +503,10 @@ After 3♣, opener replies: 3♦ = denies 5-card major, then check for 4-card fi
 | Opening | Meaning |
 |---|---|
 | 3♣ / 3♦ / 3♥ / 3♠ | **Preemptive** — Destructive block. Sound at unfavourable vulnerability., 7+ cards, ~5-10 HCP, LTC: 7-8 losers (favorable: 8-9; unfavorable: 7) |
-| 3NT | **Gambling** — AKQxxxx+ in a minor, no outside A or K |
+| 3NT | **CRASH Color** — Two same-color suits (♠♣ black or ♥♦ red), 5-5+, ≤3 losers |
+| 4♣ | **CRASH Rank** — Two same-rank suits (♠♥ majors or ♣♦ minors), 5-5+, ≤3 losers |
+| 4♦ | **CRASH Shape** — Two same-shape suits (♠♦ pointed or ♥♣ rounded), 5-5+, ≤3 losers |
 | 4♥ / 4♠ | To play — strong distributional hand or preemptive |
-| 4♣ / 4♦ | Strong preempt (8+ card minor, some values) |
 | 5♣ / 5♦ | Extreme preempt or to play |
 
 ---
