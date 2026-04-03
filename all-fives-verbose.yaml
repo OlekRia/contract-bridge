@@ -1100,17 +1100,18 @@ openings:
           - "Partner needs roughly 2 fillers to make game"
       - type: 3
         name: "Strong Two-Suiter"
-        hcp: "18-21"
-        shape: "5-5+ in two suits"
-        sequence: "2!C - 2!D - 3!C/3!D/3!H"
+        ltc: "~4 losers (≤3 losers → CRASH opening instead)"
+        shape: "5-5+ in two suits (or 4M+6m for 3!S/3NT types)"
+        sequence: "2!C - 2!D - 3!C/3!D/3!H/3!S/3NT"
         note: >
           After 2!C-2!D (waiting), opener's 3-level rebid shows a strong two-suiter.
-          The 3 rebids cover all 10 possible suit pairs via a logical grouping:
-          3!C = clubs + a higher suit, 3!D = diamonds + a major, 3!H = both majors.
+          Five rebids cover all suit combinations: 3!C = clubs + any suit (relay to
+          identify), 3!D = diamonds + a major, 3!H = both majors (known), 3!S = 4!S +
+          6+ minor (4-6 shape), 3NT = 4!H + 6+ minor (4-6 shape).
         continuations:
           after_3C:
-            meaning: "Clubs + a higher suit"
-            ask: "3!D asks which higher suit"
+            meaning: "Clubs + any other suit (5-5+)"
+            ask: "3!D asks which suit"
             responses:
               - bid: 3!H
                 meaning: "Clubs + hearts"
@@ -1119,7 +1120,7 @@ openings:
               - bid: 3NT
                 meaning: "Clubs + diamonds (both minors)"
           after_3D:
-            meaning: "Diamonds + a major"
+            meaning: "Diamonds + a major (5-5+)"
             ask: "3!H asks which major"
             responses:
               - bid: 3!S
@@ -1127,7 +1128,7 @@ openings:
               - bid: 3NT
                 meaning: "Diamonds + hearts"
           after_3H:
-            meaning: "Both majors (hearts + spades)"
+            meaning: "Both majors — hearts + spades (5-5+)"
             note: "No ask needed — suits are known."
             responder:
               - bid: 3!S
@@ -1138,6 +1139,22 @@ openings:
                 meaning: "Game in hearts"
               - bid: 4!S
                 meaning: "Game in spades"
+          after_3S:
+            meaning: "4 spades + 6+ minor"
+            ask: "3NT asks which minor"
+            responses:
+              - bid: 4!C
+                meaning: "Spades + clubs"
+              - bid: 4!D
+                meaning: "Spades + diamonds"
+          after_3NT:
+            meaning: "4 hearts + 6+ minor"
+            ask: "4!C asks which minor"
+            responses:
+              - bid: 4!D
+                meaning: "Hearts + clubs"
+              - bid: 4!H
+                meaning: "Hearts + diamonds"
           general_continuations: >
             After suits are identified: raise = support, cheapest NT = sign off,
             game in a major = to play, new suit = cue-bid (slam interest).
@@ -1318,14 +1335,45 @@ openings:
     meaning: "Destructive block. Sound at unfavourable vulnerability."
 
   - bid: 3NT
-    name: "Gambling"
-    meaning: "AKQxxxx+ in a minor, no outside A or K"
+    name: "CRASH Color"
+    meaning: "Two same-color suits (♠♣ black or ♥♦ red), 5-5+, ≤3 losers"
+    relay: "4!C asks which pair"
+    responses:
+      - bid: 4!D
+        meaning: "Red (♥+♦)"
+      - bid: 4!H
+        meaning: "Black (♠+♣)"
+    then: "Partner cuebids honors in opener's suits; RKCB available"
+
+  - bid: 4!C
+    name: "CRASH Rank"
+    meaning: "Two same-rank suits (♠♥ majors or ♣♦ minors), 5-5+, ≤3 losers"
+    relay: "4!D asks which pair"
+    responses:
+      - bid: 4!H
+        meaning: "Majors (♠+♥)"
+      - bid: 4!S
+        meaning: "Minors (♣+♦)"
+    then: "Partner cuebids honors; RKCB available"
+
+  - bid: 4!D
+    name: "CRASH Shape"
+    meaning: "Two same-shape suits (♠♦ pointed or ♥♣ rounded), 5-5+, ≤3 losers"
+    relay: "4!H asks which pair"
+    responses:
+      - bid: 4!S
+        meaning: "Pointed (♠+♦)"
+      - bid: 4NT
+        meaning: "Rounded (♥+♣)"
+    then: "Partner cuebids honors; RKCB available"
+    note: >
+      CRASH encoding: Color (same color), Rank (same rank), Shape (same shape).
+      Three openings cover all 6 possible suit pairs. After relay resolves the
+      pair, partner cuebids honors in opener's long suits for slam exploration.
+      Replaces Gambling 3NT and 4!C/4!D strong preempts (AMD-24).
 
   - bid: "4!H / 4!S"
     meaning: "To play — strong distributional hand or preemptive"
-
-  - bid: "4!C / 4!D"
-    meaning: "Strong preempt (8+ card minor, some values)"
 
   - bid: 4NT
     name: "Specific Ace Ask (Acol 4NT)"
@@ -1343,9 +1391,9 @@ openings:
       - bid: 5!S
         meaning: "Ace of spades"
       - bid: 5NT
-        meaning: "Two aces"
-      - bid: 6!C
         meaning: "Ace of clubs"
+      - bid: 6!C
+        meaning: "Two aces"
     opener_continuation: >
       Natural — bid slam in your suit if the right ace is held, sign off at
       the 5-level if not, bid grand slam with two aces. Partner's ace

@@ -139,11 +139,13 @@ openings:
     type_1: "22-23 bal (2!C-2!D-2NT)"
     type_2: "Strong major, ~5 losers, 5+ suit, 3 top honours (2!C-2!D-2!H/2!S)"
     type_3:
-      name: "Strong Two-Suiter (18-21, 5-5+)"
+      name: "Strong Two-Suiter (~4 losers, 5-5+)"
       after_2C_2D:
-        3C: "Clubs + higher suit (3!D asks: 3!H=C+H, 3!S=C+S, 3NT=C+D)"
+        3C: "Clubs + any suit (3!D asks: 3!H=C+H, 3!S=C+S, 3NT=C+D)"
         3D: "Diamonds + a major (3!H asks: 3!S=D+S, 3NT=D+H)"
         3H: "Both majors (known — bid naturally)"
+        3S: "4!S + 6+ minor (3NT asks: 4!C=S+C, 4!D=S+D)"
+        3NT: "4!H + 6+ minor (4!C asks: 4!D=H+C, 4!H=H+D)"
     responses:
       2D: "Waiting (0-7)"
       2H: "Positive relay, balanced, no 5-card suit, 8+"
@@ -206,10 +208,11 @@ openings:
 
   preempts:
     3x: "7+ cards, ~5-10 HCP, 7-8 losers (fav: 8-9, unfav: 7), destructive"
-    3NT: "Gambling (AKQxxxx+ minor, no outside A/K)"
+    3NT: "CRASH Color — two same-color suits (♠♣ or ♥♦), 5-5+, ≤3 losers. 4♣ asks: 4♦=red, 4♥=black"
+    4C: "CRASH Rank — two same-rank suits (♠♥ or ♣♦), 5-5+, ≤3 losers. 4♦ asks: 4♥=majors, 4♠=minors"
+    4D: "CRASH Shape — two same-shape suits (♠♦ or ♥♣), 5-5+, ≤3 losers. 4♥ asks: 4♠=pointed, 4NT=rounded"
     4H_4S: "To play (distributional or preemptive)"
-    4C_4D: "Strong preempt (8+ minor)"
-    4NT: "Acol Specific Ace Ask (monster hand): 5C=none, 5D=♦A, 5H=♥A, 5S=♠A, 5NT=two, 6C=♣A"
+    4NT: "Acol Specific Ace Ask (monster hand): 5C=none, 5D=♦A, 5H=♥A, 5S=♠A, 5NT=♣A, 6C=two aces"
     5C_5D: "Extreme preempt or to play"
 
 # ── Defensive Bidding (when opponents open) ───────
