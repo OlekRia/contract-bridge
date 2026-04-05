@@ -408,6 +408,126 @@ This is the practical guide: partner opens a suit, what do you bid? Work through
 | 1♣ - 1♦ | Natural, 4+ diamonds, waiting |
 | 1♣ - 1♥/♠ | Always 5+ (DEC-6). 4-card major inv+ routes through 1NT forcing. |
 
+#### 2/1 Game Force — Responder Has 13+ HCP Without 4-Card Fit
+
+**Prerequisite:** 1st/2nd seat only. Forcing 1NT ON (DEC-6). Responder is unpassed.
+
+> A new suit at the 2-level after partner's 1-suit opening is GAME-FORCING. Neither player may pass below game. Both describe shape until the best game (3NT, 4M, or 5m) is found.
+
+##### Responder's Continuations
+
+After hearing opener's rebid, responder places the game or explores for slam. Since the auction is GF, there is no rush — bid naturally.
+
+| Action | Meaning | When |
+|---|---|---|
+| Raise opener's major to 3M | 3-card support, forcing (opener chooses 3NT or 4M) | You have 3 cards in opener's major |
+| Raise opener's major to 4M | 4+ support, game values (discovered fit) | Opener showed 6+ and you have 2+, or rebid showed 5 and you have 3+ |
+| Bid 3NT | Balanced, all stopped, no major fit found | No 8-card major fit, stoppers in all unbid suits |
+| Bid a new suit | Natural, 4+ cards, still exploring | Shape not yet fully described |
+| Rebid your suit | 6+ cards, good suit | Strong single-suited hand, still GF |
+| 4NT | Blackwood — slam interest | Fit found, control-checking for slam |
+
+##### After Opener Rebids 2NT or 3NT
+
+When opener rebids 2NT (12-14 balanced) or 3NT (15-17 balanced), responder places the contract. The GF is already established — no further bids are forcing except slam tries.
+
+| Action | Meaning |
+|---|---|
+| Pass 3NT | Game reached, no slam interest, no major fit |
+| Bid 4M (opener's major) | 3+ support for opener's known 5-card major. Opener showed 5M by opening 1M; balanced rebid confirms exactly 5. |
+| Bid 4M (responder's major) | 6+ card self-sufficient suit, plays better than NT |
+| Bid 4NT over 3NT | Quantitative slam invite (not Blackwood — no agreed suit). Opener passes with minimum, bids 6NT with maximum. |
+| Bid a new suit over 2NT | Natural, 5+ cards, still searching for the best game. Over 2NT there is room to explore. A new suit is forcing (GF still applies). Over 3NT, new suits at the 4-level are slam tries. |
+
+##### Fourth Suit in a GF Auction
+
+> In a 2/1 GF auction, the fourth suit is NATURAL (4+ cards), not conventional. Since the auction is already game-forcing, there is no need for an artificial fourth-suit-forcing bid — every bid is forcing below game anyway.
+
+Compare with non-GF auctions (e.g., after forcing 1NT) where fourth suit forcing IS artificial and asks opener to describe further. In 2/1, fourth suit simply shows a real suit.
+
+**Example:** 1♠ - 2♣; 2♦ - 2♥ = natural, 4+ hearts (not asking for a stopper)
+
+##### The Critical Case: 13+ HCP with Exactly 3-Card Major Support
+
+**Problem:** This is the hand type that historically causes missed games. With 4+ trumps → Jacoby 2NT. With 0-2 trumps → 2/1 and explore. But with exactly 3 trumps, responder must choose between raising directly (simple raise = only 6-9) and bidding 2/1 to show strength.
+
+**Solution:** Bid 2/1 first (new suit, GF), then show the 3-card support later by bidding 3M. This is forcing — opener chooses: 4M with 6+ trumps (8-card fit guaranteed), or 3NT with only 5 and stoppers. The 2/1 route ensures game is reached while still finding the major fit.
+
+**Partner opens 1♥. You hold: ♠:AQ4 ♥:K76 ♦:A432 ♣:932**
+
+- Wrong: 2♥ (only shows 6-9 with 3-card support — stops in partscore)
+- Right: 2♦ (2/1 GF, 5+ diamonds... but you only have 4 diamonds). Problem: 2♦ should show 5+. Better: bid 2♣ (may be only 4 clubs in a GF auction — acceptable when no 5-card suit is available). After opener rebids, raise to 3♥ to show delayed 3-card support. Opener with 6+ hearts bids 4♥; with 5 bids 3NT.
+
+**Partner opens 1♠. You hold: ♠:K73 ♥:AQ54 ♦:KJ3 ♣:642**
+
+- Wrong: 2♠ (only shows 6-9)
+- Right: 2♥ (2/1 GF, 5+ hearts... you have only 4. Acceptable? Yes — 2♥ after 1♠ promises 5+ in standard, but with this strength you MUST create a GF. Better: 2♣ with only 3 clubs? Ugly but acceptable in a GF auction). The key: after opener rebids, bid 3♠ to show delayed 3-card support.
+
+> With exactly 3-card support and 13-15 HCP, the 2/1 route is the ONLY way to reach game. A simple raise (2M) stops at partscore. This is the gap that H-22 closes.
+
+**Partner opens 1♥. You hold: ♠:K43 ♥:A76 ♦:QJ43 ♣:K32**
+
+- Right: 2♦ (4+ diamonds is acceptable here since you have a real 4-card suit). After opener rebids (say 2♥), bid 3♥ (delayed 3-card support, GF). Opener with AKxxx of hearts + your A76 → 4♥. With KQxxx + balanced → 3NT. Either way, game is reached.
+
+##### What is NOT 2/1 Game Force
+
+- **3rd/4th seat — forcing 1NT is OFF** — Responder is a passed hand. 2-level responses are natural but NOT game-forcing — they show 8-11 HCP (passed hand can't have 13+). Opener may pass.
+- **After interference (opponent bids/doubles)** — When opponents intervene, 1NT is no longer forcing — it reverts to natural. So a 2-level bid no longer implies 13+. Standard competitive bidding applies instead.
+- **1♣ - 1♦** — This is a 1-level response (4+ diamonds, any strength). Not 2/1.
+
+##### When Opponents Interfere During a 2/1 Auction
+
+Once a 2/1 GF is established (e.g., 1♥ - 2♦), the game force SURVIVES opponent interference. Neither partner may pass below game unless doubling for penalties.
+
+- **Pass is forcing:** After a 2/1 GF is established and an opponent bids, pass says 'I have nothing useful to say about their suit, but we are still game-forcing — you MUST bid.' This is NOT a sign-off. _1♥ - 2♣; (3♦) - Pass = forcing. Opener must act._
+- **Double is penalty-oriented:** In a GF auction, we don't need a takeout double — we're already committed to game. Double says 'I think we can beat them here.' Partner may pull with extreme shape.
+- **New suit is natural and forcing:** Still game-forcing, still describing shape.
+- **Cuebid of opponent's suit:** Strong hand, no clear direction — asks partner to describe further.
+- **3NT, 4M, 5m:** Natural — placing the contract despite interference.
+
+##### Slam Exploration After 2/1 GF
+
+Once a trump fit is agreed in a GF auction (e.g., 1♥ - 2♦; 3♦ or 1♠ - 2♣; 3♠), bids beyond 3NT are slam tries. The primary tool is control cuebids — bidding suits where you hold first-round control (Ace or void).
+
+1. **Agree a trump suit below game** — E.g., raise partner's suit: 1♥ - 2♣; 2♥ - 3♥ (agreed hearts). Or: 1♠ - 2♦; 3♦ (agreed diamonds).
+2. **Cuebid first-round controls up the line** — Bid the cheapest suit where you hold the Ace (or void). Bypass = denial. E.g., after hearts agreed at 3♥: 3♠ = ♠ control, denies ♦ control (bypassed). 4♣ = ♣ control.
+3. **4NT = Blackwood (RKCB)** — Once controls are confirmed, 4NT asks for keycards. Standard 1430 responses: 5♣ = 1/4, 5♦ = 0/3, 5♥ = 2 without queen, 5♠ = 2 with queen.
+4. **Sign off at game if controls are missing** — If partner bypasses your void suit (showing no control there), sign off at 4M or 5m. Don't explore slam with two fast losers.
+
+##### 5-of-a-Minor vs 3NT
+
+In a GF auction with a minor-suit fit, prefer 3NT unless there is a clear reason not to. 3NT requires 9 tricks; 5m requires 11. The bar for bypassing 3NT is high.
+
+| Choice | When |
+|---|---|
+| Bid 3NT (default) | Stoppers in all unbid suits, no singleton/void, 25-32 HCP combined |
+| Bid 5m instead | Unstoppable suit (no stopper in opponent's suit or a known side-suit weakness), OR extreme shape (6-5+, singleton), OR 33+ HCP (slam territory — consider 6m/6NT instead of stopping at 5m). |
+| Bid 6m or 6NT | 33+ HCP, or controls confirmed via cuebids + RKCB |
+
+> 'When in doubt, bid 3NT.' The scoring advantage of 3NT (9 tricks for game) vs 5m (11 tricks for game) means 3NT is right more often than it feels. Only bail to 5m with a clear stopper problem.
+
+##### Responder's Decision Tree: 13+ HCP After Partner Opens 1-Suit
+
+**Step 1:** 4+ cards in opener's major?
+
+- **Yes:** Jacoby 2NT (GF raise)
+- **No:** Continue
+
+**Step 2:** 5+ card suit to bid at the 2-level?
+
+- **Yes:** Bid it (2/1 GF). Later show 3-card major support if applicable.
+- **No:** Continue
+
+**Step 3:** 4+ clubs?
+
+- **Yes:** Bid 2♣ (2/1 GF). 4 clubs is acceptable in a GF auction.
+- **No:** Continue
+
+**Step 4:** Strong jump shift hand (16+ HCP, self-sufficient suit)?
+
+- **Yes:** Jump shift (e.g., 1♥ - 3♦ = 16+ GF, 5+ diamonds)
+- **No:** With 13-15 and no suit to bid, bid 2♣ as a 'catch-all' GF. This is the most flexible 2/1 bid — it creates the force while leaving maximum room to describe shape later.
+
 ---
 
 ### 2♣ — Semi-Strong (Benji)
