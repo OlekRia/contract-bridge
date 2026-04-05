@@ -133,6 +133,15 @@ openings:
       3m: "Inv raise, 5+ support, 10-12"
       jump_major: "Strong jump shift — 16+ GF, 5+ suit"
       jump_other_minor: "Inv, 5+ suit, 10-12"
+    two_over_one_gf:
+      trigger: "New suit at 2-level by unpassed hand (13+ HCP) = GF"
+      opener_rebids: "2M=6+, new suit=4+, 2NT=12-14 bal, raise=4+, 3M=6+ extras, 3NT=15-17 bal"
+      responder_after_nt: "Pass 3NT, 4M=3+ support, 4NT=quantitative, new suit over 2NT=forcing"
+      fourth_suit: "Natural (4+ cards) — GF already established, no artificial ask needed"
+      competitive: "GF survives interference. Pass=forcing, X=penalty, new suit=natural forcing"
+      slam: "Cuebid controls up the line (bypass=denial), then RKCB 4NT"
+      minor_fit: "Prefer 3NT unless unstopped suit, extreme shape, or 33+ HCP"
+      exceptions: "OFF in 3rd/4th seat (passed hand) and after interference on the opening bid"
 
   2C:
     name: Benji

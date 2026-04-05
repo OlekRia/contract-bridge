@@ -1002,6 +1002,42 @@ openings:
             meaning: "Blackwood — slam interest"
             when: "Fit found, control-checking for slam"
 
+        after_opener_nt:
+          title: "After Opener Rebids 2NT or 3NT"
+          principle: >
+            When opener rebids 2NT (12-14 balanced) or 3NT (15-17 balanced),
+            responder places the contract. The GF is already established — no
+            further bids are forcing except slam tries.
+          actions:
+            - action: "Pass 3NT"
+              meaning: "Game reached, no slam interest, no major fit"
+            - action: "Bid 4M (opener's major)"
+              meaning: "3+ support for opener's known 5-card major"
+              note: "Opener showed 5M by opening 1M; balanced rebid confirms exactly 5."
+            - action: "Bid 4M (responder's major)"
+              meaning: "6+ card self-sufficient suit, plays better than NT"
+            - action: "Bid 4NT over 3NT"
+              meaning: "Quantitative slam invite (not Blackwood — no agreed suit)"
+              note: "Opener passes with minimum, bids 6NT with maximum."
+            - action: "Bid a new suit over 2NT"
+              meaning: "Natural, 5+ cards, still searching for the best game"
+              note: >
+                Over 2NT there is room to explore. A new suit is forcing (GF
+                still applies). Over 3NT, new suits at the 4-level are slam tries.
+
+        fourth_suit_natural:
+          title: "Fourth Suit in a GF Auction"
+          rule: >
+            In a 2/1 GF auction, the fourth suit is NATURAL (4+ cards), not
+            conventional. Since the auction is already game-forcing, there is no
+            need for an artificial fourth-suit-forcing bid — every bid is forcing
+            below game anyway.
+          contrast: >
+            Compare with non-GF auctions (e.g., after forcing 1NT) where fourth
+            suit forcing IS artificial and asks opener to describe further. In
+            2/1, fourth suit simply shows a real suit.
+          example: "1!S - 2!C; 2!D - 2!H = natural, 4+ hearts (not asking for a stopper)"
+
       # ── The 3-Card Support Rule ────────────────────────────
       three_card_support:
         title: "The Critical Case: 13+ HCP with Exactly 3-Card Major Support"
@@ -1061,6 +1097,82 @@ openings:
               bidding applies instead.
           - exception: "1!C - 1!D"
             why: "This is a 1-level response (4+ diamonds, any strength). Not 2/1."
+
+      # ── Competitive Interference in 2/1 GF ─────────────────
+      competitive_interference:
+        title: "When Opponents Interfere During a 2/1 Auction"
+        principle: >
+          Once a 2/1 GF is established (e.g., 1!H - 2!D), the game force
+          SURVIVES opponent interference. Neither partner may pass below game
+          unless doubling for penalties.
+        rules:
+          - rule: "Pass is forcing"
+            meaning: >
+              After a 2/1 GF is established and an opponent bids, pass says
+              'I have nothing useful to say about their suit, but we are still
+              game-forcing — you MUST bid.' This is NOT a sign-off.
+            example: "1!H - 2!C; (3!D) - Pass = forcing. Opener must act."
+          - rule: "Double is penalty-oriented"
+            meaning: >
+              In a GF auction, we don't need a takeout double — we're already
+              committed to game. Double says 'I think we can beat them here.'
+              Partner may pull with extreme shape.
+          - rule: "New suit is natural and forcing"
+            meaning: "Still game-forcing, still describing shape."
+          - rule: "Cuebid of opponent's suit"
+            meaning: "Strong hand, no clear direction — asks partner to describe further."
+          - rule: "3NT, 4M, 5m"
+            meaning: "Natural — placing the contract despite interference."
+
+      # ── Cue-Bid Slam Exploration ────────────────────────────
+      cuebid_slam:
+        title: "Slam Exploration After 2/1 GF"
+        principle: >
+          Once a trump fit is agreed in a GF auction (e.g., 1!H - 2!D; 3!D or
+          1!S - 2!C; 3!S), bids beyond 3NT are slam tries. The primary tool is
+          control cuebids — bidding suits where you hold first-round control
+          (Ace or void).
+        method:
+          - step: "Agree a trump suit below game"
+            note: >
+              E.g., raise partner's suit: 1!H - 2!C; 2!H - 3!H (agreed hearts).
+              Or: 1!S - 2!D; 3!D (agreed diamonds).
+          - step: "Cuebid first-round controls up the line"
+            note: >
+              Bid the cheapest suit where you hold the Ace (or void). Bypass =
+              denial. E.g., after hearts agreed at 3!H: 3!S = !S control, denies
+              !D control (bypassed). 4!C = !C control.
+          - step: "4NT = Blackwood (RKCB)"
+            note: >
+              Once controls are confirmed, 4NT asks for keycards. Standard 1430
+              responses: 5!C = 1/4, 5!D = 0/3, 5!H = 2 without queen,
+              5!S = 2 with queen.
+          - step: "Sign off at game if controls are missing"
+            note: >
+              If partner bypasses your void suit (showing no control there),
+              sign off at 4M or 5m. Don't explore slam with two fast losers.
+
+      # ── 5m vs 3NT Decision ─────────────────────────────────
+      five_minor_vs_3nt:
+        title: "5-of-a-Minor vs 3NT"
+        principle: >
+          In a GF auction with a minor-suit fit, prefer 3NT unless there is a
+          clear reason not to. 3NT requires 9 tricks; 5m requires 11. The bar
+          for bypassing 3NT is high.
+        criteria:
+          - criterion: "Bid 3NT (default)"
+            when: "Stoppers in all unbid suits, no singleton/void, 25-32 HCP combined"
+          - criterion: "Bid 5m instead"
+            when: >
+              Unstoppable suit (no stopper in opponent's suit or a known side-suit
+              weakness), OR extreme shape (6-5+, singleton), OR 33+ HCP (slam
+              territory — consider 6m/6NT instead of stopping at 5m).
+          - criterion: "Bid 6m or 6NT"
+            when: "33+ HCP, or controls confirmed via cuebids + RKCB"
+        guideline: >
+          'When in doubt, bid 3NT.' The scoring advantage of 3NT (9 tricks for
+          game) vs 5m (11 tricks for game) means 3NT is right more often than
+          it feels. Only bail to 5m with a clear stopper problem.
 
       # ── Quick Decision Tree for 13+ HCP ────────────────────
       decision_tree:
