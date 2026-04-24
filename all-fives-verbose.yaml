@@ -444,21 +444,31 @@ openings:
         1NT is OFF — 3M stays as limit raise (traditional).
       first_second_seat:
         - bid: 2NT
-          meaning: "Jacoby — forcing raise, 4+ trumps, GF (13+ HCP)"
+          meaning: "LTC weak-suit ask — forcing raise, 4+ trumps, GF (13+ HCP)"
           note: >
-            Opener describes hand: shortness, strength, or side suit. Forces
-            to game — responder has committed. Only in 1st/2nd seat (unpassed hand).
+            Asks opener to show which side suit has 3 losers (xxx or Qxx — no
+            stopper). Responder then evaluates whether their honours fill the
+            gap. Only in 1st/2nd seat (unpassed hand). Based on Ron Klinger's
+            Modern Losing Trick Count.
           opener_continuations:
-            - bid: "3 new suit"
-              meaning: "Singleton or void in that suit"
+            - bid: 3C
+              meaning: "3 losers in clubs (xxx or Qxx)"
+            - bid: 3D
+              meaning: "3 losers in diamonds (xxx or Qxx)"
             - bid: 3M
-              meaning: "Minimum (12-14), no shortness"
-            - bid: 3NT
-              meaning: "15-17, no shortness, semi-balanced"
-            - bid: 4M
-              meaning: "Minimum, no shortness, nothing more to say"
-            - bid: "4 new suit"
-              meaning: "Good 5+ side suit, slam interest"
+              meaning: "No side suit with 3 losers — all suits covered"
+            - bid: "3 of other major"
+              meaning: "3 losers in that major (xxx or Qxx)"
+          responder_evaluation: >
+            After hearing opener's weak suit, responder checks their own
+            holding in that suit. AKx or AQx opposite xxx = honours working,
+            slam is likely. xxx opposite xxx = danger, nobody stops the suit.
+            Void or singleton opposite xxx = losers get ruffed in suit play.
+            If opener bids 3M (no weak suit), responder can count on a solid
+            hand and explore slam confidently.
+          two_weak_suits: >
+            If opener has two side suits with 3 losers, bid the cheaper one.
+            This is rare (6+ losers from two suits alone = near-minimum hand).
         - bid: "3 new suit"
           meaning: "Fit jump — good 5+ suit (2+ of top 4 honours) + 3+ support, inv (10-12)"
           note: >
@@ -466,14 +476,27 @@ openings:
             Example: 1!S - 3!D = 5+ !D (KQxxx type), 3+ !S, 10-12 HCP.
             Applies in any seat.
         - bid: 3M
-          meaning: "Preemptive raise — 4+ trumps, weak (5-8 HCP)"
+          meaning: "Slam try — 4+ trumps, GF, slam interest (13+ HCP)"
           note: >
-            Freed by forcing 1NT: invitational hands (10-12) route through 1NT
-            and raise on round 2. So 3M is purely preemptive. Takes bidding
-            space from opponents.
+            Establishes the trump fit and invites slam exploration. Opener
+            and responder continue with cue-bids (showing aces/kings/shortness
+            up the line). Unlike 2NT (which asks about losers), 3M says 'I want
+            to explore slam via controls.' Invitational hands (10-12) route
+            through forcing 1NT instead.
+          continuations: >
+            After 1M - 3M, both hands cue-bid controls up the line:
+            - Cheapest new suit = A or K (or shortness) in that suit
+            - Skipping a suit = denying control there
+            - 4M = sign-off (no more controls to show)
+            - 4NT = RKCB (when enough controls confirmed)
         - bid: 4M
-          meaning: "To play — distributional, 5+ support, not slam interest"
-          ltc: "6-7 losers"
+          meaning: "Game raise — to play, no slam interest"
+          note: >
+            Covers both strong balanced game raises and weak distributional
+            shutouts. No slam ambition. Opener passes UNLESS holding 3 extra
+            covers (aces, kings, or distributional features) above a minimum
+            opening, in which case opener may cue-bid to explore slam.
+          ltc: "Mixed — from 5-6 losers (sound) to 8+ losers (preemptive)"
       third_fourth_seat:
         - bid: 2NT
           meaning: "Natural invitation, balanced, 11-12 HCP"
@@ -868,7 +891,7 @@ openings:
     #
     # The three responses partition ALL hands:
     #   6-12 HCP           → 1NT (forcing)
-    #   13+ with 4+ trumps → Jacoby 2NT (over 1M)
+    #   13+ with 4+ trumps → 2NT LTC ask / 3M slam try / 4M game (over 1M)
     #   13+ without fit    → 2/1 new suit (game-forcing)
 
     two_over_one_game_force:
@@ -886,7 +909,7 @@ openings:
         This is not a convention — it's a logical consequence of our system.
 
       when_to_use:
-        - "13+ HCP and no 4-card support for opener's major (Jacoby 2NT = 4+ trumps)"
+        - "13+ HCP and no 4-card support for opener's major (2NT/3M/4M = 4+ trumps)"
         - "13+ HCP after 1m opening with a good suit to show"
         - "Any hand too strong for 1NT(f) and without a direct raise"
 
@@ -1043,9 +1066,10 @@ openings:
         title: "The Critical Case: 13+ HCP with Exactly 3-Card Major Support"
         problem: >
           This is the hand type that historically causes missed games. With 4+
-          trumps → Jacoby 2NT. With 0-2 trumps → 2/1 and explore. But with
-          exactly 3 trumps, responder must choose between raising directly
-          (simple raise = only 6-9) and bidding 2/1 to show strength.
+          trumps → 2NT (LTC ask), 3M (slam try), or 4M (game). With 0-2
+          trumps → 2/1 and explore. But with exactly 3 trumps, responder
+          must choose between raising directly (simple raise = only 6-9)
+          and bidding 2/1 to show strength.
         solution: >
           Bid 2/1 first (new suit, GF), then show the 3-card support later by
           bidding 3M. This is forcing — opener chooses: 4M with 6+ trumps
@@ -1179,7 +1203,7 @@ openings:
         title: "Responder's Decision Tree: 13+ HCP After Partner Opens 1-Suit"
         steps:
           - question: "4+ cards in opener's major?"
-            yes: "Jacoby 2NT (GF raise)"
+            yes: "2NT (LTC ask), 3M (slam try), or 4M (game raise)"
             no: "Continue"
           - question: "5+ card suit to bid at the 2-level?"
             yes: "Bid it (2/1 GF). Later show 3-card major support if applicable."
@@ -2257,7 +2281,7 @@ defensive_carding:
   # ══════════════════════════════════════════════════════════════
   # MASTER RULE: Low = Encourage / Positive / Like. EVERYWHERE.
   # This applies to attitude, Reverse Smith, and discards.
-  # The ONLY exception is count (high = even, low = odd — parity, not preference).
+  # The ONLY exception is parity count (even spot = even count, odd spot = odd count).
   # If you remember nothing else, remember: LOW = GOOD.
   # ══════════════════════════════════════════════════════════════
 
@@ -2277,7 +2301,8 @@ defensive_carding:
   #  Attitude         │ Encourage (like)  │ Discourage (switch)
   #  Obvious Shift    │ Continue led suit │ Shift to obvious suit
   #  Reverse Smith    │ Like led suit     │ Don't like led suit
-  #  Count            │ Odd number        │ Even number
+  #  Parity Count     │ Odd spot = odd #  │ Even spot = even #
+  #   (truth check)   │ Hi→Lo = true      │ Lo→Hi same = false
   #  TSP (trumps)     │ Lower side suit   │ Higher side suit
   #  Italian discard  │ (see parity rule) │ (see parity rule)
   # ──────────────────┴───────────────────┴──────────────────
@@ -2295,9 +2320,10 @@ defensive_carding:
       low: "Like the opening lead suit (continue)"
       high: "Don't like the opening lead suit (switch)"
       when: "vs NT only, trick 2+, following to declarer's suit"
-    - signal: "Count"
-      low: "Odd number of cards"
-      high: "Even number of cards"
+    - signal: "Parity Count"
+      even_spot: "Highest even card = even number of cards"
+      odd_spot: "Highest odd card = odd number of cards"
+      truth_check: "High→low same parity = TRUE, low→high same parity = FALSE"
       when: "When partner needs to know your length (Ace lead, hold-up, dummy threatens)"
     - signal: "Trump Suit Preference"
       low_high: "Low-high = prefer lower side suit"
@@ -2658,25 +2684,40 @@ defensive_carding:
         action: "Play ♦9 (HIGH = shift to hearts). You hold ♥AJ behind dummy's ♥K."
 
   count:
-    name: "Count (Even / Odd)"
-    info_content: "1.0 bit per card (2 messages)"
-    master_rule: "HIGH = EVEN number of cards. LOW = ODD number of cards."
+    name: "Parity Count (Even-Odd with Truth Check)"
+    info_content: "1.0 bit first card + 1.0 bit second card (truth confirmation)"
+    master_rule: >
+      FIRST CARD: highest even spot = even count, highest odd spot = odd count.
+      SECOND CARD: high→low (descending, same parity) = TRUE signal.
+      Low→high (ascending, same parity) = FALSE signal (deception).
     note: >
-      Count is the ONE signal where high/low means parity, NOT preference.
-      This is different from attitude. Don't confuse them.
-      Mnemonic: "From a DOUBLETON (even), play HIGH."
+      Count uses card PARITY (odd/even rank), not high/low preference.
+      The two-card sequence adds a built-in truth check: partner reads
+      the order to know if the count is honest or deceptive.
+      Declarer sees two cards of the same parity and assumes a count —
+      but only partner knows whether descending = true or ascending = false.
     when_to_use: >
       When partner needs your length: (1) partner leads the Ace, (2) dummy has
       a threatening long suit, (3) partner is doing a hold-up in NT.
-    signals:
-      - signal: "High card (8, 7, 6)"
+    first_card:
+      - signal: "Highest even spot card (8, 6, 4, 2, 10)"
         meaning: "Even number of cards (2 or 4)"
-      - signal: "Low card (2, 3, 4)"
+      - signal: "Highest odd spot card (9, 7, 5, 3)"
         meaning: "Odd number of cards (3 or 5)"
+    second_card_truth_check:
+      - sequence: "High→low, same parity (e.g. 8 then 4, or 7 then 3)"
+        meaning: "TRUE — the first card count was honest"
+      - sequence: "Low→high, same parity (e.g. 4 then 8, or 3 then 7)"
+        meaning: "FALSE — the first card count was deceptive (actual count is opposite)"
+    why_this_works: >
+      Declarer sees two even cards and thinks "even count" regardless of order.
+      But partner tracks the ORDER: descending = honest, ascending = lying.
+      This gives the defence a private channel for deception that declarer
+      cannot decode without knowing who played which card first.
     examples:
       - situation: "3NT. Declarer leads ♦Q. Dummy: ♦AKJ84 (no outside entry)"
         you_hold: "♦753"
-        action: "Play ♦3 (LOW = odd = 3 cards)"
+        action: "Play ♦3 (odd spot = odd count = 3 cards)"
         result: >
           Partner holds ♦96. Knows declarer has ♦Q10x (3 cards). Partner ducks
           the ♦Q and the ♦K. Wins the third round with ♦9. Dummy's remaining
@@ -2684,18 +2725,28 @@ defensive_carding:
 
       - situation: "4♠. Partner leads ♣A. Dummy: ♣J74"
         you_hold: "♣82"
-        action: "Play ♣8 (HIGH = even = doubleton)"
+        action: "Play ♣8 (even spot = even count = doubleton)"
         result: "Partner cashes ♣K, then leads low. You ruff the third round."
 
-      - situation: "4♥. Declarer draws trumps. You follow ♥3 then ♥7"
-        you_hold: "Started with ♥732"
-        action: "Low-high (♥3 then ♥7) = ODD = 3 trumps"
-        result: "Partner deduces declarer started with 4 trumps."
+      - situation: "4♥. Declarer draws trumps. You follow ♥8 then ♥4"
+        you_hold: "Started with ♥8432"
+        action: "♥8 then ♥4 (high→low, both even = TRUE even count = 4 trumps)"
+        result: "Partner deduces declarer started with 4 trumps (13 - dummy - yours - partner)."
+
+      - situation: "4♥. You want to DECEIVE declarer about your trump length"
+        you_hold: "Started with ♥753"
+        action: "♥3 then ♥7 (low→high, both odd = FALSE signal — looks like odd but actually even... wait, you DO have odd). Alternatively: ♥5 then ♥3 (high→low, both odd = TRUE odd count)"
+        note: >
+          Use false signals when declarer is reading your count to plan the play.
+          Partner reads the order and knows the truth. Declarer doesn't track order.
 
       - situation: "3NT. Partner leads ♠K. You hold ♠A8642"
         you_hold: "♠A8642"
-        action: "Play ♠8 (HIGH = even = 5 cards, even count because ♠A kept for later)"
-        result: "Partner knows you have 5+ spades. They duck to maintain communication, then continue when in."
+        action: "Play ♠8 (even spot = even count — showing even, which is true: 5 cards is odd... play ♠9? No, use highest EVEN for even signal)"
+        note: >
+          With 5 cards (odd), play highest ODD spot: e.g. ♠9 if available.
+          With ♠A8642, no odd spot above 2-level is available, so play ♠8
+          and partner reads context (♠A unplayed + known length from auction).
 
   smith_echo:
     name: "Reverse Smith Echo (vs NT only)"
@@ -2960,15 +3011,21 @@ defensive_carding:
 
     # ── Chain 3: Count ─────────────────────────────────────────
     reading_count:
-      name: "Reading Count"
+      name: "Reading Parity Count"
       decode:
-        high: "Partner has an EVEN number of cards (2 or 4)"
-        low: "Partner has an ODD number of cards (3 or 5)"
+        even_spot: "Partner has an EVEN number of cards (2 or 4)"
+        odd_spot: "Partner has an ODD number of cards (3 or 5)"
+      truth_check: >
+        When partner plays a SECOND card in the same suit, read the order:
+        HIGH→LOW (descending, same parity) = count was TRUE.
+        LOW→HIGH (ascending, same parity) = count was FALSE (deception).
+        Declarer cannot distinguish — only you know the play order.
       deduce:
         method: >
           The power of count is ARITHMETIC. You see dummy's length, you know your
           length, partner tells you their length → declarer's length = 13 minus
           (dummy + yours + partner's). This tells you WHEN to win and when to duck.
+          With the truth check, you also know if partner is deceiving declarer.
         formula: "Declarer's length = 13 − (dummy's length + your length + partner's signalled length)"
         key_deductions:
           - if: "Declarer has 2 cards in the suit"
@@ -2986,21 +3043,33 @@ defensive_carding:
           when: "Declarer is short (singleton or doubleton) — ducking gifts a cheap trick"
         - action: "CASH from your end"
           when: "You know declarer is out — your remaining cards are all winners"
+        - action: "Trust the truth check on the second card"
+          when: "Partner played two cards of same parity — read direction (descending = true)"
       examples:
         - situation: "3NT. Declarer leads ♦K toward dummy's ♦AQJ84 (no side entry). You hold ♦1096. Partner plays ♦3."
-          decode: "LOW = odd = 3 diamonds (partner has ♦xxx)"
+          decode: "Odd spot = odd count = 3 diamonds (partner has ♦xxx)"
           deduce: "Dummy 5 + yours 3 + partner 3 = 11. Declarer has 2 diamonds. Duck twice, win the third."
           act: "Duck ♦K. Duck the next diamond. Win the third round. Dummy's ♦J84 are stranded — no entry."
 
-        - situation: "3NT. Declarer leads ♦K toward dummy's ♦AQJ84 (no side entry). You hold ♦1096. Partner plays ♦7."
-          decode: "HIGH = even = 2 diamonds (partner has ♦xx)"
+        - situation: "3NT. Declarer leads ♦K toward dummy's ♦AQJ84 (no side entry). You hold ♦1096. Partner plays ♦8."
+          decode: "Even spot = even count = 2 diamonds (partner has ♦8x)"
           deduce: "Dummy 5 + yours 3 + partner 2 = 10. Declarer has 3 diamonds. Duck only once, win the second."
-          act: "Duck ♦K. Win the next diamond. Declarer still has one diamond, so dummy's ♦J84 are accessible — but you've limited them to 3 diamond tricks instead of 5."
+          act: "Duck ♦K. Win the next diamond. Declarer still has one diamond — but you've limited them to 3 diamond tricks instead of 5."
 
         - situation: "4♠. You lead ♣A. Dummy: ♣J74. Partner plays ♣8."
-          decode: "HIGH = even = doubleton (♣8x)"
+          decode: "Even spot = even count = doubleton (♣8x)"
           deduce: "Partner has 2 clubs. Cash ♣K, then lead a third club — partner ruffs."
           act: "Cash ♣K, then lead ♣ low for partner's ruff."
+
+        - situation: "4♥. Declarer draws trumps. Partner follows ♥8 then ♥4."
+          decode: "8→4 = high→low, both even = TRUE even count"
+          deduce: "Partner has 4 hearts (even, confirmed true). Declarer started with 13 - dummy - yours - 4."
+          act: "Plan defence knowing declarer's exact trump length."
+
+        - situation: "4♥. Declarer draws trumps. Partner follows ♥4 then ♥8."
+          decode: "4→8 = low→high, both even = FALSE signal — partner actually has ODD hearts"
+          deduce: "Partner is deceiving declarer (showing even to confuse). Real count is odd (3 or 5). You know the truth."
+          act: "Use the true (odd) count for your defensive calculations."
 
     # ── Chain 4: Reverse Smith Echo ────────────────────────────
     reading_smith:
@@ -3725,8 +3794,8 @@ dummy_analysis:
         defence_approach: "Dummy is weak (6-9). Look at dummy shape — singleton = lead trumps. Flat = passive, make declarer find tricks."
 
       - pattern: "1M — 3M — 4M"
-        declarer_profile: "Minimum opener (12-14) accepting limit raise"
-        defence_approach: "Dummy is stronger (10-12, 4+ trumps). More entries, better suit. Need to be more active — dummy can help."
+        declarer_profile: "Slam try declined — opener signing off at game (1st/2nd seat: 3M = slam try; 3rd/4th seat: 3M = limit raise accepted)"
+        defence_approach: "Both hands are strong (GF in 1st/2nd, inv in 3rd/4th). Dummy has 4+ trumps. Active defence needed — dummy can help declarer."
 
       - pattern: "1m — 1M — 1NT — 3NT"
         declarer_profile: "12-14 balanced, 3-4 in responder's major, 4+ in opened minor"
