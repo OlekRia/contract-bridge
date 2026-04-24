@@ -3426,37 +3426,62 @@ defensive_carding:
 
       # ─ Short Holdings ───────────────────────────
       from_short_holdings:
+        parity_principle: >
+          Opening leads from spot cards integrate with the parity count system:
+          the PARITY (odd/even) of the led card itself signals your count.
+          Even card led = even number of cards. Odd card led = odd number.
+          This is consistent with follow-up parity count signals.
         table:
-          - holding: "x x"
+          - holding: "x x (doubleton, even)"
             lead: "Higher card"
-            note: "Top of doubleton. Partner will see you play the lower next — knows it's a doubleton."
-          - holding: "x x x"
+            parity_note: "Lead the higher card — prefer even-ranked if choice exists (e.g. from 86, lead 8 = even spot confirms even count)"
+            note: "Partner sees high card then low card next round = doubleton confirmed."
+          - holding: "x x x (3 cards, odd)"
             lead: "Lowest (3rd highest)"
+            parity_note: "Lead the lowest — prefer odd-ranked if choice exists (e.g. from 975, lead 5 = odd spot confirms odd count)"
             note: "NOT MUD. Low from three immediately tells partner this isn't a doubleton."
-          - holding: "x x x x (no honour)"
+          - holding: "x x x x (4 cards, even, no honour)"
             lead: "2nd highest, then lowest"
-            note: "From 8643, lead the 6 then the 3. Partner sees the count."
+            parity_note: "Lead an even-ranked card if available (e.g. from 8643, lead 6 = even spot confirms even count, then 3 next)"
+            note: "From 8643, lead the 6 then the 3. Partner sees the count via parity + sequence."
           - holding: "Singleton"
             lead: "The card (only option)"
             note: "Vs suits only. Sets up a ruff if you can regain the lead."
+        parity_examples:
+          - holding: "8 6 (doubleton)"
+            lead: "8 (even spot = even count = doubleton)"
+            confirm: "Next play: 6 (high→low, both even = TRUE even)"
+          - holding: "7 5 (doubleton)"
+            lead: "7 (odd — wrong parity for even count, but only option)"
+            note: "Partner infers doubleton from high card + context. Parity imperfect here."
+          - holding: "9 7 3 (3 cards)"
+            lead: "3 (odd spot = odd count = 3 cards)"
+          - holding: "8 5 3 (3 cards)"
+            lead: "3 (odd spot = odd count)"
+            note: "Even though 8 is available, lead 3rd highest per standard rule — happens to be odd."
+          - holding: "9 6 4 2 (4 cards)"
+            lead: "4 (even spot = even count = 4 cards)"
+            confirm: "Partner sees even lead from length = 4 cards."
 
       # ─ Ace Leads and Count Request ──────────────
       ace_king_agreement:
-        rule: "K from AK. A asks partner for COUNT."
+        rule: "K from AK. A asks partner for PARITY COUNT."
         detail: >
           When partner leads the ACE (not from AKQ), they are asking you for COUNT —
-          not attitude. Give count: high-low = even number, low = odd number.
+          not attitude. Give parity count: highest even spot = even, highest odd spot = odd.
+          Second card same parity: high→low = TRUE, low→high = FALSE.
           This helps leader decide whether to cash the King or switch.
         examples:
           - scenario: "Partner leads ♥A vs 4♠. You hold ♥863."
-            signal: "♥3 (low = odd count)"
+            signal: "♥3 (odd spot = odd count = 3 hearts)"
             result: "Partner knows you have 3 hearts. If dummy has 2, declarer has 4 — don't cash King."
           - scenario: "Partner leads ♥A vs 4♠. You hold ♥82."
-            signal: "♥8 (high-low = even count)"
+            signal: "♥8 (even spot = even count = doubleton)"
             result: "Partner knows you have 2 hearts. Cash King, then give you a ruff on the third round."
+            confirm: "Next round you play ♥2 (high→low, both even = TRUE even count)."
           - scenario: "Partner leads ♥K vs 4♠. You hold ♥Q73."
             signal: "♥Q (unblock!)"
-            result: "Drop the Queen under the King. Partner continues with Ace, you play low to show 3."
+            result: "Drop the Queen under the King. Partner continues with Ace, you play ♥3 (odd) to show 3."
 
     # ── When NOT to Lead Your Suit ─────────────────
 
