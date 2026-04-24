@@ -5235,3 +5235,100 @@ losing_trick_count:
       - situation: "Penalty doubles"
         prefer: "HCP + defensive tricks"
         reason: "You need quick tricks, not playing tricks"
+
+# ══════════════════════════════════════════════════════════════
+# APPENDIX: Convention Summary
+# ══════════════════════════════════════════════════════════════
+
+convention_summary:
+  title: "All Fives — Complete Convention List"
+
+  bidding_conventions:
+    notrump_system:
+      - name: "Split Stayman (2C)"
+        purpose: "4-card major ask over 1NT (includes Crawling for weak 4-4)"
+      - name: "5-Card Major Ask (2D)"
+        purpose: "Finds 5-card major in opener's hand"
+      - name: "Smolen"
+        purpose: "Right-sides 5-3 major fits after Stayman denial"
+      - name: "Helvic Wriggle"
+        purpose: "Escape from 1NTX"
+      - name: "Puppet Stayman"
+        purpose: "Over 2NT openings"
+
+    opening_structure:
+      - name: "Benji 2C"
+        purpose: "Semi-strong: balanced 22-23, strong major, or strong two-suiter"
+      - name: "Strong 2D"
+        purpose: "Game-forcing, 24+ HCP or 4- losers"
+      - name: "Weak Twos (2H/2S)"
+        purpose: "5-10 HCP, 6-card major"
+      - name: "Ogust (2NT over weak two)"
+        purpose: "Enquiry: min/max x bad/good suit"
+      - name: "Forcing 1NT"
+        purpose: "Over 1M opening (1st/2nd seat), routes 6-12 HCP"
+      - name: "2/1 Game Force"
+        purpose: "New suit at 2-level = 13+ GF"
+
+    major_raise_structure:
+      - name: "2NT LTC Weak-Suit Ask"
+        purpose: "GF raise 4+ trumps, asks where opener has 3 losers"
+        seat: "1st/2nd seat"
+      - name: "3M Slam Try"
+        purpose: "GF raise 4+ trumps, cue-bidding follows"
+        seat: "1st/2nd seat"
+      - name: "4M Game Raise"
+        purpose: "To play, no slam (unless opener has 3 extra covers)"
+        seat: "Any"
+      - name: "Fit Jumps (3 new suit)"
+        purpose: "Good 5+ suit + 3+ support, invitational (10-12)"
+        seat: "Any"
+
+    competitive_defensive:
+      - name: "UCM (Untouched-Color-MinorMajor)"
+        purpose: "Two-suited overcalls vs artificial/strong openings"
+      - name: "UCM vs 1NT"
+        purpose: "Differentiated by NT strength (penalty X vs weak NT)"
+      - name: "Michaels Cuebid"
+        purpose: "Two-suited overcall of opponent's natural suit opening"
+      - name: "Unusual 2NT"
+        purpose: "Two lowest unbid suits (5-5+)"
+      - name: "RAPTOR 1NT"
+        purpose: "4M + 5+m overcall of natural 1-level opening"
+      - name: "Lebensohl"
+        purpose: "After partner doubles a weak two"
+      - name: "Fighters"
+        purpose: "Defense to Multi 2D"
+      - name: "Lead-Directing Doubles"
+        purpose: "Lightner slam double, lead-directing at other levels"
+
+    slam_tools:
+      - name: "RKCB 4NT"
+        purpose: "Roman Keycard Blackwood"
+      - name: "Cue-bids"
+        purpose: "Control-showing after 1M-3M slam try"
+
+  defensive_carding:
+    signals:
+      - name: "Attitude"
+        method: "Low = encourage, high = discourage"
+      - name: "Obvious Shift (Granovetter)"
+        method: "Trick 1: high = shift to obvious suit"
+      - name: "Parity Count"
+        method: "Even spot = even count, odd spot = odd count; high-low = true, low-high = false"
+      - name: "Reverse Smith Echo"
+        method: "vs NT: low in declarer's suit = like opening lead"
+      - name: "Trump Suit Preference"
+        method: "High-low = higher side suit"
+      - name: "Italian Discards"
+        method: "Odd = want suit; even low = lower suit; even high = higher suit"
+
+    leads:
+      - name: "3rd/5th"
+        method: "3rd highest from 3-4 cards, 5th from 5+"
+      - name: "Jack Exception"
+        method: "4th highest when suit contains the Jack"
+      - name: "K from AK"
+        method: "King lead from AK; Ace asks for parity count"
+      - name: "Parity in leads"
+        method: "Led card parity signals count (even spot = even cards)"
