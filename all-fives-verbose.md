@@ -2124,3 +2124,83 @@ NLTC refines the standard count by weighting losers: an ace loser (missing the a
 
 ---
 
+## Convention Summary
+
+**All Fives — Complete Convention List**
+
+### Bidding Conventions
+
+#### Notrump System
+
+| Convention | Purpose |
+|---|---|
+| Split Stayman (2C) | 4-card major ask over 1NT (includes Crawling for weak 4-4) |
+| 5-Card Major Ask (2D) | Finds 5-card major in opener's hand |
+| Smolen | Right-sides 5-3 major fits after Stayman denial |
+| Helvic Wriggle | Escape from 1NTX |
+| Puppet Stayman | Over 2NT openings |
+
+#### Opening Structure
+
+| Convention | Purpose |
+|---|---|
+| Benji 2C | Semi-strong: balanced 22-23, strong major, or strong two-suiter |
+| Strong 2D | Game-forcing, 24+ HCP or 4- losers |
+| Weak Twos (2H/2S) | 5-10 HCP, 6-card major |
+| Ogust (2NT over weak two) | Enquiry: min/max x bad/good suit |
+| Forcing 1NT | Over 1M opening (1st/2nd seat), routes 6-12 HCP |
+| 2/1 Game Force | New suit at 2-level = 13+ GF |
+
+#### Major Raise Structure
+
+| Convention | Purpose |
+|---|---|
+| 2NT LTC Weak-Suit Ask | GF raise 4+ trumps, asks where opener has 3 losers |
+| 3M Slam Try | GF raise 4+ trumps, cue-bidding follows |
+| 4M Game Raise | To play, no slam (unless opener has 3 extra covers) |
+| Fit Jumps (3 new suit) | Good 5+ suit + 3+ support, invitational (10-12) |
+
+#### Competitive Defensive
+
+| Convention | Purpose |
+|---|---|
+| UCM (Untouched-Color-MinorMajor) | Two-suited overcalls vs artificial/strong openings |
+| UCM vs 1NT | Differentiated by NT strength (penalty X vs weak NT) |
+| Michaels Cuebid | Two-suited overcall of opponent's natural suit opening |
+| Unusual 2NT | Two lowest unbid suits (5-5+) |
+| RAPTOR 1NT | 4M + 5+m overcall of natural 1-level opening |
+| Lebensohl | After partner doubles a weak two |
+| Fighters | Defense to Multi 2D |
+| Lead-Directing Doubles | Lightner slam double, lead-directing at other levels |
+
+#### Slam Tools
+
+| Convention | Purpose |
+|---|---|
+| RKCB 4NT | Roman Keycard Blackwood |
+| Cue-bids | Control-showing after 1M-3M slam try |
+
+### Defensive Carding
+
+#### Signals
+
+| Convention | Purpose |
+|---|---|
+| Attitude | Low = encourage, high = discourage |
+| Obvious Shift (Granovetter) | Trick 1: high = shift to obvious suit |
+| Parity Count | Even spot = even count, odd spot = odd count; high-low = true, low-high = false |
+| Reverse Smith Echo | vs NT: low in declarer's suit = like opening lead |
+| Trump Suit Preference | High-low = higher side suit |
+| Italian Discards | Odd = want suit; even low = lower suit; even high = higher suit |
+
+#### Leads
+
+| Convention | Purpose |
+|---|---|
+| 3rd/5th | 3rd highest from 3-4 cards, 5th from 5+ |
+| Jack Exception | 4th highest when suit contains the Jack |
+| K from AK | King lead from AK; Ace asks for parity count |
+| Parity in leads | Led card parity signals count (even spot = even cards) |
+
+---
+

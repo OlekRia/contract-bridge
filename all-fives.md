@@ -502,3 +502,49 @@ Classify dummy's suits → reconstruct declarer from bidding → choose defence 
 - `1M-3M-4M`: Dummy 10-12, 4+ trumps. More entries. Be active.
 - `Weak two-4M`: Shape but no tricks. Cash fast.
 
+
+---
+
+## Convention Summary
+
+### Bidding
+
+- Split Stayman (2C) — 4-card major ask over 1NT
+- 5-Card Major Ask (2D) — finds 5M in opener
+- Smolen — right-sides 5-3 major fits
+- Helvic Wriggle — escape from 1NTX
+- Puppet Stayman — over 2NT
+- Benji 2C — balanced 22-23 / strong major / strong two-suiter
+- Strong 2D — GF, 24+ HCP or 4- losers
+- Weak Twos (2H/2S) — 5-10 HCP, 6-card major
+- Ogust — 2NT enquiry over weak two
+- Forcing 1NT — over 1M (1st/2nd seat)
+- 2/1 Game Force — new suit at 2-level = 13+ GF
+- 2NT LTC Weak-Suit Ask — GF raise, asks 3-loser suit
+- 3M Slam Try — GF raise + cue-bids
+- 4M Game Raise — to play (unless 3 extra covers)
+- Fit Jumps — good suit + support, inv
+- UCM — vs artificial/strong openings
+- UCM vs 1NT — differentiated by strength
+- Michaels Cuebid — two-suited vs natural opening
+- Unusual 2NT — two lowest unbid (5-5+)
+- RAPTOR 1NT — 4M + 5+m overcall
+- Lebensohl — after X of weak two
+- Fighters — defense to Multi 2D
+- Lead-Directing Doubles — Lightner + lead direction
+- RKCB 4NT — Roman Keycard Blackwood
+- Cue-bids — after 1M-3M slam try
+
+### Carding
+
+- Attitude — low = encourage, high = discourage
+- Obvious Shift — trick 1: high = shift to obvious suit
+- Parity Count — even spot = even, odd spot = odd; truth check by order
+- Reverse Smith Echo — vs NT: low = like lead suit
+- Trump Suit Preference — high-low = higher side suit
+- Italian Discards — odd = want; even low = lower; even high = higher
+- 3rd/5th leads — 3rd from 3-4, 5th from 5+
+- Jack Exception — 4th highest with J in suit
+- K from AK — Ace asks for parity count
+- Parity in leads — led card parity signals count
+
