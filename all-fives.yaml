@@ -119,10 +119,10 @@ openings:
     jump_responses_over_1M:
       seat_note: "1st/2nd seat (forcing 1NT ON) vs 3rd/4th (OFF) changes 2NT and 3M meaning."
       first_second:
-        2NT: "Jacoby — GF raise, 4+ trumps (opener: 3x=short, 3M=min, 3NT=15-17, 4M=min flat)"
+        2NT: "LTC weak-suit ask — GF raise, 4+ trumps (opener: 3C/3D/3oM=3 losers in that suit, 3M=no weak suit)"
         3_new_suit: "Fit jump — good 5+ suit + 3+ support, inv 10-12"
-        3M: "Preemptive raise — 4+ trumps, weak 5-8"
-        4M: "To play, distributional, not slam"
+        3M: "Slam try — 4+ trumps, GF, continue with cue-bids"
+        4M: "Game raise, no slam interest (opener may try with 3 extra covers)"
       third_fourth:
         2NT: "Natural inv 11-12"
         3_new_suit: "Fit jump (same as 1st/2nd)"
@@ -436,9 +436,10 @@ carding:
       ≤1 honor, excluding trump/led/declarer's suits; vs NT = shortest). Encourage =
       continue (no shift tolerance). Discourage = wants the obvious shift. FREE signal.
 
-  count:
-    high: even
-    low: odd
+  parity_count:
+    even_spot: "even count (highest even card)"
+    odd_spot: "odd count (highest odd card)"
+    truth_check: "high→low same parity = TRUE, low→high same parity = FALSE"
 
   smith_echo:
     name: "Reverse Smith Echo"

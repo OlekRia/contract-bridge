@@ -1,6 +1,9 @@
-# Count Signal — Hold-Up Timing Against a Running Suit
+# Parity Count Signal — Hold-Up Timing Against a Running Suit
 
 ## The Rule
+
+Highest EVEN spot = EVEN count. Highest ODD spot = ODD count.
+Second card same parity: high→low = TRUE, low→high = FALSE.
 
 When dummy has a threatening long suit and partner holds a stopper,
 give COUNT so partner knows WHEN to win. Duck too long = the suit
@@ -61,20 +64,30 @@ Dummy's only possible entry is ♣J. If partner uses up declarer's
 
 ## The Count Signal
 
-**Trick 2**: Declarer leads ♦2. Dummy plays ♦A. Partner plays ♦5.
+**Trick 2**: Declarer leads ♦2. Dummy plays ♦A. Partner plays ♦5
+(highest odd spot = odd count = 3 diamonds).
 
-You hold ♦104. You play ♦4 (LOW = odd count).
+You hold ♦104. Play highest even spot.
 
-Wait — ♦4 from ♦104 is low = odd. But you have 2 diamonds (even).
-Let's reconsider: with ♦104, play ♦10 (HIGH = even = 2 diamonds).
+**Your play: ♦10** (even spot = even count = doubleton).
 
-**Your play: ♦10** (high = even count = doubleton).
+Partner now knows: you have 2 diamonds (even), dummy has 6, declarer
+has (13 − 6 − 2 − 3) = 2 diamonds. Declarer has a doubleton!
 
-Partner now knows: you have 2 diamonds, dummy has 6, declarer has
-(13 − 6 − 2 − 3) = 2 diamonds. Declarer has a doubleton!
+**Trick 3**: Declarer leads ♦6. Dummy plays ♦K. Partner plays ♦9
+(high→low: ♦5 then... wait, ♦9 is odd like ♦5 — and 9 > 5, so
+this is low→high same parity. FALSE signal?).
 
-**Trick 3**: Declarer leads ♦6. Dummy plays ♦K. Partner plays ♦9.
-You show out (confirming doubleton — you discard ♠3).
+No — partner played ♦5 first, then ♦9. That's low→high, both odd
+= FALSE. But partner has 3 diamonds (odd) and wants to tell the
+truth. So partner plays ♦9 then ♦5 — high→low — wait, partner
+can't choose the order freely; they play as dummy calls the suit.
+
+**Clarification**: In follow-suit situations, partner plays what
+they can. The truth check mainly applies when partner has free
+choice over two tricks. Here, partner's ♦5 at trick 2 (odd = odd
+count) is the primary signal. The ♦9 at trick 3 is just following
+suit. You show out (confirming your doubleton — you discard ♠3).
 
 **Trick 4**: Dummy leads ♦Q. Partner wins ♦J!
 
@@ -88,10 +101,16 @@ Partner returns ♥7. Your ♥AK106 cash. Down 2.
 
 ## What If You Had 3 Diamonds?
 
-If you held ♦1064 (3 cards), you'd play ♦4 (LOW = odd = 3 diamonds).
-Partner calculates: you have 3, dummy has 6, partner has 3, so
-declarer has 1. Partner should duck ONCE and win round 2 —
-declarer's singleton is exhausted after one play.
+If you held ♦1064 (3 cards), you'd play ♦ highest odd spot. But
+your odd cards are... none visible. ♦10 is even, ♦6 is even, ♦4
+is even. All your diamonds are even-ranked!
+
+Play ♦4 (lowest even — an even card from an odd holding is itself
+a signal: you couldn't find an odd card, so partner infers from
+context). Or use the truth check: ♦4 then ♦10 (low→high, both
+even = FALSE even → actually odd). Partner calculates: you have 3
+diamonds, dummy has 6, partner has 3, declarer has 1. Duck ONCE,
+win round 2.
 
 ---
 
@@ -102,7 +121,7 @@ Partner's hold-up formula against a dummy suit:
 - Duck exactly (declarer's count − 1) rounds
 - Win on the round that exhausts declarer's last diamond
 
-Your count signal makes this calculation possible.
+Your parity count signal makes this calculation possible.
 
 ---
 
@@ -110,5 +129,7 @@ Your count signal makes this calculation possible.
 
 Against a threatening long suit in dummy, count is far more valuable
 than attitude. Partner already knows they need to hold up — what
-they don't know is HOW LONG to duck. Your count signal tells them
-declarer's length, which determines the exact hold-up timing.
+they don't know is HOW LONG to duck. Your parity count signal tells
+them declarer's length, which determines the exact hold-up timing.
+The even/odd spot card gives the initial read; the truth check on
+the second card confirms or denies when partner has free choice.

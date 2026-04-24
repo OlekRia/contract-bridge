@@ -1,4 +1,4 @@
-# Count to Time Your Ace — When to Win, When to Duck
+# Parity Count to Time Your Ace — When to Win, When to Duck
 
 ## The Concept
 
@@ -6,7 +6,7 @@ Declarer leads a long suit to establish it. You hold the Ace — the
 only stopper. Duck too early, and declarer re-enters to cash winners.
 Win too late, and the suit runs before you can act.
 
-Partner's count signal tells you how many rounds to duck.
+Partner's parity count signal tells you how many rounds to duck.
 
 ---
 
@@ -53,23 +53,43 @@ diamonds are exhausted, dummy's remaining diamonds are stranded
 If declarer has only 2 diamonds, you should duck ONCE and win on
 the second round.
 
-**How do you know?** Partner's count signal.
+**How do you know?** Partner's parity count signal.
 
-Dummy plays ♦K. Partner plays ♦3 (LOW = odd count = 1 or 3 diamonds).
+Dummy plays ♦K. Partner holds ♦73 — 2 diamonds (even). Play
+highest even spot.
 
-Partner has 2 diamonds (♦73 — playing ♦3 as the low card). Wait —
-♦3 low means odd. If partner has 2 diamonds, that's even, not odd.
-Partner has ♦73 — that's 2 diamonds (even). Partner should play ♦7
-(high = even).
+**Partner plays ♦ ... wait, ♦7 is odd, ♦3 is odd.** Both of
+partner's diamonds are odd-ranked! With no even spot card available,
+partner plays ♦7 (highest card — context tells you it's from a
+short holding, likely doubleton).
 
-**Let me reconsider.** Partner plays ♦7 (HIGH = even = 2 diamonds).
+**You read: ♦7 is odd spot = odd count signal.** But is it true?
+Context helps: dummy has 5, you have 3. If partner has 3 (odd),
+declarer has 2. If partner has 2, declarer has 3. You need to
+consider which is more consistent with the auction and play.
+
+Declarer opened 1♣ (clubs) and responded 1NT — likely balanced
+without long diamonds. Partner's ♦7 from a doubleton is signalling
+with the only card available. The auction + ♦7 (high card from
+short holding) suggests doubleton.
 
 You calculate: dummy 5 + you 3 + partner 2 = 10. Declarer has 3
 diamonds.
 
 **You duck.** ♦K wins.
 
-**Trick 3**: Dummy leads ♦Q. Partner plays ♦3 (last diamond).
+**Trick 3**: Dummy leads ♦Q. Partner plays ♦3 (last diamond —
+♦7 then ♦3 = high→low, both odd = TRUE odd count).
+
+But wait — partner has 2 diamonds (even), yet signalled odd. The
+truth check reveals: ♦7→♦3 is high→low same parity = TRUE. So
+the odd signal was "true odd." But partner actually has EVEN (2).
+
+**This is the limitation**: when all your cards have the wrong
+parity for your actual count, you signal what you can and partner
+uses context (auction, hand pattern) to resolve the ambiguity.
+Here, partner's show-out on round 3 would confirm the doubleton.
+
 **You duck again.** ♦Q wins.
 
 **Trick 4**: Dummy leads ♦J. **NOW you win ♦A.**
@@ -112,14 +132,30 @@ Duck exactly (declarer's count − 1) = 3 − 1 = 2 rounds
 Win on round 3
 ```
 
-Without partner's ♦7 (even count), you're guessing. With it, the
-defence is mechanical.
+Partner's parity signal plus auction context makes this calculation
+possible.
+
+---
+
+## Parity Limitation: Wrong-Parity Holdings
+
+When ALL your cards share the wrong parity for your actual count
+(e.g., ♦73 = both odd, but you have 2 = even), you signal with
+what you have. Partner resolves ambiguity via:
+1. **Context** — auction, dummy, hand patterns
+2. **Truth check** — if a second card is played, the direction
+   (high→low vs low→high) confirms or denies
+3. **Show-out** — failing to follow suit is the ultimate count signal
+
+This is rare (most holdings have mixed parity), but when it happens,
+bridge judgement fills the gap.
 
 ---
 
 ## Key Takeaway
 
-The Ace is not just a trick — it's a TIMER. Partner's count signal
-starts the clock. Calculate declarer's length, duck the right number
-of rounds, and strand the suit. The ♦7 at trick 2 made the entire
-defence possible.
+The Ace is not just a trick — it's a TIMER. Partner's parity count
+signal starts the clock. Calculate declarer's length, duck the right
+number of rounds, and strand the suit. Even when the parity signal
+is imperfect, combining it with auction inference gives you the
+answer.
