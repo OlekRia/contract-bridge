@@ -50,7 +50,7 @@ known_problems:
       or a convenient minor (12-14), the opening suit may be only 4.
   - id: 4
     problem: >
-      New defensive bidding package (CRASH, Michaels, Lebensohl) is adopted but
+      New defensive bidding package (UCM, Michaels, Lebensohl) is adopted but
       untested at the table. See H-7 for the effectiveness tracking plan.
 
 # ──────────────────────────────────────────────
@@ -1617,7 +1617,7 @@ competitive:
         favorable: "7 losers"
         equal: "6 losers"
         unfavorable: "5 losers"
-      - action: "CRASH / CRASH vs 1NT"
+      - action: "UCM / UCM vs 1NT"
         favorable: "9 losers, 5-4+ shape"
         equal: "8 losers, 5-4+ shape"
         unfavorable: "7 losers, 5-5+ shape"
@@ -1692,19 +1692,19 @@ competitive:
         - bid: 2NT
           meaning: "Invitational+, asks overcaller's shape"
 
-  # ── CRASH over artificial/strong openings ────
-  crash:
-    name: "CRASH Convention"
+  # ── UCM over artificial/strong openings ────
+  ucm:
+    name: "UCM Convention (Untouched-Color-MinorMajor)"
     trigger: "Opponents open artificial/strong bid or short/garbage suit (strong 1!C, 2!C, 2!D, short !C 2+, garbage 1!D). NOT against Multi 2!D — use natural bidding instead."
     principle: >
       When opponents open an artificial/strong bid that does not promise a specific
-      suit, all four suits are 'unbid'. CRASH provides three two-suited bids organized
-      by suit-pairing property: Color, Rank, Shape. The same applies to garbage/short
-      openings where the bid does not promise length in the suit.
+      suit, all four suits are 'unbid'. UCM provides three two-suited bids organized
+      by suit-pairing property: Untouched, Color, MinorMajor. The same applies to
+      garbage/short openings where the bid does not promise length in the suit.
     definitions:
+      Untouched: "Two non-adjacent suits (!S+!D pointed, or !H+!C rounded)"
       Color: "Two same-color suits (!H+!D reds, or !S+!C blacks)"
-      Rank: "Two same-rank suits (!H+!S majors, or !C+!D minors)"
-      Shape: "Two same-shape suits (!S+!D pointed, or !H+!C rounded)"
+      MinorMajor: "Two same-rank suits (!H+!S majors, or !C+!D minors)"
     requirements:
       - "5-4+ shape (5-5+ required at unfavorable vulnerability)"
       - "LTC: 8 losers at equal, 9 at favorable, 7 at unfavorable"
@@ -1716,72 +1716,72 @@ competitive:
         - bid: X
           meaning: "Color (reds or blacks)"
         - bid: 2!D
-          meaning: "Rank (majors or minors)"
+          meaning: "MinorMajor (majors or minors)"
         - bid: 2!H
           meaning: "Natural, 5+ hearts"
         - bid: 2!S
           meaning: "Natural, 5+ spades"
         - bid: 2NT
-          meaning: "Shape (pointed or rounded)"
+          meaning: "Untouched (pointed or rounded)"
     vs_strong_1C:
       trigger: "(1!C) - ?"
       bids:
         - bid: X
           meaning: "Color (reds or blacks)"
         - bid: 1!D
-          meaning: "Rank (majors or minors)"
+          meaning: "MinorMajor (majors or minors)"
         - bid: 1!H
           meaning: "Natural, 5+ hearts"
         - bid: 1!S
           meaning: "Natural, 5+ spades"
         - bid: 1NT
-          meaning: "Shape (pointed or rounded)"
+          meaning: "Untouched (pointed or rounded)"
     vs_strong_2D:
       trigger: "(2!D) - ? [strong or garbage 2!D only — NOT Multi 2!D]"
       note: >
-        CRASH is excluded against Multi 2!D (weak two in either major). Simulation
+        UCM is excluded against Multi 2!D (weak two in either major). Simulation
         evidence: 40,000 deals show 46.9% MP and 0.8:1 gain/loss ratio — the only
-        negative-expectation CRASH scenario. Multi is a preemptive opening; the opener
-        is weak (5-10 HCP) with a known 6-card major, reducing CRASH's disruption value.
+        negative-expectation UCM scenario. Multi is a preemptive opening; the opener
+        is weak (5-10 HCP) with a known 6-card major, reducing UCM's disruption value.
         Use natural bidding (double/overcall) until a dedicated defense is developed.
       bids:
         - bid: X
           meaning: "Color (reds or blacks)"
         - bid: 2!H
-          meaning: "Rank (majors or minors)"
+          meaning: "MinorMajor (majors or minors)"
         - bid: 2!S
           meaning: "Natural, 5+ spades"
         - bid: 2NT
-          meaning: "Shape (pointed or rounded)"
+          meaning: "Untouched (pointed or rounded)"
     vs_garbage_1D:
       trigger: "(1!D) - ? [garbage/short !D, does not promise length]"
       bids:
         - bid: X
           meaning: "Color (reds or blacks)"
         - bid: 1!H
-          meaning: "Rank (majors or minors)"
+          meaning: "MinorMajor (majors or minors)"
         - bid: 1!S
           meaning: "Natural, 5+ spades"
         - bid: 1NT
-          meaning: "Shape (pointed or rounded)"
+          meaning: "Untouched (pointed or rounded)"
     advancer_actions:
-      title: "Advancer (partner of CRASH bidder)"
+      title: "Advancer (partner of UCM bidder)"
       principle: >
         Advancer uses pass/correct to find the right suit. Bid your better suit
         in the shorter possible pair. If you hold equal preference, bid the cheaper suit.
       examples:
         - scenario: "Partner bids Color (reds or blacks), you hold !H:Kxxx !D:xx !S:Jxx !C:xxxx"
           action: "Bid hearts (your better red suit). If partner has blacks, he corrects to !S."
-        - scenario: "Partner bids Rank (majors or minors), you hold !H:xx !S:Qxxx !C:Kxxxx !D:x"
+        - scenario: "Partner bids MinorMajor (majors or minors), you hold !H:xx !S:Qxxx !C:Kxxxx !D:x"
           action: "Bid !S (your better major). If partner has minors, he corrects to his minor."
 
   # ── Defense to opponents' 1NT ────────────────
   defense_vs_1nt:
-    name: "CRASH Defense to 1NT (differentiated by strength)"
+    name: "UCM Defense to 1NT (differentiated by strength)"
     principle: >
-      Unified CRASH framework extends to 1NT defense. Against weak NT, a penalty
+      Unified UCM framework extends to 1NT defense. Against weak NT, a penalty
       double is too valuable to sacrifice (opponents are minimum, conversion is
-      frequent). Against strong NT, disruption via CRASH is more productive than
+      frequent). Against strong NT, disruption via UCM is more productive than
       penalty. After a penalty double, if opponents run, revert to natural bidding.
 
     vs_strong_nt:
@@ -1791,15 +1791,15 @@ competitive:
         - bid: X
           meaning: "Color (reds or blacks)"
         - bid: 2!C
-          meaning: "Rank (majors or minors)"
+          meaning: "MinorMajor (majors or minors)"
         - bid: 2!D
-          meaning: "Shape (pointed or rounded)"
+          meaning: "Untouched (pointed or rounded)"
         - bid: 2!H
           meaning: "Natural, 5+ hearts"
         - bid: 2!S
           meaning: "Natural, 5+ spades"
       note: >
-        Pure CRASH. No penalty double — against 15-17, we are unlikely to have
+        Pure UCM. No penalty double — against 15-17, we are unlikely to have
         a big penalty. Disruption and lead direction are more valuable.
 
     vs_weak_nt:
@@ -1811,21 +1811,21 @@ competitive:
         - bid: 2!C
           meaning: "Color (reds or blacks)"
         - bid: 2!D
-          meaning: "Rank (majors or minors)"
+          meaning: "MinorMajor (majors or minors)"
         - bid: 2!H
           meaning: "Natural, 5+ hearts"
         - bid: 2!S
           meaning: "Natural, 5+ spades"
         - bid: 2NT
-          meaning: "Shape (pointed or rounded)"
+          meaning: "Untouched (pointed or rounded)"
       note: >
-        CRASH shifts one step up to make room for penalty double. Shape moves to
-        2NT. Against 12-14, the penalty double is high-frequency and lucrative —
+        UCM shifts one step up to make room for penalty double. Untouched moves
+        to 2NT. Against 12-14, the penalty double is high-frequency and lucrative —
         opponents are minimum and unlikely to make 1NT doubled.
 
     after_penalty_double:
       trigger: "(1NT) - X - Run by opponents"
-      principle: "Natural bidding resumes. No CRASH, no special meanings."
+      principle: "Natural bidding resumes. No UCM, no special meanings."
 
     requirements:
       - "5-4+ shape (5-5+ at unfavorable)"
@@ -1945,13 +1945,13 @@ competitive:
     name: "Defense to Multi 2!D (Fighters style)"
     trigger: "(2!D) - ? [Multi 2!D — weak two in either major, 5-10 HCP, 6-card major]"
     principle: >
-      Multi 2!D is PREEMPTIVE, not artificial/strong. CRASH is explicitly excluded
+      Multi 2!D is PREEMPTIVE, not artificial/strong. UCM is explicitly excluded
       (simulation: 46.9% MP, 0.8:1 gain/loss across 40,000 deals). The key problem
       is ambiguity — which major do they have? The Fighters defense acts minimally
       in direct seat, then uses pass-then-act to compete once the suit is revealed.
     exclusion_note: >
-      CRASH was falsified against Multi 2!D by DD simulation. The opener is weak
-      (5-10 HCP) with a known 6-card major, so CRASH's suit-pairing disruption adds
+      UCM was falsified against Multi 2!D by DD simulation. The opener is weak
+      (5-10 HCP) with a known 6-card major, so UCM's suit-pairing disruption adds
       no value. Our side typically holds 20-25 HCP — the goal is to reach the right
       contract, not to disrupt. See contract-bridge/simulation/crash.md.
     direct_seat:

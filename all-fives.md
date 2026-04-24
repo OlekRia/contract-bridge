@@ -232,65 +232,15 @@ Avoid: Void or strong 4-card side suit
 | 2♥/2♠ | Natural 5+ |
 | 2NT | Invitational+ |
 
-### CRASH over artificial/strong openings
-
-**Trigger:** Opponents open artificial/strong or short/garbage (strong 1♣, 2♣, 2♦, short ♣ 2+, garbage 1♦). NOT Multi 2♦.
-
-| Property | Shows |
-|---|---|
-| Color | Two same-color suits (♥+♦ reds or ♠+♣ blacks) |
-| Rank | Two same-rank suits (♥+♠ majors or ♣+♦ minors) |
-| Shape | Two same-shape suits (♠+♦ pointed or ♥+♣ rounded) |
-
-#### vs Strong 2♣
-
-| Bid | Meaning |
-|---|---|
-| X | Color |
-| 2♦ | Rank |
-| 2♥/2♠ | Natural 5+ |
-| 2NT | Shape |
-
-#### vs Strong 1♣
-
-| Bid | Meaning |
-|---|---|
-| X | Color |
-| 1♦ | Rank |
-| 1♥/1♠ | Natural 5+ |
-| 1NT | Shape |
-
-#### Vs strong/garbage 2♦ (NOT Multi)
-
-| Bid | Meaning |
-|---|---|
-| X | Color |
-| 2♥ | Rank |
-| 2♠ | Natural 5+ |
-| 2NT | Shape |
-
-#### Vs garbage/short 1♦
-
-| Bid | Meaning |
-|---|---|
-| X | Color |
-| 1♥ | Rank |
-| 1♠ | Natural 5+ |
-| 1NT | Shape |
-
-**Requirements:** 5-4+ shape (5-5+ unfav), LTC: 8 equal / 9 fav / 7 unfav
-
-**Advancer:** Pass/correct — bid better suit in the shorter possible pair
-
-### CRASH defense to 1NT (differentiated by strength)
+### UCM defense to 1NT (differentiated by strength)
 
 #### Vs strong NT (15-17)
 
 | Bid | Meaning |
 |---|---|
 | X | Color |
-| 2♣ | Rank |
-| 2♦ | Shape |
+| 2♣ | MinorMajor |
+| 2♦ | Untouched |
 | 2♥/2♠ | Natural 5+ |
 
 #### Vs weak NT (12-14)
@@ -299,9 +249,9 @@ Avoid: Void or strong 4-card side suit
 |---|---|
 | X | Penalty (15+) |
 | 2♣ | Color |
-| 2♦ | Rank |
+| 2♦ | MinorMajor |
 | 2♥/2♠ | Natural 5+ |
-| 2NT | Shape |
+| 2NT | Untouched |
 
 **After penalty X:** If opponents run: revert to natural bidding
 
@@ -327,7 +277,7 @@ Avoid: Void or strong 4-card side suit
 
 ### Defense to Multi 2♦ (Fighters style)
 
-**Trigger:** Opponent opens Multi 2♦ (weak two in either major). CRASH excluded.
+**Trigger:** Opponent opens Multi 2♦ (weak two in either major). UCM excluded.
 
 | Bid | Meaning |
 |---|---|
@@ -474,13 +424,6 @@ X of any artificial bid = lead that suit
 
 **Obvious Shift (trick 1):** Trick 1: attitude refers to the obvious shift suit (dummy's shortest side suit, ≤1 honor, excluding trump/led/declarer's suits; vs NT = shortest). Encourage = continue (no shift tolerance). Discourage = wants the obvious shift. FREE signal.
 
-### Count
-
-| Signal | Meaning |
-|---|---|
-| High | even |
-| Low | odd |
-
 ### Smith Echo (vs NT)
 
 **When:** vs NT only, trick 2+, following to declarer's suit
@@ -522,9 +465,9 @@ Never signal with potential tricks. Cheapest FREE card (SFS-aware).
 | Length | 3rd or 5th highest |
 | Sequences | Top of sequence (AKx→K, KQx→K, QJx→Q, JTx→J, T9x→T) |
 | AK | K lead from AK; A asks for count |
-| xx | Higher |
-| xxx | Lowest (3rd highest) |
-| xxxx | Highest safe, then low |
+| xx | Higher (prefer even-ranked card for even parity signal) |
+| xxx | Lowest (3rd highest; prefer odd-ranked for odd parity signal) |
+| xxxx | 2nd highest then low (prefer even-ranked for even parity signal) |
 | With J | Lead 4th highest (KJ732→3) |
 
 **Vs suits:** Prefer sequences; avoid unsupported honours

@@ -21,7 +21,7 @@
 | 1 | 3rd/4th seat 1NT is 15-17 HCP (not 12-14), because a weak NT blocks us without a chance at game. 12-14 balanced hands open their 4-card suit directly (1♣ = 4+, 1♦/1♥/1♠ as available). RESOLVED (AMD-8 + DEC-6): prepared 1♣ eliminated. All 3rd/4th seat suit openings are real (4+). Forcing 1NT is OFF in 3rd/4th seat (responder is a passed hand). 1NT = natural, non-forcing. |
 | 2 | The 4441 distribution. Every system struggles with this. |
 | 3 | 1♥ and 1♠ usually promise 5, but may show only 4: (A) 15+ balanced with 4333 or 4-4 majors (any seat), (B) 12-14 balanced in 3rd/4th seat (can't open 1NT). Partner must be aware: after opener rebids 2NT (15-17) or a convenient minor (12-14), the opening suit may be only 4. |
-| 4 | New defensive bidding package (CRASH, Michaels, Lebensohl) is adopted but untested at the table. See H-7 for the effectiveness tracking plan. |
+| 4 | New defensive bidding package (UCM, Michaels, Lebensohl) is adopted but untested at the table. See H-7 for the effectiveness tracking plan. |
 
 ---
 
@@ -449,7 +449,7 @@ Compare with non-GF auctions (e.g., after forcing 1NT) where fourth suit forcing
 
 ##### The Critical Case: 13+ HCP with Exactly 3-Card Major Support
 
-**Problem:** This is the hand type that historically causes missed games. With 4+ trumps → Jacoby 2NT. With 0-2 trumps → 2/1 and explore. But with exactly 3 trumps, responder must choose between raising directly (simple raise = only 6-9) and bidding 2/1 to show strength.
+**Problem:** This is the hand type that historically causes missed games. With 4+ trumps → 2NT (LTC ask), 3M (slam try), or 4M (game). With 0-2 trumps → 2/1 and explore. But with exactly 3 trumps, responder must choose between raising directly (simple raise = only 6-9) and bidding 2/1 to show strength.
 
 **Solution:** Bid 2/1 first (new suit, GF), then show the 3-card support later by bidding 3M. This is forcing — opener chooses: 4M with 6+ trumps (8-card fit guaranteed), or 3NT with only 5 and stoppers. The 2/1 route ensures game is reached while still finding the major fit.
 
@@ -510,7 +510,7 @@ In a GF auction with a minor-suit fit, prefer 3NT unless there is a clear reason
 
 **Step 1:** 4+ cards in opener's major?
 
-- **Yes:** Jacoby 2NT (GF raise)
+- **Yes:** 2NT (LTC ask), 3M (slam try), or 4M (game raise)
 - **No:** Continue
 
 **Step 2:** 5+ card suit to bid at the 2-level?
@@ -727,7 +727,7 @@ All defensive bidding actions are governed by Losing Trick Count (LTC) adjusted 
 | Simple overcall | 9 losers | 8 losers | 7 losers |
 | Jump overcall (weak) | 10 losers | 9 losers | 8 losers |
 | Takeout double | 7 losers | 6 losers | 5 losers |
-| CRASH / CRASH vs 1NT | 9 losers, 5-4+ shape | 8 losers, 5-4+ shape | 7 losers, 5-5+ shape |
+| UCM / UCM vs 1NT | 9 losers, 5-4+ shape | 8 losers, 5-4+ shape | 7 losers, 5-5+ shape |
 | Michaels / Unusual 2NT | 9 losers (weak side) | 8 losers (weak side) | 7 losers or 16+ HCP (strong side only) |
 | RAPTOR 1NT overcall | 9 losers | 8 losers | 7 losers |
 | Natural overcall at 2-level | 8 losers | 7 losers | 6 losers |
@@ -772,73 +772,9 @@ Shows: 5+ in other minor + 4 in an unknown major.
 | 2♥ / 2♠ | Natural, 5+ cards |
 | 2NT | Invitational+, asks overcaller's shape |
 
-### CRASH Convention
+### UCM Defense to 1NT (differentiated by strength)
 
-**Trigger:** Opponents open artificial/strong bid or short/garbage suit (strong 1♣, 2♣, 2♦, short ♣ 2+, garbage 1♦). NOT against Multi 2♦ — use natural bidding instead.
-
-When opponents open an artificial/strong bid that does not promise a specific suit, all four suits are 'unbid'. CRASH provides three two-suited bids organized by suit-pairing property: Color, Rank, Shape. The same applies to garbage/short openings where the bid does not promise length in the suit.
-
-| Property | Shows |
-|---|---|
-| Color | Two same-color suits (♥+♦ reds, or ♠+♣ blacks) |
-| Rank | Two same-rank suits (♥+♠ majors, or ♣+♦ minors) |
-| Shape | Two same-shape suits (♠+♦ pointed, or ♥+♣ rounded) |
-
-- 5-4+ shape (5-5+ required at unfavorable vulnerability)
-- LTC: 8 losers at equal, 9 at favorable, 7 at unfavorable
-- At unfavorable: only act with 5-5+ shape and 7 or fewer losers
-- At favorable: 5-4 shape with 9 losers is acceptable — disruption value is high
-
-#### vs Strong 2♣: (2♣) - ?
-
-| Bid | Meaning |
-|---|---|
-| X | Color (reds or blacks) |
-| 2♦ | Rank (majors or minors) |
-| 2♥ | Natural, 5+ hearts |
-| 2♠ | Natural, 5+ spades |
-| 2NT | Shape (pointed or rounded) |
-
-#### vs Strong 1♣: (1♣) - ?
-
-| Bid | Meaning |
-|---|---|
-| X | Color (reds or blacks) |
-| 1♦ | Rank (majors or minors) |
-| 1♥ | Natural, 5+ hearts |
-| 1♠ | Natural, 5+ spades |
-| 1NT | Shape (pointed or rounded) |
-
-#### vs Strong / Garbage 2♦: (2♦) - ? [strong or garbage 2♦ only — NOT Multi 2♦]
-
-| Bid | Meaning |
-|---|---|
-| X | Color (reds or blacks) |
-| 2♥ | Rank (majors or minors) |
-| 2♠ | Natural, 5+ spades |
-| 2NT | Shape (pointed or rounded) |
-
-#### vs Garbage / Short 1♦: (1♦) - ? [garbage/short ♦, does not promise length]
-
-| Bid | Meaning |
-|---|---|
-| X | Color (reds or blacks) |
-| 1♥ | Rank (majors or minors) |
-| 1♠ | Natural, 5+ spades |
-| 1NT | Shape (pointed or rounded) |
-
-#### Advancer (partner of CRASH bidder)
-
-Advancer uses pass/correct to find the right suit. Bid your better suit in the shorter possible pair. If you hold equal preference, bid the cheaper suit.
-
-- **Partner bids Color (reds or blacks), you hold ♥:Kxxx ♦:xx ♠:Jxx ♣:xxxx**
-  → Bid hearts (your better red suit). If partner has blacks, he corrects to ♠.
-- **Partner bids Rank (majors or minors), you hold ♥:xx ♠:Qxxx ♣:Kxxxx ♦:x**
-  → Bid ♠ (your better major). If partner has minors, he corrects to his minor.
-
-### CRASH Defense to 1NT (differentiated by strength)
-
-Unified CRASH framework extends to 1NT defense. Against weak NT, a penalty double is too valuable to sacrifice (opponents are minimum, conversion is frequent). Against strong NT, disruption via CRASH is more productive than penalty. After a penalty double, if opponents run, revert to natural bidding.
+Unified UCM framework extends to 1NT defense. Against weak NT, a penalty double is too valuable to sacrifice (opponents are minimum, conversion is frequent). Against strong NT, disruption via UCM is more productive than penalty. After a penalty double, if opponents run, revert to natural bidding.
 
 #### Vs Strong NT (15-17)
 
@@ -847,12 +783,12 @@ Unified CRASH framework extends to 1NT defense. Against weak NT, a penalty doubl
 | Bid | Meaning |
 |---|---|
 | X | Color (reds or blacks) |
-| 2♣ | Rank (majors or minors) |
-| 2♦ | Shape (pointed or rounded) |
+| 2♣ | MinorMajor (majors or minors) |
+| 2♦ | Untouched (pointed or rounded) |
 | 2♥ | Natural, 5+ hearts |
 | 2♠ | Natural, 5+ spades |
 
-> Pure CRASH. No penalty double — against 15-17, we are unlikely to have a big penalty. Disruption and lead direction are more valuable.
+> Pure UCM. No penalty double — against 15-17, we are unlikely to have a big penalty. Disruption and lead direction are more valuable.
 
 #### Vs Weak NT (12-14)
 
@@ -862,14 +798,14 @@ Unified CRASH framework extends to 1NT defense. Against weak NT, a penalty doubl
 |---|---|
 | X | Penalty (15+ HCP) |
 | 2♣ | Color (reds or blacks) |
-| 2♦ | Rank (majors or minors) |
+| 2♦ | MinorMajor (majors or minors) |
 | 2♥ | Natural, 5+ hearts |
 | 2♠ | Natural, 5+ spades |
-| 2NT | Shape (pointed or rounded) |
+| 2NT | Untouched (pointed or rounded) |
 
-> CRASH shifts one step up to make room for penalty double. Shape moves to 2NT. Against 12-14, the penalty double is high-frequency and lucrative — opponents are minimum and unlikely to make 1NT doubled.
+> UCM shifts one step up to make room for penalty double. Untouched moves to 2NT. Against 12-14, the penalty double is high-frequency and lucrative — opponents are minimum and unlikely to make 1NT doubled.
 
-**After penalty double:** Natural bidding resumes. No CRASH, no special meanings.
+**After penalty double:** Natural bidding resumes. No UCM, no special meanings.
 
 ---
 
@@ -938,9 +874,9 @@ Without Lebensohl, advancer cannot distinguish weak (0-7), invitational (8-11), 
 
 **Trigger:** (2♦) - ? [Multi 2♦ — weak two in either major, 5-10 HCP, 6-card major]
 
-Multi 2♦ is PREEMPTIVE, not artificial/strong. CRASH is explicitly excluded (simulation: 46.9% MP, 0.8:1 gain/loss across 40,000 deals). The key problem is ambiguity — which major do they have? The Fighters defense acts minimally in direct seat, then uses pass-then-act to compete once the suit is revealed.
+Multi 2♦ is PREEMPTIVE, not artificial/strong. UCM is explicitly excluded (simulation: 46.9% MP, 0.8:1 gain/loss across 40,000 deals). The key problem is ambiguity — which major do they have? The Fighters defense acts minimally in direct seat, then uses pass-then-act to compete once the suit is revealed.
 
-> **CRASH excluded:** CRASH was falsified against Multi 2♦ by DD simulation. The opener is weak (5-10 HCP) with a known 6-card major, so CRASH's suit-pairing disruption adds no value. Our side typically holds 20-25 HCP — the goal is to reach the right contract, not to disrupt. See contract-bridge/simulation/crash.md.
+> **CRASH excluded:** UCM was falsified against Multi 2♦ by DD simulation. The opener is weak (5-10 HCP) with a known 6-card major, so UCM's suit-pairing disruption adds no value. Our side typically holds 20-25 HCP — the goal is to reach the right contract, not to disrupt. See contract-bridge/simulation/crash.md.
 
 #### Direct Seat Actions (immediately over 2♦)
 
@@ -1212,12 +1148,7 @@ After dummy appears, choose signal type using three axes. This is mechanical, no
 | **Low card (2, 3, 4)** | Encouraging — I have values here, continue this suit |
 | **High card (7, 8, 9)** | Discouraging — I have nothing here, please switch |
 
-### 2. Count (Even / Odd) (Even / Odd)
-
-| Signal | Meaning |
-|---|---|
-| **High card (8, 7, 6)** | Even number of cards (2 or 4) |
-| **Low card (2, 3, 4)** | Odd number of cards (3 or 5) |
+### 2. Parity Count (Even-Odd with Truth Check) (Even / Odd)
 
 ### Reverse Smith Echo (vs NT only)
 

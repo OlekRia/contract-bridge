@@ -248,54 +248,54 @@ competitive:
       2H_2S: "Natural 5+"
       2NT: "Invitational+"
 
-  CRASH:
-    name: "CRASH over artificial/strong openings"
+  UCM:
+    name: "UCM over artificial/strong openings (Untouched-Color-MinorMajor)"
     trigger: "Opponents open artificial/strong or short/garbage (strong 1!C, 2!C, 2!D, short !C 2+, garbage 1!D). NOT Multi 2!D."
-    principle: "Color-Rank-Shape: three bids showing two-suited hands by suit pairing"
+    principle: "Untouched-Color-MinorMajor: three bids showing two-suited hands by suit pairing"
     definitions:
+      Untouched: "Two non-adjacent suits (!S+!D pointed or !H+!C rounded)"
       Color: "Two same-color suits (!H+!D reds or !S+!C blacks)"
-      Rank: "Two same-rank suits (!H+!S majors or !C+!D minors)"
-      Shape: "Two same-shape suits (!S+!D pointed or !H+!C rounded)"
+      MinorMajor: "Two same-rank suits (!H+!S majors or !C+!D minors)"
     vs_strong_2C:
       X: "Color"
-      2D: "Rank"
+      2D: "MinorMajor"
       2H_2S: "Natural 5+"
-      2NT: "Shape"
+      2NT: "Untouched"
     vs_strong_1C:
       X: "Color"
-      1D: "Rank"
+      1D: "MinorMajor"
       1H_1S: "Natural 5+"
-      1NT: "Shape"
+      1NT: "Untouched"
     vs_strong_2D:
       label: "Vs strong/garbage 2!D (NOT Multi)"
       X: "Color"
-      2H: "Rank"
+      2H: "MinorMajor"
       2S: "Natural 5+"
-      2NT: "Shape"
+      2NT: "Untouched"
     vs_garbage_1D:
       label: "Vs garbage/short 1!D"
       X: "Color"
-      1H: "Rank"
+      1H: "MinorMajor"
       1S: "Natural 5+"
-      1NT: "Shape"
+      1NT: "Untouched"
     requirements: "5-4+ shape (5-5+ unfav), LTC: 8 equal / 9 fav / 7 unfav"
     advancer: "Pass/correct — bid better suit in the shorter possible pair"
 
   defense_vs_1NT:
-    name: "CRASH defense to 1NT (differentiated by strength)"
+    name: "UCM defense to 1NT (differentiated by strength)"
     vs_strong_NT:
       label: "Vs strong NT (15-17)"
       X: "Color"
-      2C: "Rank"
-      2D: "Shape"
+      2C: "MinorMajor"
+      2D: "Untouched"
       2H_2S: "Natural 5+"
     vs_weak_NT:
       label: "Vs weak NT (12-14)"
       X: "Penalty (15+)"
       2C: "Color"
-      2D: "Rank"
+      2D: "MinorMajor"
       2H_2S: "Natural 5+"
-      2NT: "Shape"
+      2NT: "Untouched"
     after_penalty_X: "If opponents run: revert to natural bidding"
     requirements: "5-4+ shape, LTC: 8 equal / 9 fav / 7 unfav. Penalty X: 15+ HCP"
 
@@ -323,7 +323,7 @@ competitive:
 
   defense_vs_multi_2D:
     name: "Defense to Multi 2!D (Fighters style)"
-    trigger: "Opponent opens Multi 2!D (weak two in either major). CRASH excluded."
+    trigger: "Opponent opens Multi 2!D (weak two in either major). UCM excluded."
     direct_seat:
       X: "12-15 balanced OR any 19+"
       2H_2S: "Natural, 5+ suit, 10+ HCP"
