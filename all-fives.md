@@ -532,7 +532,7 @@ Classify dummy's suits → reconstruct declarer from bidding → choose defence 
 - Lebensohl — after X of weak two
 - Fighters — defense to Multi 2D
 - Lead-Directing Doubles — Lightner + lead direction
-- RKCB 4NT — Roman Keycard Blackwood
+- RKCB 4NT — Roman Keycard Blackwood 30-41-22
 - Cue-bids — after 1M-3M slam try
 
 ### Carding

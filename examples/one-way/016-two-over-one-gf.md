@@ -289,7 +289,7 @@ raise to 3M later (forcing -- opener chooses 4M or 3NT).
   bypassing). Now all side suits are controlled (♧ by you, ♢ by opener,
   ♡ by your AK). Ask for keycards.
 
-  Opener: 5D (1430: 0 or 3 keycards). With AK of spades + A of diamonds
+  Opener: 5C (30-41-22: 3 or 0 keycards). With AK of spades + A of diamonds
   = 3 keycards. You have Q of trumps + A of hearts = 2 keycards. Total:
   5 keycards + trump queen = 6S.
 

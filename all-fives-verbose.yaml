@@ -1168,8 +1168,8 @@ openings:
               !D control (bypassed). 4!C = !C control.
           - step: "4NT = Blackwood (RKCB)"
             note: >
-              Once controls are confirmed, 4NT asks for keycards. Standard 1430
-              responses: 5!C = 1/4, 5!D = 0/3, 5!H = 2 without queen,
+              Once controls are confirmed, 4NT asks for keycards. 30-41-22
+              responses: 5!C = 3/0, 5!D = 4/1, 5!H = 2 without queen,
               5!S = 2 with queen.
           - step: "Sign off at game if controls are missing"
             note: >
@@ -5304,7 +5304,7 @@ convention_summary:
 
     slam_tools:
       - name: "RKCB 4NT"
-        purpose: "Roman Keycard Blackwood"
+        purpose: "Roman Keycard Blackwood 30-41-22"
       - name: "Cue-bids"
         purpose: "Control-showing after 1M-3M slam try"
 

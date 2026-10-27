@@ -491,7 +491,7 @@ Once a trump fit is agreed in a GF auction (e.g., 1♥ - 2♦; 3♦ or 1♠ - 2�
 
 1. **Agree a trump suit below game** — E.g., raise partner's suit: 1♥ - 2♣; 2♥ - 3♥ (agreed hearts). Or: 1♠ - 2♦; 3♦ (agreed diamonds).
 2. **Cuebid first-round controls up the line** — Bid the cheapest suit where you hold the Ace (or void). Bypass = denial. E.g., after hearts agreed at 3♥: 3♠ = ♠ control, denies ♦ control (bypassed). 4♣ = ♣ control.
-3. **4NT = Blackwood (RKCB)** — Once controls are confirmed, 4NT asks for keycards. Standard 1430 responses: 5♣ = 1/4, 5♦ = 0/3, 5♥ = 2 without queen, 5♠ = 2 with queen.
+3. **4NT = Blackwood (RKCB)** — Once controls are confirmed, 4NT asks for keycards. 30-41-22 responses: 5♣ = 3/0, 5♦ = 4/1, 5♥ = 2 without queen, 5♠ = 2 with queen.
 4. **Sign off at game if controls are missing** — If partner bypasses your void suit (showing no control there), sign off at 4M or 5m. Don't explore slam with two fast losers.
 
 ##### 5-of-a-Minor vs 3NT
@@ -2177,7 +2177,7 @@ NLTC refines the standard count by weighting losers: an ace loser (missing the a
 
 | Convention | Purpose |
 |---|---|
-| RKCB 4NT | Roman Keycard Blackwood |
+| RKCB 4NT | Roman Keycard Blackwood 30-41-22 |
 | Cue-bids | Control-showing after 1M-3M slam try |
 
 ### Defensive Carding
