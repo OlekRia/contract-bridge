@@ -1,0 +1,8 @@
+scenario=nt vul=false train=20000 test=40000
+policy                      vs-low/dl      vs HCP-direct [95%]      vs HCP-invite [95%]
+HCP/HCP direct                 0.6280  +0.0000 [+0.0000,+0.0000]  +0.0000 [+0.0000,+0.0000]  vs Fifths/Fifths direct:  -0.0063 [-0.0151,+0.0026]
+HCP/HCP invite                 0.6280  +0.0000 [+0.0000,+0.0000]  +0.0000 [+0.0000,+0.0000]  vs Fifths/Fifths direct:  -0.0063 [-0.0151,+0.0026]
+Fifths/Fifths direct           0.6343  +0.0063 [-0.0026,+0.0151]  +0.0063 [-0.0026,+0.0151]  vs Fifths/Fifths direct:  +0.0000 [+0.0000,+0.0000]
+Fifths/Fifths invite           0.6381  +0.0130 [+0.0040,+0.0220]  +0.0130 [+0.0040,+0.0220]  vs Fifths/Fifths direct:  +0.0099 [+0.0030,+0.0168]
+SHV/SHV direct                 0.6300  +0.0019 [-0.0082,+0.0120]  +0.0019 [-0.0082,+0.0120]  vs Fifths/Fifths direct:  -0.0043 [-0.0138,+0.0051]
+SHV/SHV invite                 0.6395  +0.0150 [+0.0044,+0.0256]  +0.0150 [+0.0044,+0.0256]  vs Fifths/Fifths direct:  +0.0101 [-0.0007,+0.0210]

@@ -1,0 +1,9 @@
+S2-MC(k=48) vs HCP     : +0.3807 IMP/deal [+0.1946,+0.5668] n=1500 differ=330
+S2-MC(k=48) vs HCP+len : +0.3000 IMP/deal [+0.1277,+0.4723] n=1500 differ=305
+S2-MC(k=48) vs Fifths  : +0.3993 IMP/deal [+0.2108,+0.5878] n=1500 differ=349
+S2-MC(k=48) vs BUM-RAP : +0.4193 IMP/deal [+0.2307,+0.6079] n=1500 differ=367
+S2-MC(k=48) vs Zar     : +0.0027 IMP/deal [-0.1397,+0.1450] n=1500 differ=194
+S2-MC(k=48) vs KnR     : +0.0680 IMP/deal [-0.0822,+0.2182] n=1500 differ=215
+S2-MC(k=48) vs -LTC    : +0.5207 IMP/deal [+0.3238,+0.7176] n=1500 differ=411
+S2-MC(k=48) vs -NLTC   : +0.2093 IMP/deal [+0.0456,+0.3731] n=1500 differ=268
+S2-MC(k=48) vs HCP+len+short: +0.0287 IMP/deal [-0.1233,+0.1806] n=1500 differ=217

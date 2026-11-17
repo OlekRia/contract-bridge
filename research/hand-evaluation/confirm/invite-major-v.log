@@ -1,0 +1,5 @@
+HCP/HCP: direct>= 13.50; invite lo=13.50 hi=13.50 accept>= 6.50 (test invites 0.0%)
+Zar/Zar: direct>= 31.50; invite lo=30.50 hi=32.50 accept>= 19.50 (test invites 25.9%)
+Zar/HCP+short: direct>= 31.50; invite lo=31.50 hi=33.50 accept>= 7.50 (test invites 23.7%)
+SHV/SHV-helpsuit: direct>= 9.19; invite lo=9.10 hi=9.64 accept>= 9.28 (test invites 27.3%)
+SHV/SHV: direct>= 9.19; invite lo=9.10 hi=9.64 accept>= 9.23 (test invites 27.3%)

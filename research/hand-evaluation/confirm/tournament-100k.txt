@@ -1,0 +1,39 @@
+Team round robin on random deals: 16 teams, 32-board matches, 18 complete round robins (70000 test boards available, 3840 per round robin)
+
+Event 1 — final standings (15 matches each, 480 boards per team):
+  #  team                               IMPs      VPs
+  1  BUM-RAP                            +312   194.87
+  2  All Fives (Zar fit, HCP NT)        +267   193.36
+  3  Two-lens (Zar fit, Fifths NT)      +222   186.48
+  4  HCP+len                            +191   181.66
+  5  Zar                                +113   170.21
+  6  Kaplan-Rubens                      +120   165.62
+  7  HCP                                +157   163.68
+  8  OHE start (HL+D)                    +52   157.63
+  9  HCP+len+short                       -46   144.38
+ 10  OHE full                            -11   144.25
+ 11  Fifths                              -31   143.16
+ 12  NLTC                                -60   139.80
+ 13  Zar @52/62/67                       -66   137.94
+ 14  Classic LTC                        -223   119.16
+ 15  SAYC (HCP 25/33/37)                -203   113.90
+ 16  OHE full @pub                      -794    43.88
+
+All 18 events combined (each team: 270 matches):
+  #  team                            VP/match  IMPs/board     W-D-L   titles   podiums
+  1  All Fives (Zar fit, HCP NT)        12.54      +0.525 187-10-73       7        16
+  2  Two-lens (Zar fit, Fifths NT)      12.45      +0.485 196-9-65       6        13
+  3  HCP+len                            11.56      +0.369 172-2-96       0         3
+  4  BUM-RAP                            11.53      +0.317 172-6-92       3         8
+  5  Fifths                             11.49      +0.315 170-4-96       2         3
+  6  HCP                                11.18      +0.289 153-5-112      0         3
+  7  Zar                                11.18      +0.245 162-10-98       0         2
+  8  Kaplan-Rubens                      11.07      +0.239 158-6-106      0         5
+  9  OHE start (HL+D)                   10.79      +0.167 154-3-113      0         1
+ 10  HCP+len+short                       9.80      +0.005 113-3-154      0         0
+ 11  NLTC                                9.72      +0.003 117-2-151      0         0
+ 12  OHE full                            9.48      -0.070 110-3-157      0         0
+ 13  Zar @52/62/67                       8.70      -0.235  93-0-177      0         0
+ 14  SAYC (HCP 25/33/37)                 8.30      -0.295  87-3-180      0         0
+ 15  Classic LTC                         7.68      -0.429  73-2-195      0         0
+ 16  OHE full @pub                       2.52      -1.930   9-0-261      0         0

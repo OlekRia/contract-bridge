@@ -204,10 +204,11 @@ With 4♠-4♥ and no 4+ minor, open 1♠ because after 1♠-1NT, bidding 2♥ i
 | Raise | Meaning | LTC |
 |---|---|---|
 | 1x - 2x (single raise) | 6-9 HCP, 3+ card support. Standard. If opener had only 4, he rebids 2NT. | 9-10 losers |
+| 1M - 2M - 3M (DEC-15) | Invitational game try. Opener Zar 31-32 vul / 32-33 non-vul. Responder bids 4M with Zar 20+ (vul) / 19+ (non-vul), otherwise passes. Opener bids 4M directly with Zar 33+ (vul) / 34+ (non-vul). | Zar, not LTC |
 | 1x - 3x (limit raise) | 10-12 HCP, 4+ card support. Invitational. Opener bids game with 5-6 losers. | 7-8 losers |
 | 1M - 4M (game raise) | Distributional, 5+ card support or strong hand. Based on playing tricks, not just HCP. | 6-7 losers |
 
-> **After a fit is found, re-evaluate using LTC: 24 minus combined losers = expected tricks. A hand with 10 HCP but 7 losers (e.g. ♠:KQxxx ♥:x ♦:Axxx ♣:xxx) is a limit raise by LTC, though HCP says only a single raise. Trust LTC in suit contracts — see H-8.**
+> **After 1M - 2M, opener counts Zar points: HCP + controls (A=2, K=1) + lengths of the two longest suits + (longest - shortest). Vulnerable: 33+ game, 31-32 bid 3M, 30 or less pass. Non-vulnerable: 34+ game, 32-33 bid 3M. Responder accepts 3M with Zar 20+ (vul) / 19+ (non-vul). Classic LTC is not used here: it scores KQx as one loser and Axx as two, so it cannot see aces (DEC-15, H-36). Responder's choice of raise still uses the loser ranges in the table; LTC remains in use elsewhere (H-8).**
 
 #### Competitive Re-evaluation with LTC
 

@@ -115,7 +115,8 @@ openings:
       single: "6-9 HCP, 3+ support, 9-10 losers"
       limit: "10-12 HCP, 4+ support, 7-8 losers"
       game: "Distributional, 5+ support, 6-7 losers"
-    raise_note: "After fit, use LTC: 24 - combined losers = tricks (H-8)"
+      single_raise_continuation: "Opener Zar vul 33+ = 4M, 31-32 = 3M inv, else pass (NV 34+ / 32-33). Responder accepts 3M with Zar 20+ vul / 19+ NV (DEC-15)"
+    raise_note: "After 1M-2M opener counts Zar (HCP + controls A2/K1 + two longest + longest-shortest), not LTC (DEC-15)"
     jump_responses_over_1M:
       seat_note: "1st/2nd seat (forcing 1NT ON) vs 3rd/4th (OFF) changes 2NT and 3M meaning."
       first_second:

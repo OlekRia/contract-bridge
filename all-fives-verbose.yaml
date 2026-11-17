@@ -422,6 +422,12 @@ openings:
         meaning: "6-9 HCP, 3+ card support"
         ltc: "9-10 losers"
         note: "Standard. If opener had only 4, he rebids 2NT."
+      - sequence: "1M - 2M - 3M (DEC-15)"
+        meaning: "Invitational game try. Opener Zar 31-32 vul / 32-33 non-vul"
+        ltc: "Zar, not LTC"
+        note: >
+          Responder bids 4M with Zar 20+ (vul) / 19+ (non-vul), otherwise passes.
+          Opener bids 4M directly with Zar 33+ (vul) / 34+ (non-vul).
       - sequence: "1x - 3x (limit raise)"
         meaning: "10-12 HCP, 4+ card support"
         ltc: "7-8 losers"
@@ -431,10 +437,13 @@ openings:
         ltc: "6-7 losers"
         note: "Based on playing tricks, not just HCP."
     raise_ltc_note: >
-      After a fit is found, re-evaluate using LTC: 24 minus combined losers =
-      expected tricks. A hand with 10 HCP but 7 losers (e.g. !S:KQxxx !H:x
-      !D:Axxx !C:xxx) is a limit raise by LTC, though HCP says only a single
-      raise. Trust LTC in suit contracts — see H-8.
+      After 1M - 2M, opener counts Zar points: HCP + controls (A=2, K=1) +
+      lengths of the two longest suits + (longest - shortest). Vulnerable: 33+
+      game, 31-32 bid 3M, 30 or less pass. Non-vulnerable: 34+ game, 32-33 bid
+      3M. Responder accepts 3M with Zar 20+ (vul) / 19+ (non-vul). Classic LTC
+      is not used here: it scores KQx as one loser and Axx as two, so it cannot
+      see aces (DEC-15, H-36). Responder's choice of raise still uses the loser
+      ranges in the table; LTC remains in use elsewhere (H-8).
 
     jump_responses_over_1M:
       title: "Jump Responses After 1-Major Opening"

@@ -1,0 +1,457 @@
+# Give Claude this entire YAML file with access to the repository.
+# This is a research/teaching prompt, not a ratified convention-card amendment.
+title: "All Fives — Slam Discovery in Uncontested Auctions"
+version: 1
+language: English
+status: research_prompt
+scope:
+  overall: "Build an opening-by-opening guide to discovering small and grand slams."
+  current_chapter: "After natural 1♣ and 1♦ openings"
+  auction: "One-way bidding: both opponents pass throughout."
+  default: "Opener in first/second seat; responder unpassed."
+  variations: "Separate third/fourth-seat openings and passed-hand responses."
+  destinations: ["6♣", "6♦", "6♥", "6♠", "6NT", "7♣", "7♦", "7♥", "7♠", "7NT"]
+  successful_stops: ["partscore", "3NT", "4♥", "4♠", "5♣", "5♦", "6 instead of 7"]
+  future_chapters: >-
+    Inventory every other opening actually present in the current specification,
+    including seat-dependent NT, Benji, weak/preemptive, UCM and specific-ace
+    openings. Give each a roadmap entry using the same discovery framework.
+    Fully develop the 1-minor chapter now; do not pretend the later chapters
+    are complete or import their special responses into 1-minor auctions.
+
+claude_prompt: |
+  Act as the Fermat Institute's Principal Investigator and our All Fives
+  partnership bidding coach. Produce a practical, comprehensive chapter:
+  "How we discover slam after opening 1♣ or 1♦."
+
+  Read this entire YAML as your assignment, including its source inventory,
+  system constraints, audit questions, hand matrix and seed deals. Explain
+  how the partnership discovers slam potential from the first response,
+  rather than merely describing Blackwood once a fit has already been found.
+  The goal is repeatable partnership decisions: find worthwhile slams, reject
+  poor ones, choose the right strain, and preserve a safe stopping place.
+
+  Begin by reading the current repository sources. Apply the Constitution's
+  authority hierarchy, then lex specialis and lex posterior. Cite actual
+  paths, YAML sections and applicable F-/R-/DEC-/H-IDs. Distinguish ratified
+  agreements from active investigations and from historical rejected ideas.
+  Source snapshots below are navigation aids; recheck them against live files.
+
+  Use three explicit labels throughout:
+  CURRENT AGREEMENT — supported by an applicable authoritative source.
+  GAP / CONFLICT — missing, ambiguous, inconsistent or impossible as written.
+  PROPOSAL — a precise new agreement that requires partnership adoption.
+  Never smooth over a gap by inventing a forcing bid. If a worked hand cannot
+  be bid unambiguously, stop its CURRENT auction at the first missing agreement
+  and give a separately labelled PROPOSED continuation through the final contract.
+  Do the complete analysis and present concrete proposals for review; this
+  assignment does not ratify them or authorize rewriting governance/system files.
+
+  First build a response map separately for 1♣ and 1♦. Partition responder's
+  hands by strength (weak, invitational, GF, slam interest), shape, minor support,
+  five-card major, four-card major, long minor and passed/unpassed status.
+  For every branch state its first call, minimum length, strength, forcing
+  status and route to the next informative call. Expose uncovered hand types.
+  A 1♣ opening has no non-jump new-suit 2/1 response: do not manufacture one.
+  The documented non-jump 2/1 over 1♦ is 2♣; it promises five clubs here.
+
+  Then follow each useful first response through opener's rebid and responder's
+  next action. Cover minimum suit rebids, second suits, major raises, reverses,
+  jump rebids, balanced rebids and strong jump shifts. Distinguish ranges by
+  the exact auction: a 2NT rebid after a one-level/forcing-1NT response is not
+  automatically the same as 2NT inside an established 2/1 GF. Audit ranges and
+  opening eligibility, especially balanced 12–14 and 18–21 hands. Where the
+  sources omit a continuation or range, record a gap rather than importing Acol,
+  SAYC or generic 2/1 defaults.
+
+  For every route, answer in order:
+  1. What makes either player suspect slam: extras, controls, a long source of
+     tricks, a double fit, useful shortness, or exceptionally good trumps?
+  2. Which call keeps the auction alive, and is it one-round forcing or GF?
+  3. How are shape, fit and working honours discovered without wasting space?
+  4. Which bid actually agrees trumps? Who knows the fit, and does partner know?
+  5. Which side suits are controlled, and can defenders cash two quick tricks?
+  6. Is there a credible route to twelve tricks, including trump quality,
+     entries, ruffs, discards and establishment of a side suit?
+  7. Which question still matters, who should ask it, and can we afford every
+     possible answer before committing to 4NT or another asking bid?
+  8. Should we stop, bid a small slam, or investigate a thirteenth trick?
+
+  Evaluate both hands independently before revealing partner's cards. Use
+  HCP, aces/kings, working versus wasted honours, fit length, shape, source of
+  tricks and qualified LTC/NLTC analysis. The 33/37 HCP guidelines and
+  24-minus-combined-losers estimate are prompts to investigate, not guarantees.
+  Do not use LTC as a substitute for NT winners or before establishing a fit.
+  Demonstrate low-HCP slams and high-HCP hands with fatal control weaknesses.
+  Re-evaluate honours opposite both shortness and length; do not double-count
+  distribution, ruffing tricks and long-suit winners.
+
+  Explain current first-round control bidding before comparing alternatives.
+  A king or singleton is a second-round control and must not silently be shown
+  as an ace/void under our current agreement. Infer a denial only from a control
+  bid that actually bypasses a cheaper, available control-showing call. Show
+  an actual legal auction for each inference. A denial of first-round control
+  is not proof of two immediate losers: combine both hands' information.
+
+  Explain our RKCB 30-41-22 with the four aces plus the agreed trump king:
+  5♣ = 3/0, 5♦ = 4/1, 5♥ = two without the trump queen, 5♠ = two with it.
+  This is the 3014 mapping confirmed in AMD-32/AMD-33, not 1430. Enumerate
+  responses, resolve 3/0 and 4/1 ambiguity using information legitimately known
+  to the asker, and consider the trump queen. Separate a useful void from an
+  ace: a void is not an extra keycard. Explain why asking with a void can leave
+  the identity of a missing useful ace unresolved. Do not promise that all
+  keycards imply twelve or thirteen tricks.
+
+  Give a response-by-response safety table for clubs and diamonds as trumps.
+  For each of 5♣/5♦/5♥/5♠, say whether the original five-of-trumps stopping
+  place is still available, which keycard holdings can make that response bad,
+  and what the asker must know before using 4NT. Include a clubs example where
+  5♦ already makes a return to 5♣ impossible, and examples where 5♥/5♠ bypass
+  5♦. Never show a descending bid or claim that 5m remains available afterward.
+  If 4NT is unsafe, show the current control-bidding route or identify the
+  missing agreement; compare one economical alternative as a proposal.
+
+  Give a context table for 4NT: quantitative after appropriate natural NT
+  sequences without agreed trumps; RKCB with agreed trumps where documented;
+  unresolved where the system does not settle the meaning. Address auctions
+  with a previously shown minor fit followed by 3NT explicitly. A quantitative
+  invitation can be passed; an RKCB ask cannot. Do not decide the meaning solely
+  from the immediately preceding call or from the last suit mentioned.
+
+  Discuss queen asks, side-king asks, 5NT, grand-slam exploration and void
+  treatments only with explicit status labels. If undocumented, give a complete
+  candidate agreement with triggers, answers, signoffs and conflicts. A grand
+  slam needs a credible thirteenth trick, sound trumps and sufficient controls;
+  specify any remaining finesse or break dependency. Include a case with all
+  five keycards that correctly stops in six.
+
+  Compare 3NT, 5m, 6m, 6M and 6NT using actual trick sources, stoppers, entries,
+  lead exposure, trump fits, scoring and vulnerability. Preserve the system's
+  preference for 3NT when there is no reason to leave it, while explaining when
+  a genuine slam investigation justifies passing 3NT. Show 6m making through
+  ruffs when 6NT has insufficient winners. Distinguish IMP and matchpoint
+  judgments; derive any numerical break-even claim from the specified outcomes.
+
+  Recommend the smallest coherent set of improvements. For each candidate
+  method explain the exact gap it fills, auction cost, displaced meanings,
+  memory burden, gain/loss cases and falsifiable validation plan. Rank candidates
+  as needed now, optional later, or unsuitable. Prefer solving an evidenced gap
+  over adding a catalogue of fashionable conventions. Keep the full CURRENT
+  and PROPOSED auction trees separate so partners can drill either consistently.
+
+  Produce all requested outputs and coverage below. Be concrete: full legal
+  auctions, exact hand diagrams, call-by-call meanings, justified final contracts,
+  failed alternatives, safe stops and a concise partnership memory card.
+  Do not claim simulation, table validation or double-dummy analysis was run
+  unless you actually ran it and report the inputs, tool and results.
+
+sources:
+  governing:
+    - "CLAUDE.md"
+    - "gov/CONSTITUTION.md — authority, system integrity, incremental change"
+    - "gov/facts.yaml — F-SYS-029; HCP, controls and LTC foundations"
+    - "gov/requirements.yaml — R-BID-036, R-BID-039, R-BID-044 through R-BID-048"
+    - "gov/decisions.yaml — DEC-6 and DEC-14; check later applicable decisions"
+    - "gov/hypotheses.yaml — H-8, H-22, H-26, H-34, H-35 and H-35b; verify current status"
+    - "gov/amendments.yaml — AMD-32/AMD-33 confirm RKCB 30-41-22 (3014); check later corrections"
+  specification:
+    - "contract-bridge/all-fives.yaml — openings.1_suit"
+    - "contract-bridge/all-fives-verbose.yaml — minor openings, continuations, hand evaluation"
+    - "contract-bridge/all-fives-verbose.md — rendered reading aid; check YAML source"
+  examples_and_evidence:
+    - "contract-bridge/examples/one-way/009-response-1c.md"
+    - "contract-bridge/examples/one-way/016-two-over-one-gf.md"
+    - "contract-bridge/analysis/2026-06-02.md — board 17 and slam-discovery discussion"
+    - "contract-bridge/analysis/2026-06-11.md — boards 7 and 16; strain/control confusion and successful 6♣"
+    - "contract-bridge/analysis/2026-06-16.md — board 19; compare discovery principles, not opening-specific methods"
+    - "gov/knowledge/hand-evaluation.md"
+    - "gov/knowledge/losing-trick-count.md"
+    - "gov/knowledge/bridge-books-bidding.md"
+  external_comparisons:
+    - title: "Eddie Kantar — RKB XVII: minor-suit splinter agreements"
+      url: "https://www.kantarbridge.com/rkb_xvii.html"
+      use: "Compare lower-level minor keycard asks; its splinter structure is not ours."
+    - title: "ACBL Unit 390 — Roman Key-Card Blackwood"
+      url: "https://www.acblunit390.org/Simon/rkc-blackwood.htm"
+      use: "Comparative reference only: its 1430 mapping differs from our 30-41-22; do not import it."
+  evidence_rule: >-
+    Historical analyses can contain contradictory 'cold' versus 'on a finesse'
+    descriptions. Check the actual cards and evidence. Cite an external source
+    for a proposed convention, but never treat it as authority for our agreements.
+
+system_snapshot:
+  first_second_seat:
+    opening_1C: "Usually 5+; 4 only with 15+ balanced 3=3=3=4, per current specification."
+    opening_1D: "4+; often 5+, with strong balanced exceptions documented separately."
+    balanced_12_14: "Normally open 1NT, not a minor. Check opening eligibility first."
+    response_1C_1D: "4+ diamonds; explicit exception to the five-card new-suit rule."
+    response_1m_1M: "5+ major, regardless of responder strength; DEC-6."
+    response_1NT: "6–12, forcing one round; no fit and no available one-level new suit."
+    response_1D_2C: "13+, 5+ clubs, GF; not generic four-card 2♣."
+    single_minor_raise: "6–9, 3+ support; verify an actual fit given short-minor exceptions."
+    jump_minor_raise: "10–12, 5+ support, invitational; specific rule overrides generic raise text."
+    response_2NT: "11–12 balanced, natural invitation."
+    jump_new_major: "16+, 5+ self-sufficient suit, GF strong jump shift."
+    jump_other_minor: "10–12, 5+ suit, invitational."
+  third_fourth_seat:
+    minors: "Best minor, possibly three cards; 12–14 balanced can open a minor."
+    responder: "Passed hand; forcing 1NT and automatic 2/1 GF are OFF."
+    one_level_new_suit: "4+ instead of the first/second-seat five-card-major promise."
+    audit: "Do not put an ordinary 16+ HCP strong-jump-shift hand in a passed-hand example."
+  established_2_1_gf:
+    fourth_suit: "Natural, 4+; R-BID-045, DEC-14."
+    controls: "First-round ace/void controls up the line; R-BID-047."
+    keycards: "4NT RKCB 30-41-22 (3014), per AMD-32/AMD-33, after agreed trumps and a safety check."
+    responses: {"5♣": "3 or 0", "5♦": "4 or 1", "5♥": "2 without trump queen", "5♠": "2 with trump queen"}
+    minor_game: "Prefer 3NT unless justified by stopper problems, shape or slam prospects; R-BID-048."
+
+mandatory_audit:
+  - id: G01
+    issue: "13+ with only four-card majors and no legal natural GF response."
+    task: >-
+      Test both minor openings, with and without support. Forcing 1NT stops at
+      12; 1M promises five; 1♦–2♣ requires five clubs. Enumerate the uncovered
+      shapes and compare a minimal fix against keeping every current meaning.
+  - id: G02
+    issue: "Strong direct minor support and establishing a force after 1♣."
+    task: >-
+      2m is a weak raise and 3m invitational, so neither is an inverted GF raise.
+      Show when a genuine new suit followed by support works and when no such
+      suit exists. Distinguish 1♣–2♦, a jump in the other minor, from 1♦–2♣.
+  - id: G03
+    issue: "One-level auctions and incompletely defined fourth-suit forcing."
+    task: >-
+      The verbose text mentions artificial fourth suit outside 2/1 GF but does
+      not fully define its level, duration or continuations. Audit sequences
+      such as 1♣–1♦; 1♥–1♠ and 1♦–1♠; 2♣–2♥. Do not automatically call every
+      fourth suit GF, or export the 2/1 natural rule to every forcing auction.
+  - id: G04
+    issue: "Conflicting response lengths and overly broad GF wording."
+    task: >-
+      available_2_1_bids.after_1C says one-level responses may have four cards;
+      the dedicated response rule and DEC-6 require five-card majors. Apply
+      source priority explicitly. Reconcile 'new suit at the two-level is GF'
+      with the specific invitational jump-in-other-minor treatment.
+  - id: G05
+    issue: "Incorrect bypass and void examples in cuebid_slam."
+    task: >-
+      3♥–3♠ does not bypass a diamond control bid; 4♦ is still ahead. Also,
+      partner's lack of control opposite your void does not create two immediate
+      losers in that suit. Preserve the ratified first-round principle while
+      flagging these illustrations and writing accurate replacement examples.
+  - id: G06
+    issue: "Scope of slam machinery outside established 2/1 GF."
+    task: >-
+      Audit whether control bids, fit-setting raises, fast arrival, 4m, queen
+      asks, king asks, 5NT and void responses are defined after one-over-one,
+      strong jump shifts and forcing-1NT starts. Give exact proposals for missing
+      meanings; do not turn a natural new suit into a control bid without a trigger.
+  - id: G07
+    issue: "NT rebid ranges and continuation collisions."
+    task: >-
+      Check 1m–1x–2NT against 1♦–2♣–2NT/3NT. Do not invent an 18–19 jump-NT
+      range. Audit whether the 12–14 balanced 2/1 branch is reachable when such
+      opener hands normally open 1NT. Flag any contradiction instead of building
+      an example that violates the opening system.
+  - id: G08
+    issue: "Premature 3NT, unsafe 4NT and ambiguous four-of-a-minor."
+    task: >-
+      Define which return to a minor is natural, forcing, invitational, fit-setting
+      or a proposed keycard ask in each sequence. Address reopening after 3NT
+      and how a natural NT rebid interacts with a previously shown fit.
+
+methods_to_compare:
+  existing_first:
+    - "Natural shape discovery, delayed support and strong jump shifts"
+    - "Forcing status, reverses and space preservation; audit exact meanings"
+    - "HCP plus fit, controls, working honours, trick sources and qualified LTC/NLTC"
+    - "First-round control bids, RKCB 30-41-22 and quantitative NT invitations"
+  candidates_only_if_a_gap_requires_them:
+    - "Precisely scoped fourth-suit forcing outside the existing 2/1 GF rule"
+    - "Checkback/new-minor forcing after natural NT rebids, with exact triggers"
+    - "Inverted minor raises or another GF minor-support route; show displaced weak raises"
+    - "Splinters and shortness discovery; preserve our existing strong major jump shifts"
+    - "Mixed first-/second-round control bids; explicitly changes R-BID-047"
+    - "Minorwood versus Kickback versus retaining 4NT with a strict safety check"
+    - "Serious/non-serious 3NT only where fit and auction make it useful"
+    - "Exclusion keycard for a useful void, if ordinary controls cannot solve the problem"
+    - "Trump-queen and specific side-king asks with complete signoff rules"
+  collision_requirement: >-
+    For any repurposed call, list all affected existing sequences and provide
+    an alternative route for hands that previously used it. Do not install
+    several incompatible meanings on 4♣/4♦ or call 4♣ Gerber by default.
+
+hand_coverage:
+  minimum_worked_examples: 28
+  minimum_per_minor_opening: 12
+  minimum_justified_no_slam_examples: 8
+  minimum_matched_pairs: 4
+  matched_pair_rule: >-
+    Change one meaningful feature while retaining two valid, disjoint 13-card
+    hands: useful/wasted honours, good/poor trumps, working/misfitting side suit,
+    or minimum/maximum strength. Show why the decision changes or stays the same.
+  required_cases:
+    - "Minimum unbalanced opener opposite a powerful responder with minor support"
+    - "Strong opener opposite an invitational responder; opener initiates the try"
+    - "Balanced strong hands with no fit: quantitative invitation accepted"
+    - "Balanced quantitative invitation declined by a minimum"
+    - "Long solid clubs generating tricks below a mechanical 33-HCP threshold"
+    - "Long solid diamonds generating tricks below a mechanical 33-HCP threshold"
+    - "Long broken minor with similar HCP but inadequate trump texture"
+    - "5–5 minors or a minor double fit; controls versus wasted major honours"
+    - "Minor-major two-suiter; discovered 5–3 major fit"
+    - "A 4–4 major fit after a minor opening; expose response-map gaps"
+    - "Six- or seven-card responder major; compare slow bidding and strong jump shift"
+    - "1♣–1♦ start with four diamonds; genuine delayed club support"
+    - "1♦–2♣ GF start; eventual clubs, diamonds or NT as distinct branches"
+    - "Forcing-1NT start with 10–12; avoid quietly inventing a GF"
+    - "13–15 with four-card majors only and no five-card clubs after 1♦"
+    - "GF club support after 1♣ with no legal one-level new suit"
+    - "Singleton producing a useful ruff and fitting side-suit honours"
+    - "Honours wasted opposite a singleton; downgrade despite similar HCP"
+    - "Useful void; ambiguity of ordinary keycard asking"
+    - "High combined HCP but two cashing side-suit losers; stop"
+    - "Missing two keycards discovered before committing beyond a safe game"
+    - "One missing keycard and uncertain trump queen; assess the real trump holding"
+    - "Club RKCB response bypasses 5♣; show prevention rather than an illegal retreat"
+    - "Diamond RKCB response bypasses 5♦; show prevention or prior safety evidence"
+    - "6m has ruffing tricks while 6NT lacks twelve winners"
+    - "All five keycards but no thirteenth trick; stop in six"
+    - "Grand slam with an identifiable thirteenth trick and adequate trump control"
+    - "Third/fourth-seat short-minor opening and a passed responder; no automatic GF"
+
+seed_deals:
+  instructions: >-
+    These are synthetic two-hand starting positions, not solved auctions or
+    claims that slam makes. Suit keys are S/H/D/C; '-' is a void and T is ten.
+    Default to opener first seat. Validate counts/HCP and opening eligibility,
+    calculate the actual outcome prospects, and assign coverage cases. Add
+    examples and matched variants until all coverage targets are met. Complete
+    four-hand deals only when needed for play or DD analysis, recording the
+    construction assumptions. Never choose a favourable unseen layout to
+    justify a bid the partnership could not infer.
+  deals:
+    - id: S01
+      opening_to_investigate: "1♣"
+      focus: "1♣–1♦, delayed club fit, controls and minor versus NT slam"
+      opener: {S: "A84", H: "K6", D: "75", C: "AKJ962"}
+      responder: {S: "KQ5", H: "A83", D: "AQ64", C: "Q84"}
+    - id: S02
+      opening_to_investigate: "1♦"
+      focus: "Strong diamond support but only four clubs; locate the response gap"
+      opener: {S: "A84", H: "K6", D: "AKJ962", C: "75"}
+      responder: {S: "KQ5", H: "A83", D: "Q84", C: "AQ64"}
+    - id: S03
+      opening_to_investigate: "1♣"
+      focus: "Five-card spade response, delayed 5–3 fit and opener's heart shortness"
+      opener: {S: "K84", H: "6", D: "AQ7", C: "KJ9632"}
+      responder: {S: "AQJ75", H: "A83", D: "K64", C: "Q8"}
+    - id: S04
+      opening_to_investigate: "1♦"
+      focus: "Five-card heart response; distinguish natural bidding from a strong jump shift"
+      opener: {S: "6", H: "K84", D: "KJ9632", C: "AQ7"}
+      responder: {S: "A83", H: "AQJ75", D: "Q8", C: "K64"}
+    - id: S05
+      opening_to_investigate: "1♦"
+      focus: "28 HCP, two minor fits and complementary shortness; audit first response"
+      opener: {S: "A8", H: "6", D: "KJ974", C: "AQ862"}
+      responder: {S: "7", H: "A84", D: "AQ862", C: "KJ97"}
+    - id: S06
+      opening_to_investigate: "1♣"
+      focus: "33 HCP and a nine-card club fit, but defenders hold both top hearts"
+      opener: {S: "AQJ", H: "Q8", D: "AK", C: "KJ9752"}
+      responder: {S: "K86", H: "J97", D: "QJ84", C: "AQ8"}
+    - id: S07
+      opening_to_investigate: "1♣"
+      focus: "Strong balanced opening exception; 1♦ response and NT slam assessment"
+      opener: {S: "K84", H: "AQ7", D: "A62", C: "KJ73"}
+      responder: {S: "AQ7", H: "KJ8", D: "KQ83", C: "A62"}
+    - id: S08
+      opening_to_investigate: "1♣"
+      focus: "Void, delayed fit and identifying which ace matters"
+      opener: {S: "A84", H: "-", D: "KQ73", C: "AKJ962"}
+      responder: {S: "KQ5", H: "A83", D: "A642", C: "Q84"}
+    - id: S09
+      opening_to_investigate: "1♦"
+      opener_seat: third
+      responder_previously_passed: true
+      focus: "Strong opener facing a passed hand; invitation versus force"
+      opener: {S: "A8", H: "K6", D: "AKJ962", C: "K75"}
+      responder: {S: "KQ5", H: "A83", D: "Q84", C: "9864"}
+    - id: S10
+      opening_to_investigate: "1♣"
+      focus: "Eleven-card club fit and grand-slam trick count; no legal automatic GF response"
+      opener: {S: "A84", H: "K6", D: "75", C: "AKJ962"}
+      responder: {S: "KQ", H: "AQJ", D: "AKQ", C: "QT843"}
+    - id: S11
+      opening_to_investigate: "1♦"
+      focus: "Documented five-card 2♣ GF; club agreement and control-bidding entry"
+      opener: {S: "A8", H: "K6", D: "KJ974", C: "A862"}
+      responder: {S: "KQ5", H: "A83", D: "A6", C: "KQJ97"}
+    - id: S12
+      opening_to_investigate: "1♦"
+      focus: "Two balanced 17-counts, four-card hearts, no five-card clubs; response-map hole"
+      opener: {S: "K84", H: "AQ7", D: "KJ62", C: "A73"}
+      responder: {S: "AQ7", H: "KJ84", D: "A83", C: "K62"}
+
+worked_example_format:
+  - "ID, coverage tags, scoring, vulnerability, dealer and passed-hand status"
+  - "Exact opener/responder cards; independently verified HCP and S-H-D-C shape"
+  - "Opening eligibility and what each hand knows before the first response"
+  - "First suspicion of slam and the information still needed"
+  - "Complete CURRENT auction, or exact gap where it stops"
+  - "Separate complete PROPOSED auction when a new agreement is required"
+  - "Every call: meaning, lengths, strength, NF/F1/GF status and source/status label"
+  - "Exact fit-setting bid, control inferences and remaining uncertainty"
+  - "Pre-ask safety check, keycards/trump queen and legal stopping places"
+  - "Final contract with twelve/thirteen-trick plan or concrete reason to stop"
+  - "One plausible wrong turn, its cost, and why the recommended action improves it"
+  - "Sensitivity to a changed honour, shortness, trump holding, lead or adverse break"
+  - "Evidence level: hand reasoning, conditional probability, actual simulation or actual DD"
+
+deliverables:
+  - "Opening-by-opening roadmap with the 1♣/1♦ chapter fully developed"
+  - "Source-grounded system audit, precedence resolutions and remaining gaps"
+  - "Separate 1♣ and 1♦ response maps and continuation trees"
+  - "Discovery framework from first response through safe stop, small slam and grand slam"
+  - "Method comparison and the smallest coherent proposed improvement package"
+  - "Club/diamond RKCB safety tables and contextual 4NT meaning table"
+  - "At least 28 worked examples meeting the coverage counts, including all seed deals"
+  - "At least four controlled comparisons and eight justified decisions against slam"
+  - "Twelve bidding quizzes with answers kept separate, including meaning/forcing-status traps"
+  - "One-page partnership memory card separating CURRENT agreements from proposals"
+  - "Validation plan and proposed governance cascade for each recommended change"
+
+validation:
+  hand_integrity: >-
+    Check thirteen cards per player, valid unique ranks per suit, no shared card
+    between partners, exact HCP, stated shape and opening eligibility. Complete
+    deals must contain every card exactly once and forty total HCP.
+  auction_integrity: >-
+    Every non-pass call must outrank the preceding contract; players alternate;
+    opponents pass. Check length, strength, seat and forcing status at each call.
+    Below-game pass is illegal under a continuing GF; game-level signoff, declined
+    quantitative 4NT and terminal passes must be explicitly intelligible.
+  knowledge_integrity: >-
+    Explain a bid from that player's cards and disclosed information only.
+    Full partnership cards are for teaching and checking, not bidding clairvoyance.
+    Do not infer an unshown singleton, side king, queen or missing ace location.
+  evaluation_integrity: >-
+    Separate winning on a chosen layout, DD-makeability and a sound percentage
+    contract. With only two hands, state lead, split and finesse dependencies.
+    Analyse known bad controls before asking for aces; check tricks after keycards.
+  experiment: >-
+    Specify a stratified comparison of current methods against one proposed
+    change at a time, with reproducible deal-generation constraints and seeds.
+    Measure missed worthwhile slams, poor slams bid, correct rejections, wrong
+    strains, unsafe asks, unresolved auctions, memory errors and scoring outcome.
+    Keep unresolved current auctions visible rather than giving the baseline
+    invented agreements. Predeclare success criteria and separate training from
+    held-out hands. If using DD, report it as an upper-bound play benchmark,
+    not as evidence that a practical bidder should know the winning contract.
+  review_boundary: >-
+    Deliver precise proposed text and affected governance/system sections for
+    review. Existing experiments and active hypotheses are not automatic system
+    ratification. Subsequent adoption follows the repository's approval and
+    amendment process; do not interrupt this research assignment to request
+    approval for merely analysing an alternative.

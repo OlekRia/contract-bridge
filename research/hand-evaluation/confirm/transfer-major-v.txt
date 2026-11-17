@@ -1,0 +1,4 @@
+transfer majornt->major vul=true: r(src-table, tgt-table) on target hands = 0.715
+  in-context table vs HCP      +0.5073 [+0.4684,+0.5461]
+  transferred table vs HCP     +0.0712 [+0.0402,+0.1021]
+  transferred vs in-context    -0.4361 [-0.4740,-0.3982]

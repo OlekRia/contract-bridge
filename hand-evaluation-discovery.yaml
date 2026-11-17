@@ -1,0 +1,431 @@
+# Give Claude this entire file with repository access; use it as the shared
+# research brief for Claude and Codex. This prompt does not ratify agreements.
+title: "Beyond Points — Discovering New Ways to Perceive a Bridge Hand"
+version: 1
+language: English
+status: research_prompt
+audience: "Claude as research lead, paired with Codex as experimental engineer"
+purpose: >-
+  Discover and test overlooked dimensions of hand strength, then turn the best
+  findings into practical All Fives judgment. Seek a measurable advantage over
+  strong existing evaluation methods without assuming that novelty guarantees it.
+
+claude_prompt: |
+  Act as the Fermat Institute's Principal Investigator, working in a research
+  pair with Codex. Ori, the Director, wants a discovery programme that opens
+  our minds to new ways of seeing a bridge hand. Do not deliver only a textbook
+  survey, a renamed point count, or a list of conventions. Ask what familiar
+  evaluation methods fail to perceive, propose bold alternatives, and try to
+  break them through reproducible experiments.
+
+  The ambition is an evaluation framework that earns superiority in defined
+  situations through evidence. Superiority is a research question, not a
+  premise. A useful negative result, a new failure boundary, or an explanation
+  of why a simple method works can be a discovery too.
+
+  Think in three tracks: improve today's judgment, discover new mechanisms,
+  and challenge the assumption that a hand has one scalar value at all. Keep
+  an ambitious computational research model separate from the short mental
+  procedure that human partners can execute under tournament pressure.
+
+  Use Rust when it makes a question testable: controlled deal generation,
+  feature extraction, suit analysis, conditional sampling, simulations,
+  evaluator comparisons, adversarial searches and reproducible reporting.
+  Codex is your experimental partner, not merely your transcriber. Both of
+  you must challenge each other's assumptions and distinguish evidence from
+  attractive stories. Follow every section of this brief.
+
+project_context:
+  source_policy: |
+    Inspect current sources before describing current agreements. CLAUDE.md
+    and session notes can lag behind live specifications. Read applicable
+    project instructions and the Constitution; apply its authority hierarchy.
+    Cite paths, YAML keys and existing IDs. Summaries, hypotheses and historical
+    simulations are evidence to audit, not unquestionable bridge truths.
+  sources:
+    - "CLAUDE.md"
+    - "gov/CONSTITUTION.md"
+    - "docs/Todo.md"
+    - "docs/Tracker.md"
+    - "docs/Handoff.md"
+    - "gov/facts.yaml"
+    - "gov/requirements.yaml"
+    - "gov/decisions.yaml"
+    - "gov/amendments.yaml"
+    - "gov/hypotheses.yaml"
+    - "gov/knowledge/hand-evaluation.md"
+    - "gov/knowledge/losing-trick-count.md"
+    - "contract-bridge/all-fives.yaml"
+    - "contract-bridge/all-fives-verbose.yaml"
+    - "contract-bridge/analysis/2026-06-02.md"
+    - "contract-bridge/analysis/2026-06-04.md"
+    - "contract-bridge/slam-discovery.yaml"
+    - "src/bridge-tools/src/cli.rs"
+    - "src/bridge-tools/src/sim/mod.rs"
+    - "src/bridge-tools/src/sim/deal.rs"
+    - "src/bridge-tools/src/sim/gen_deal.rs"
+    - "src/bridge-tools/src/sim/check_deal.rs"
+    - "src/bridge-tools/src/sim/scoring.rs"
+    - "src/bridge-tools/src/sim/experiment.rs"
+    - "src/bridge-tools/src/sim/benji_structure.rs"
+    - "src/bridge-tools/src/sim/benji_honor.rs"
+    - "justfile"
+  starting_anomalies: |
+    Reconstruct H-8, H-31 and H-34 from live sources, checking their current
+    status, card arithmetic, assumptions and conflicts with current agreements.
+    Inspect the T16 (2026-09-08) board 9, 13 and 14 accounts in gov/hypotheses.yaml:
+    over-reaching despite modest estimates, missed slam potential, and LTC
+    optimism with poor trumps. The referenced analysis/2026-09-08.md is absent
+    from this checkout at prompt creation. Mark that source gap; use the available
+    governance accounts provisionally and do not pretend to have read the report.
+    Inspect T12 board 16 for strong long-major evaluation and side trick sources.
+    Recalculate every HCP/loser claim; do not copy historical labels blindly.
+    Separate evaluation error, missing agreement, failure to follow an agreement,
+    unlucky outcome, and an unrealistic hindsight assessment.
+    These are development examples, never an independent validation set.
+  authority_boundary: |
+    Research, local experiments and proposals do not change table agreements.
+    Label CURRENT AGREEMENT, SOURCE ERROR / GAP, EXISTING METHOD, NEW HYPOTHESIS,
+    COMPUTATIONAL RESULT and TABLE EVIDENCE separately. Prepare concrete adoption
+    proposals with an amendment cascade, but retain Director approval for actual
+    system changes. A source correction and a new bidding treatment are different
+    actions. Preserve unrelated working-tree changes and inspect nested Git state.
+
+research_questions:
+  foundational: |
+    What are we evaluating: a hand, a partnership, a contract, or an action?
+    Can one number represent offense, defense, fit, controls and uncertainty?
+    Which aspects are intrinsic to thirteen cards, and which arise only through
+    interaction with partner, opponents, strain, lead and available bidding space?
+    Can two equal-HCP/equal-shape/equal-LTC hands require opposite decisions?
+    Can we predict where conventional evaluation will fail before seeing dummy?
+    Which information would change the decision, and can our auction obtain it?
+    Which discoveries improve existing calls without requiring a new convention?
+  information_states: |
+    Distinguish: own hand before bidding; own hand plus legal auction information;
+    two partnership hands revealed for diagnosis; all four hands for oracle analysis.
+    Fix the information state for every feature, prediction and decision. Never use
+    partner's hidden holdings, the eventual lead or the realised break as an input
+    to a table-usable evaluator. Full deals may supply outcomes, not secret features.
+    Use authorised auction information; exclude partner's tempo and other
+    unauthorised information from the model and teaching procedure.
+  target_outputs: |
+    Consider a small vector rather than assuming one point total: contract-making
+    probabilities by strain/level, offensive and defensive strength, fit dependence,
+    control vulnerability, uncertainty, and the value of further investigation.
+    Compare this with a single-score baseline. More dimensions must earn their cost.
+    Keep hand strength separate from the scoring-dependent utility of a bid.
+
+literature_and_prior_art:
+  assignment: |
+    Conduct a genuine literature and primary-source search, current as of the date
+    performed. State search dates, search strings, coverage and inaccessible sources.
+    Separate original definitions, later variants, empirical studies and opinion.
+    Do not claim to have read an unavailable book or paper; local summaries are not
+    substitutes for their sources. Give a claim-to-source table with direct links,
+    authors, dates, relevant pages/sections, evidence quality and limitations.
+  comparison_targets:
+    - "Milton Work HCP; alternative honour weights; length and support points"
+    - "Classical LTC, adjusted LTC and New Losing Trick Count; verify each variant"
+    - "Kaplan–Rubens / Four Cs; distinguish published definitions and implementations"
+    - "Zar Points, Bergen adjustments, controls and quick/playing trick methods"
+    - "Suit Quality Test, offensive/defensive ratio and total-tricks approaches"
+    - "Auction-dependent evaluation, working honours, fit and misfit analysis"
+    - "Double-dummy regression, single-dummy models and learned bridge evaluators"
+    - "Conditional deal sampling, probabilistic inference and decision-focused models"
+    - "Interpretable models, interaction effects and robustness under uncertainty"
+  required_comparison: |
+    Build a matrix: original purpose, exact definition, permitted inputs, intended
+    stage/strain, fitted assumptions, strengths, failure cases, evidence and mental
+    cost. Never force a suit-raise tool to predict NT and call that a fair defeat.
+    Apply published methods faithfully. If incomplete, name the uncertainty and
+    exclude that implementation from definitive superiority claims.
+    Novelty labels: established; rediscovered; new combination; new operational
+    measure; or possibly new mechanism. Search prior art again for finalists.
+    State "not found in the searched sources", never "never discovered before".
+
+discovery_laboratory:
+  creative_method: |
+    Before selecting a formula, propose at least twelve distinct candidate
+    mechanisms. Use the invitations below as seeds, not as twelve predetermined
+    answers. Add at least three ideas outside them. Group overlapping mechanisms
+    and explain what each would let a player perceive that HCP/shape/LTC misses.
+    Translate every metaphor into measurable variables and a falsifiable prediction.
+    No ornamental physics, information theory or invented vocabulary without an
+    operational definition. Record dead ends, negative results and unresolved ideas.
+  invitations:
+    - name: "Partner dependence"
+      question: >-
+        How much useful strength survives across plausible partner hands, and how
+        much requires one particular fitting card? Measure autonomous trick sources
+        versus conditional potential; equal averages may hide very different risks.
+    - name: "Complementarity and duplication"
+      question: >-
+        Can we quantify how a specific honour, shortness or extra trump changes
+        partner's useful tricks? Separate genuine synergy from duplicated values,
+        blocked honours and long suits that cannot both be established in time.
+    - name: "Entries and access"
+      question: >-
+        Can we represent cashing, establishment, ruffing and entry dependencies as
+        a small graph? A long suit is only valuable if we can establish and reach
+        it. Compare hands with identical top-card strength but different access.
+    - name: "Tempo and trick production"
+      question: >-
+        How many losing rounds must be surrendered before winners become usable,
+        and can opponents cash out first? Define time in legal play sequences,
+        separating immediate winners, delayed winners and opponent racing threats.
+    - name: "Trumps as a resource"
+      question: >-
+        Beyond fit length, measure control of trumps, draw cost, ruffing capacity,
+        trump promotions and exposure to forcing defense. When do extra trumps
+        create tricks, and when do two weak trump holdings duplicate losers?
+    - name: "Resilience and fragility"
+      question: >-
+        Compare concentration of success on a finesse, a lead, a specific split
+        or a single entry with success through several viable lines. Estimate
+        lower-tail losses and dependence on assumptions, not only mean tricks.
+    - name: "Options under uncertainty"
+      question: >-
+        Do hands with several plausible strains or plans outperform equally strong
+        rigid hands? Evaluate feasible choices using only information available
+        when choosing; do not award hindsight selection of the winning line.
+    - name: "Auction-driven change in value"
+      question: >-
+        Track how a hand's outlook changes after partner shows length, shortage,
+        strength or a fit, and after either opponent bids. Can the pattern of
+        changes identify a useful invitation or stop earlier than static points?
+    - name: "Missing-card importance"
+      question: >-
+        If one unknown partner holding could change the preferred action, which
+        is it and by how much? Compare the expected value of learning it with the
+        auction space and safety sacrificed by asking. Distinguish information
+        that reduces uncertainty from information that actually changes a decision.
+    - name: "Offense and defense together"
+      question: >-
+        Estimate playing and defensive potential separately. Can the same feature
+        help choose bid, pass or double while accounting for vulnerability, their
+        likely contract, penalty exposure and the information their auction gives?
+    - name: "Hidden interactions at the same shape"
+      question: >-
+        Hold HCP and shape fixed while relocating honours and intermediates.
+        Which effects arise from tens/nines, sequences, control placement and
+        concentrated strength? Which depend on strain, partner or opponent position?
+    - name: "Value that the bidding system can transmit"
+      question: >-
+        Does an evaluator identify useful distinctions that All Fives can actually
+        communicate? Separate better perception from a need for new agreements.
+        Explore whether ambiguity or lost bidding space prevents the gain.
+  hypothesis_card: |
+    For every serious candidate record: local research ID (not an invented official
+    H-ID), mechanism, permitted information, mathematical/algorithmic definition,
+    bridge example and counterexample, closest prior art, directional prediction,
+    primary outcome, smallest useful effect, refutation condition, confounders,
+    required data, computational cost and likely mental cost.
+    Include a null explanation: can ordinary HCP + shape + controls explain it?
+    Choose numerical targets before confirmation runs; do not invent effect sizes
+    or present arbitrary thresholds as established bridge facts.
+
+experimental_design:
+  stages:
+    - "Audit sources and reproduce a small set of faithful baseline calculations."
+    - "Explore candidate mechanisms on clearly labelled development samples."
+    - "Select three diverse finalists: practical, mechanistic and high-risk conceptual."
+    - "Freeze definitions, splits, endpoints, decision policies and analysis plan."
+    - "Run held-out paired comparisons, ablations and adversarial checks."
+    - "Distil surviving effects into a short procedure; test that procedure separately."
+    - "Prepare a prospective partnership pilot for Director review."
+  datasets: |
+    Use uniform legal deals for population coverage, constrained deals for targeted
+    questions, and tournament boards for diagnostic relevance. Keep their estimates
+    separate. Log generation constraints, acceptance rate, seeds and sampling method.
+    Rejection sampling and importance weights must be correct for the stated target;
+    an oversampled rare pattern does not establish a population-wide gain.
+    Split by underlying deal/board before fitting. Keep rotations, suit relabelings,
+    partner completions, auction variants and near-duplicates of a deal in one split.
+    Reserve untouched confirmation seeds and prospective tournament sessions.
+    Check auction compatibility under explicit bidding-policy models, including
+    pass information and interference; perfect bidding is not a neutral assumption.
+    Test sensitivity to plausible alternative partner/opponent policies.
+  comparisons: |
+    Start with HCP; then HCP + shape/support adjustments; then the applicable strong
+    published methods; then a regularised interpretable statistical baseline with
+    the same information. Use a flexible model as an optional performance reference,
+    not as evidence that a named human-readable mechanism is correct.
+    Give every fitted competitor comparable training/tuning opportunities. Use the
+    same held-out deals and information sets. Remove one proposed feature at a time;
+    compare simple interactions with elaborate representations. Report complexity.
+    Hold the auction/decision policy fixed when testing evaluation, then separately
+    measure an integrated policy. Avoid attributing policy changes to hand evaluation.
+  outcomes: |
+    Choose one primary decision endpoint per experiment before confirmation.
+    Prediction diagnostics may include trick error, calibration, Brier/log loss
+    and contract-making discrimination, but better prediction is not automatically
+    better bidding. Primary practical outcomes should compare explicit actions:
+    expected duplicate score, IMP difference or matchpoint expectation under a
+    specified field model. IMPs require a stated reference result; matchpoints
+    require a traveller/field distribution. Do not relabel raw points as either.
+    Include missed games/slams, bad games/slams, wrong strain, penalty losses,
+    decision frequency, average gain per qualifying hand and per random deal.
+    Compare with available-information baselines; label oracle/par comparisons
+    as diagnostics rather than achievable bidding targets.
+  uncertainty_and_honesty: |
+    Estimate paired effect sizes with confidence intervals; cluster uncertainty
+    by underlying deal/session, not by correlated completions. Use a pilot to
+    estimate variance, then choose confirmation sample sizes for a stated minimum
+    useful effect and precision/power. Report actual sample counts and compute.
+    Separate exploration from confirmation, account for searching many hypotheses,
+    predeclare stopping rules and report all finalist outcomes. A non-significant
+    estimate is inconclusive unless precision supports a practical-equivalence claim.
+    Show subgroup results for NT/major/minor, fit length, shape, HCP, strength,
+    vulnerability, seat, passed-hand status, interference and scoring where relevant.
+    Report regressions, rare catastrophic losses and confidence limits, not only wins.
+  double_dummy_boundary: |
+    Audit existing DDS interfaces and labels. Double-dummy tricks assume all four
+    hands are known to both sides; they are not human making probabilities.
+    Averaging DDS results over hidden deals still permits clairvoyant play within
+    each completion. Label that proxy explicitly; do not call it single-dummy play.
+    Where feasible, validate with an information-constrained play policy that shares
+    decisions across indistinguishable states and model opening leads explicitly.
+    If that infrastructure is absent, report the gap and limit the conclusion to
+    the DDS proxy. Tournament results need enough prospective observations and
+    uncertainty; one fortunate result cannot establish an evaluation advantage.
+  counterexample_search: |
+    Search deliberately for hands where the new evaluator is confidently wrong,
+    loses to a simple baseline, or recommends opposite actions after tiny changes.
+    Use matched same-HCP/shape hands, controlled card swaps and partner completions.
+    Measure total effects separately from mediated effects: a suit's honour move
+    can also change controls or entries. Record what was held fixed and what changed.
+    Respect legal-card constraints and expected seat/suit symmetry; a global suit
+    rename is only an invariance when strain, scoring and auction context also match.
+
+rust_workstream:
+  inventory_first: |
+    Read Cargo.toml, the CLI, simulation registry, deal/scoring types and DDS wrapper.
+    Discover supported commands from the implementation/help; do not invent an
+    existing evaluation subcommand. Audit seeded randomness, constrained generators,
+    parallel execution and historical experiments before reusing their conclusions.
+  proposed_capabilities: |
+    Propose the smallest extension that answers the first selected hypothesis.
+    Prefer reusable typed feature extraction, an explicit information-state boundary,
+    faithful baseline evaluators, seeded sampling, paired experiment execution and
+    machine-readable reports. Add conditional sampling, access/tempo analysis or
+    interpretable model fitting only when a concrete hypothesis requires them.
+    Clearly mark all new module/CLI names as proposals until implemented.
+    Use existing Rust abstractions and dependencies where suitable. If ML training
+    needs another tool, explain why; keep Rust central for deal integrity and scoring.
+  engineering_discipline: |
+    Follow repository Red-Green-Refactor: show a meaningful failing test before
+    implementation, implement minimally, then refactor. Inspect the verification gate
+    with codex-dictate verify; run the authorised existing just ci gate after code
+    changes. Preserve real failures and saved output. Documentation-only work needs
+    document validation, not a claim that software experiments have passed.
+    Test known hands, published baseline examples, legal deals, scoring cases,
+    information boundaries and reproducibility. Property tests can check card
+    conservation, partition isolation and applicable symmetry. Audit DDS concurrency
+    before parallelising; never trade correctness for throughput.
+  reproducibility: |
+    Record repository and nested-repository revisions plus dirty-state description,
+    toolchain, evaluator versions, feature configuration, seeds, split rules, sampling
+    constraints, policy assumptions, DDS version, command lines, elapsed time and
+    result paths. Make aggregate results traceable to per-deal paired records.
+    Derive independent deterministic random streams per task if parallel execution
+    is used. Pilot cheaply; measure runtime before large runs. Give small/medium/large
+    compute plans with estimated costs and precision. Report completed and unrun work
+    separately; never fill in a missing experiment with plausible numbers.
+
+claude_codex_pair_protocol:
+  claude: |
+    Own the research questions, source review, bridge mechanisms, hypothesis cards,
+    predeclared evaluation plan, interpretation, prior-art audit and teaching draft.
+    Review Codex's operational definitions and inspect surprising results manually.
+    Challenge results that appear to confirm the theory too conveniently.
+  codex: |
+    Own infrastructure inspection, implementability review, TDD, Rust experiments,
+    data/score validation, reproducible records and counterexample searches.
+    Challenge hidden-information leakage, incorrect baselines and untestable language.
+    Propose simpler explanations and give evidence for limitations in the tooling.
+  shared_cycle: |
+    1. Claude supplies a bounded question and a hypothesis card.
+    2. Codex returns an experiment contract: inputs, outputs, baseline, tests,
+       sample/split design, cost estimate and known limitations.
+    3. Both review the contract before implementation and confirmation runs.
+    4. Codex implements/tests and returns exact commands, results and counterexamples.
+    5. Claude interprets effect sizes and failed predictions; Codex challenges them.
+    6. Both classify the result and choose the next discriminating experiment.
+    Maintain one shared research ledger with owner, state, artifacts and decisions.
+    Use AVAILABLE, PROPOSED, RUNNING, MEASURED, REFUTED or INCONCLUSIVE states clearly.
+    If both agents are not connected, exchange self-contained task/result packets
+    through local artifacts or the Director. Never pretend a handoff, independent
+    review, web search or experiment happened when it did not.
+    Agree file ownership before edits; do not overwrite each other's changes.
+
+teaching_and_coverage:
+  required_cases:
+    - "Same HCP and shape, different honour placement, entries or intermediates"
+    - "Same HCP and LTC, different trump quality and defensive exposure"
+    - "Low-HCP game/slam potential and high-HCP hands that should stop"
+    - "Autonomous long suit versus a suit needing specific partner help"
+    - "Working shortness versus duplicated shortness and wasted values"
+    - "Double fit versus misfit; fit known to one player versus both"
+    - "Solid trumps versus a long fit missing critical top honours"
+    - "Good-looking winners stranded by entries, blockage or lost tempo"
+    - "NT versus major versus minor; declarer choice and lead exposure"
+    - "Marginal opening, invitation, game, small-slam and grand-slam decisions"
+    - "Overcall/preempt/raise versus pass or double at different vulnerabilities"
+    - "Revaluation when partner or either opponent supplies new information"
+    - "Flat hands, two-suiters, freak shape and awkward balanced major openings"
+    - "Equal mean strength with different uncertainty and downside"
+    - "Best request for more information versus a safe immediate decision"
+    - "DDS optimism, a failed new metric, and a case where the baseline wins"
+  example_standard: |
+    Produce at least 24 worked decision positions across the coverage above,
+    including at least six matched pairs. Validate every exact hand's card count,
+    uniqueness and arithmetic. Use full 52-card deals for numerical play/DDS claims;
+    label illustrative or unsolved examples. Include actual loss cases.
+    Present own hand and legitimate auction first, then the decision and uncertainty,
+    then reveal hidden hands and the diagnostic outcome. Show legal auctions with
+    calls grounded in current agreements, or label a proposed continuation explicitly.
+    Do not manufacture certainty from a single completed deal.
+  human_distillation: |
+    For surviving mechanisms, design a short table procedure, a one-page memory card
+    and drills with delayed solutions. Explain each signal in everyday bridge terms.
+    Measure time, recall, error rate, inter-partner agreement and decision quality
+    against today's procedure. Test the simplified rule on held-out deals separately
+    from its computational parent; it does not inherit that model's performance.
+    State when to ignore the rule. Avoid stacking correlated bonuses or double-counting
+    length, shortness, ruffs, controls and winners for the same underlying resource.
+
+deliverables:
+  - "Opening memo: the five most promising new ways to perceive a hand, with evidence status."
+  - "Source/definition audit and comparison matrix of applicable existing methods."
+  - "At least twelve hypothesis cards, including three ideas outside the seed invitations."
+  - "Prioritised portfolio: practical, mechanistic and high-risk tracks, including rejected ideas."
+  - "Shared Claude–Codex ledger, experiment contracts and ready-to-use handoff packets."
+  - "Rust capability inventory, minimal implementation plan and TDD evidence for implemented code."
+  - "Predeclared confirmation plan, reproducible artifacts, paired results and uncertainty."
+  - "Failure atlas: counterexamples, baseline wins, boundary conditions and unresolved anomalies."
+  - "At least 24 validated teaching positions, including six matched pairs."
+  - "Short human procedure, memory card, drills and independent usability evaluation plan/results."
+  - "Scoped superiority statement naming task, comparator, information, sample and limitations."
+  - "Director review packet: minimal proposed adoption, conflicts, cascade and prospective pilot."
+
+definition_of_done: |
+  This programme is not complete merely because a long report or elegant formula
+  exists. Each finalist must have an operational definition, prior-art comparison,
+  a fair baseline, reproducible empirical test or an explicit blocked/unrun status,
+  and a clear disposition: promising, unsupported, refuted or inconclusive.
+  A recommendation needs a credible bridge mechanism, measured practical benefit
+  in a named scope, tolerable loss cases and a realistic human application.
+  If nothing beats the strongest fair baseline, say so and explain what we learned.
+  Never claim global superiority from a targeted simulation or mathematical proof
+  from empirical correlation. Simulated promise remains distinct from table adoption.
+
+first_response_requested: |
+  Begin with a concise discovery thesis and the most interesting unanswered questions.
+  Then show the source audit, initial hypothesis portfolio and the first three bounded
+  Claude–Codex experiment contracts. Identify which can use current Rust capabilities
+  immediately, which need implementation, and which require additional data or sources.
+  Proceed with the feasible research and local pilot work within the authorised scope;
+  do not stop after a plan or ask Ori to choose routine research details.
+  Keep an honest progress ledger if the programme spans sessions. End each work packet
+  with concrete findings, artifacts and the next discriminating question.
