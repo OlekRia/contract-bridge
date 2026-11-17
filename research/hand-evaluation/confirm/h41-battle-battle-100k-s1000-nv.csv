@@ -1,0 +1,485 @@
+row,col,mean,ci95
+HCP,HCP,0.00000,0.00000
+HCP,Fifths,-0.05342,0.01197
+HCP,BUM-RAP,-0.09711,0.01563
+HCP,HCP+len,0.00096,0.01806
+HCP,HCP+len+short,0.20940,0.02338
+HCP,Zar,0.06677,0.02434
+HCP,Kaplan-Rubens,0.05019,0.02431
+HCP,NLTC,0.23539,0.02614
+HCP,Classic LTC,0.56926,0.02584
+HCP,Fermat,0.04486,0.02485
+HCP,Fermat NT,-0.03555,0.01333
+HCP,Fermat-2 NT,-0.02131,0.01338
+HCP,Fermat 2-lens,-0.19468,0.02122
+HCP,Fermat WL 2-lens,-0.22523,0.02237
+HCP,Fermat-2,0.10586,0.02573
+HCP,F2-noLong,0.05940,0.02455
+HCP,F2-halfShort,0.10262,0.02456
+HCP,OHE start (HL+D),0.09647,0.02335
+HCP,OHE full,0.20564,0.02468
+HCP,HCP @25/33/37,0.33106,0.01888
+HCP,Zar @52/62/67,0.46769,0.02998
+HCP,OHE full @pub,1.77849,0.03617
+Fifths,HCP,0.05342,0.01197
+Fifths,Fifths,0.00000,0.00000
+Fifths,BUM-RAP,-0.04369,0.01320
+Fifths,HCP+len,0.05349,0.01940
+Fifths,HCP+len+short,0.26244,0.02417
+Fifths,Zar,0.11715,0.02454
+Fifths,Kaplan-Rubens,0.09961,0.02452
+Fifths,NLTC,0.28982,0.02673
+Fifths,Classic LTC,0.62512,0.02706
+Fifths,Fermat,0.09490,0.02475
+Fifths,Fermat NT,0.01787,0.01202
+Fifths,Fermat-2 NT,0.03211,0.01035
+Fifths,Fermat 2-lens,-0.14321,0.02083
+Fifths,Fermat WL 2-lens,-0.17412,0.02207
+Fifths,Fermat-2,0.15627,0.02577
+Fifths,F2-noLong,0.11059,0.02460
+Fifths,F2-halfShort,0.15320,0.02471
+Fifths,OHE start (HL+D),0.14877,0.02375
+Fifths,OHE full,0.26335,0.02547
+Fifths,HCP @25/33/37,0.38438,0.02091
+Fifths,Zar @52/62/67,0.51411,0.02947
+Fifths,OHE full @pub,1.80513,0.03589
+BUM-RAP,HCP,0.09711,0.01563
+BUM-RAP,Fifths,0.04369,0.01320
+BUM-RAP,BUM-RAP,0.00000,0.00000
+BUM-RAP,HCP+len,0.09791,0.02030
+BUM-RAP,HCP+len+short,0.30261,0.02416
+BUM-RAP,Zar,0.15864,0.02370
+BUM-RAP,Kaplan-Rubens,0.13895,0.02375
+BUM-RAP,NLTC,0.32772,0.02581
+BUM-RAP,Classic LTC,0.66515,0.02713
+BUM-RAP,Fermat,0.13689,0.02391
+BUM-RAP,Fermat NT,0.06156,0.01432
+BUM-RAP,Fermat-2 NT,0.07580,0.01422
+BUM-RAP,Fermat 2-lens,-0.10155,0.02082
+BUM-RAP,Fermat WL 2-lens,-0.13255,0.02178
+BUM-RAP,Fermat-2,0.19710,0.02494
+BUM-RAP,F2-noLong,0.15122,0.02377
+BUM-RAP,F2-halfShort,0.19443,0.02403
+BUM-RAP,OHE start (HL+D),0.19263,0.02380
+BUM-RAP,OHE full,0.30402,0.02551
+BUM-RAP,HCP @25/33/37,0.42659,0.02283
+BUM-RAP,Zar @52/62/67,0.55566,0.02890
+BUM-RAP,OHE full @pub,1.81979,0.03586
+HCP+len,HCP,-0.00096,0.01806
+HCP+len,Fifths,-0.05349,0.01940
+HCP+len,BUM-RAP,-0.09791,0.02030
+HCP+len,HCP+len,0.00000,0.00000
+HCP+len,HCP+len+short,0.20457,0.01802
+HCP+len,Zar,0.06008,0.01922
+HCP+len,Kaplan-Rubens,0.03999,0.02129
+HCP+len,NLTC,0.21945,0.02419
+HCP+len,Classic LTC,0.55950,0.02371
+HCP+len,Fermat,0.03525,0.02022
+HCP+len,Fermat NT,-0.03703,0.02008
+HCP+len,Fermat-2 NT,-0.02233,0.02008
+HCP+len,Fermat 2-lens,-0.20203,0.02037
+HCP+len,Fermat WL 2-lens,-0.23313,0.02204
+HCP+len,Fermat-2,0.09676,0.02187
+HCP+len,F2-noLong,0.05276,0.02053
+HCP+len,F2-halfShort,0.09466,0.02017
+HCP+len,OHE start (HL+D),0.09096,0.02049
+HCP+len,OHE full,0.19835,0.02373
+HCP+len,HCP @25/33/37,0.31461,0.02221
+HCP+len,Zar @52/62/67,0.44320,0.02752
+HCP+len,OHE full @pub,1.73054,0.03656
+HCP+len+short,HCP,-0.20940,0.02338
+HCP+len+short,Fifths,-0.26244,0.02417
+HCP+len+short,BUM-RAP,-0.30261,0.02416
+HCP+len+short,HCP+len,-0.20457,0.01802
+HCP+len+short,HCP+len+short,0.00000,0.00000
+HCP+len+short,Zar,-0.15081,0.01568
+HCP+len+short,Kaplan-Rubens,-0.17244,0.01871
+HCP+len+short,NLTC,0.02492,0.01935
+HCP+len+short,Classic LTC,0.37870,0.01878
+HCP+len+short,Fermat,-0.16359,0.01691
+HCP+len+short,Fermat NT,-0.24130,0.02414
+HCP+len+short,Fermat-2 NT,-0.23094,0.02426
+HCP+len+short,Fermat 2-lens,-0.40910,0.02011
+HCP+len+short,Fermat WL 2-lens,-0.44034,0.02209
+HCP+len+short,Fermat-2,-0.11258,0.01879
+HCP+len+short,F2-noLong,-0.15972,0.01713
+HCP+len+short,F2-halfShort,-0.11563,0.01651
+HCP+len+short,OHE start (HL+D),-0.10639,0.02035
+HCP+len+short,OHE full,-0.00117,0.02339
+HCP+len+short,HCP @25/33/37,0.11134,0.02385
+HCP+len+short,Zar @52/62/67,0.26103,0.02760
+HCP+len+short,OHE full @pub,1.54402,0.03816
+Zar,HCP,-0.06677,0.02434
+Zar,Fifths,-0.11715,0.02454
+Zar,BUM-RAP,-0.15864,0.02370
+Zar,HCP+len,-0.06008,0.01922
+Zar,HCP+len+short,0.15081,0.01568
+Zar,Zar,0.00000,0.00000
+Zar,Kaplan-Rubens,-0.01993,0.01743
+Zar,NLTC,0.16859,0.01952
+Zar,Classic LTC,0.51298,0.02253
+Zar,Fermat,-0.02431,0.01088
+Zar,Fermat NT,-0.09921,0.02454
+Zar,Fermat-2 NT,-0.08583,0.02472
+Zar,Fermat 2-lens,-0.26066,0.01687
+Zar,Fermat WL 2-lens,-0.29183,0.01933
+Zar,Fermat-2,0.03758,0.01457
+Zar,F2-noLong,-0.00665,0.01294
+Zar,F2-halfShort,0.03506,0.01245
+Zar,OHE start (HL+D),0.03373,0.02130
+Zar,OHE full,0.13814,0.02499
+Zar,HCP @25/33/37,0.24221,0.02617
+Zar,Zar @52/62/67,0.38830,0.02435
+Zar,OHE full @pub,1.62721,0.03737
+Kaplan-Rubens,HCP,-0.05019,0.02431
+Kaplan-Rubens,Fifths,-0.09961,0.02452
+Kaplan-Rubens,BUM-RAP,-0.13895,0.02375
+Kaplan-Rubens,HCP+len,-0.03999,0.02129
+Kaplan-Rubens,HCP+len+short,0.17244,0.01871
+Kaplan-Rubens,Zar,0.01993,0.01743
+Kaplan-Rubens,Kaplan-Rubens,0.00000,0.00000
+Kaplan-Rubens,NLTC,0.19677,0.01891
+Kaplan-Rubens,Classic LTC,0.54110,0.02201
+Kaplan-Rubens,Fermat,-0.00152,0.01711
+Kaplan-Rubens,Fermat NT,-0.08014,0.02391
+Kaplan-Rubens,Fermat-2 NT,-0.06754,0.02436
+Kaplan-Rubens,Fermat 2-lens,-0.23929,0.01984
+Kaplan-Rubens,Fermat WL 2-lens,-0.27037,0.02111
+Kaplan-Rubens,Fermat-2,0.05715,0.01706
+Kaplan-Rubens,F2-noLong,0.01281,0.01657
+Kaplan-Rubens,F2-halfShort,0.05463,0.01638
+Kaplan-Rubens,OHE start (HL+D),0.05481,0.01998
+Kaplan-Rubens,OHE full,0.15837,0.02418
+Kaplan-Rubens,HCP @25/33/37,0.25692,0.02586
+Kaplan-Rubens,Zar @52/62/67,0.41927,0.02618
+Kaplan-Rubens,OHE full @pub,1.65492,0.03687
+NLTC,HCP,-0.23539,0.02614
+NLTC,Fifths,-0.28982,0.02673
+NLTC,BUM-RAP,-0.32772,0.02581
+NLTC,HCP+len,-0.21945,0.02419
+NLTC,HCP+len+short,-0.02492,0.01935
+NLTC,Zar,-0.16859,0.01952
+NLTC,Kaplan-Rubens,-0.19677,0.01891
+NLTC,NLTC,0.00000,0.00000
+NLTC,Classic LTC,0.35449,0.01859
+NLTC,Fermat,-0.18102,0.01900
+NLTC,Fermat NT,-0.26625,0.02592
+NLTC,Fermat-2 NT,-0.25949,0.02649
+NLTC,Fermat 2-lens,-0.43075,0.02215
+NLTC,Fermat WL 2-lens,-0.46200,0.02276
+NLTC,Fermat-2,-0.13187,0.01886
+NLTC,F2-noLong,-0.18298,0.01823
+NLTC,F2-halfShort,-0.13443,0.01828
+NLTC,OHE start (HL+D),-0.12541,0.02253
+NLTC,OHE full,-0.02659,0.02454
+NLTC,HCP @25/33/37,0.07184,0.02622
+NLTC,Zar @52/62/67,0.24876,0.02778
+NLTC,OHE full @pub,1.51648,0.03826
+Classic LTC,HCP,-0.56926,0.02584
+Classic LTC,Fifths,-0.62512,0.02706
+Classic LTC,BUM-RAP,-0.66515,0.02713
+Classic LTC,HCP+len,-0.55950,0.02371
+Classic LTC,HCP+len+short,-0.37870,0.01878
+Classic LTC,Zar,-0.51298,0.02253
+Classic LTC,Kaplan-Rubens,-0.54110,0.02201
+Classic LTC,NLTC,-0.35449,0.01859
+Classic LTC,Classic LTC,0.00000,0.00000
+Classic LTC,Fermat,-0.52855,0.02250
+Classic LTC,Fermat NT,-0.60119,0.02623
+Classic LTC,Fermat-2 NT,-0.59713,0.02674
+Classic LTC,Fermat 2-lens,-0.77518,0.02451
+Classic LTC,Fermat WL 2-lens,-0.80646,0.02540
+Classic LTC,Fermat-2,-0.47856,0.02264
+Classic LTC,F2-noLong,-0.52979,0.02169
+Classic LTC,F2-halfShort,-0.48005,0.02134
+Classic LTC,OHE start (HL+D),-0.47785,0.02337
+Classic LTC,OHE full,-0.37662,0.02429
+Classic LTC,HCP @25/33/37,-0.26599,0.02457
+Classic LTC,Zar @52/62/67,-0.07327,0.03106
+Classic LTC,OHE full @pub,1.27049,0.03947
+Fermat,HCP,-0.04486,0.02485
+Fermat,Fifths,-0.09490,0.02475
+Fermat,BUM-RAP,-0.13689,0.02391
+Fermat,HCP+len,-0.03525,0.02022
+Fermat,HCP+len+short,0.16359,0.01691
+Fermat,Zar,0.02431,0.01088
+Fermat,Kaplan-Rubens,0.00152,0.01711
+Fermat,NLTC,0.18102,0.01900
+Fermat,Classic LTC,0.52855,0.02250
+Fermat,Fermat,0.00000,0.00000
+Fermat,Fermat NT,-0.07736,0.02449
+Fermat,Fermat-2 NT,-0.06391,0.02465
+Fermat,Fermat 2-lens,-0.23859,0.01463
+Fermat,Fermat WL 2-lens,-0.26980,0.01894
+Fermat,Fermat-2,0.06189,0.01304
+Fermat,F2-noLong,0.01766,0.01008
+Fermat,F2-halfShort,0.05937,0.01192
+Fermat,OHE start (HL+D),0.05807,0.02087
+Fermat,OHE full,0.15903,0.02497
+Fermat,HCP @25/33/37,0.26092,0.02613
+Fermat,Zar @52/62/67,0.41877,0.02427
+Fermat,OHE full @pub,1.64921,0.03735
+Fermat NT,HCP,0.03555,0.01333
+Fermat NT,Fifths,-0.01787,0.01202
+Fermat NT,BUM-RAP,-0.06156,0.01432
+Fermat NT,HCP+len,0.03703,0.02008
+Fermat NT,HCP+len+short,0.24130,0.02414
+Fermat NT,Zar,0.09921,0.02454
+Fermat NT,Kaplan-Rubens,0.08014,0.02391
+Fermat NT,NLTC,0.26625,0.02592
+Fermat NT,Classic LTC,0.60119,0.02623
+Fermat NT,Fermat,0.07736,0.02449
+Fermat NT,Fermat NT,0.00000,0.00000
+Fermat NT,Fermat-2 NT,0.01424,0.00966
+Fermat NT,Fermat 2-lens,-0.16124,0.01952
+Fermat NT,Fermat WL 2-lens,-0.19197,0.02067
+Fermat NT,Fermat-2,0.13746,0.02506
+Fermat NT,F2-noLong,0.09133,0.02403
+Fermat NT,F2-halfShort,0.13455,0.02420
+Fermat NT,OHE start (HL+D),0.13172,0.02305
+Fermat NT,OHE full,0.23990,0.02502
+Fermat NT,HCP @25/33/37,0.36271,0.02112
+Fermat NT,Zar @52/62/67,0.50415,0.02998
+Fermat NT,OHE full @pub,1.79347,0.03583
+Fermat-2 NT,HCP,0.02131,0.01338
+Fermat-2 NT,Fifths,-0.03211,0.01035
+Fermat-2 NT,BUM-RAP,-0.07580,0.01422
+Fermat-2 NT,HCP+len,0.02233,0.02008
+Fermat-2 NT,HCP+len+short,0.23094,0.02426
+Fermat-2 NT,Zar,0.08583,0.02472
+Fermat-2 NT,Kaplan-Rubens,0.06754,0.02436
+Fermat-2 NT,NLTC,0.25949,0.02649
+Fermat-2 NT,Classic LTC,0.59713,0.02674
+Fermat-2 NT,Fermat,0.06391,0.02465
+Fermat-2 NT,Fermat NT,-0.01424,0.00966
+Fermat-2 NT,Fermat-2 NT,0.00000,0.00000
+Fermat-2 NT,Fermat 2-lens,-0.17496,0.02010
+Fermat-2 NT,Fermat WL 2-lens,-0.20585,0.02131
+Fermat-2 NT,Fermat-2,0.12499,0.02546
+Fermat-2 NT,F2-noLong,0.07888,0.02442
+Fermat-2 NT,F2-halfShort,0.12175,0.02463
+Fermat-2 NT,OHE start (HL+D),0.11819,0.02327
+Fermat-2 NT,OHE full,0.23325,0.02541
+Fermat-2 NT,HCP @25/33/37,0.35240,0.02086
+Fermat-2 NT,Zar @52/62/67,0.48612,0.02996
+Fermat-2 NT,OHE full @pub,1.77564,0.03583
+Fermat 2-lens,HCP,0.19468,0.02122
+Fermat 2-lens,Fifths,0.14321,0.02083
+Fermat 2-lens,BUM-RAP,0.10155,0.02082
+Fermat 2-lens,HCP+len,0.20203,0.02037
+Fermat 2-lens,HCP+len+short,0.40910,0.02011
+Fermat 2-lens,Zar,0.26066,0.01687
+Fermat 2-lens,Kaplan-Rubens,0.23929,0.01984
+Fermat 2-lens,NLTC,0.43075,0.02215
+Fermat 2-lens,Classic LTC,0.77518,0.02451
+Fermat 2-lens,Fermat,0.23859,0.01463
+Fermat 2-lens,Fermat NT,0.16124,0.01952
+Fermat 2-lens,Fermat-2 NT,0.17496,0.02010
+Fermat 2-lens,Fermat 2-lens,0.00000,0.00000
+Fermat 2-lens,Fermat WL 2-lens,-0.03125,0.01255
+Fermat 2-lens,Fermat-2,0.29795,0.01779
+Fermat 2-lens,F2-noLong,0.25258,0.01609
+Fermat 2-lens,F2-halfShort,0.29551,0.01735
+Fermat 2-lens,OHE start (HL+D),0.29617,0.02108
+Fermat 2-lens,OHE full,0.40252,0.02470
+Fermat 2-lens,HCP @25/33/37,0.50887,0.02379
+Fermat 2-lens,Zar @52/62/67,0.65369,0.02482
+Fermat 2-lens,OHE full @pub,1.87458,0.03622
+Fermat WL 2-lens,HCP,0.22523,0.02237
+Fermat WL 2-lens,Fifths,0.17412,0.02207
+Fermat WL 2-lens,BUM-RAP,0.13255,0.02178
+Fermat WL 2-lens,HCP+len,0.23313,0.02204
+Fermat WL 2-lens,HCP+len+short,0.44034,0.02209
+Fermat WL 2-lens,Zar,0.29183,0.01933
+Fermat WL 2-lens,Kaplan-Rubens,0.27037,0.02111
+Fermat WL 2-lens,NLTC,0.46200,0.02276
+Fermat WL 2-lens,Classic LTC,0.80646,0.02540
+Fermat WL 2-lens,Fermat,0.26980,0.01894
+Fermat WL 2-lens,Fermat NT,0.19197,0.02067
+Fermat WL 2-lens,Fermat-2 NT,0.20585,0.02131
+Fermat WL 2-lens,Fermat 2-lens,0.03125,0.01255
+Fermat WL 2-lens,Fermat WL 2-lens,0.00000,0.00000
+Fermat WL 2-lens,Fermat-2,0.32914,0.01910
+Fermat WL 2-lens,F2-noLong,0.28381,0.01936
+Fermat WL 2-lens,F2-halfShort,0.32668,0.01982
+Fermat WL 2-lens,OHE start (HL+D),0.32726,0.02220
+Fermat WL 2-lens,OHE full,0.43295,0.02556
+Fermat WL 2-lens,HCP @25/33/37,0.53756,0.02500
+Fermat WL 2-lens,Zar @52/62/67,0.68402,0.02499
+Fermat WL 2-lens,OHE full @pub,1.88851,0.03624
+Fermat-2,HCP,-0.10586,0.02573
+Fermat-2,Fifths,-0.15627,0.02577
+Fermat-2,BUM-RAP,-0.19710,0.02494
+Fermat-2,HCP+len,-0.09676,0.02187
+Fermat-2,HCP+len+short,0.11258,0.01879
+Fermat-2,Zar,-0.03758,0.01457
+Fermat-2,Kaplan-Rubens,-0.05715,0.01706
+Fermat-2,NLTC,0.13187,0.01886
+Fermat-2,Classic LTC,0.47856,0.02264
+Fermat-2,Fermat,-0.06189,0.01304
+Fermat-2,Fermat NT,-0.13746,0.02506
+Fermat-2,Fermat-2 NT,-0.12499,0.02546
+Fermat-2,Fermat 2-lens,-0.29795,0.01779
+Fermat-2,Fermat WL 2-lens,-0.32914,0.01910
+Fermat-2,Fermat-2,0.00000,0.00000
+Fermat-2,F2-noLong,-0.04424,0.01181
+Fermat-2,F2-halfShort,-0.00252,0.01103
+Fermat-2,OHE start (HL+D),-0.00261,0.02127
+Fermat-2,OHE full,0.09979,0.02558
+Fermat-2,HCP @25/33/37,0.20055,0.02722
+Fermat-2,Zar @52/62/67,0.35541,0.02499
+Fermat-2,OHE full @pub,1.58536,0.03739
+F2-noLong,HCP,-0.05940,0.02455
+F2-noLong,Fifths,-0.11059,0.02460
+F2-noLong,BUM-RAP,-0.15122,0.02377
+F2-noLong,HCP+len,-0.05276,0.02053
+F2-noLong,HCP+len+short,0.15972,0.01713
+F2-noLong,Zar,0.00665,0.01294
+F2-noLong,Kaplan-Rubens,-0.01281,0.01657
+F2-noLong,NLTC,0.18298,0.01823
+F2-noLong,Classic LTC,0.52979,0.02169
+F2-noLong,Fermat,-0.01766,0.01008
+F2-noLong,Fermat NT,-0.09133,0.02403
+F2-noLong,Fermat-2 NT,-0.07888,0.02442
+F2-noLong,Fermat 2-lens,-0.25258,0.01609
+F2-noLong,Fermat WL 2-lens,-0.28381,0.01936
+F2-noLong,Fermat-2,0.04424,0.01181
+F2-noLong,F2-noLong,0.00000,0.00000
+F2-noLong,F2-halfShort,0.04171,0.01142
+F2-noLong,OHE start (HL+D),0.04268,0.02095
+F2-noLong,OHE full,0.14881,0.02467
+F2-noLong,HCP @25/33/37,0.25236,0.02559
+F2-noLong,Zar @52/62/67,0.40192,0.02570
+F2-noLong,OHE full @pub,1.64966,0.03759
+F2-halfShort,HCP,-0.10262,0.02456
+F2-halfShort,Fifths,-0.15320,0.02471
+F2-halfShort,BUM-RAP,-0.19443,0.02403
+F2-halfShort,HCP+len,-0.09466,0.02017
+F2-halfShort,HCP+len+short,0.11563,0.01651
+F2-halfShort,Zar,-0.03506,0.01245
+F2-halfShort,Kaplan-Rubens,-0.05463,0.01638
+F2-halfShort,NLTC,0.13443,0.01828
+F2-halfShort,Classic LTC,0.48005,0.02134
+F2-halfShort,Fermat,-0.05937,0.01192
+F2-halfShort,Fermat NT,-0.13455,0.02420
+F2-halfShort,Fermat-2 NT,-0.12175,0.02463
+F2-halfShort,Fermat 2-lens,-0.29551,0.01735
+F2-halfShort,Fermat WL 2-lens,-0.32668,0.01982
+F2-halfShort,Fermat-2,0.00252,0.01103
+F2-halfShort,F2-noLong,-0.04171,0.01142
+F2-halfShort,F2-halfShort,0.00000,0.00000
+F2-halfShort,OHE start (HL+D),-0.00016,0.02053
+F2-halfShort,OHE full,0.10217,0.02454
+F2-halfShort,HCP @25/33/37,0.20642,0.02596
+F2-halfShort,Zar @52/62/67,0.35647,0.02491
+F2-halfShort,OHE full @pub,1.61474,0.03740
+OHE start (HL+D),HCP,-0.09647,0.02335
+OHE start (HL+D),Fifths,-0.14877,0.02375
+OHE start (HL+D),BUM-RAP,-0.19263,0.02380
+OHE start (HL+D),HCP+len,-0.09096,0.02049
+OHE start (HL+D),HCP+len+short,0.10639,0.02035
+OHE start (HL+D),Zar,-0.03373,0.02130
+OHE start (HL+D),Kaplan-Rubens,-0.05481,0.01998
+OHE start (HL+D),NLTC,0.12541,0.02253
+OHE start (HL+D),Classic LTC,0.47785,0.02337
+OHE start (HL+D),Fermat,-0.05807,0.02087
+OHE start (HL+D),Fermat NT,-0.13172,0.02305
+OHE start (HL+D),Fermat-2 NT,-0.11819,0.02327
+OHE start (HL+D),Fermat 2-lens,-0.29617,0.02108
+OHE start (HL+D),Fermat WL 2-lens,-0.32726,0.02220
+OHE start (HL+D),Fermat-2,0.00261,0.02127
+OHE start (HL+D),F2-noLong,-0.04268,0.02095
+OHE start (HL+D),F2-halfShort,0.00016,0.02053
+OHE start (HL+D),OHE start (HL+D),0.00000,0.00000
+OHE start (HL+D),OHE full,0.11291,0.02233
+OHE start (HL+D),HCP @25/33/37,0.21788,0.02477
+OHE start (HL+D),Zar @52/62/67,0.36435,0.02735
+OHE start (HL+D),OHE full @pub,1.61582,0.03607
+OHE full,HCP,-0.20564,0.02468
+OHE full,Fifths,-0.26335,0.02547
+OHE full,BUM-RAP,-0.30402,0.02551
+OHE full,HCP+len,-0.19835,0.02373
+OHE full,HCP+len+short,0.00117,0.02339
+OHE full,Zar,-0.13814,0.02499
+OHE full,Kaplan-Rubens,-0.15837,0.02418
+OHE full,NLTC,0.02659,0.02454
+OHE full,Classic LTC,0.37662,0.02429
+OHE full,Fermat,-0.15903,0.02497
+OHE full,Fermat NT,-0.23990,0.02502
+OHE full,Fermat-2 NT,-0.23325,0.02541
+OHE full,Fermat 2-lens,-0.40252,0.02470
+OHE full,Fermat WL 2-lens,-0.43295,0.02556
+OHE full,Fermat-2,-0.09979,0.02558
+OHE full,F2-noLong,-0.14881,0.02467
+OHE full,F2-halfShort,-0.10217,0.02454
+OHE full,OHE start (HL+D),-0.11291,0.02233
+OHE full,OHE full,0.00000,0.00000
+OHE full,HCP @25/33/37,0.10613,0.02445
+OHE full,Zar @52/62/67,0.28286,0.02984
+OHE full,OHE full @pub,1.52697,0.03596
+HCP @25/33/37,HCP,-0.33106,0.01888
+HCP @25/33/37,Fifths,-0.38438,0.02091
+HCP @25/33/37,BUM-RAP,-0.42659,0.02283
+HCP @25/33/37,HCP+len,-0.31461,0.02221
+HCP @25/33/37,HCP+len+short,-0.11134,0.02385
+HCP @25/33/37,Zar,-0.24221,0.02617
+HCP @25/33/37,Kaplan-Rubens,-0.25692,0.02586
+HCP @25/33/37,NLTC,-0.07184,0.02622
+HCP @25/33/37,Classic LTC,0.26599,0.02457
+HCP @25/33/37,Fermat,-0.26092,0.02613
+HCP @25/33/37,Fermat NT,-0.36271,0.02112
+HCP @25/33/37,Fermat-2 NT,-0.35240,0.02086
+HCP @25/33/37,Fermat 2-lens,-0.50887,0.02379
+HCP @25/33/37,Fermat WL 2-lens,-0.53756,0.02500
+HCP @25/33/37,Fermat-2,-0.20055,0.02722
+HCP @25/33/37,F2-noLong,-0.25236,0.02559
+HCP @25/33/37,F2-halfShort,-0.20642,0.02596
+HCP @25/33/37,OHE start (HL+D),-0.21788,0.02477
+HCP @25/33/37,OHE full,-0.10613,0.02445
+HCP @25/33/37,HCP @25/33/37,0.00000,0.00000
+HCP @25/33/37,Zar @52/62/67,0.18954,0.03318
+HCP @25/33/37,OHE full @pub,1.60323,0.03725
+Zar @52/62/67,HCP,-0.46769,0.02998
+Zar @52/62/67,Fifths,-0.51411,0.02947
+Zar @52/62/67,BUM-RAP,-0.55566,0.02890
+Zar @52/62/67,HCP+len,-0.44320,0.02752
+Zar @52/62/67,HCP+len+short,-0.26103,0.02760
+Zar @52/62/67,Zar,-0.38830,0.02435
+Zar @52/62/67,Kaplan-Rubens,-0.41927,0.02618
+Zar @52/62/67,NLTC,-0.24876,0.02778
+Zar @52/62/67,Classic LTC,0.07327,0.03106
+Zar @52/62/67,Fermat,-0.41877,0.02427
+Zar @52/62/67,Fermat NT,-0.50415,0.02998
+Zar @52/62/67,Fermat-2 NT,-0.48612,0.02996
+Zar @52/62/67,Fermat 2-lens,-0.65369,0.02482
+Zar @52/62/67,Fermat WL 2-lens,-0.68402,0.02499
+Zar @52/62/67,Fermat-2,-0.35541,0.02499
+Zar @52/62/67,F2-noLong,-0.40192,0.02570
+Zar @52/62/67,F2-halfShort,-0.35647,0.02491
+Zar @52/62/67,OHE start (HL+D),-0.36435,0.02735
+Zar @52/62/67,OHE full,-0.28286,0.02984
+Zar @52/62/67,HCP @25/33/37,-0.18954,0.03318
+Zar @52/62/67,Zar @52/62/67,0.00000,0.00000
+Zar @52/62/67,OHE full @pub,1.18320,0.03753
+OHE full @pub,HCP,-1.77849,0.03617
+OHE full @pub,Fifths,-1.80513,0.03589
+OHE full @pub,BUM-RAP,-1.81979,0.03586
+OHE full @pub,HCP+len,-1.73054,0.03656
+OHE full @pub,HCP+len+short,-1.54402,0.03816
+OHE full @pub,Zar,-1.62721,0.03737
+OHE full @pub,Kaplan-Rubens,-1.65492,0.03687
+OHE full @pub,NLTC,-1.51648,0.03826
+OHE full @pub,Classic LTC,-1.27049,0.03947
+OHE full @pub,Fermat,-1.64921,0.03735
+OHE full @pub,Fermat NT,-1.79347,0.03583
+OHE full @pub,Fermat-2 NT,-1.77564,0.03583
+OHE full @pub,Fermat 2-lens,-1.87458,0.03622
+OHE full @pub,Fermat WL 2-lens,-1.88851,0.03624
+OHE full @pub,Fermat-2,-1.58536,0.03739
+OHE full @pub,F2-noLong,-1.64966,0.03759
+OHE full @pub,F2-halfShort,-1.61474,0.03740
+OHE full @pub,OHE start (HL+D),-1.61582,0.03607
+OHE full @pub,OHE full,-1.52697,0.03596
+OHE full @pub,HCP @25/33/37,-1.60323,0.03725
+OHE full @pub,Zar @52/62/67,-1.18320,0.03753
+OHE full @pub,OHE full @pub,0.00000,0.00000

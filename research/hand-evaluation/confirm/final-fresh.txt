@@ -1,0 +1,15 @@
+Final test on 70000 held-out random boards (5000-board matches, 36 matches, perfect exchange):
+
+| # | Team | Won | VP/match | % optimal vs DD | IMPs lost vs DD/board | Fermat Complete vs team (IMPs/board, 95% CI) |
+|---|---|---|---|---|---|---|
+| 1 | FERMAT COMPLETE | 8/8 | 18.48 | 73.5% | -2.140 | — |
+| 2 | Fermat WL 2-lens | 7/8 | 14.51 | 72.7% | -2.231 | +0.094 [+0.076, +0.111] |
+| 3 | Kaplan-Rubens / Fifths | 6/8 | 13.67 | 71.8% | -2.271 | +0.138 [+0.115, +0.160] |
+| 4 | Fermat 2-lens | 5/8 | 12.45 | 71.9% | -2.263 | +0.132 [+0.117, +0.147] |
+| 5 | Zar / Fifths | 4/8 | 11.90 | 71.4% | -2.278 | +0.144 [+0.124, +0.164] |
+| 6 | All Fives today (Zar / HCP) | 3/8 | 10.90 | 71.0% | -2.300 | +0.169 [+0.149, +0.189] |
+| 7 | Fifths | 2/8 | 5.31 | 69.6% | -2.436 | +0.322 [+0.295, +0.348] |
+| 8 | HCP | 1/8 | 2.77 | 68.6% | -2.493 | +0.386 [+0.359, +0.413] |
+| 9 | SAYC classic (HCP 25/33/37) | 0/8 | 0.00 | 67.3% | -2.907 | +0.871 [+0.838, +0.904] |
+Fermat Complete cuts (non-vul): NT [24.75, 31.25, 34.25], game 53.25, slam 61.75, grand 65.25
+Fermat Complete cuts (vul): NT [24.25, 31.25, 34.25], game 52.25, slam 61.75, grand 65.25

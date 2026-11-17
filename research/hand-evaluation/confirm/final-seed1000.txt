@@ -1,0 +1,13 @@
+Final test on 70000 held-out random boards (5000-board matches, 36 matches, perfect exchange):
+
+| # | Team | Won | VP/match | % optimal vs DD | IMPs lost vs DD/board | Fermat Complete vs team (IMPs/board, 95% CI) |
+|---|---|---|---|---|---|---|
+| 1 | FERMAT COMPLETE | 8/8 | 18.60 | 73.1% | -2.176 | — |
+| 2 | Fermat WL 2-lens | 7/8 | 15.12 | 72.2% | -2.281 | +0.106 [+0.088, +0.124] |
+| 3 | Fermat 2-lens | 6/8 | 13.31 | 71.3% | -2.309 | +0.141 [+0.125, +0.156] |
+| 4 | Kaplan-Rubens / Fifths | 4/8 | 11.84 | 71.4% | -2.314 | +0.147 [+0.124, +0.170] |
+| 5 | Zar / Fifths | 5/8 | 11.75 | 70.9% | -2.324 | +0.154 [+0.134, +0.174] |
+| 6 | All Fives today (Zar / HCP) | 3/8 | 11.13 | 70.5% | -2.348 | +0.180 [+0.160, +0.200] |
+| 7 | Fifths | 2/8 | 5.45 | 69.4% | -2.462 | +0.316 [+0.289, +0.343] |
+| 8 | HCP | 1/8 | 2.80 | 68.3% | -2.520 | +0.382 [+0.354, +0.409] |
+| 9 | SAYC classic (HCP 25/33/37) | 0/8 | 0.00 | 66.9% | -2.936 | +0.868 [+0.835, +0.901] |

@@ -42,6 +42,14 @@ own-hand method can achieve.
 | `hand-evaluation-report.md` → `.pdf` | Full packet-1 report (19 pages) |
 | `13-nltc-method.md` → `nltc-method.pdf` | How to count and use NLTC (cross-check to Zar; slam candidate; never for NT) |
 | `17-tournament-report.md` → `tournament.pdf` | Tournament report with analytics: level mix, accuracy by deal type, errors per 1 000 boards, losses by vul/strain/HCP band, featured match |
+| `25-fermat-complete.md` | Fermat Complete: the extracted system — wins 8/8 on fresh deals, +0.17 IMP/board over All Fives today |
+| `24-slam-weakest-link.md` | H-38 slam trigger + keycard gate; H-41 weakest-link (series reliability) evaluation — both corroborated in DD |
+| `23-fermat2.md` | H-40 Fermat-2 challenger — refuted on fresh deals; Fermat fit vs Zar confirmed |
+| `22-lenses-fermat.md` | 55-team SAYC round robin including Fermat lenses (Fermat fit lens sweeps the podium) |
+| `21-fermat.md` | H-39 Fermat Points (one base count + fit dial) vs Zar/Fifths across 12 tournaments |
+| `20-competitive.md` | Competitive systems study: opponents interfere, compete (LoTT) and sacrifice |
+| `19-systems.md` | Systems study: SAYC, Precision, Acol, 2/1 GF, All Fives and perfect exchange — 41-team round robins + system shoot-out |
+| `18-lenses-tournament.md` | 41-team two-lens round robin (fit lens × NT lens, SAYC framework, 5 000-board matches) |
 | `16-tournament.md` | Team round robin of 16 evaluation teams on random deals (All Fives / Two-lens win) |
 | `15-battle.md` → `battle.pdf` | 14 methods on 100 000 random deals vs DD-optimal level; P8 Zar > NLTC confirmed |
 | `14-ohe-codification.md` | Darricades OHE as codified from Timm's overview (secondary source) |

@@ -1,0 +1,9 @@
+H-37 competitive entry: 70000 test deals; direct seat can enter on 37624 (53.7%). Tuned thresholds HCP [1.5, 0.5, 8.5], Zar [18.5, 11.5, 22.5] (1-level overcall, 2-level overcall, double).
+rule                                    enter% IMP/board vs pass vs current [95%] per board     H-32 class     vul / NV
+Current (12+ HCP & SQT, double 13+)      22.1%           +0.331    +0.000 [+0.000,+0.000]   +0.000 (n=2516) +0.308/+0.355
+Textbook SAYC (8+/10+, double 12+)       57.8%           +0.676    +0.345 [+0.318,+0.372]   +0.222 (n=2516) +0.554/+0.800
+H-37 Zar (23 / 26, double 24)            58.5%           +0.766    +0.435 [+0.407,+0.462]   +0.222 (n=2516) +0.630/+0.903
+Tuned HCP                                96.0%           +0.870    +0.539 [+0.503,+0.574]   +0.222 (n=2516) +0.628/+1.114
+Tuned Zar                                90.5%           +0.868    +0.537 [+0.503,+0.572]   +0.222 (n=2516) +0.646/+1.093
+Always enter when possible              100.0%           +0.864    +0.533 [+0.497,+0.569]   +0.222 (n=2516) +0.611/+1.119
+Never enter                               0.0%           +0.000    -0.331 [-0.356,-0.307]   -1.641 (n=2516) +0.000/+0.000
