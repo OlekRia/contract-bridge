@@ -42,6 +42,8 @@ own-hand method can achieve.
 | `hand-evaluation-report.md` → `.pdf` | Full packet-1 report (19 pages) |
 | `13-nltc-method.md` → `nltc-method.pdf` | How to count and use NLTC (cross-check to Zar; slam candidate; never for NT) |
 | `17-tournament-report.md` → `tournament.pdf` | Tournament report with analytics: level mix, accuracy by deal type, errors per 1 000 boards, losses by vul/strain/HCP band, featured match |
+| `27-replay-20261116.md` | Replay of Winterthur 2026-11-16 as pair 1 with Fermat Complete + Fifths: 71.25% → 69.17%, still 1st |
+| `26-h42-systems.md` | H-42 systems check: Fermat Complete wins all 12 auction-model round robins |
 | `25-fermat-complete.md` | Fermat Complete: the extracted system — wins 8/8 on fresh deals, +0.17 IMP/board over All Fives today |
 | `24-slam-weakest-link.md` | H-38 slam trigger + keycard gate; H-41 weakest-link (series reliability) evaluation — both corroborated in DD |
 | `23-fermat2.md` | H-40 Fermat-2 challenger — refuted on fresh deals; Fermat fit vs Zar confirmed |
