@@ -120,3 +120,27 @@ deals (seed 1000), DD outcomes, "who reaches the DD-optimal contract".
   reduced from 1 000 000 to the first **100 000** deals of seed 1000 (compute time). Split
   unchanged: first 30% (30 000 deals) train, remaining 70 000 test. File:
   `data/battle-100k-s1000.jsonl` (first 100 000 complete lines of the generation run).
+
+## Addendum E — H-45 Fermat Interlock (written 2026-11-18, before any interlock code ran)
+
+Requested by the Director ("discover a method better than Fermat Complete"). Frozen now:
+
+- **Definitions** exactly as filed in H-45 (`gov/hypotheses.yaml`): fit-lens terms fitting
+  (+1 per K/Q/J in a side suit where partner has 4+), wasted (−1 per K/Q/J opposite a
+  singleton; −2 K, −1 Q/J, −1 A opposite a void), double fit (+2 for a side suit with a combined
+  8+); NT filler (+½ per J/T in a suit where partner holds A, K or Q). Gates (−3 per unstopped
+  suit, −4 per uncovered side suit, keycards) as in Fermat Complete.
+- **Ceiling (DIAG, step 0)**: ridge λ = 5 on DD tricks in the shared strain; features = combined
+  per-suit holding class (length × A/K/Q/J/T mask) and short-hand length × combined-length
+  bucket, separate trump block, plus raw fitting/wasted counts; fitted separately for NT and
+  major-fit sides on the train region; three cuts on predicted tricks per vulnerability.
+- **Split**: first 30% of deals train (seed 1000, deals 0-29 999) in both files.
+  Exploratory = `data/battle-100k-s1000.jsonl` test region (seed 1000, already used to develop
+  Fermat Complete); **confirmation = `data/rematch-train30k-plus-fresh70k.jsonl` fresh region
+  (seed 2000)**. Definitions are not changed after the exploratory run.
+- **Primary (P-H45)**: Fermat Interlock (all terms) vs Fermat Complete, IMPs per board on the
+  fresh region, 32-board blocks, rotating vulnerability, perfect exchange. Corroborated if the
+  95% CI lower bound > +0.03; refuted if the upper bound < 0.
+- **Step 0 (S-H45)**: Ceiling vs Fermat Complete ≥ +0.10 → headroom exists; < +0.05 → the
+  search moves to information transfer.
+- Secondary: ablations (each term alone, all but one, fit lens only); % optimal; IMPs lost vs DD.
