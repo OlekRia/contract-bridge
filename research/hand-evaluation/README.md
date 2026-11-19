@@ -42,6 +42,7 @@ own-hand method can achieve.
 | `hand-evaluation-report.md` → `.pdf` | Full packet-1 report (19 pages) |
 | `13-nltc-method.md` → `nltc-method.pdf` | How to count and use NLTC (cross-check to Zar; slam candidate; never for NT) |
 | `17-tournament-report.md` → `tournament.pdf` | Tournament report with analytics: level mix, accuracy by deal type, errors per 1 000 boards, losses by vul/strain/HCP band, featured match |
+| `41-h43-matchpoints.md` | **H-43 matchpoint lines corroborated**: +0.27 MP-% per board over IMP lines (All Fives, competing, new deals); at pairs game +1, 3NT +½, grand +2 Fermat points; field term adds nothing |
 | `40-h52-auction-neural.md` | **H-52 auction-aware network** (own hand + partner's shown range): ties Fermat Complete at the table (inconclusive, −0.025 primary); +0.05-0.10 over H-51; Fermat is near the ceiling of the auction's information |
 | `39-h51-neural.md` | **H-51 neural evaluator**: a network trained on ~250k DD deals is the best evaluator with both hands seen (+0.13 over Fermat Complete, 21/21), but loses through HCP-ranged auctions (primary refuted, −0.10) |
 | `38-h50-footprint.md` | **H-50 refuted**: Zar's footprint gate inside Fermat Complete costs 0.07-0.13 IMP/board (seed 7000); it vetoes about half the good slams |
