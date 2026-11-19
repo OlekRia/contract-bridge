@@ -144,3 +144,65 @@ Requested by the Director ("discover a method better than Fermat Complete"). Fro
 - **Step 0 (S-H45)**: Ceiling vs Fermat Complete ≥ +0.10 → headroom exists; < +0.05 → the
   search moves to information transfer.
 - Secondary: ablations (each term alone, all but one, fit lens only); % optimal; IMPs lost vs DD.
+
+## Addendum F — H-46 Partnership Shortness (written 2026-11-18, before any H-46 code ran and before the seed-3000 deals were read)
+
+- **Definition** exactly as filed in H-46: per side suit, s = shorter hand's length, c =
+  combined length: +2 (s = 0, c ≤ 7), +1 (s = 1, c ≤ 7), −1 (s ≥ 3), else 0. Fit value =
+  Fermat fit totals + w × term; w chosen from {1, 2, 3, 4, 5} by lowest total train regret
+  after tuning the lines for each w. NT lens and all gates as in Fermat Complete.
+- **Data**: train = deals 0-29 999 of `data/battle-100k-s1000.jsonl` (as before); confirmation
+  = `data/battle-fresh30k-s3000.jsonl` (30 000 new uniformly random deals, seed 3000, generated
+  with ddss 0.2 — byte-identical solver output to dds-bridge 0.18 on the benchmark), combined
+  as `data/train30k-s1000-plus-fresh30k-s3000.jsonl`, train fraction 0.5.
+- **Exploratory** runs only on the seed-1000 and seed-2000 regions; no definition changes
+  after them.
+- **Primary (P-H46)**: H-46 vs Fermat Complete on the seed-3000 deals, IMPs per board,
+  32-board blocks, rotating vulnerability, perfect exchange. Corroborated if the 95% CI lower
+  bound > +0.03; refuted if the upper bound < 0; otherwise inconclusive.
+- Secondary: ruffing-bonus-only, mirror-only, H-46 + wasted honours (H-45 term), ceiling
+  (DIAG, same ridge as Addendum E), All Fives today; fit/NT split; share of the ceiling.
+
+## Addendum G — H-47 Fermat Complete + wasted honours (written 2026-11-18, before the seed-4000 deals were generated)
+
+- **Definition** exactly as filed in H-47 (= `interlock_fit` with only `wasted` on, unchanged
+  since H-45): side suits only; −1 per K/Q/J opposite partner's singleton; −2 per K and −1 per
+  A/Q/J opposite partner's void. No tuned weight; lines re-tuned on train as for Fermat Complete.
+- **Data**: train = deals 0-29 999 of `data/battle-100k-s1000.jsonl`; confirmation =
+  `data/battle-fresh30k-s4000.jsonl` (30 000 new uniformly random deals, seed 4000, ddss),
+  combined as `data/train30k-s1000-plus-fresh30k-s4000.jsonl`, train fraction 0.5.
+- **Primary (P-H47)**: H-47 vs Fermat Complete, IMPs per board on the seed-4000 deals, 32-board
+  blocks, rotating vulnerability, perfect exchange. Corroborated if mean ≥ +0.015 and 95% CI
+  lower bound > 0; refuted if the upper bound < 0; otherwise inconclusive. One run.
+- Secondary: fit/NT split, % optimal, IMPs lost vs DD, ceiling (DIAG) and All Fives today.
+
+## Addendum H — H-48 Fermat Fit-Quality (written 2026-11-18, before the seed-5000 deals were generated and before any H-48 code ran)
+
+- **Definition** exactly as filed in H-48. Fit value = Fermat fit totals + term, term over side
+  suits: −½ × HCP held opposite partner's 0-1 cards (A=4, K=3, Q=2, J=1); +1½ × shorter hand's
+  trump length; +1½ if combined trumps ≥ 9; +1 × ruff units (void 2, singleton 1) in side suits
+  where partner holds 3+, both hands. No tuned weight; lines re-tuned on train; gates unchanged.
+- **Data**: train = deals 0-29 999 of `data/battle-100k-s1000.jsonl`; confirmation =
+  `data/battle-fresh30k-s5000.jsonl` (30 000 new uniformly random deals, seed 5000, ddss),
+  combined as `data/train30k-s1000-plus-fresh30k-s5000.jsonl`, train fraction 0.5.
+- **Primary (P-H48)**: H-48 vs Fermat Complete on the seed-5000 deals, IMPs per board, 32-board
+  blocks, rotating vulnerability, perfect exchange. Corroborated if the 95% CI lower bound
+  > +0.03; refuted if the upper bound < 0; otherwise inconclusive. One run.
+- Secondary: each part alone (wasted HCP; trump quality; ruff units), the 18-feature residual
+  model and the ceiling (DIAG), All Fives today; fit/NT split.
+
+## Addendum H2 — H-48 step 2, auction-model check (written 2026-11-18, before any step-2 code ran)
+
+- **Models**: the H-42 `eval_lab systems` information models (captain + partner's count bucket
+  per system; SAYC, Precision, Acol, 2/1, All Fives; silent and competitive). Fermat Complete's
+  coverage gates as in H-42 (shown by stopper/control bids).
+- **Information levels for the Fit-Quality term** (added to the regime's Fermat fit value):
+  L1 = trump term only (3- vs 4-card support shown by the raise structure), wasted/ruff terms 0;
+  **L2 = trump term always + wasted/ruff terms only when the regime's Fermat fit estimate ≥ 50**
+  (game-try / slam-try zone where splinters and shortness tries happen); L3 = full term known.
+  Lines tuned on train per level.
+- **Data**: `data/train30k-s1000-plus-fresh30k-s5000.jsonl`, train fraction 0.5, 5 000-board
+  matches; secondary run on `data/rematch-train30k-plus-fresh70k.jsonl` (0.3).
+- **Primary (P-H48b)**: Fit-Quality L2 vs Fermat Complete, All Fives model, **competitive**
+  opponents, IMPs per board. Corroborated if the 95% CI lower bound > 0; refuted if the upper
+  bound < 0. Secondary: L1 and L3, the other systems, silent opponents, L2 vs Zar / HCP.

@@ -1,0 +1,2 @@
+invite band (non-vul): fit w = 3.5, accept at dev >= +2.5; NT w = 3.5, accept at dev >= +2.0
+invite band (vul): fit w = 3.5, accept at dev >= +2.5; NT w = 4.0, accept at dev >= +2.0
