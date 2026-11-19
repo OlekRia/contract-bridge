@@ -42,6 +42,7 @@ own-hand method can achieve.
 | `hand-evaluation-report.md` → `.pdf` | Full packet-1 report (19 pages) |
 | `13-nltc-method.md` → `nltc-method.pdf` | How to count and use NLTC (cross-check to Zar; slam candidate; never for NT) |
 | `17-tournament-report.md` → `tournament.pdf` | Tournament report with analytics: level mix, accuracy by deal type, errors per 1 000 boards, losses by vul/strain/HCP band, featured match |
+| `44-grand-round-robin.md` | **Grand round robin**: 28 teams, new seed-13000 deals. The H-54 card is 1st silent and 3rd competing; the Fermat family is within 0.02 under competition; H-54 replication +0.015 (mean of four sets about +0.026) |
 | `43-h54-trump.md` | **H-54 corroborated**: Fermat Complete + trump quality (+1½ per card of the shorter trump holding, +1½ for a 9+ fit) = +0.051 IMP/board at the table (All Fives, competing), 1st of 22 |
 | `42-h53-fitsplit.md` | **H-53 inconclusive**: switching Fit-Quality's shortness terms by auction type adds nothing (+0.006); the trump-quality term alone (L1) is +0.024 at the table and 1st in 3 of 4 leagues, the candidate for H-54 |
 | `usability/` | **H-42 step 2 kit**: Fermat Complete memory card (teams + pairs lines), 40 positions from seed 213, solutions, score sheet |
