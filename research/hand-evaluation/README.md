@@ -42,6 +42,17 @@ own-hand method can achieve.
 | `hand-evaluation-report.md` → `.pdf` | Full packet-1 report (19 pages) |
 | `13-nltc-method.md` → `nltc-method.pdf` | How to count and use NLTC (cross-check to Zar; slam candidate; never for NT) |
 | `17-tournament-report.md` → `tournament.pdf` | Tournament report with analytics: level mix, accuracy by deal type, errors per 1 000 boards, losses by vul/strain/HCP band, featured match |
+| `39-h51-neural.md` | **H-51 neural evaluator**: a network trained on ~250k DD deals is the best evaluator with both hands seen (+0.13 over Fermat Complete, 21/21), but loses through HCP-ranged auctions (primary refuted, −0.10) |
+| `38-h50-footprint.md` | **H-50 refuted**: Zar's footprint gate inside Fermat Complete costs 0.07-0.13 IMP/board (seed 7000); it vetoes about half the good slams |
+| `37-zar-max.md` | **Zar Max (H-49)**: the full Zar Points book (Petkov 2003) as an evaluator, played in a 22-team **SAYC** league: 5th, best non-Fermat team; +0.064 IMP/board over Zar / HCP (corroborated); book slam/grand lines right, game line 2-3 low |
+| `36-voi.md` | Value of information in the All Fives auction: partner's count within 3 points recovers 81-87% of the cost of bidding blind; shape facts little; game invitations ≈ 0 with silent opponents |
+| `35-auction20.md` | 20-team tournament **without seeing partner's cards** (All Fives auction model, new seed-6000 deals): Fit-Quality wins with silent opponents; with competition Fermat family 1-4, Fermat Complete +0.19 over All Fives today |
+| `34-tournament20.md` | 20-team round robin (5 000-board matches, two events): Fermat Fit-Quality wins both 19/19; Fermat family 1-4; All Fives today 9th; SAYC 25/33/37 last |
+| `33-h48-systems.md` | H-48 step 2 inside the auction models: gain survives with silent opponents (+0.03 to +0.05, trump term alone keeps most), vanishes when opponents compete — primary inconclusive |
+| `32-h48-fitquality.md` | **H-48 Fermat Fit-Quality corroborated** on 30 000 new deals: +0.077 over Fermat Complete (+0.16 on fit boards) — method card, lines, worked example |
+| `31-residual.md` | What Fermat Complete misses (residual diagnostic): wasted HCP, shorter-hand trump length, ruff units — an 18-feature correction gains +0.09 to +0.11 in four regions |
+| `30-h47-wasted.md` | H-47 wasted honours inconclusive on 30 000 new deals (−0.008): the H-45 gain did not replicate; three two-hand terms failed, the ceiling (+0.27) stands |
+| `29-h46-shortness.md` | H-46 partnership shortness refuted on 30 000 new deals (−0.05); the diagnostic must be fitted on Fermat residuals; wasted honours keeps helping (+0.04) |
 | `28-h45-interlock.md` | H-45 Fermat Interlock refuted (−0.11); two-hand ceiling +0.27 over Fermat Complete — the room is in partnership shortness |
 | `27-replay-20261116.md` | Replay of Winterthur 2026-11-16 as pair 1 with Fermat Complete + Fifths: 71.25% → 69.17%, still 1st |
 | `26-h42-systems.md` | H-42 systems check: Fermat Complete wins all 12 auction-model round robins |
