@@ -1,6 +1,6 @@
 # Fermat Complete — memory card
 
-**Status:** H-42; the pairs lines are DEC-16. Pending adoption into All Fives (roadmap item 3).
+**Status:** H-42 + H-54 (trump quality); the pairs lines are DEC-16. Pending adoption into All Fives (roadmap item 3).
 
 ## 1. Count your hand
 
@@ -33,14 +33,25 @@ Shape numbers:
 | 6NT | 31½ | 31½ |
 | 7NT | 34½ | 34½ |
 
-**Major fit (8+ cards):** add the two FIT counts.
+**Major fit (8+ cards):** add the two FIT counts, then add **trump quality**: **+1½ per card of the shorter trump holding**, and **+1½ more for a 9+ card fit**.
+
+Trump quality by fit:
+
+| Fit | Trump quality |
+|---|---|
+| 4-4 | +6 |
+| 5-3 | +4½ |
+| 6-2 | +3 |
+| 5-4 | +7½ |
+| 6-3 | +6 |
+| 5-5 | +9 |
 
 | Contract | Teams | Pairs |
 |---|---|---|
-| Game, vulnerable | 52½ | **54**; with 53, invite |
-| Game, not vulnerable | 53½ | **54** |
-| Small slam | 62 | 62 |
-| Grand slam | 65½ | **67½** |
+| Game, vulnerable | 58½ | **59½**; with 59, invite |
+| Game, not vulnerable | 59 | **59½** |
+| Small slam | 68 | 68 |
+| Grand slam | 71½ | **73½** |
 
 **For slam:** first take **4 off for each side suit** where neither hand has an A, a K, a void or a singleton. A slam still needs **at most one keycard missing** (RKCB: four aces + trump king). A grand needs **all five keycards**.
 
@@ -52,8 +63,10 @@ You: ♠ AK543 ♥ K32 ♦ A2 ♣ 432
 |---|---|---|---|---|
 | You: ♠ AK543 ♥ K32 ♦ A2 ♣ 432 | 14 | 6 | 11 (5332) | **31** |
 | Partner: ♠ QJ76 ♥ A54 ♦ K543 ♣ 65 | 10 | 3 | 10 (4432) | **23** |
-| Total | | | | **54** |
+| FIT + FIT | | | | 54 |
+| Trump quality, ♠ 5-4 | | | | +7½ |
+| Total | | | | **61½** |
 
-54 is a game at teams and at pairs.
+61½ is a game at teams and at pairs.
 
-For slam: ♣ has no A, K or shortness in either hand, so 54 − 4 = 50. No slam.
+For slam: ♣ has no A, K or shortness in either hand, so 61½ − 4 = 57½. No slam (68 needed).

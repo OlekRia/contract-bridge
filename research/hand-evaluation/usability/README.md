@@ -1,6 +1,6 @@
 # H-42 step 2 — usability test of Fermat Complete
 
-**Question:** can Ori and Urs count Fermat Complete fast and consistently enough for the table?
+**Question:** can Ori and Urs count Fermat Complete fast and consistently enough for the table? This is the card with the H-54 trump-quality term (`../43-h54-trump.md`).
 
 **Pass marks**, set in H-42 before the test:
 - **Speed:** 20 seconds or less per hand, on average.
